@@ -1,0 +1,23 @@
+{
+  "extends": "eslint-config-airbnb",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "globals": {
+    "react": true,
+    "gatsby-helpers": true
+  },
+  "rules": {
+    "comma-dangle": "off",
+    "indent": ["error", 4],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "semi": [2, "never"],
+    "react/jsx-indent": ["warn", 4],
+    "react/jsx-indent-props": ["warn", 4],
+    "import/no-extraneous-dependencies": [0],
+    "import/extensions": [0],
+    "import/no-unresolved": [0],
+  }
+}
