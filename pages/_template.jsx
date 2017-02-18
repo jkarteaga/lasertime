@@ -1,18 +1,14 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import '../css/markdown-styles'
+import HeaderMenu from '../components/HeaderMenu'
 
 import { rhythm } from '../utils/typography'
 
-module.exports = React.createClass({
-    propTypes() {
-        return {
-            children: React.PropTypes.any,
-        }
-    },
+class _template extends React.Component {
     render() {
         return (
             <div>
@@ -38,8 +34,9 @@ module.exports = React.createClass({
                                 textDecoration: 'none',
                             }}
                         >
-                            Lasertime
+                            Logo
                         </Link>
+                        <HeaderMenu />
                     </Container>
                 </Headroom>
                 <Container
@@ -53,5 +50,13 @@ module.exports = React.createClass({
                 </Container>
             </div>
         )
-    },
-})
+    }
+}
+
+_template.propTypes = {
+    children: PropTypes.object.isRequired
+}
+_template.defaultProps = {}
+
+export default _template
+
