@@ -1,9 +1,10 @@
 import React, { Component, PropTypes } from 'react'
+import HeaderMenu from './HeaderMenu'
 
 class PageHeader extends Component {
     render() {
         return (
-            <div>Header</div>
+            <HeaderMenu />
         )
     }
 }

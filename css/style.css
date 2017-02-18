@@ -1,0 +1,13 @@
+.menu__list-item {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.menu__link {
+    color: black;
+}
+
+.menu__link--active {
+    color: red;
+}

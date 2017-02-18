@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import '../css/markdown-styles'
+import '../css/style'
 import HeaderMenu from '../components/HeaderMenu'
 
 import { rhythm } from '../utils/typography'
@@ -17,7 +18,7 @@ class _template extends React.Component {
                         marginBottom: rhythm(1),
                     }}
                     style={{
-                        background: '#252525'
+                        background: '#999'
                     }}
                 >
                     <Container

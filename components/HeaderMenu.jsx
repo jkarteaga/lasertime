@@ -1,16 +1,17 @@
 import React, { Component, PropTypes } from 'react'
-import { Route, Link } from 'react-router'
+import MenuItem from './MenuItem'
 
-class HeaderMenu extends Component {
-    render() {
-        return (
-            <div>
-                <Link to="/articles/">Статьи</Link>
-                <Link to="/doctors/">Врачи</Link>
-                <Link to="/prices /">Цены</Link>
-            </div>
-        )
-    }
+function HeaderMenu(props) {
+    return (
+        <ul>
+            <MenuItem path="/doctors/" name="Врачи" />
+            <MenuItem path="/services/" name="Услуги" />
+            <MenuItem path="/prices/" name="Цены" />
+            <MenuItem path="/articles/" name="Статьи" />
+            <MenuItem path="/news/" name="Новости" />
+            <MenuItem path="/contacts/" name="Контакты" />
+        </ul>
+    )
 }
 
 HeaderMenu.propTypes = {}
