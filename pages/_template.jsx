@@ -1,63 +1,48 @@
 import React, { PropTypes } from 'react'
 import { Container } from 'react-responsive-grid'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import '../css/markdown-styles'
 import '../css/style'
-import HeaderMenu from '../components/HeaderMenu'
-
+import PageHeader from '../components/PageHeader'
 import { rhythm } from '../utils/typography'
 
-class _template extends React.Component {
-    render() {
-        return (
-            <div>
-                <Headroom
-                    wrapperStyle={{
-                        marginBottom: rhythm(1),
-                    }}
-                    style={{
-                        background: '#999'
-                    }}
-                >
-                    <Container
-                        style={{
-                            maxWidth: 960,
-                            paddingTop: 0,
-                            padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
-                        }}
-                    >
-                        <Link
-                            to={prefixLink('/')}
-                            style={{
-                                color: 'white',
-                                textDecoration: 'none',
-                            }}
-                        >
-                            Logo
-                        </Link>
-                        <HeaderMenu />
-                    </Container>
-                </Headroom>
+function Template({ children }) {
+    return (
+        <div>
+            <Headroom
+                wrapperStyle={{
+                    marginBottom: rhythm(1),
+                }}
+                style={{
+                    background: '#999'
+                }}
+            >
                 <Container
                     style={{
                         maxWidth: 960,
-                        padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
                         paddingTop: 0,
+                        padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
                     }}
                 >
-                    {this.props.children}
+
+                    <PageHeader />
                 </Container>
-            </div>
-        )
-    }
+            </Headroom>
+            <Container
+                style={{
+                    maxWidth: 960,
+                    padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
+                    paddingTop: 0,
+                }}
+            >
+                {children}
+            </Container>
+        </div>
+    )
 }
 
-_template.propTypes = {
-    children: PropTypes.object.isRequired
+Template.propTypes = {
+    children: PropTypes.object.isRequired  // eslint-disable-line react/forbid-prop-types
 }
-_template.defaultProps = {}
 
-export default _template
-
+export default Template

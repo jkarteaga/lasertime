@@ -1,20 +1,22 @@
-import React, { Component, PropTypes } from 'react'
+import React, { PropTypes } from 'react'
 import MenuItem from './MenuItem'
 
-function HeaderMenu(props) {
+function HeaderMenu({ position, items }) {
+    const links = items.map((item, id) => <MenuItem
+        key={id}
+        path={item[0]}
+        name={item[1]}
+    />)
+
     return (
-        <ul>
-            <MenuItem path="/doctors/" name="Врачи" />
-            <MenuItem path="/services/" name="Услуги" />
-            <MenuItem path="/prices/" name="Цены" />
-            <MenuItem path="/articles/" name="Статьи" />
-            <MenuItem path="/news/" name="Новости" />
-            <MenuItem path="/contacts/" name="Контакты" />
-        </ul>
+        <ul className={position === 'left' ? 'menu--left' : 'menu--right'}>{ links }</ul>
     )
 }
 
-HeaderMenu.propTypes = {}
+HeaderMenu.propTypes = {
+    position: PropTypes.string.isRequired,
+    items: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired
+}
 HeaderMenu.defaultProps = {}
 
 export default HeaderMenu

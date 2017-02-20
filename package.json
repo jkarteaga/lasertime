@@ -37,8 +37,9 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
+    "build": "rm -r public/*; gatsby build",
     "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "watch": "watch 'echo File changed!' .",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

@@ -1,2 +1,14 @@
-siteTitle="Lasertime"
+siteTitle="Lasertime Клиника"
 linkPrefix = "/"
+
+leftMenuItems = [
+    ["/news/", "Новости"],
+    ["/doctors/", "Врачи"],
+    ["/services/", "Услуги"],
+]
+
+rightMenuItems = [
+    ["/prices/", "Цены"],
+    ["/articles/", "Статьи"],
+    ["/contacts/", "Контакты"]
+]

@@ -11,3 +11,7 @@
 .menu__link--active {
     color: red;
 }
+
+.outline {
+    outline: 1px solid red;
+}
