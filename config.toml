@@ -1,6 +1,9 @@
 siteTitle="Lasertime Клиника"
 linkPrefix = "/"
 
+fixedPhone = 84997824343
+mobilePhone = 89263060335
+
 leftMenuItems = [
     ["/news/", "Новости"],
     ["/doctors/", "Врачи"],
