@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React from 'react'
 import { config } from 'config'
 import HeaderMenu from './HeaderMenu'
 import PhoneWidget from './PhoneList'

@@ -13,12 +13,15 @@
     "comma-dangle": "off",
     "indent": ["error", 4],
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
-    "semi": [2, "never"],
+    "semi": [0, "never"],
     "react/jsx-indent": ["warn", 4],
     "react/jsx-indent-props": ["warn", 4],
     "import/no-extraneous-dependencies": [0],
     "import/extensions": [0],
     "import/no-unresolved": [0],
     "react/no-danger": [0],
+  },
+  "env": {
+    "mocha": true
   }
 }
