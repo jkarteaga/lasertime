@@ -3,6 +3,10 @@
   "description": "LaserTime Clinic",
   "version": "0.1.1",
   "author": "Oleg Legun",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oleglegun/lasertime.git"
+  },
   "dependencies": {
     "front-matter": "^2.0.7",
     "gatsby": "^0.12.6",
@@ -44,7 +48,7 @@
   "main": "n/a",
   "scripts": {
     "build": "rm -r public/*; gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "deploy": "rm -r public/*; gatsby build --prefix-links && gh-pages -d public",
     "watch": "watch 'echo File changed!' .",
     "develop": "gatsby develop",
     "test": "npm run unit",
