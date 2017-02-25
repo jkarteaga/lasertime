@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import { config } from 'config'
 
 
-
 class Index extends React.Component {
     render() {
         return (
@@ -18,12 +17,11 @@ class Index extends React.Component {
                     ]}
                 />
                 <h1>
-                    Hello World!
+                    Home Page
                 </h1>
                 <p>
-                    Some text
+
                 </p>
-                <Link to={prefixLink('/test/')}>Link</Link>
             </div>
         )
     }
