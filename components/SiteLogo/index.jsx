@@ -7,7 +7,6 @@ import logo from '../../assets/jpg/logo.jpg'
 function Logo() {
     return (
         <div className="page-header__logo">
-            <Link to={prefixLink('/')}>
                 <img
                     alt="Клиника Знак Качества"
                     title="Клиника Знак Качества"
@@ -15,7 +14,6 @@ function Logo() {
                     width="237"
                     height="100"
                 />
-            </Link>
         </div>
     )
 }

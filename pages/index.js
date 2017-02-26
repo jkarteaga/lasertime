@@ -7,6 +7,8 @@ import { config } from 'config'
 
 class Index extends React.Component {
     render() {
+        console.log('---', this.props.route)
+
         return (
             <div>
                 <Helmet
@@ -19,9 +21,6 @@ class Index extends React.Component {
                 <h1>
                     Home Page
                 </h1>
-                <p>
-
-                </p>
             </div>
         )
     }

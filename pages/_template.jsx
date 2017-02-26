@@ -3,7 +3,7 @@ import '../css/styles.less'
 import PageHeader from '../components/PageHeader'
 import PageContent from '../components/PageContent'
 
-function Template({ children }) {
+function Page({ children }) {
     return (
         <div>
             <PageHeader />
@@ -16,8 +16,8 @@ function Template({ children }) {
     )
 }
 
-Template.propTypes = {
+Page.propTypes = {
     children: PropTypes.object.isRequired  // eslint-disable-line react/forbid-prop-types
 }
 
-export default Template
+export default Page

@@ -1,5 +1,7 @@
 import React from 'react'
 import { config } from 'config'
+import { Link } from 'react-router'
+import { prefixLink } from 'gatsby-helpers'
 import HeaderMenu from './HeaderMenu'
 import PhoneList from './PhoneList'
 import Logo from './SiteLogo'
@@ -20,8 +22,10 @@ function PageHeader() {
                 </div>
 
                 <div className="page-header__item">
-                    <Title />
-                    <Logo />
+                    <Link to={prefixLink('/')}>
+                        <Title />
+                        <Logo />
+                    </Link>
                 </div>
 
                 <div className="page-header__item">
