@@ -2,8 +2,9 @@ import React from 'react'
 import { config } from 'config'
 import HeaderMenu from './HeaderMenu'
 import PhoneList from './PhoneList'
-import Logo from './Logo'
-import Social from './Social'
+import Logo from './SiteLogo'
+import Title from './SiteTitle'
+import SocialList from './SocialList'
 
 
 function PageHeader(props) {
@@ -19,11 +20,12 @@ function PageHeader(props) {
                 </div>
 
                 <div className="page-header__item">
+                    <Title />
                     <Logo />
                 </div>
 
                 <div className="page-header__item">
-                    <Social />
+                    <SocialList />
                     <HeaderMenu position="right" items={rightMenuItems} />
                 </div>
             </div>

@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 
 function Social(props) {
     return (
-        <div>Social Icons</div>
+        <div className="social-list">Мы в соц. сетях</div>
     )
 }
 
