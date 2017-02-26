@@ -7,7 +7,7 @@ import Title from './SiteTitle'
 import SocialList from './SocialList'
 
 
-function PageHeader(props) {
+function PageHeader() {
     const { leftMenuItems, rightMenuItems, fixedPhone, mobilePhone } = config
 
     return (

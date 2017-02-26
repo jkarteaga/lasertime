@@ -6,14 +6,14 @@ import logo from '../../assets/jpg/logo.jpg'
 
 function Logo() {
     return (
-        <div className="site-head__logo">
+        <div className="page-header__logo">
             <Link to={prefixLink('/')}>
                 <img
                     alt="Клиника Знак Качества"
                     title="Клиника Знак Качества"
                     src={prefixLink(`${logo}`)}
-                    width="345"
-                    height="145"
+                    width="237"
+                    height="100"
                 />
             </Link>
         </div>
