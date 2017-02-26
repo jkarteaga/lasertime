@@ -5,11 +5,11 @@ import { prefixLink } from 'gatsby-helpers'
 
 function MenuItem({ path, name }) {
     return (
-        <li className="menu__list-item">
+        <li className="header-menu__item">
             <Link
                 to={prefixLink(path)}
-                className="menu__link"
-                activeClassName="menu__link--active"
+                className="header-menu__link"
+                activeClassName="header-menu__link--active"
             >
                 {name}
             </Link>
