@@ -9,7 +9,7 @@ function HeaderMenu({ position, items }) {
     />)
 
     return (
-        <ul className={position === 'left' ? 'menu--left' : 'menu--right'}>{ links }</ul>
+        <ul className={position === 'left' ? 'page-header__menu-left' : 'page-header__menu-right'}>{ links }</ul>
     )
 }
 

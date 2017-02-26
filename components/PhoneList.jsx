@@ -6,17 +6,28 @@ function PhoneList({ items }) {
         const arr = phone.toString().match(re)
         const formattedPhone = `8 (${arr[2]}) ${arr[3]}-${arr[4]}`
         return (
-            <a
-                key={phone}
-                href={`tel:+7${arr.slice(2, 5).join('')}`}
-                className={id ? 'header__phone--bottom' : 'header__phone--top'}
-            >
-                {formattedPhone}
-            </a>
+            <div key={phone} className="phone-list__item">
+                <span
+                    className={id ?
+                        'phone-list__icon phone-list__icon--fixed'
+                        :
+                        'phone-list__icon phone-list__icon--mobile'}
+                />
+                <a
+                    href={`tel:+7${arr.slice(2, 5).join('')}`}
+                    className="phone-list__link"
+                >
+                    {formattedPhone}
+                </a>
+            </div>
         )
     })
     return (
-        <div className="header__phones">{phones}</div>
+        <div className="phone-list">
+            <div className="phone-list__items">
+                {phones}
+            </div>
+        </div>
     )
 }
 
