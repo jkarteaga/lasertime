@@ -11,12 +11,14 @@
 }
 
 .page-header__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-grow: 1;
 
   &:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 0;
+    display: block;
+    //justify-content: flex-end;
   }
 }
 
