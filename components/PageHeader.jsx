@@ -2,6 +2,7 @@ import React from 'react'
 import { config } from 'config'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
+import ScrollProgress from './ScrollProgress'
 import HeaderMenu from './HeaderMenu'
 import PhoneList from './PhoneList'
 import Logo from './SiteLogo'
@@ -33,6 +34,7 @@ function PageHeader() {
                     <HeaderMenu position="right" items={rightMenuItems} />
                 </div>
             </div>
+            <ScrollProgress backgroundColor="#daaa64" />
         </header>
     )
 }

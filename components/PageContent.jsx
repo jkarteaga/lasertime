@@ -1,13 +1,20 @@
 import React, { PropTypes } from 'react'
 
-function PageContent(props) {
-    return (
-        <div className="PageContent">
-            <div className="PageContent__wrapper">
-                {props.children}
+class PageContent extends React.Component {
+    componentDidMount() {
+
+    }
+
+    render() {
+        return (
+            <div className="PageContent">
+                <div className="PageContent__wrapper">
+                    {this.props.children}
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
+
 }
 
 PageContent.propTypes = {}
