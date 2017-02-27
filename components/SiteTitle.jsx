@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 
 function SiteTitle(props) {
     return (
-        <div className="page-header__title">
+        <div className="PageHeader__title">
 
             <svg width="217px" height="39px" viewBox="1 3 217 39" version="1.1">
                 <path

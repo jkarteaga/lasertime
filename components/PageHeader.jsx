@@ -13,22 +13,22 @@ function PageHeader() {
     const { leftMenuItems, rightMenuItems, fixedPhone, mobilePhone } = config
 
     return (
-        <header className="page-header">
-            <div className="page-header__items">
+        <header className="PageHeader">
+            <div className="PageHeader__items">
 
-                <div className="page-header__item">
+                <div className="PageHeader__item">
                     <PhoneList items={[fixedPhone, mobilePhone]} />
                     <HeaderMenu position="left" items={leftMenuItems} />
                 </div>
 
-                <div className="page-header__item">
+                <div className="PageHeader__item">
                     <Link to={prefixLink('/')}>
                         <Title />
                         <Logo />
                     </Link>
                 </div>
 
-                <div className="page-header__item">
+                <div className="PageHeader__item">
                     <SocialList />
                     <HeaderMenu position="right" items={rightMenuItems} />
                 </div>

@@ -1,21 +1,26 @@
 @import "../variables";
 
-.header-menu__items {
+.HeaderMenu__items {
   margin-left: 0;
 }
 
-.header-menu__item {
+.HeaderMenu__item {
   margin: 10px;
 }
 
-.header-menu__link {
+.HeaderMenu__link {
   border-bottom: 5px solid #fff;
-  color: @gray-20;
+  color: @MenuItem-color;
   text-decoration: none;
   padding: 10px;
   transition: all .3s ease-out;
+
+  &:hover {
+    color: @MenuItem-color-hover;
+  }
 }
 
-.header-menu__link--active {
+.HeaderMenu__link--active {
+  color: @MenuItem-color-hover;
   border-bottom: 5px solid @gold-dark;
 }

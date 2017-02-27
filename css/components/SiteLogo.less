@@ -1,4 +1,4 @@
-.page-header__logo {
+.PageHeader__logo {
   text-align: center;
   img {
     height: 100%;
@@ -7,7 +7,7 @@
 }
 
 
-.mask .shine{
+.PageHeader__logo--mask .PageHeader__logo--shine{
   position: relative;
   //display:block;
   //width:150px;
@@ -17,16 +17,16 @@
   //background: ;
   //-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
 }
-.mask .shine{
+.PageHeader__logo--mask .PageHeader__logo--shine{
   background-position: -250px 0;
 }
-.mask .shine:hover,
-.mask .shine:focus{
+.PageHeader__logo--mask .PageHeader__logo--shine:hover,
+.PageHeader__logo--mask .PageHeader__logo--shine:focus{
   background-position: 10px 0;
   /*change speed to see in slow motion*/
   transition: all 1s;
 }
-.mask .shine::after{
+.PageHeader__logo--mask .PageHeader__logo--shine::after{
   content:'';
   position: absolute;
   pointer-events: none;

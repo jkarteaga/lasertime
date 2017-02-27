@@ -9,9 +9,9 @@ function HeaderMenu({ position, items }) {
     />)
 
     return (
-        <div className={position === 'left' ? 'header-menu header-menu--left' : 'header-menu header-menu--right'}>
-            <div className="header-menu__wrapper">
-                <ul className="header-menu__items">
+        <div className={`HeaderMenu ${position === 'left' ? 'HeaderMenu--left' : 'HeaderMenu--right'}`}>
+            <div className="HeaderMenu__wrapper">
+                <ul className="HeaderMenu__items">
                     { links }
                 </ul>
             </div>
