@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react'
-import { getArticles } from '../../utils/helpers'
+import { getPrices } from '../../utils/helpers'
 import PagePreview from '../../components/PagePreview'
 
-function ArticleList(props, context) {
+function PriceList(props, context) {
 
-    const articles = getArticles(props.route.pages)
+    const articles = getPrices(props.route.pages)
     const articlesElements = articles.map((article) => {
         return <PagePreview article={article} />
     })
@@ -14,12 +14,12 @@ function ArticleList(props, context) {
     )
 }
 
-ArticleList.contextTypes = {
+PriceList.contextTypes = {
     router: PropTypes.object.isRequired
 }
-ArticleList.propTypes = {
+PriceList.propTypes = {
     route: PropTypes.object.isRequired
 }
-ArticleList.defaultProps = {}
+PriceList.defaultProps = {}
 
-export default ArticleList
+export default PriceList

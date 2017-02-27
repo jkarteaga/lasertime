@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import { Link } from 'react-router'
 
 
-function ArticlePreview(props) {
+function PagePreview(props) {
     return (
         <div>
             <Link to={props.article.data.path}>{props.article.data.title}</Link>
@@ -10,9 +10,9 @@ function ArticlePreview(props) {
     )
 }
 
-ArticlePreview.propTypes = {
+PagePreview.propTypes = {
     article: PropTypes.object.isRequired
 }
-ArticlePreview.defaultProps = {}
+PagePreview.defaultProps = {}
 
-export default ArticlePreview
+export default PagePreview
