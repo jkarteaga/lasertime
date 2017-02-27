@@ -6,7 +6,8 @@ import logo from '../../assets/jpg/logo.jpg'
 
 function Logo() {
     return (
-        <div className="page-header__logo">
+        <div className="page-header__logo mask">
+            <div className="shine">
                 <img
                     alt="Клиника Знак Качества"
                     title="Клиника Знак Качества"
@@ -14,6 +15,7 @@ function Logo() {
                     width="237"
                     height="100"
                 />
+            </div>
         </div>
     )
 }

@@ -1,10 +1,16 @@
 import React, { PropTypes } from 'react'
+import { getArticles } from '../../utils/helpers'
+import ArticlePreview from '../../components/ArticlePreview'
 
 function Index(props, context) {
     console.log('---', props.route)
+    const articles = getArticles(props.route.pages)
+    const articlesElements = articles.map((article) => {
+        return <ArticlePreview article={article} />
+    })
 
     return (
-        <div>1</div>
+        <div>{articlesElements}</div>
     )
 }
 

@@ -10,8 +10,6 @@ function Page({ children }) {
             <PageContent>
                 {children}
             </PageContent>
-
-
         </div>
     )
 }
