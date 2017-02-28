@@ -1,30 +1,59 @@
 import React from 'react';
 
 
-// Constants for calculating the scrollable height of the page
-const browserHeight = window.innerHeight;
-let pageHeight;
-let totalScrollableArea;
-
-
-
 class ScrollProgress extends React.Component {
-    constructor(props) {
-        super(props);
-        this.to = null;
-        this._onScroll = this._onScroll.bind(this);
+    state = {
+        to: null,
+        browserHeight: null,
+        pageHeight: null,
+        totalScrollableArea: null,
+        currentPage: null
     }
 
     componentWillMount() {
-        window.addEventListener('scroll', this._onScroll);
-        setTimeout(() => {
-            pageHeight = document.body.scrollHeight;
-            totalScrollableArea = pageHeight - browserHeight;
-        }, 200)
+        window.addEventListener('scroll', this._onScroll)
+        setTimeout(this._initialize, 200)
     }
 
     componentWillUnmount() {
-        window.removeEventListener('scroll', this._onScroll);
+        window.removeEventListener('scroll', this._onScroll)
+    }
+
+    _initialize = () => {
+        const pageHeight = document.body.scrollHeight
+        const totalScrollableArea = pageHeight - window.innerHeight
+
+        this.setState({
+            browserHeight: window.innerHeight,
+            pageHeight: pageHeight,
+            totalScrollableArea: totalScrollableArea,
+            currentPage: window.location.pathname
+        })
+    }
+
+    _onScroll = () => {
+
+        if (this.state.to) {
+            clearTimeout(this.state.to)
+            console.log('---', 'cleared!')
+
+        }
+
+        const id = setTimeout(() => {
+            if (this.state.currentPage !== window.location.pathname) {
+                this._initialize()
+            }
+            let scrolled = document.body.scrollTop
+
+            let percentage = (scrolled / this.state.totalScrollableArea).toFixed(2) * 100
+            this.refs.ScrollProgressValue.style.width = percentage + '%'
+        }, 100)
+
+        this.setState({
+            to: id
+        })
+
+        console.log('---', 'checked!')
     }
 
     render() {
@@ -38,29 +67,12 @@ class ScrollProgress extends React.Component {
             </div>
         );
     }
-
-    _onScroll() {
-
-        if (this.to) {
-            clearTimeout(this.to);
-        }
-
-        this.to = setTimeout(() => {
-            console.log(`browserHeight: ${browserHeight}
-pageHeight: ${pageHeight}
-scrollableArea: ${totalScrollableArea}
-scrolled: ${document.body.scrollTop}`)
-
-            var scrolled = document.body.scrollTop;
-            var percentage = (scrolled / totalScrollableArea).toFixed(2) * 100;
-            this.refs.ScrollProgressValue.style.width = percentage + '%';
-        }, 100);
-    }
-};
+}
 
 
 ScrollProgress.propTypes = {
-    backgroundColor: React.PropTypes.string
+    backgroundColor: React.PropTypes.string,
+    route: React.PropTypes.object
 };
 
 
