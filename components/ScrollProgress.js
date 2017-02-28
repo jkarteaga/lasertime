@@ -10,7 +10,7 @@ class ScrollProgress extends React.Component {
         currentPage: null
     }
 
-    componentWillMount() {
+    componentDidMount() {
         window.addEventListener('scroll', this._onScroll)
         setTimeout(this._initialize, 200)
     }
@@ -35,8 +35,6 @@ class ScrollProgress extends React.Component {
 
         if (this.state.to) {
             clearTimeout(this.state.to)
-            console.log('---', 'cleared!')
-
         }
 
         const id = setTimeout(() => {
@@ -52,8 +50,6 @@ class ScrollProgress extends React.Component {
         this.setState({
             to: id
         })
-
-        console.log('---', 'checked!')
     }
 
     render() {

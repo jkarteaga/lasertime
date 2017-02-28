@@ -2,9 +2,9 @@ import React, { PropTypes } from 'react'
 
 function PhoneList({ items }) {
     const phones = items.map((phone, id) => {
-        const re = /^(\d)(\d\d\d)(\d\d\d)(\d\d\d\d)$/i
+        const re = /^(\d)(\d\d\d)(\d\d\d)(\d\d)(\d\d)$/i
         const arr = phone.toString().match(re)
-        const formattedPhone = `8 (${arr[2]}) ${arr[3]}-${arr[4]}`
+        const formattedPhone = `8 (${arr[2]}) ${arr[3]}-${arr[4]}-${arr[5]}`
         return (
             <div key={phone} className="PhoneList__item">
                 <span

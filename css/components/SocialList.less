@@ -1,0 +1,37 @@
+@import "../variables";
+
+.SocialList {
+  display: flex;
+  flex-basis: 55%;
+}
+
+.SocialList__links {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: space-around;
+  margin: auto;
+
+}
+
+
+.SocialList__link svg {
+  width: 40px;
+}
+
+.SocialList__link--fb .icon-fb,
+.SocialList__link--vk .icon-vk,
+.SocialList__link--inst .icon-inst {
+  fill: @social-icon;
+}
+
+.SocialList__link--fb:hover .icon-fb {
+    fill: @icon-fb-color--hover;
+}
+
+.SocialList__link--vk:hover .icon-vk {
+    fill: @icon-vk-color--hover;
+}
+
+.SocialList__link--inst:hover .icon-inst {
+    fill: @icon-inst-color--hover;
+}
