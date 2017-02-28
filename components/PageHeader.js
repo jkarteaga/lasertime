@@ -15,26 +15,28 @@ function PageHeader() {
 
     return (
         <header className="PageHeader">
-            <div className="PageHeader__items">
+            <div className="PageHeader__wrapper">
+                <div className="PageHeader__items">
 
-                <div className="PageHeader__item">
-                    <PhoneList items={[fixedPhone, mobilePhone]} />
-                    <HeaderMenu position="left" items={leftMenuItems} />
-                </div>
+                    <div className="PageHeader__item">
+                        <PhoneList items={[fixedPhone, mobilePhone]} />
+                        <HeaderMenu position="left" items={leftMenuItems} />
+                    </div>
 
-                <div className="PageHeader__item">
-                    <Link to={prefixLink('/')}>
-                        <Title />
-                        <Logo />
-                    </Link>
-                </div>
+                    <div className="PageHeader__item">
+                        <Link to={prefixLink('/')}>
+                            <Title />
+                            <Logo />
+                        </Link>
+                    </div>
 
-                <div className="PageHeader__item">
-                    <SocialList />
-                    <HeaderMenu position="right" items={rightMenuItems} />
+                    <div className="PageHeader__item">
+                        <SocialList />
+                        <HeaderMenu position="right" items={rightMenuItems} />
+                    </div>
                 </div>
+                <ScrollProgress backgroundColor="#daaa64" />
             </div>
-            <ScrollProgress backgroundColor="#daaa64" />
         </header>
     )
 }
