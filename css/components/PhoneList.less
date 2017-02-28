@@ -9,7 +9,28 @@
   margin: auto;
 }
 
+.PhoneList__item {
+  padding-left: 40px;
+  position: relative;
+}
+
+.PhoneList__icon {
+  position: absolute;
+  left: 0px;
+
+  &--fixed {
+    fill: @icon-phone-color;
+    height: 25px;
+  }
+
+  &--mobile {
+    fill: @icon-phone-color;
+    height: 25px;
+  }
+}
+
 .PhoneList__link {
+  font-size: 20px;
   color: @gray-50;
   text-decoration: none;
 }
