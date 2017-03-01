@@ -7,11 +7,13 @@ import PageFooter from '../components/PageFooter'
 function Page({ children }) {
     return (
         <div className="Page">
-            <PageHeader />
-            <PageContent>
-                {children}
-            </PageContent>
-            <PageFooter />
+            <div className="Page__wrapper">
+                <PageHeader />
+                <PageContent>
+                    {children}
+                </PageContent>
+                <PageFooter />
+            </div>
         </div>
     )
 }

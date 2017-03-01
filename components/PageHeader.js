@@ -10,35 +10,73 @@ import Title from './SiteTitle'
 import SocialList from './SocialList'
 
 
-function PageHeader() {
-    const { leftMenuItems, rightMenuItems, fixedPhone, mobilePhone } = config
+class PageHeader extends React.Component {
 
-    return (
-        <header className="PageHeader">
-            <div className="PageHeader__wrapper">
-                <div className="PageHeader__items">
+    state = {
+        timer: null,
+    }
 
-                    <div className="PageHeader__item">
-                        <PhoneList items={[fixedPhone, mobilePhone]} />
-                        <HeaderMenu position="left" items={leftMenuItems} />
+    componentDidMount() {
+        window.addEventListener('scroll', this._onScroll)
+    }
+
+
+    _onScroll = () => {
+        // console.log('---', document.body.scrollTop)
+        let timer = this.state.timer;
+        if (timer) {
+            clearTimeout(timer)
+            this.setState({
+                timer: null
+            })
+            // console.log('---', 'clear')
+        }
+
+        const id = setTimeout(() => {
+            // console.log('---', 'timer')
+            if (document.body.scrollTop > 49) {
+                this._pageHeaderElement.classList.add('PageHeader--fixed')
+            } else {
+                this._pageHeaderElement.classList.remove('PageHeader--fixed')
+            }
+        }, 10)
+
+        this.setState({
+            timer: id
+        })
+
+    }
+
+
+    render() {
+        const { leftMenuItems, rightMenuItems, fixedPhone, mobilePhone } = config
+        return (
+            <header className="PageHeader">
+                <div className="PageHeader__wrapper" ref={(ref) => { this._pageHeaderElement = ref }}>
+                    <div className="PageHeader__items">
+
+                        <div className="PageHeader__item">
+                            <PhoneList items={[fixedPhone, mobilePhone]} />
+                            <HeaderMenu position="left" items={leftMenuItems} />
+                        </div>
+
+                        <div className="PageHeader__item">
+                            <Link to={prefixLink('/')}>
+                                <Title />
+                                <Logo />
+                            </Link>
+                        </div>
+
+                        <div className="PageHeader__item">
+                            <SocialList />
+                            <HeaderMenu position="right" items={rightMenuItems} />
+                        </div>
                     </div>
-
-                    <div className="PageHeader__item">
-                        <Link to={prefixLink('/')}>
-                            <Title />
-                            <Logo />
-                        </Link>
-                    </div>
-
-                    <div className="PageHeader__item">
-                        <SocialList />
-                        <HeaderMenu position="right" items={rightMenuItems} />
-                    </div>
+                    <ScrollProgress backgroundColor="#EDD483" />
                 </div>
-                <ScrollProgress backgroundColor="#EDD483" />
-            </div>
-        </header>
-    )
+            </header>
+        )
+    }
 }
 
 PageHeader.propTypes = {}

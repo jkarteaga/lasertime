@@ -11,7 +11,7 @@ function Logo() {
                     alt="Клиника Знак Качества"
                     title="Клиника Знак Качества"
                     src={prefixLink(`${logo}`)}
-                    width="200"
+                    width="230"
                 />
             </div>
         </div>
