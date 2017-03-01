@@ -35,7 +35,7 @@ function PageHeader() {
                         <HeaderMenu position="right" items={rightMenuItems} />
                     </div>
                 </div>
-                <ScrollProgress backgroundColor="#daaa64" />
+                <ScrollProgress backgroundColor="#EDD483" />
             </div>
         </header>
     )

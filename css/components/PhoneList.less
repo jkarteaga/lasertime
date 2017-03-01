@@ -3,6 +3,7 @@
 .PhoneList {
   display: flex;
   flex-basis: 55%;
+  flex-grow: 1;
 }
 
 .PhoneList__items {
@@ -16,14 +17,16 @@
 
 .PhoneList__icon {
   position: absolute;
-  left: 0px;
+
 
   &--fixed {
+    left: 0px;
     fill: @icon-phone-color;
     height: 25px;
   }
 
   &--mobile {
+    left: 10px;
     fill: @icon-phone-color;
     height: 25px;
   }

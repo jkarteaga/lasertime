@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
-import './style.less'
-import logo from '../../assets/jpg/logo.jpg'
+import logo from '../assets/jpg/logo.jpg'
 
 function Logo() {
     return (
@@ -12,8 +11,7 @@ function Logo() {
                     alt="Клиника Знак Качества"
                     title="Клиника Знак Качества"
                     src={prefixLink(`${logo}`)}
-                    width="237"
-                    height="100"
+                    width="200"
                 />
             </div>
         </div>

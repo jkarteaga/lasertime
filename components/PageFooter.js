@@ -3,7 +3,11 @@ import React, { Component, PropTypes } from 'react'
 class PageFooter extends Component {
     render() {
         return (
-            <div>Footer</div>
+            <div className="PageFooter">
+                <div className="PageFooter__wrapper">
+                    Лицензия на осуществление медицинской деятельности №123456
+                </div>
+            </div>
         )
     }
 }
