@@ -2,10 +2,12 @@
 @import "../mixins";
 
 .PageHeader {
-  height: 168px;
+  height: 167px;
 }
 
 .PageHeader--fixed {
+  .container();
+  border: 1px solid @gold;
   position: fixed;
   left: 0;
   top: 0;
@@ -15,10 +17,9 @@
 }
 
 .PageHeader__wrapper {
-  .container();
+  //.container();
   z-index: 1;
   background-color: #fff;
-  border: 1px solid @gold;
   border-bottom: none;
 }
 

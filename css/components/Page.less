@@ -2,12 +2,14 @@
 @import "../variables";
 
 .Page {
+  min-height: 100vh;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: lighten(@gold, 26%) url("http://webdesign-finder.com/html/clinique/img/pattern10.png") center repeat;
+  background: lighten(@gold, 26%) url("http://webdesign-finder.com/html/clinique/img/pattern10.png") 0 0 repeat;
 }
 
 .Page__wrapper {
   .container();
   box-shadow: @container-shadow;
+  border: 1px solid @gold;
 }
