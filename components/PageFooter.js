@@ -5,7 +5,7 @@ class PageFooter extends Component {
         return (
             <div className="PageFooter">
                 <div className="PageFooter__wrapper">
-                    Лицензия на осуществление медицинской деятельности №123456
+                    Лицензия на осуществление медицинской деятельности № ЛО-77-01-013289 от 18.10.2016 г.
                 </div>
             </div>
         )

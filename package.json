@@ -48,10 +48,12 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "rm -r public/*; gatsby build",
-    "deploy": "rm -r public/*; gatsby build --prefix-links && gh-pages -d public",
+    "build": "npm run clean; npm run copy-static; gatsby build",
+    "clean": "rm -r public/*",
+    "copy-static": "cp -R assets/static public/",
+    "deploy": "npm run clean; npm run copy-static; gatsby build --prefix-links && gh-pages -d public",
     "watch": "watch 'echo File changed!' .",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "test": "npm run unit",
     "unit": "NODE_ENV=test mocha --compilers js:babel-core/register --require test/setup/index.js test/unit || exit 0"
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
-import logo from '../assets/jpg/logo.jpg'
+import logo from '../assets/static/img/SiteLogo__logo.jpg'
 
 function Logo() {
     return (
