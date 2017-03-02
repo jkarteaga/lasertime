@@ -3,6 +3,7 @@ title: Цены на PRP терапию
 path: /prices/prp-therapy/
 description:
 keywords: ["prp цена в москве"]
+order: 10
 ---
 
 ## Лечение плазмой PRP (аутогемотерапия)

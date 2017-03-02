@@ -3,6 +3,7 @@ title: Цены на ДОТ-омоложение
 path: /prices/dot-rejuvenation/
 description:
 keywords: ["ДОТ омоложение", "SmartXide DOT омоложение"]
+order: 3
 ---
 
 ## Лазерное омоложение на аппарате SmartXide DOT

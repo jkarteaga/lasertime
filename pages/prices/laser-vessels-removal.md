@@ -3,6 +3,7 @@ title: Цены на лазерное удаление сосудов
 path: /prices/laser-vessels-removal/
 description:
 keywords: ["удаление сосудов цены"]
+order: 8
 ---
 
 | ВИД НОВООБРАЗОВАНИЯ                                                     | СТОИМОСТЬ        |

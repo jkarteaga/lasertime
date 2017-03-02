@@ -3,6 +3,7 @@ title: Цены на армирование мезонитями
 path: /prices/threads/
 description:
 keywords: ["мезонити цена"]
+order: 13
 ---
 
 ## Нити ПДО

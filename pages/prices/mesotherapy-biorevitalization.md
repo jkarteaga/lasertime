@@ -3,6 +3,7 @@ title: Цены на мезотерапию и биоревитализацию
 path: /prices/mesotherapy-biorevitalization/
 description:
 keywords: ["мезотерапия цены", "биоревитализация цены"]
+order: 9
 ---
 
 

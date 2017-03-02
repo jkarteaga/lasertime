@@ -3,6 +3,7 @@ title: Цены на удаление новообразований кожи
 path: /prices/skin-lesions-removal/
 description:
 keywords: ["удаление новообразований кожи цены"]
+order: 11
 ---
 
 | ВИД НОВООБРАЗОВАНИЯ                      | СТОИМОСТЬ                |

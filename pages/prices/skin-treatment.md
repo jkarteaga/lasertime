@@ -3,6 +3,7 @@ title: Цены на уход за кожей
 path: /prices/skin-treatment/
 description:
 keywords: ["массаж лица цена в москве"]
+order: 12
 ---
 
 

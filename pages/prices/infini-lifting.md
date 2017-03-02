@@ -3,6 +3,7 @@ title: Цены на игольчатый лифтинг INFINI
 path: /prices/infini-lifting/
 description:
 keywords: ["infini цена"]
+order: 5
 ---
 
 ## Фракционный радиоволновой лифтинг на аппарате INFINI
