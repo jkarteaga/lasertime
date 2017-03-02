@@ -33,7 +33,8 @@ module.exports = React.createClass({
                     {head.title.toComponent()}
                     {head.meta.toComponent()}
                     <TypographyStyle typography={typography} />
-                    <GoogleFont typography={typography} />
+                    <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet" />
+                    {/*<GoogleFont typography={typography} />*/}
                     {css}
                 </head>
                 <body>
