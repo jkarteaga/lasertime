@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import MenuItem from './MenuItem'
+import MenuItem from './HeaderMenuItem'
 
 function HeaderMenu({ position, items }) {
     const links = items.map((item, id) => <MenuItem
@@ -10,11 +10,9 @@ function HeaderMenu({ position, items }) {
 
     return (
         <div className={`HeaderMenu ${position === 'left' ? 'HeaderMenu--left' : 'HeaderMenu--right'}`}>
-            <div className="HeaderMenu__wrapper">
-                <ul className="HeaderMenu__items">
-                    { links }
-                </ul>
-            </div>
+            <ul className="HeaderMenu__items">
+                { links }
+            </ul>
         </div>
     )
 }

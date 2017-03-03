@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 
 
-function MenuItem({ path, name }) {
+function HeaderMenuItem({ path, name }) {
     return (
         <li className="HeaderMenu__item">
             <Link
@@ -17,10 +17,10 @@ function MenuItem({ path, name }) {
     )
 }
 
-MenuItem.propTypes = {
+HeaderMenuItem.propTypes = {
     path: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired
 }
-MenuItem.defaultProps = {}
+HeaderMenuItem.defaultProps = {}
 
-export default MenuItem
+export default HeaderMenuItem

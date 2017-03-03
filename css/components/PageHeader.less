@@ -2,6 +2,9 @@
 @import "../mixins";
 
 .PageHeader {
+  position: relative;
+  z-index: 10;
+
   height: 167px;
 }
 
@@ -12,15 +15,11 @@
   left: 0;
   top: 0;
   right: 0;
-
-  //border-bottom: 4px solid @gray-80;
 }
 
 .PageHeader__wrapper {
-  //.container();
-  z-index: 1;
   background-color: #fff;
-  border-bottom: none;
+  //border-bottom: none;
 }
 
 .PageHeader__items {

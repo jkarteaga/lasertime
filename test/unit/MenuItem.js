@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import { shallow } from 'enzyme'
 import React from 'react'
 import { Link } from 'react-router'
-import MenuItem from '../../components/MenuItem'
+import MenuItem from '../../components/HeaderMenuItem'
 
 
 describe('unit/MenuItem', () => {
