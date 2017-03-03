@@ -1,3 +1,22 @@
+@import "variables";
+
+/*------------------------------------------------------------------------------
+/*  Basic styles
+/*----------------------------------------------------------------------------*/
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: @html-font-size;
+  overflow-x: hidden;
+}
+
+/*------------------------------------------------------------------------------
+/*  Imports
+/*----------------------------------------------------------------------------*/
+
 @import "./components/HeaderMenu";
 @import "./components/MenuItem";
 @import "./components/Page";
@@ -10,3 +29,12 @@
 @import "./components/SiteTitle";
 @import "./components/SocialList";
 
+/*------------------------------------------------------------------------------
+/*  Test
+/*----------------------------------------------------------------------------*/
+
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}

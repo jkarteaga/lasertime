@@ -1,13 +1,14 @@
 @import "../mixins";
 @import "../variables";
 
+.PageContent {
+  background-color: #fff;
+  border-bottom: 4px solid @gold;
+}
 
 .PageContent__wrapper {
-  //.container();
-  background-color: #fff;
   padding: 40px 40px 50px;
   //outline: 1px solid red;
-  border-bottom: 4px solid @gold;
 }
 
 .PageContent a {
@@ -20,7 +21,7 @@
     color: @link-color;
   }
 
-  &::before {
-
+  &:hover {
+    color: @link-color--hover;
   }
 }

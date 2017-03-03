@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/server'
 import React from 'react'
 import Typography from 'typography'
 import { GoogleFont } from 'react-typography'
-import CodePlugin from 'typography-plugin-code'
+
 
 const options = {
     googleFonts: [
@@ -20,9 +20,7 @@ const options = {
     baseFontSize: '18px',
     baseLineHeight: 1.65,
     scale: 2.25,
-    plugins: [
-        new CodePlugin(),
-    ],
+    plugins: [],
 }
 
 const typography = new Typography(options)

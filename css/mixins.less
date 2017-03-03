@@ -13,23 +13,29 @@
   overflow: hidden;
 }
 
+
 .container() {
-  width: 320px;
   margin: 0 auto;
 
-  @media @tablet-width {
-    width: 640px;
+  @media @mobile-widths {
+    width: 100%;
   }
 
-  @media @desktop-width {
+  @media @tablet-widths {
+    //min-width: 960px;
+    width: 100%;
+  }
+
+  @media @desktop-widths {
     width: 960px;
   }
 }
 
+
 .container-fluid() {
   width: auto;
 
-  @media @tablet-width {
+  @media @tablet-widths {
     width: 90%;
     max-width: 960px;
     margin: 0 auto;

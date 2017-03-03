@@ -1,5 +1,6 @@
-import React, { PropTypes } from 'react'
+import 'normalize.css'
 import '../css/styles.less'
+import React, { PropTypes } from 'react'
 import PageHeader from '../components/PageHeader'
 import PageContent from '../components/PageContent'
 import PageFooter from '../components/PageFooter'
