@@ -2,16 +2,15 @@
 
 .PhoneList {
   display: flex;
-  flex-basis: 55%;
-  flex-grow: 1;
+
+  flex-basis: 70px;
 }
 
 .PhoneList__items {
-  margin: auto;
+  margin: auto auto 0;
 }
 
 .PhoneList__item {
-  padding-left: 40px;
   position: relative;
 }
 
@@ -20,20 +19,20 @@
 
 
   &--fixed {
-    left: 0px;
+    left: -40px;
     fill: @icon-phone-color;
     height: 25px;
   }
 
   &--mobile {
-    left: 10px;
+    left: -30px;
     fill: @icon-phone-color;
     height: 25px;
   }
 }
 
 .PhoneList__link {
-  font-size: 21px;
+  font-size: @font-size-phone-link;
   color: @gold-dark;
   text-decoration: none;
 }

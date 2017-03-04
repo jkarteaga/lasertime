@@ -1,8 +1,6 @@
 .HeaderMenu {
-  flex-grow: 1;
+  flex-basis: 80px;
 }
-
-.HeaderMenu--left {}
 
 .HeaderMenu__items {
 
@@ -11,20 +9,19 @@
   margin: 0;
   list-style: none;
 
-
   display: flex;
-
-  //justify-content: space-around;
+  justify-content: space-around;
+  height: 80px;
 }
 
 
 .HeaderMenu__item {
-  //background-color: #ccc;
+  align-self: center;
 }
 
 
 .HeaderMenu__link {
-  font-size: 19.5px;
+  font-size: @font-size-header-menu;
   border-bottom: 5px solid #fff;
   color: @MenuItem-color;
   text-decoration: none;
@@ -38,6 +35,5 @@
 }
 
 .HeaderMenu__link--active {
-  //color: @MenuItem-color-hover;
   border-bottom: 5px solid @gold;
 }

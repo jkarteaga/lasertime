@@ -72,7 +72,7 @@ class PageHeader extends React.Component {
                             <HeaderMenu position="right" items={rightMenuItems} />
                         </div>
                     </div>
-                    <ScrollProgress backgroundColor="#EDD483" />
+                    {/*<ScrollProgress backgroundColor="#EDD483" />*/}
                 </div>
             </header>
         )
