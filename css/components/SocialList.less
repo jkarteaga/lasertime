@@ -1,30 +1,53 @@
 @import "../variables";
 
-.SocialList {
-  display: flex;
-  justify-content: center;
-  flex-basis: 70px;
-}
-
-.SocialList__link {
-  margin: auto 5px 0;
-  width: 38px;
-}
-
 .SocialList__link--fb .icon-fb,
 .SocialList__link--vk .icon-vk,
 .SocialList__link--inst .icon-inst {
-  fill: @social-icon;
+  fill: @icon-social-color;
 }
 
 .SocialList__link--fb:hover .icon-fb {
-    fill: @social-icon--hover;
+  fill: @icon-social-color--hover;
 }
 
 .SocialList__link--vk:hover .icon-vk {
-    fill: @social-icon--hover;
+  fill: @icon-social-color--hover;
 }
 
 .SocialList__link--inst:hover .icon-inst {
-    fill: @social-icon--hover;
+  fill: @icon-social-color--hover;
+}
+
+
+@media @mobile-widths {
+  .SocialList {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .SocialList {
+    display: flex;
+    justify-content: center;
+    flex-basis: 53px;
+  }
+
+  .SocialList__link {
+    margin: auto 5px 5px;
+    width: @icon-social-size--tablet;
+  }
+
+}
+
+@media @desktop-widths-min {
+  .SocialList {
+    display: flex;
+    justify-content: center;
+    flex-basis: 70px;
+  }
+
+  .SocialList__link {
+    margin: auto 5px 0;
+    width: @icon-social-size--desktop;
+  }
 }

@@ -2,26 +2,11 @@
 /*  @media
 /*----------------------------------------------------------------------------*/
 
-@mobile-widths: ~"(max-width: 499px)";
-@tablet-widths: ~"(min-width: 500px)";
+@mobile-widths: ~"(max-width: 549px)";
+@tablet-widths: ~"(min-width: 550px)";
 @desktop-widths-min: ~"(min-width: 768px)";
 @desktop-widths: ~"(min-width: 960px)";
 
-/*
-< 500
-mobile-menu
-width: 100%
-
->= 500
-tablet-menu
-width: 100%
-not-fixed!
-
->=960
-desktop-menu
-width: 960
-
-*/
 
 /*------------------------------------------------------------------------------
 /*  Colors
@@ -52,8 +37,8 @@ width: 960
 @icon-phone-color: @gray-50;
 @icon-phone-color--hover: @gold-dark;
 
-@social-icon: @gray-50;
-@social-icon--hover: darken(@gold, 15%);
+@icon-social-color: @gray-50;
+@icon-social-color--hover: darken(@gold, 15%);
 
 /*------------------------------------------------------------------------------
 /*  Font Sizes
@@ -68,7 +53,18 @@ width: 960
 @font-size--h3: 1.8rem;
 
 @font-size-header-menu: 1.95rem;
-@font-size-phone-link: 2.2rem;
+
+@font-size-phone-link--desktop: 2.2rem;
+@font-size-phone-link--tablet: 1.8rem;
+
+@line-height-phone-link--tablet: 2.1rem;
+@line-height-phone-link--desktop: 2.7rem;
+
+@icon-phone-size--desktop: 2.4rem;
+@icon-phone-size--tablet: 2rem;
+
+@icon-social-size--tablet: 3rem;
+@icon-social-size--desktop: 3.8rem;
 
 @line-height: 1.4;
 @line-height--computed: 1.4rem;
