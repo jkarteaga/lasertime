@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import logo from '../assets/static/img/SiteLogo__logo.jpg'
 
-function Logo() {
+function HeaderLogo() {
     return (
         <div className="PageHeader__logo PageHeader__logo--mask">
             <div className="PageHeader__logo--shine">
@@ -18,7 +18,7 @@ function Logo() {
     )
 }
 
-Logo.propTypes = {}
-Logo.defaultProps = {}
+HeaderLogo.propTypes = {}
+HeaderLogo.defaultProps = {}
 
-export default Logo
+export default HeaderLogo

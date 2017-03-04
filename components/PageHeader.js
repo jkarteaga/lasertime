@@ -5,8 +5,8 @@ import { prefixLink } from 'gatsby-helpers'
 import ScrollProgress from './ScrollProgress'
 import HeaderMenu from './HeaderMenu'
 import PhoneList from './PhoneList'
-import Logo from './SiteLogo'
-import Title from './SiteTitle'
+import Logo from './HeaderLogo'
+import Title from './HeaderTitle'
 import SocialList from './SocialList'
 
 
@@ -61,7 +61,7 @@ class PageHeader extends React.Component {
                         </div>
 
                         <div className="PageHeader__item">
-                            <Link to={prefixLink('/')}>
+                            <Link className="PageHeader__link-home" to={prefixLink('/')}>
                                 <Title />
                                 <Logo />
                             </Link>

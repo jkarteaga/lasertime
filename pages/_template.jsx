@@ -10,10 +10,10 @@ function Page({ children }) {
         <div className="Page">
             <div className="Page__wrapper">
                 <PageHeader />
-                <PageContent>
-                    {children}
-                </PageContent>
-                <PageFooter />
+                {/*<PageContent>*/}
+                    {/*{children}*/}
+                {/*</PageContent>*/}
+                {/*<PageFooter />*/}
             </div>
         </div>
     )
