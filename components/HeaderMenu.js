@@ -9,11 +9,11 @@ function HeaderMenu({ position, items }) {
     />)
 
     return (
-        <div className={`HeaderMenu ${position === 'left' ? 'HeaderMenu--left' : 'HeaderMenu--right'}`}>
+        <nav className={`HeaderMenu ${position === 'left' ? 'HeaderMenu--left' : 'HeaderMenu--right'}`}>
             <ul className="HeaderMenu__items">
                 { links }
             </ul>
-        </div>
+        </nav>
     )
 }
 

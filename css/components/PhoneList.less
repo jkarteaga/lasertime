@@ -7,7 +7,7 @@
   }
 }
 
-@media @tablet-widths {
+@media @mobile-wide-widths {
   .PhoneList {
     display: flex;
     flex-basis: 53px;
@@ -16,7 +16,7 @@
   .PhoneList__items {
     margin: auto auto 0;
     padding-left: 15px;
-    line-height: @line-height-phone-link--tablet;
+    line-height: @line-height-phone-link--mobile-wide;
   }
 
   .PhoneList__item {
@@ -33,25 +33,25 @@
 
     &--fixed {
       left: -35px;
-      height: @icon-phone-size--tablet;
+      height: @icon-phone-size--mobile-wide;
       fill: @icon-phone-color;
     }
 
     &--mobile {
       left: -25px;
-      height: @icon-phone-size--tablet;
+      height: @icon-phone-size--mobile-wide;
       fill: @icon-phone-color;
     }
   }
 
   .PhoneList__link {
-    font-size: @font-size-phone-link--tablet;
+    font-size: @font-size-phone-link--mobile-wide;
   }
 
 }
 
 
-@media @desktop-widths-min {
+@media @tablet-widths {
   .PhoneList {
     flex-basis: 70px;
   }

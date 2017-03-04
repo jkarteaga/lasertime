@@ -1,10 +1,18 @@
 @import "../variables";
 
+.HeaderMenu__items {
+  // Reset ul styles
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
 @media @mobile-widths {
 
 }
 
-@media @tablet-widths {
+@media @mobile-wide-widths {
   .HeaderMenu {
     flex-basis: 60px;
 
@@ -18,12 +26,6 @@
   }
 
   .HeaderMenu__items {
-
-    // Reset ul styles
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
     display: flex;
     justify-content: space-around;
     height: 60px;
@@ -36,7 +38,7 @@
 
 
   .HeaderMenu__link {
-    font-size: @font-size-header-menu;
+    font-size: @font-size-header-menu--mobile-wide;
     border-bottom: 5px solid #fff;
     color: @MenuItem-color;
     text-decoration: none;
@@ -55,22 +57,14 @@
 
 }
 
-@media @desktop-widths-min {
+@media @tablet-widths {
   .HeaderMenu {
-    flex-basis: 80px;
+    //flex-basis: 80px;
     margin: 0;
   }
 
   .HeaderMenu__items {
-
-    //// Reset ul styles
-    //padding: 0;
-    //margin: 0;
-    //list-style: none;
-    //
-    //display: flex;
-    //justify-content: space-around;
-    height: 80px;
+    height: 85px;
   }
 
   .HeaderMenu__item {
@@ -79,7 +73,7 @@
 
 
   .HeaderMenu__link {
-    font-size: @font-size-header-menu;
+    font-size: @font-size-header-menu--desktop;
     border-bottom: 5px solid #fff;
     color: @MenuItem-color;
     text-decoration: none;
