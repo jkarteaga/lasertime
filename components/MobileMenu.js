@@ -3,6 +3,8 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Radium from 'radium'
 import { config } from 'config'
+import logo from '../assets/static/img/SiteLogo__logo.jpg'
+
 
 const Menu = require('react-burger-menu').push
 let RadiumLink = Radium(Link)
@@ -72,6 +74,9 @@ class MobileMenu extends Component {
 
         return (
             <Menu wait={20} {...this.props}>
+                <div className="MobileMenu__logo">
+                    <img src={logo} />
+                </div>
                 {menuElements}
             </Menu>
         )
