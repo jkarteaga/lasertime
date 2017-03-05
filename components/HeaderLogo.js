@@ -10,7 +10,7 @@ function HeaderLogo() {
                 <img
                     alt="Клиника Знак Качества"
                     title="Клиника Знак Качества"
-                    src={prefixLink(`${logo}`)}
+                    src={logo}
                 />
             </div>
         </div>
