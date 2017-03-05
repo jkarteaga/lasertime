@@ -8,7 +8,52 @@ const Menu = require('react-burger-menu').push
 let RadiumLink = Radium(Link)
 
 class MobileMenu extends Component {
+    state = {
+        render: false,
+        timer: null
+    }
+
+    componentDidMount() {
+        this._initialize()
+        window.addEventListener('resize', this._onResize)
+    }
+
+    _initialize = () => {
+        setTimeout(this._onResize, 10)
+    }
+
+    _onResize = () => {
+
+        if (this.state.timer) {
+            clearTimeout(this.state.timer)
+        }
+
+        const id = setTimeout(() => {
+            if (window && window.innerWidth > 550) {
+                this.setState({
+                    render: false
+                })
+            }
+            else {
+                this.setState({
+                    render: true
+                })
+            }
+        }, 10)
+
+        this.setState({
+            timer: id
+        })
+    }
+
+
+
     render() {
+
+        if (!this.state.render) {
+            return null;
+        }
+
         const { leftMenuItems, rightMenuItems, fixedPhone, mobilePhone } = config
 
         const menuItems = leftMenuItems.concat(rightMenuItems)
@@ -16,6 +61,7 @@ class MobileMenu extends Component {
         const menuElements = menuItems.map((item) => {
             return (
                 <RadiumLink
+                    key={item[0]}
                     to={prefixLink(item[0])}
                     className="MobileMenu__link"
                 >

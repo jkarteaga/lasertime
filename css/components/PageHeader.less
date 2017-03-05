@@ -1,7 +1,26 @@
 @import "../variables";
 @import "../mixins";
 
+
+.PageHeader__wrapper {
+  background-color: #fff;
+  //padding-top: 5px;
+}
+
 @media @mobile-widths {
+  .PageHeader {
+    height: 65px;
+
+  }
+
+  .PageHeader__wrapper {
+    position: fixed;
+    //z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+
   .PageHeader__items {
     display: flex;
     flex-direction: column;
@@ -14,24 +33,22 @@
 }
 
 @media @mobile-wide-widths {
+
   .PageHeader {
-    position: relative;
-    z-index: 10;
-    //line-height: @line-height;
+    height: 113px;
+
   }
 
-  .PageHeader--fixed {
-    .container();
-
-    border: 1px solid @gold;
+  .PageHeader__wrapper {
     position: fixed;
+    z-index: 10;
     left: 0;
     top: 0;
     right: 0;
   }
 
+
   .PageHeader__wrapper {
-    background-color: #fff;
     padding-top: 5px;
   }
 
@@ -61,48 +78,35 @@
 
 @media @tablet-widths {
   .PageHeader {
-    position: relative;
-    z-index: 10;
-  }
-
-  .PageHeader--fixed {
-    .container();
-
-    border: 1px solid @gold;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
+    height: 165px;
   }
 
   .PageHeader__wrapper {
     padding-top: 0;
   }
 
-  .PageHeader__items {
-    display: flex;
-  }
-
-  .PageHeader__item {
-    flex-basis: 38%;
-
-    display: flex;
-    flex-direction: column;
-
-    &:nth-child(2) {
-      flex-basis: 230px;
-      flex-shrink: 0;
-    }
-  }
-
-  .PageHeader__link-home {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media @desktop-widths {
+  .PageHeader {
+    position: relative;
+    z-index: 10;
+    height: 165px;
+  }
 
+  .PageHeader__wrapper {
+    position: static;
+  }
+
+  .PageHeader--fixed {
+    .container();
+
+    //border: 1px solid @gold;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
 }
 
 

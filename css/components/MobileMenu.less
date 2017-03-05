@@ -10,12 +10,19 @@
   .MobileMenu {
     display: block;
   }
+
+  .MobileMenu__link {
+    color: @MobileMenu__link-color;
+    text-decoration: none;
+    font-size: @font-size-mobile-menu;
+    padding: 5px
+  }
+
   /* Position and sizing of burger button */
   .bm-burger-button {
     position: fixed;
     width: 30px;
     height: 25px;
-    //left: 36px;
     right: 20px;
     top: 20px;
   }
@@ -33,30 +40,18 @@
 
   /* Color/shape of close button cross */
   .bm-cross {
-    background: #bdc3c7;
+    background: @gray-80;
   }
 
   /* General sidebar styles */
   .bm-menu {
-    background: @gray-20;
+    background: @MobileMenu__bg-color;
     padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
-
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #373a47;
   }
 
   /* Wrapper for item list */
   .bm-item-list {
-    color: #b8b7ad;
     padding: 0.8em;
-  }
-
-  /* Styling of overlay */
-  .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
   }
 }
 
