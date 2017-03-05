@@ -4,16 +4,21 @@ import React, { PropTypes } from 'react'
 import PageHeader from '../components/PageHeader'
 import PageContent from '../components/PageContent'
 import PageFooter from '../components/PageFooter'
+import MobileMenu from '../components/MobileMenu'
 
 function Page({ children }) {
+
     return (
-        <div className="Page">
-            <div className="Page__wrapper">
-                <PageHeader />
-                {/*<PageContent>*/}
-                    {/*{children}*/}
-                {/*</PageContent>*/}
-                {/*<PageFooter />*/}
+        <div id="outer-container">
+            <MobileMenu className="MobileMenu" right width={200} pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+            <div id="page-wrap" className="Page">
+                <div className="Page__wrapper">
+                    <PageHeader />
+                    <PageContent>
+                    {children}
+                    </PageContent>
+                    <PageFooter />
+                </div>
             </div>
         </div>
     )
