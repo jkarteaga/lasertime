@@ -10,7 +10,9 @@ function ArticleList(props, context) {
     })
 
     return (
-        <div>{articlesElements}</div>
+        <div>
+            <h1>Статьи</h1>
+            {articlesElements}</div>
     )
 }
 

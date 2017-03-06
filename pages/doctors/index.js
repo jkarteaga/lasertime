@@ -11,6 +11,7 @@ function PriceList(props) {
 
     return (
         <div>
+            <h1>Наши врачи</h1>
             {articlesElements}
         </div>
     )

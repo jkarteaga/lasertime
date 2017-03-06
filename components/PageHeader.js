@@ -8,6 +8,7 @@ import PhoneList from './PhoneList'
 import Logo from './HeaderLogo'
 import Title from './HeaderTitle'
 import SocialList from './SocialList'
+import phoneIcon from '../assets/static/img/MobileMenu__phone-icon.png'
 
 
 class PageHeader extends React.Component {
@@ -56,6 +57,11 @@ class PageHeader extends React.Component {
                     <div className="PageHeader__items">
 
                         <div className="PageHeader__item">
+                            <a href="tel:+79055881313">
+                            <div className="PageHeader__phone-icon">
+                                <img src={phoneIcon}/>
+                            </div>
+                            </a>
                             <PhoneList items={[fixedPhone, mobilePhone]} />
                             <HeaderMenu position="left" items={leftMenuItems} />
                         </div>

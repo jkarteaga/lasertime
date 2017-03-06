@@ -2,7 +2,10 @@ import React, { PropTypes } from 'react'
 
 function News(props) {
     return (
-        <div>Страница в разработке</div>
+        <div>
+            <h1>Новости</h1>
+            Страница в разработке
+        </div>
     )
 }
 

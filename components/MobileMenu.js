@@ -5,13 +5,13 @@ import Radium from 'radium'
 import { config } from 'config'
 import logo from '../assets/static/img/SiteLogo__logo.jpg'
 
-
 const Menu = require('react-burger-menu').push
 let RadiumLink = Radium(Link)
 
 class MobileMenu extends Component {
     state = {
         render: false,
+        isOpen: false,
         timer: null
     }
 
@@ -49,7 +49,6 @@ class MobileMenu extends Component {
     }
 
 
-
     render() {
 
         if (!this.state.render) {
@@ -73,9 +72,11 @@ class MobileMenu extends Component {
         })
 
         return (
-            <Menu wait={20} {...this.props}>
+            <Menu isOpen={this.state.isOpen} wait={20} {...this.props}>
                 <div className="MobileMenu__logo">
-                    <img src={logo} />
+                    <RadiumLink to={prefixLink('/')} >
+                        <img src={logo} />
+                    </RadiumLink>
                 </div>
                 {menuElements}
             </Menu>
