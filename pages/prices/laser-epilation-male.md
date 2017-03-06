@@ -3,7 +3,7 @@ title: Цены на лазерную эпиляцию для мужчин
 path: /prices/laser-epilation-male/
 description:
 keywords: ["лазерная эпиляция цены"]
-order: 7
+order: 2
 ---
 
 
