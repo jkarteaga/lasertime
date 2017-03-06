@@ -53,7 +53,7 @@
   "scripts": {
     "build": "npm run clean; npm run copy-static; gatsby build",
     "clean": "rm -r public/*",
-    "copy-static": "cp -R assets/static public/",
+    "copy-static": "cp -R assets/favicon/ public/; cp -R assets/static public/",
     "deploy": "npm run clean; npm run copy-static; gatsby build --prefix-links && gh-pages -d public",
     "watch": "watch 'echo File changed!' .",
     "dev": "gatsby develop",

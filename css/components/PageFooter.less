@@ -5,8 +5,31 @@
 }
 
 .PageFooter__wrapper {
-
   padding: 20px;
-  height: 100px;
   background-color: #fff;
+}
+
+@media @mobile-widths {
+  .PageFooter__wrapper {
+    font-size: @font-size--mobile;
+  }
+}
+
+@media @mobile-wide-widths {
+  .PageFooter__wrapper {
+    font-size: @font-size--mobile;
+  }
+}
+
+@media @tablet-widths {
+  .PageFooter__wrapper {
+    //padding: 20px 40px 50px;
+    font-size: @font-size--tablet;
+  }
+}
+
+@media @desktop-widths {
+  .PageFooter__wrapper {
+    font-size: @font-size--desktop;
+  }
 }

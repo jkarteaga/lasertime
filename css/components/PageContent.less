@@ -12,15 +12,12 @@
 
 .PageContent__wrapper {
   padding: 20px 40px 50px;
+  line-height: @line-height;
   //outline: 1px solid red;
 }
 
-
-
 .PageContent a {
-
   color: @link-color;
-
   text-decoration: none;
 
   &:visited {
@@ -29,5 +26,33 @@
 
   &:hover {
     color: @link-color--hover;
+  }
+}
+
+
+@media @mobile-widths {
+  .PageContent__wrapper {
+    padding: 0 15px;
+    font-size: @font-size--mobile;
+  }
+}
+
+@media @mobile-wide-widths {
+  .PageContent__wrapper {
+    padding: 0 10px;
+    font-size: @font-size--mobile;
+  }
+}
+
+@media @tablet-widths {
+  .PageContent__wrapper {
+    padding: 20px 40px 50px;
+    font-size: @font-size--tablet;
+  }
+}
+
+@media @desktop-widths {
+  .PageContent__wrapper {
+    font-size: @font-size--desktop;
   }
 }
