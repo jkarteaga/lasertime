@@ -1,5 +1,5 @@
 ---
-title: Цены на лазерное удаление сосудов на лице
+title: Лазерное удаление сосудов на лице
 path: /prices/laser-vessels-removal/
 description:
 keywords: ["удаление сосудов цены"]

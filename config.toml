@@ -5,7 +5,7 @@ fixedPhone = 84991234567
 mobilePhone = 89055881313
 
 leftMenuItems = [
-    ["/news/", "Новости"],
+    ["/actions/", "Акции"],
     ["/doctors/", "Врачи"],
     ["/services/", "Услуги"],
 ]

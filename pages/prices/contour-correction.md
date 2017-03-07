@@ -1,5 +1,5 @@
 ---
-title: Цены на контурную пластику
+title: Контурная пластика
 path: /prices/contour-correction/
 description:
 keywords: ["контурная пластика цены"]

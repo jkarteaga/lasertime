@@ -1,5 +1,5 @@
 ---
-title: Цены на лазерную биоревитализацию
+title: Лазерная биоревитализация
 path: /prices/laser-biorevitalization/
 description:
 keywords: [""]

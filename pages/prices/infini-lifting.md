@@ -1,5 +1,5 @@
 ---
-title: Цены на игольчатый RF лифтинг INFINI
+title: Игольчатый RF лифтинг INFINI
 path: /prices/infini-lifting/
 description:
 keywords: ["infini цена"]

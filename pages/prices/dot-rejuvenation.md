@@ -1,5 +1,5 @@
 ---
-title: Цены на фракционное лазерное омоложение (SmartXide DOT)
+title: Фракционное лазерное омоложение (SmartXide DOT)
 path: /prices/dot-rejuvenation/
 description: Выраженный лифтинг, сглаживание морщин, шлифовка рубцов. Выравнивает цвет и рельеф кожи.
 keywords: ["ДОТ омоложение", "SmartXide DOT омоложение"]

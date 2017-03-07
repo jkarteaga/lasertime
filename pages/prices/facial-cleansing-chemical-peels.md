@@ -1,5 +1,5 @@
 ---
-title: Цены на чистку лица и химические пилинги
+title: Чистка лица и химические пилинги
 path: /prices/facial-cleansing-chemical-peels/
 description:
 keywords: ["инфини", "лифтинг", "омоложение"]

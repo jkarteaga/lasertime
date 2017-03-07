@@ -1,5 +1,5 @@
 ---
-title: Цены на удаление новообразований кожи
+title: Удаление новообразований кожи
 path: /prices/skin-lesions-removal/
 description:
 keywords: ["удаление новообразований кожи цены"]

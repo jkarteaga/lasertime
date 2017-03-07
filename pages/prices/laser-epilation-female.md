@@ -1,5 +1,5 @@
 ---
-title: Цены на лазерную эпиляцию для женщин
+title: Лазерная эпиляция для женщин
 path: /prices/laser-epilation-female/
 description:
 keywords: ["лазерная эпиляция цены"]

@@ -1,5 +1,5 @@
 ---
-title: Цены на анастезию и отдельные методы лечения
+title: Анастезия и отдельные методы лечения
 path: /prices/anesthesia-and-other-treatments/
 description:
 keywords: ["контурная пластика цены"]

@@ -1,5 +1,5 @@
 ---
-title: Цены на армирование нитями (лифтинг)
+title: Армирование нитями (лифтинг)
 path: /prices/threads/
 description:
 keywords: ["мезонити цена"]

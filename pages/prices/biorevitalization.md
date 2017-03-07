@@ -1,5 +1,5 @@
 ---
-title: Цены на биоревитализацию
+title: Биоревитализация
 path: /prices/biorevitalization/
 description:
 keywords: ['биоревитализация цены']

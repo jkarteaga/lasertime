@@ -1,5 +1,5 @@
 ---
-title: Цены на мезотерапию
+title: Мезотерапия
 path: /prices/mesotherapy/
 description:
 keywords: ["мезотерапия цены"]

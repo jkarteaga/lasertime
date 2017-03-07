@@ -1,5 +1,5 @@
 ---
-title: Цены на PRP-плазма терапию
+title: PRP-плазма терапия
 path: /prices/prp-therapy/
 description:
 keywords: ["prp цена в москве"]

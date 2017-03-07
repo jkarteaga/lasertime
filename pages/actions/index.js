@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react'
 function News(props) {
     return (
         <div>
-            <h1>Новости</h1>
+            <h1>Акции</h1>
             Страница в разработке
         </div>
     )

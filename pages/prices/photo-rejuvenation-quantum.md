@@ -1,5 +1,5 @@
 ---
-title: Цены на фотоомоложение аппаратом №1 IPL Quantum Lumenis
+title: Фотоомоложение аппаратом №1 IPL Quantum Lumenis
 path: /prices/photo-rejuvenation-quantum/
 description: Помогает избавиться от пигмента и сосудистой сетки на лице. Сужает поры, снимает воспаление. №1 в лечении розацея!
 keywords: ["фотоомоложение Quantum Lumenis"]

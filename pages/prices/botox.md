@@ -1,5 +1,5 @@
 ---
-title: Цены на ботулотоксины, лечение гипергидроза
+title: Ботулотоксины и лечение гипергидроза
 path: /prices/botox/
 description:
 keywords: [""]
