@@ -13,9 +13,14 @@ table {
     }
   }
 
-  & tr {
+  & tbody tr {
     &:nth-child(even) {
       background-color: @gray-95;
+    }
+
+    &:hover {
+      background-color: @red-stamp;
+      color: #fff;
     }
 
     & td {
