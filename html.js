@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { prefixLink } from 'gatsby-helpers'
-import appleLaunchLogo from './assets/static/img/apple-launch-logo.jpg'
 
 const BUILD_TIME = new Date().getTime()
 
@@ -25,10 +24,6 @@ module.exports = React.createClass({
                 <meta charSet="utf-8" />
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-                <link rel="apple-touch-startup-image" href={prefixLink(appleLaunchLogo)} />
-                <meta name="apple-mobile-web-app-capable" content="yes" />
-                <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
                 {head.title.toComponent()}
                 {head.meta.toComponent()}

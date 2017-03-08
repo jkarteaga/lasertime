@@ -12,6 +12,7 @@ const md = markdownIt({
     .use(require('markdown-it-deflist'))
     .use(require('markdown-it-abbr'))
     .use(require('markdown-it-attrs'))
+    .use(require('markdown-it-container'))
 
 module.exports = function (content) {
     this.cacheable()

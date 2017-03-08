@@ -7,8 +7,8 @@ order: 8
 ---
 
 
-## Aquashine
-#### Revofil / Южная Корея
+## Aquashine {.PriceTable__heading}
+#### Revofil / Южная Корея {.PriceTable__caption}
 
 | НАЗВАНИЕ ПРЕПАРАТА        | ОБЪЕМ    | СТОИМОСТЬ   |
 |:--------------------------|:---------|:------------|
@@ -22,8 +22,8 @@ order: 8
 | Meso-Genesis BP 3         | 1 ампула | 7 000 руб.  |
 
 
-## Препараты Плаценты
-#### Placenta Human / Япония
+## Препараты Плаценты{.PriceTable__heading}
+#### Placenta Human / Япония {.PriceTable__caption}
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ    | СТОИМОСТЬ  |
 |:-------------------|:---------|:-----------|
@@ -33,47 +33,47 @@ order: 8
 
 
 
-## JaluPro (Ялупро)
-#### Professiona Dietics Srl. / Италия
+## JaluPro (Ялупро){.PriceTable__heading}
+#### Professiona Dietics Srl. / Италия {.PriceTable__caption}
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ  | СТОИМОСТЬ   |
 |:-------------------|:-------|:------------|
 | JaluPro            | 3 мл   | 10 000 руб. |
 | JaluPro HMW        | 2,5 мл | 8 500 руб.  |
 
-## IAL-system
-#### Fitodgen / Италия
+## IAL-system{.PriceTable__heading}
+#### Fitodgen / Италия {.PriceTable__caption}
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ   | СТОИМОСТЬ   |
 |:-------------------|:--------|:------------|
 | IAL-system         | 1,1 мл  | 10 000 руб. |
 | IAL-system ACP     |  1,1 мл | 12 000 руб. |
 
-## Hyaron
-#### Dongkook Pharmaceutical / Южная Корея
+## Hyaron{.PriceTable__heading}
+#### Dongkook Pharmaceutical / Южная Корея {.PriceTable__caption}
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ  | СТОИМОСТЬ  |
 |:-------------------|:-------|:-----------|
 | Hyaron             | 2,5 мл | 7 000 руб. |
 
 
-## Juvederm (Ювидерм)
-#### Allergan / Франция
+## Juvederm (Ювидерм){.PriceTable__heading}
+#### Allergan / Франция {.PriceTable__caption}
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ | СТОИМОСТЬ   |
 |:-------------------|:------|:------------|
 | Juvederm Hydrate   | 1 мл  | 10 500 руб. |
 
-## Jalucomplex
-#### Bioformula, I.R.A. / Италия
+## Jalucomplex{.PriceTable__heading}
+#### Bioformula, I.R.A. / Италия {.PriceTable__caption}
 
 | ПРЕПАРАТ       | ОБЪЕМ | СТОИМОСТЬ   |
 |:---------------|:------|:------------|
 | Jalucomplex 3% | 3 мл  | 10 000 руб. |
 
 
-##  TEOSYAL (Теосиаль)
-#### TEOXANE Laboratories / Швейцария
+##  TEOSYAL (Теосиаль){.PriceTable__heading}
+#### TEOXANE Laboratories / Швейцария {.PriceTable__caption}
 
 | ПРЕПАРАТ            | ОБЪЕМ | СТОИМОСТЬ    |
 |:--------------------|:------|:-------------|
@@ -81,8 +81,8 @@ order: 8
 | TEOSYAL Meso-Expert | 3 мл  | 16 000 руб.  |
 
 
-## Stylage (Стилаж)
-#### Laboratories VIVACY / Франция
+## Stylage (Стилаж){.PriceTable__heading}
+#### Laboratories VIVACY / Франция {.PriceTable__caption}
 
 | ПРЕПАРАТ          | ОБЪЕМ | СТОИМОСТЬ   |
 |:------------------|:------|:------------|
@@ -90,15 +90,15 @@ order: 8
 | Stylage HYDRO MAX | 1 мл  | 12 000 руб. |
 
 
-## PRINCESS (Принцесс)
-#### Crome / Австралия
+## PRINCESS (Принцесс){.PriceTable__heading}
+#### Crome / Австралия {.PriceTable__caption}
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ | СТОИМОСТЬ   |
 |:-------------------|:------|:------------|
 | PRINCESS Rich      | 1 мл  | 10 000 руб. |
 
-## YVOIRE
-#### LG Life Sciences / Южная Корея
+## YVOIRE{.PriceTable__heading}
+#### LG Life Sciences / Южная Корея {.PriceTable__caption}
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ | СТОИМОСТЬ   |
 |:-------------------|:------|:------------|
