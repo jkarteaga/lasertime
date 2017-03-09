@@ -16,7 +16,6 @@ const md = markdownIt({
     .use(require('markdown-it-container'), 'box', {
         render: (tokens, idx) => {
             const m = tokens[idx].info.trim().match(/^box\s+(.*)$/);
-            console.log(util.inspect(tokens[idx]))
             if (tokens[idx].nesting === 1) {
                 switch (m[1]) {
                 case 'notice':

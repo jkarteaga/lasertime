@@ -40,31 +40,3 @@ C 13 марта по 1 мая 2017 года.{.Actions__date}
 
 
 
-
-::: box notice
-content1
-content 2
-
-asdf
-sadf
-
-
-asdf
-:::
-
-::: box info
-content1
-content 2
-:::
-
-::: box warning
-content1
-content 2
-:::
-
-::: box danger
-content1
-content 2
-:::
-
-
