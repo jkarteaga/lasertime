@@ -1,6 +1,7 @@
 const frontMatter = require('front-matter')
 const markdownIt = require('markdown-it')
 const objectAssign = require('object-assign')
+const util = require('util')
 
 const md = markdownIt({
     html: true,
@@ -15,17 +16,17 @@ const md = markdownIt({
     .use(require('markdown-it-container'), 'box', {
         render: (tokens, idx) => {
             const m = tokens[idx].info.trim().match(/^box\s+(.*)$/);
-
+            console.log(util.inspect(tokens[idx]))
             if (tokens[idx].nesting === 1) {
                 switch (m[1]) {
                 case 'notice':
-                    return `<div class="MessageBox MessageBox--notice">${md.utils.escapeHtml(m[1])}`
+                    return `<div class="MessageBox MessageBox--notice">`
                 case 'info':
-                    return `<div class="MessageBox MessageBox--info">${md.utils.escapeHtml(m[1])}`
+                    return `<div class="MessageBox MessageBox--info">`
                 case 'warning':
-                    return `<div class="MessageBox MessageBox--warning">${md.utils.escapeHtml(m[1])}`
+                    return `<div class="MessageBox MessageBox--warning">`
                 case 'danger':
-                    return `<div class="MessageBox MessageBox--danger">${md.utils.escapeHtml(m[1])}`
+                    return `<div class="MessageBox MessageBox--danger">`
                 }
             }
             return '</div>\n'
