@@ -12,7 +12,25 @@ const md = markdownIt({
     .use(require('markdown-it-deflist'))
     .use(require('markdown-it-abbr'))
     .use(require('markdown-it-attrs'))
-    .use(require('markdown-it-container'))
+    .use(require('markdown-it-container'), 'box', {
+        render: (tokens, idx) => {
+            const m = tokens[idx].info.trim().match(/^box\s+(.*)$/);
+
+            if (tokens[idx].nesting === 1) {
+                switch (m[1]) {
+                case 'notice':
+                    return `<div class="MessageBox MessageBox--notice">${md.utils.escapeHtml(m[1])}`
+                case 'info':
+                    return `<div class="MessageBox MessageBox--info">${md.utils.escapeHtml(m[1])}`
+                case 'warning':
+                    return `<div class="MessageBox MessageBox--warning">${md.utils.escapeHtml(m[1])}`
+                case 'danger':
+                    return `<div class="MessageBox MessageBox--danger">${md.utils.escapeHtml(m[1])}`
+                }
+            }
+            return '</div>\n'
+        }
+    })
 
 module.exports = function (content) {
     this.cacheable()

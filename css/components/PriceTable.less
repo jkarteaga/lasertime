@@ -1,0 +1,47 @@
+@import "../variables";
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid @gray-90;
+
+  & thead {
+    background-color: @gold;
+
+    & th {
+      text-align: center !important;
+    }
+  }
+
+  & tbody tr {
+    position: relative;
+    &:nth-child(even) {
+      background-color: @gray-95;
+    }
+
+    &:hover {
+      background-color: #f9ecc4;
+    }
+
+    & td {
+      padding: 5px;
+
+      &:first-of-type {
+        width: 60%;
+      }
+    }
+  }
+}
+
+.PriceTable__heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.PriceTable__caption {
+  font-size: @font-size-price-table-caption-small;
+  margin-top: -10px;
+  color: @gray-50;
+  text-align: center;
+  margin-bottom: 10px;
+}

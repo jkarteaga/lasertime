@@ -5,8 +5,8 @@ import PagePreview from '../../components/PagePreview'
 function ArticleList(props, context) {
 
     const articles = getArticles(props.route.pages)
-    const articlesElements = articles.map((article) => {
-        return <PagePreview article={article} />
+    const articlesElements = articles.map((article, id) => {
+        return <PagePreview key={id} article={article} />
     })
 
     return (

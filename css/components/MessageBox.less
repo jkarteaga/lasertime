@@ -1,0 +1,44 @@
+@import "../variables";
+
+.MessageBox {
+  z-index: 0;
+  position: relative;
+  border-left: 60px solid;
+  margin: 10px 0;
+  padding: 10px 10px 10px 10px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -45px;
+    top: calc(50% - 15px);
+    background: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_info_outline_48px-128.png") no-repeat center;
+    background-size: 100%;
+  }
+
+  &--notice {
+    background-color: @MessageBox-bg-color--notice;
+    border-color: @MessageBox-border-color--notice;
+
+    &::before {
+      background-image: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_info_outline_48px-128.png");
+    }
+  }
+
+  &--info {
+    background-color: @MessageBox-bg-color--info;
+    border-color: @MessageBox-border-color--info;
+  }
+
+  &--warning {
+    background-color: @MessageBox-bg-color--warning;
+    border-color: @MessageBox-border-color--warning;
+  }
+
+  &--danger {
+    background-color: @MessageBox-bg-color--danger;
+    border-color: @MessageBox-border-color--danger;
+  }
+}
