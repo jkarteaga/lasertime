@@ -1,8 +1,8 @@
 ---
 title: Преимущества фракционного омоложения
-path: /laser-rejuvenation-advantages/
+path: /laser-rejuvenation-advantages-moscow/
 description:
-keywords: ["фракционное омоложение преимущества"]
+keywords: ["преимущества фракционного омоложения"]
 ---
 
 Клиника красоты <<Знак качества>> гарантирует омоложение кожи благодаря

@@ -3,6 +3,7 @@ title: Безыгольная биоревитализация
 path: /biorevitalization-vitalaser-moscow/
 description: Безыгольная биоревитализация на аппарате Лазмик в Москве
 keywords: ["биоревитализация", "омоложение"]
+promotion: true
 ---
 
 ![Лазмик Москва](http://lasertime.ru/images/vitalaser-moscow.jpg)

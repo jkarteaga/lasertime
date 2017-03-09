@@ -4,6 +4,7 @@ path: /3d-lifting-infini-moscow/
 description:
 keywords: ["инфини", "лифтинг", "омоложение"]
 category: article
+promotion: true
 ---
 
 Глубокий 3D лифтинг на аппарате INFINI
