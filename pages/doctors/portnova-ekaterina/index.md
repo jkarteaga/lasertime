@@ -5,7 +5,7 @@ description:
 keywords: [""]
 ---
 
-![](http://lasertime.ru/images/image3.jpg)
+![](./portnova-ekaterina.jpg){.width-50 .float-right}
 
 Ведущий специалист клиники "Знак Качества" по световым и лазерным
 технологиям. В основе ее работы лежат принципы сочетания комфорта и

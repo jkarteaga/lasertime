@@ -5,7 +5,7 @@ description:
 keywords: [""]
 ---
 
-![](http://lasertime.ru/images/Dopidze-Tatiana.jpg)
+![](./dolidze-tatiana.jpg){.width-50 .float-right}
 
 **Помощник врача-косметолога**
 

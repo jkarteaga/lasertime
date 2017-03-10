@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Helmet from 'react-helmet'
 import { config } from 'config'
+import mainCollage from './home-page/lasertime-main-collage.jpg'
 
 
 class Index extends React.Component {
@@ -19,7 +20,7 @@ class Index extends React.Component {
                 <p>Медицинский центр «Знак качества» - команда молодых, энергичных и увлеченных своим делом
                     специалистов-профессионалов в области лазерной и инъекционной косметологии.</p>
 
-                <img src="http://lasertime.ru/images/lasertime-main-collage.jpg" alt="Клиника Красоты Знак Качества"
+                <img style={{ width: '100%' }} src={prefixLink(mainCollage)} alt="Клиника Красоты Знак Качества"
                      title="Клиника Красоты Знак Качества" />
 
                 <p>Центр открыт в 2013 году, однако в кратчайшие сроки завоевал заслуженную популярность, благодаря
