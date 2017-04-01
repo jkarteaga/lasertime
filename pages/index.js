@@ -14,7 +14,7 @@ class Index extends React.Component {
                     title={config.siteTitle}
                     meta={[
                         { name: 'description', content: 'Добро пожаловать в клинику красоты "Знак Качества"! Мы качественно проводим процедуры фракционного лазерного омоложения, лазерной эпиляции, пластической хирургии.' },
-                        { name: 'keywords', content: 'sample, something' },
+                        { name: 'keywords', content: 'Знак Качества' },
                     ]}
                 />
                 <p>Медицинский центр «Знак качества» - команда молодых, энергичных и увлеченных своим делом
