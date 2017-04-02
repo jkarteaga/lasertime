@@ -4,7 +4,7 @@ const actions = [
         title: 'Лазерная эпиляция',
         description: 'голени + бикини + подмышки',
         image: 'face-cleansing.jpg',
-        price_old: 12000,
+        price_old: 18000,
         price_new: 12000,
         group: 2,
         delay: 0
@@ -14,7 +14,7 @@ const actions = [
         title: 'Лазерная эпиляция',
         description: 'лицо + 1/3 шеи',
         image: 'face-cleansing.jpg',
-        price_old: 3000,
+        price_old: 6000,
         price_new: 3000,
         group: 2,
         delay: 0
@@ -24,7 +24,7 @@ const actions = [
         title: 'Лазерная эпиляция',
         description: 'руки полностью + подмышки',
         image: 'face-cleansing.jpg',
-        price_old: 7000,
+        price_old: 8000,
         price_new: 7000,
         group: 2,
         delay: 0
@@ -85,7 +85,7 @@ const actions = [
         description: 'цена за 1 единицу',
         image: 'face-cleansing.jpg',
         price_old: 100,
-        price_new: 100,
+        price_new: 85,
         group: 1,
         delay: 0
     },
@@ -124,7 +124,7 @@ const actions = [
         title: 'Чистка лица',
         description: '',
         image: 'face-cleansing.jpg',
-        price_old: 3000,
+        price_old: 4000,
         price_new: 3000,
         group: 1,
         delay: 0

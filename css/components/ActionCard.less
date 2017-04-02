@@ -1,74 +1,129 @@
 .Action {
   position: relative;
-  width: 200px;
-  height: 220px;
+  width: 280px;
+  height: 300px;
   background: #fff;
-  margin: 5px;
+  margin: 10px 5px;
   overflow: hidden;
   box-shadow: 0 0 5px 1px #ccc;
 
   &__logo img {
-    height: 100px;
+    height: 140px;
     width: auto;
-    filter: brightness(0.7);
+    filter: blur(1px) brightness(0.7);
+
   }
 
   &__title {
     position: absolute;
-    width: 180px;
-    height: 60px;
-    text-align: center;
-    top: 5px;
-    left: 10px;
+    display: table;
+    width: 240px;
+    height: 70px;
+    top: 15px;
+    left: 20px;
     text-transform: uppercase;
     color: #fff;
     text-shadow: 1px 1px 1px #333;
-    font-size: 20px;
-    // outline: 1px solid red;
+    font-size: 26px;
+    line-height: 30px;
+    //outline: 1px solid red;
+
+    & div {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
   }
 
   &__header::after {
     content: '';
     position: absolute;
-    top: 80px;
-    left: -25px;
-    width: 250px;
+    top: 120px;
+    left: -35px;
+    width: 350px;
     height: 60px;
     background-color: #fff;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
-    clip: rect(0px, 250px, 25px, 0px);
+    clip: rect(0px, 350px, 25px, 0px);
   }
 
   &__badge {
     position: absolute;
-    top: 55px;
-    left: 75px;
-    width: 50px;
-    // height: 50px;
-    color: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    top: 90px;
+    left:115px;
+    width: 60px;
+    font-size: 22px;
+    //height: 50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     text-align: center;
-    background: #53C975;
+    //text-shadow: 1px 1px #666;
+
+
+    &--red {
+      color: #fff;
+      //background: #b7111a;
+      //background-image: linear-gradient(#ed3f21, #b7111a, #ed3f21);
+      background-image: linear-gradient(#e95941, #b64434, #e95941);
+      box-shadow: 0 2px 0 0 #b7111a;
+      text-shadow: 1px 1px #5e0a0c;
+
+
+    }
+
+    &--green {
+      color: #fff;
+      //background: #53C975;
+      background-image: linear-gradient(#53C975, #408746, #53C975);
+      box-shadow: 0 2px 0 0 #259A46;
+      text-shadow: 1px 1px #185f2f;
+
+    }
+
+    &--orange {
+      color: #fff;
+      //background: #c4971b;
+      //background-image: linear-gradient(#ffe460, #d9ab0b, #ffe460);
+      background-image: linear-gradient(#ecda78, #c69d5a, #ecda78);
+      box-shadow: 0 2px 0 0 #c8ad46;
+      text-shadow: 1px 1px #9c8833;
+
+    }
+
+    &--silver {
+      color: #333;
+      //background: #e6e6e6;
+      background-image: linear-gradient(#e6e6e6, #fff, #e6e6e6);
+      box-shadow: 0 2px 0 0 #ababab;
+      text-shadow: 1px 1px #ccc;
+
+    }
+
     border-radius: 50%;
-    box-shadow: 0 2px 0 0 #259A46;
     font-weight: bold;
   }
 
   &__description {
-    // outline: 1px solid red;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 6px;
-    font-size: 15px;
+    display: table;
+    width: 240px;
+    height: 50px;
+    margin: 10px auto;
+    //outline: 1px solid red;
+
+    & div {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 18px;
+    }
   }
 
   &__price {
     width: 100%;
     // outline: 1px solid red;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     padding-bottom: 7px;
 
     &--old {
@@ -88,9 +143,11 @@
 
   &__deadline {
     position: relative;
+    box-sizing: border-box;
     width: 50%;
     float: left;
-    text-align: center;
+    padding-left: 60px;
+    //text-align: center;
 
     &::after {
       content: '';
@@ -98,7 +155,7 @@
       top: 0;
       right: 0;
       width: 1px;
-      height: 20px;
+      height: 25px;
       background: #ccc;
     }
   }
@@ -112,8 +169,8 @@
     float: right;
     width: 20px;
     height: 20px;
-    padding-right: 10px;
-     //background: red;
+    padding-right: 20px;
+    //background: red;
     color: #888;
   }
 }
