@@ -16,7 +16,7 @@ class Actions extends Component {
     render() {
         return (
             <ActionList
-                display={this.state.displayGrid}
+                displayGrid={this.state.displayGrid}
                 toggleDisplayMode={this.toggleDisplayMode}
                 items={actions}
                 categories={categories}

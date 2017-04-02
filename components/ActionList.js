@@ -1,30 +1,66 @@
-import React, { PropTypes } from 'react';
-import Action from './ActionCard';
+import React, { PropTypes } from "react";
+import Action from "./ActionCard";
+import { calcDiscount, generateDeadline } from "../utils/helpers";
 
-function ActionList({ display, toggleDisplayMode, items, categories, groups }) {
-    const item = items[0]
-    return (
-        <div>
-            <button onClick={toggleDisplayMode}>Change mode</button>
-            <div className="Actions">
-                <Action
-                    title={item.title}
-                    description={item.description}
-                    priceOld={item.price_old}
-                    priceNew={item.price_new}
-                    discount={60}
-                    deadline={3}
-                    deadlineColor="red"
-                    image={item.image}
+function ActionList({ displayGrid, toggleDisplayMode, items, categories, groups }) {
+    // const item = items[0]
+
+    let actionElements
+
+    if (displayGrid) {
+        actionElements = items.filter(() => true).map((item, id) => {
+            return (
+                <Action key={id}
+                        title={item.title}
+                        description={item.description}
+                        priceOld={item.price_old}
+                        priceNew={item.price_new}
+                        discount={calcDiscount(item.price_old, item.price_new)}
+                        deadline={generateDeadline(1)}
+                        deadlineColor="red"
+                        image={item.image}
                 />
-            </div>
-        </div>
+            )
+        })
+    } else {
+        actionElements = items.filter(() => true).map((item, id) => {
+            return (
+                <tr key={id}>
+                    <td>{item.title}</td>
+                    <td>{item.price_new}</td>
+                </tr>
+            )
+        })
+    }
 
-    )
+
+    return displayGrid ? (
+            <div>
+                <button onClick={toggleDisplayMode}>Change mode</button>
+
+                <div className="Actions">
+                    { actionElements }
+                </div>
+            </div>
+        ) : (
+            <div>
+                <button onClick={toggleDisplayMode}>Change mode</button>
+                <table>
+                    <thead>
+                    <td>Зона</td>
+                    <td>Цена по акции</td>
+                    </thead>
+                    <tbody>
+                    {actionElements}
+                    </tbody>
+                </table>
+            </div>
+        )
+
 }
 
 ActionList.propTypes = {
-    display: PropTypes.bool.isRequired,
+    displayGrid: PropTypes.bool.isRequired,
     toggleDisplayMode: PropTypes.func.isRequired,
     items: PropTypes.array.isRequired,
     categories: PropTypes.object.isRequired,
