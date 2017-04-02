@@ -64,7 +64,7 @@ const actions = [
         title: 'Биоревитализация лица',
         description: 'препаратом Hyaron® с обезболиванием',
         image: 'face-cleansing.jpg',
-        price_old: 6000,
+        price_old: 11000,
         price_new: 6000,
         group: 1,
         delay: 0
@@ -74,7 +74,7 @@ const actions = [
         title: 'Увеличение скул',
         description: 'препаратом Perfecta Subskin®',
         image: 'face-cleansing.jpg',
-        price_old: 25000,
+        price_old: 32000,
         price_new: 25000,
         group: 1,
         delay: 0
@@ -94,7 +94,7 @@ const actions = [
         title: 'Лечение гипергидроза',
         description: 'цена за 1 флакон',
         image: 'face-cleansing.jpg',
-        price_old: 20000,
+        price_old: 26000,
         price_new: 20000,
         group: 1,
         delay: 0
@@ -104,7 +104,7 @@ const actions = [
         title: 'Плазмолифинг',
         description: 'с гиалуроновой кислотой',
         image: 'face-cleansing.jpg',
-        price_old: 6000,
+        price_old: 7500,
         price_new: 6000,
         group: 1,
         delay: 0
@@ -114,7 +114,7 @@ const actions = [
         title: 'Фотоомоложение лица',
         description: '',
         image: 'face-cleansing.jpg',
-        price_old: 7000,
+        price_old: 10000,
         price_new: 7000,
         group: 1,
         delay: 0
@@ -134,7 +134,7 @@ const actions = [
         title: 'Омоложение infini',
         description: 'RF-омоложение (насадка не вкл. в стоимость)',
         image: 'face-cleansing.jpg',
-        price_old: 10000,
+        price_old: 11000,
         price_new: 10000,
         group: 1,
         delay: 0
@@ -144,7 +144,7 @@ const actions = [
         title: 'DOT-омоложение',
         description: 'фракционный нанопилинг + обезболивание',
         image: 'face-cleansing.jpg',
-        price_old: 6000,
+        price_old: 9000,
         price_new: 6000,
         group: 1,
         delay: 0
