@@ -34,7 +34,7 @@ const actions = [
         title: 'Лазерная эпиляция',
         description: 'бикини + подмышки',
         image: 'face-cleansing.jpg',
-        price_old: 6000,
+        price_old: 7500,
         price_new: 6000,
         group: 2,
         delay: 0
@@ -44,7 +44,7 @@ const actions = [
         title: 'Увеличение губ',
         description: 'препаратом Princess Volume®',
         image: 'face-cleansing.jpg',
-        price_old: 10000,
+        price_old: 23000,
         price_new: 10000,
         group: 1,
         delay: 0
@@ -54,7 +54,7 @@ const actions = [
         title: 'Биоревитализация лица',
         description: 'препаратом Aquashine® 2,5мл',
         image: 'face-cleansing.jpg',
-        price_old: 12000,
+        price_old: 19000,
         price_new: 12000,
         group: 1,
         delay: 0
