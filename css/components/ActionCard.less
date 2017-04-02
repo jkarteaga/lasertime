@@ -10,16 +10,16 @@
   &__logo img {
     height: 140px;
     width: auto;
-    filter: blur(1px) brightness(0.7);
+    filter: blur(0) brightness(0.6);
   }
 
   &__title {
     position: absolute;
     display: table;
-    width: 240px;
+    width: 250px;
     height: 70px;
     top: 15px;
-    left: 20px;
+    left: 15px;
     text-transform: uppercase;
     color: #fff;
     text-shadow: 1px 1px 1px #333;
@@ -57,16 +57,25 @@
     padding-bottom: 13px;
     text-align: center;
 
-    &--red {
-      color: #fff;
+    //&--gray {
+    //  color: #fff;
+    //  //background-image: linear-gradient(to right top, #e95941, #b64434, #e95941);
+    //  background-image: linear-gradient(to right top, #e95941, #a54e4a, #e95941);
+    //  box-shadow: 0 2px 0 0 #914642;
+    //  text-shadow: 1px 1px #5e0a0c;
+    //
+    //}
+
+    &--gray {
+      color: #333;
       //background-image: linear-gradient(to right top, #e95941, #b64434, #e95941);
-      background-image: linear-gradient(to right top, #e95941, #a54e4a, #e95941);
-      box-shadow: 0 2px 0 0 #914642;
-      text-shadow: 1px 1px #5e0a0c;
+      background-image: linear-gradient(to right top, #ffffff, #d6d6d6, #ffffff);
+      box-shadow: 0 2px 0 0 #d6d6d6;
+      text-shadow: 1px 1px #a2a2a2;
 
     }
 
-    &--orange {
+    &--gold {
       color: #fff;
       background-image: linear-gradient(to right top, #ecda78, #b78c51, #ecda78);
       box-shadow: 0 2px 0 0 #ae8b47;
@@ -74,7 +83,7 @@
 
     }
 
-    &--gray {
+    &--silver {
       color: #fff;
       background-image: linear-gradient(to right top, #c5c5c5, #808080, #c5c5c5);
       box-shadow: 0 2px 0 0 #808080;
@@ -114,7 +123,7 @@
       width: 50%;
       float: left;
       text-decoration: line-through;
-      color: #a2a2a2;
+      color: #c3c3c3;
       text-align: center;
       line-height: 43px;
 
@@ -123,9 +132,11 @@
     &--new {
       width: 50%;
       float: right;
-      color: #3FC66C;
+      //color: #3FC66C;
+      color: #333;
       //font-weight: bold;
       font-size: 28px;
+      text-indent: 5px;
 
     }
   }
@@ -184,7 +195,7 @@
     padding: 3px;
     margin-right: 11px;
     color: #888;
-    opacity: 0.3;
+    opacity: 0.2;
 
     &:hover {
       opacity: 0.5;

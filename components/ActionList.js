@@ -10,7 +10,7 @@ function ActionList({ displayGrid, toggleDisplayMode, items, categories, groups 
     if (displayGrid) {
         actionElements = items.filter(() => true).map((item, id) => {
             const discount = calcDiscount(item.price_old, item.price_new)
-            const badgeColor = discount >= 50 ? 'red' : discount >= 25 ? 'orange' : 'gray'
+            const badgeColor = discount >= 50 ? 'gold' : discount >= 25 ? 'silver' : 'gray'
             const d = Math.ceil(Math.random() * 6)
             const deadline = generateDeadline(d)
             const deadlineColor = d <= 2 ? 'red' : d <= 3 ? 'orange' : 'black'
