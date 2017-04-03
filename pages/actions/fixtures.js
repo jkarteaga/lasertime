@@ -81,7 +81,7 @@ const actions = [
     },
     {
         category: 1,
-        title: 'Dysport (Диспорт)',
+        title: 'Dysport®',
         description: 'цена за 1 единицу',
         image: 'dysport.jpg',
         price_old: 100,
@@ -92,7 +92,7 @@ const actions = [
     {
         category: 1,
         title: 'Лечение гипергидроза',
-        description: 'цена за 1 флакон',
+        description: 'стоимость за 1 флакон',
         image: 'hyperhydrosis.jpg',
         price_old: 26000,
         price_new: 20000,
@@ -112,7 +112,7 @@ const actions = [
     {
         category: 2,
         title: 'Фотоомоложение',
-        description: 'лица',
+        description: 'лицо',
         image: 'ipl-rejuvenation.jpg',
         price_old: 10000,
         price_new: 7000,
@@ -122,7 +122,7 @@ const actions = [
     {
         category: 2,
         title: 'Чистка лица',
-        description: '',
+        description: 'комбинированная',
         image: 'facial-cleansing.jpg',
         price_old: 4000,
         price_new: 3000,
@@ -132,7 +132,7 @@ const actions = [
     {
         category: 2,
         title: 'Омоложение infini',
-        description: 'RF-омоложение (насадка не вкл. в стоимость)',
+        description: 'RF-омоложение, насадка не вкл. в стоимость',
         image: 'infini.jpg',
         price_old: 11000,
         price_new: 10000,
@@ -142,7 +142,7 @@ const actions = [
     {
         category: 2,
         title: 'DOT-омоложение',
-        description: 'фракционный нанопилинг + обезболивание',
+        description: 'фракционный нанопилинг с обезболиванием',
         image: 'dot-rejuvenation.jpg',
         price_old: 9000,
         price_new: 6000,
@@ -151,7 +151,7 @@ const actions = [
     },
 ]
 
-const categories = ['Лазерная эпиляция', 'Инъекции', 'Аппаратная косметология', 'еще']
+const categories = ['Эпиляция', 'Инъекции', 'Аппаратная косметология', 'еще']
 
 const groups = {
     1: [[1, 5], [10, 12]],
