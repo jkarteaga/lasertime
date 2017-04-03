@@ -1,6 +1,6 @@
 const actions = [
     {
-        category: 1,
+        category: 0,
         title: 'Лазерная эпиляция',
         description: 'голени + бикини + подмышки',
         image: 'laser-epilation-legs.jpg',
@@ -10,7 +10,7 @@ const actions = [
         delay: 0
     },
     {
-        category: 1,
+        category: 0,
         title: 'Лазерная эпиляция',
         description: 'лицо + 1/3 шеи',
         image: 'laser-epilation-face.jpg',
@@ -20,7 +20,7 @@ const actions = [
         delay: 0
     },
     {
-        category: 1,
+        category: 0,
         title: 'Лазерная эпиляция',
         description: 'руки полностью + подмышки',
         image: 'laser-epilation-armpits.jpg',
@@ -30,7 +30,7 @@ const actions = [
         delay: 0
     },
     {
-        category: 1,
+        category: 0,
         title: 'Лазерная эпиляция',
         description: 'бикини + подмышки',
         image: 'laser-epilation-bikini.jpg',
@@ -110,9 +110,9 @@ const actions = [
         delay: 0
     },
     {
-        category: 3,
-        title: 'Фотоомоложение лица',
-        description: '',
+        category: 2,
+        title: 'Фотоомоложение',
+        description: 'лица',
         image: 'ipl-rejuvenation.jpg',
         price_old: 10000,
         price_new: 7000,
@@ -120,7 +120,7 @@ const actions = [
         delay: 0
     },
     {
-        category: 3,
+        category: 2,
         title: 'Чистка лица',
         description: '',
         image: 'facial-cleansing.jpg',
@@ -130,7 +130,7 @@ const actions = [
         delay: 0
     },
     {
-        category: 3,
+        category: 2,
         title: 'Омоложение infini',
         description: 'RF-омоложение (насадка не вкл. в стоимость)',
         image: 'infini.jpg',
@@ -140,7 +140,7 @@ const actions = [
         delay: 0
     },
     {
-        category: 3,
+        category: 2,
         title: 'DOT-омоложение',
         description: 'фракционный нанопилинг + обезболивание',
         image: 'dot-rejuvenation.jpg',
@@ -151,11 +151,7 @@ const actions = [
     },
 ]
 
-const categories = {
-    1: 'Лазерная эпиляция',
-    2: 'Инъекции',
-    3: 'Аппаратная косметология'
-}
+const categories = ['Лазерная эпиляция', 'Инъекции', 'Аппаратная косметология', 'еще']
 
 const groups = {
     1: [[1, 5], [10, 12]],

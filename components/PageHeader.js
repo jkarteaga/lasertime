@@ -10,11 +10,12 @@ import Title from './HeaderTitle'
 import SocialList from './SocialList'
 import phoneIcon from '../assets/static/img/MobileMenu__phone-icon.png'
 
+let timer
 
 class PageHeader extends React.Component {
 
     state = {
-        timer: null,
+        headerIsFixed: false
     }
 
     componentDidMount() {
@@ -23,29 +24,31 @@ class PageHeader extends React.Component {
 
 
     _onScroll = () => {
-        // console.log('---', document.body.scrollTop)
-        let timer = this.state.timer;
+        timer = this.state.timer;
         if (timer) {
             clearTimeout(timer)
-            this.setState({
-                timer: null
-            })
-            // console.log('---', 'clear')
+            timer = null
         }
 
         const id = setTimeout(() => {
-            // console.log('---', 'timer')
             if (document.body.scrollTop > 49) {
-                this._pageHeaderElement.classList.add('PageHeader--fixed')
+                if (!this.state.headerIsFixed) {
+                    this._pageHeaderElement.classList.add('PageHeader--fixed')
+                    this.setState({
+                        headerIsFixed: true
+                    })
+                }
             } else {
-                this._pageHeaderElement.classList.remove('PageHeader--fixed')
+                if (this.state.headerIsFixed) {
+                    this._pageHeaderElement.classList.remove('PageHeader--fixed')
+                    this.setState({
+                        headerIsFixed: false
+                    })
+                }
             }
-        }, 10)
+        }, 50)
 
-        this.setState({
-            timer: id
-        })
-
+        timer = id
     }
 
 

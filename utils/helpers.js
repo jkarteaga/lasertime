@@ -41,3 +41,7 @@ export function generateDeadline(days) {
             return `${days} дней`
     }
 }
+
+export function filterByCategory(array, catId) {
+    return array.filter(item => item.category === catId)
+}
