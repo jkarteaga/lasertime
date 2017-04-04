@@ -154,8 +154,8 @@ const actions = [
 const categories = ['Эпиляция', 'Инъекции', 'Аппаратная косметология', 'еще']
 
 const groups = {
-    1: [[1, 5], [10, 12]],
-    2: [[14, 16]]
+    1: [[1, 2], [10, 11, 12, 13]],
+    2: [[5, 6], [14]]
 }
 
 export default { actions, categories, groups }

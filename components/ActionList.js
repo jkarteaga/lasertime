@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import ActionCard from './ActionCard'
 import ActionGrid from './ActionGrid'
 import ActionTable from './ActionTable'
-import { calcDiscount, generateDeadline, filterByCategory } from '../utils/helpers'
+import { calcDiscount, generateDeadline, filterActionsByCategory, filterCurrentActionsByGroup } from '../utils/helpers'
 
 function ActionList({ displayGrid, toggleDisplayMode, items, categories, groups }) {
     // const item = items[0]
@@ -11,12 +11,12 @@ function ActionList({ displayGrid, toggleDisplayMode, items, categories, groups 
     let actionTables
 
     if (displayGrid) {
-        actionCards = items.filter(() => true).map((item, id) => {
+        actionCards = filterCurrentActionsByGroup(items, groups).map((item, id) => {
             const discount = calcDiscount(item.price_old, item.price_new)
             const badgeColor = discount >= 50 ? 'gold' : discount >= 25 ? 'silver' : 'gray'
-            const d = Math.ceil(Math.random() * 6)
-            const deadline = generateDeadline(d)
-            const deadlineColor = d <= 2 ? 'red' : d <= 3 ? 'orange' : 'black'
+            const deadline = item.deadline
+            const deadlineString = generateDeadline(deadline)
+            const deadlineColor = deadline <= 2 ? 'red' : deadline <= 3 ? 'orange' : 'black'
             return (
                 <ActionCard
                     key={id}
@@ -26,17 +26,17 @@ function ActionList({ displayGrid, toggleDisplayMode, items, categories, groups 
                     priceOld={item.price_old}
                     priceNew={item.price_new}
                     discount={discount}
-                    deadline={deadline}
+                    deadline={deadlineString}
                     deadlineColor={deadlineColor}
                     image={item.image}
                 />
             )
         })
     } else {
-
         actionTables = categories.map((catTitle, catId) => {
             // Get all actions w/ current category
-            const categoryElements = filterByCategory(items, catId).map((item, id) => {
+            const currentActions = filterCurrentActionsByGroup(items, groups)
+            const categoryElements = filterActionsByCategory(currentActions, catId).map((item, id) => {
                 return (
                     <tr key={id}>
                         <td>{`${item.title} (${item.description})`}</td>
@@ -46,7 +46,9 @@ function ActionList({ displayGrid, toggleDisplayMode, items, categories, groups 
                 )
             })
 
-            return categoryElements.length !== 0 ? <ActionTable key={catId} title={catTitle} elements={categoryElements} /> : null
+            return categoryElements.length !== 0 ?
+                <ActionTable key={catId} title={catTitle} elements={categoryElements} />
+                : null
         })
     }
 

@@ -25,6 +25,34 @@ export function calcDiscount(priceOld, priceNew) {
     return discount - (discount % 5)
 }
 
+export function filterActionsByCategory(array, catId) {
+    return array.filter(item => item.category === catId)
+}
+
+// filterActionsByGroup returns array of action elements w/ added deadline field
+export function filterCurrentActionsByGroup(items, groups) {
+    // debugger
+    const now = new Date().getDate()
+    const actions = []
+
+
+    items.forEach((item) => {
+        const group = groups[item.group]
+        let slice
+
+        for (let i = 0; i < group.length; i++) {
+            if (group[i].includes(now)) {
+                slice = group[i]
+                const deadline = slice[slice.length - 1] - (now - 1)
+                actions.push({ ...item, deadline })
+                break
+            }
+        }
+    })
+
+    return actions
+}
+
 export function generateDeadline(days) {
     switch (days) {
         case 1:
@@ -36,8 +64,4 @@ export function generateDeadline(days) {
         default:
             return `${days} дней`
     }
-}
-
-export function filterByCategory(array, catId) {
-    return array.filter(item => item.category === catId)
 }
