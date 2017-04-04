@@ -31,8 +31,8 @@ export function filterActionsByCategory(array, catId) {
 
 // filterActionsByGroup returns array of action elements w/ added deadline field
 export function filterCurrentActionsByGroup(items, groups) {
-    // debugger
-    const now = new Date().getDate()
+    const date = new Date().getDate()
+    const day = new Date().getDay()
     const actions = []
 
 
@@ -40,20 +40,27 @@ export function filterCurrentActionsByGroup(items, groups) {
         const group = groups[item.group]
         let slice
 
-        for (let i = 0; i < group.length; i++) {
-            if (group[i].includes(now)) {
-                slice = group[i]
-                const deadline = slice[slice.length - 1] - (now - 1)
-                actions.push({ ...item, deadline })
-                break
+        if (typeof group !== 'string') {
+            for (let i = 0; i < group.length; i++) {
+                if (group[i].includes(date)) {
+                    slice = group[i]
+                    const deadline = slice[slice.length - 1] - (date - 1)
+                    actions.push({ ...item, deadline })
+                    break
+                }
             }
+        } else if (group === 'weekdays' && day !== 0 && day !== 6) {
+            const deadline = 6 - day
+            actions.push({ ...item, deadline })
+        } else if (group === 'weekend' && (day === 0 || day === 6)) {
+            actions.push({ ...item, deadline: day === 0 ? 1 : 2 })
         }
     })
 
     return actions
 }
 
-export function generateDeadline(days) {
+export function generateDeadlineString(days) {
     switch (days) {
         case 1:
             return '1 день'

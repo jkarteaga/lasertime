@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import ActionCard from './ActionCard'
 import ActionGrid from './ActionGrid'
 import ActionTable from './ActionTable'
-import { calcDiscount, generateDeadline, filterActionsByCategory, filterCurrentActionsByGroup } from '../utils/helpers'
+import { calcDiscount, generateDeadlineString, filterActionsByCategory, filterCurrentActionsByGroup } from '../utils/helpers'
 
 function ActionList({ displayGrid, toggleDisplayMode, items, categories, groups }) {
     // const item = items[0]
@@ -15,7 +15,7 @@ function ActionList({ displayGrid, toggleDisplayMode, items, categories, groups 
             const discount = calcDiscount(item.price_old, item.price_new)
             const badgeColor = discount >= 50 ? 'gold' : discount >= 25 ? 'silver' : 'gray'
             const deadline = item.deadline
-            const deadlineString = generateDeadline(deadline)
+            const deadlineString = generateDeadlineString(deadline)
             const deadlineColor = deadline <= 2 ? 'red' : deadline <= 3 ? 'orange' : 'black'
             return (
                 <ActionCard

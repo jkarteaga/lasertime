@@ -6,8 +6,7 @@ const actions = [
         image: 'laser-epilation-legs.jpg',
         price_old: 18000,
         price_new: 12000,
-        group: 2,
-        delay: 0
+        group: 6
     },
     {
         category: 0,
@@ -16,8 +15,7 @@ const actions = [
         image: 'laser-epilation-face.jpg',
         price_old: 6000,
         price_new: 3000,
-        group: 2,
-        delay: 0
+        group: 6
     },
     {
         category: 0,
@@ -26,8 +24,7 @@ const actions = [
         image: 'laser-epilation-armpits.jpg',
         price_old: 8000,
         price_new: 7000,
-        group: 2,
-        delay: 0
+        group: 6
     },
     {
         category: 0,
@@ -36,8 +33,7 @@ const actions = [
         image: 'laser-epilation-bikini.jpg',
         price_old: 7500,
         price_new: 6000,
-        group: 2,
-        delay: 0
+        group: 6
     },
     {
         category: 1,
@@ -46,8 +42,7 @@ const actions = [
         image: 'lips-augmentation.jpg',
         price_old: 23000,
         price_new: 10000,
-        group: 1,
-        delay: 0
+        group: 6
     },
     {
         category: 1,
@@ -56,8 +51,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 19000,
         price_new: 12000,
-        group: 1,
-        delay: 0
+        group: 6
     },
     {
         category: 1,
@@ -66,8 +60,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 11000,
         price_new: 6000,
-        group: 1,
-        delay: 0
+        group: 6
     },
     {
         category: 1,
@@ -76,8 +69,7 @@ const actions = [
         image: 'cheekbones-augmentation.jpg',
         price_old: 32000,
         price_new: 25000,
-        group: 1,
-        delay: 0
+        group: 6
     },
     {
         category: 1,
@@ -86,8 +78,7 @@ const actions = [
         image: 'dysport.jpg',
         price_old: 100,
         price_new: 85,
-        group: 1,
-        delay: 0
+        group: 6
     },
     {
         category: 1,
@@ -96,8 +87,7 @@ const actions = [
         image: 'hyperhydrosis.jpg',
         price_old: 26000,
         price_new: 20000,
-        group: 1,
-        delay: 0
+        group: 6
     },
     {
         category: 1,
@@ -106,8 +96,7 @@ const actions = [
         image: 'plazmolifting.jpg',
         price_old: 7500,
         price_new: 6000,
-        group: 1,
-        delay: 0
+        group: 6
     },
     {
         category: 2,
@@ -116,8 +105,7 @@ const actions = [
         image: 'ipl-rejuvenation.jpg',
         price_old: 10000,
         price_new: 7000,
-        group: 1,
-        delay: 0
+        group: 6
     },
     {
         category: 2,
@@ -126,8 +114,7 @@ const actions = [
         image: 'facial-cleansing.jpg',
         price_old: 4000,
         price_new: 3000,
-        group: 1,
-        delay: 0
+        group: 6
     },
     {
         category: 2,
@@ -136,8 +123,7 @@ const actions = [
         image: 'infini.jpg',
         price_old: 11000,
         price_new: 10000,
-        group: 1,
-        delay: 0
+        group: 6
     },
     {
         category: 2,
@@ -146,16 +132,19 @@ const actions = [
         image: 'dot-rejuvenation.jpg',
         price_old: 9000,
         price_new: 6000,
-        group: 1,
-        delay: 0
+        group: 6
     },
 ]
 
 const categories = ['Эпиляция', 'Инъекции', 'Аппаратная косметология', 'еще']
 
 const groups = {
-    1: [[1, 2], [10, 11, 12, 13]],
-    2: [[5, 6], [14]]
+    1: [[1, 2, 3], [6, 7], [10, 11, 12], [15, 16], [19, 20, 21], [24, 25], [28, 29, 30]],
+    2: [[2, 3], [7, 8], [12, 13], [17, 18], [22, 23], [27, 28], [31]],
+    3: [[3, 4, 5, 6, 7, 8, 9], [17, 18, 19, 20, 21, 22, 23]],
+    4: [[10, 11, 12, 13, 14, 15, 16], [24, 25, 26, 27, 28, 29, 30]],
+    5: 'weekend',
+    6: 'weekdays'
 }
 
 export default { actions, categories, groups }
