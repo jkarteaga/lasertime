@@ -40,8 +40,8 @@ function ActionList({ displayGrid, toggleDisplayMode, items, categories, groups 
                 return (
                     <tr key={id}>
                         <td>{`${item.title} (${item.description})`}</td>
-                        <td>{item.price_old} руб.</td>
-                        <td>{item.price_new} руб.</td>
+                        <td className="ActionTable__price ActionTable__price--old">{item.price_old}</td>
+                        <td className="ActionTable__price">{item.price_new}</td>
                     </tr>
                 )
             })

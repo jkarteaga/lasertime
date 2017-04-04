@@ -5,12 +5,12 @@ function ActionTable({ title, elements }) {
         <div>
             <h2 className="Actions__heading">{title}</h2>
 
-            <table>
+            <table className="ActionTable">
                 <thead>
                 <tr>
                     <th>Зона</th>
-                    <th>Цена</th>
-                    <th>Цена по акции</th>
+                    <th>Цена, руб.</th>
+                    <th>Цена по акции, руб.</th>
                 </tr>
                 </thead>
                 <tbody>

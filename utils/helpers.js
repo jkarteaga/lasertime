@@ -12,16 +12,12 @@ export function getDoctors(pages) {
 
 export function getPrices(pages) {
     return pages
-        .filter((page) => {
-            return page.requirePath.indexOf('prices/') !== -1 && page.file.ext === 'md' && !page.data.draft
-        })
+        .filter(page => page.requirePath.indexOf('prices/') !== -1 && page.file.ext === 'md' && !page.data.draft)
         .sort((p1, p2) => p1.data.order - p2.data.order)
 }
 
 export function getArticles(pages) {
-    return pages.filter((page) => {
-        return page.requirePath.indexOf('articles/') !== -1 && page.file.ext === 'md' && !page.data.draft
-    });
+    return pages.filter(page => page.requirePath.indexOf('articles/') !== -1 && page.file.ext === 'md' && !page.data.draft)
 }
 
 export function calcDiscount(priceOld, priceNew) {
