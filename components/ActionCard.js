@@ -1,7 +1,13 @@
-import React, { PropTypes } from "react";
-import { prefixLink } from "gatsby-helpers";
+import React, { PropTypes } from 'react'
+import { prefixLink } from 'gatsby-helpers'
 
 function Action({ title, description, badgeColor, priceOld, priceNew, discount, deadline, deadlineColor, image }) {
+
+    const descriptionElement = Array.isArray(description) ?
+        <div>{description[0]}<br />{description[1]}</div> :
+        <div>{description}</div>
+
+
     return (
         <div className="Action">
 
@@ -18,7 +24,7 @@ function Action({ title, description, badgeColor, priceOld, priceNew, discount, 
             <div className="Action__body">
                 <div className={`Action__badge Action__badge--${badgeColor}`}>{`-${discount}%`}</div>
                 <div className="Action__description">
-                    <div>{description}</div>
+                    { descriptionElement }
                 </div>
 
                 <div className="Action__price">
@@ -64,7 +70,10 @@ function Action({ title, description, badgeColor, priceOld, priceNew, discount, 
 
 Action.propTypes = {
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.arrayOf(PropTypes.string)
+    ]).isRequired,
     badgeColor: PropTypes.string.isRequired,
     priceOld: PropTypes.number.isRequired,
     priceNew: PropTypes.number.isRequired,

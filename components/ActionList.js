@@ -154,9 +154,13 @@ class ActionList extends React.Component {
 
 
                 const categoryElements = sortedActions.map((item) => {
+
+
+                    const descriptionElement = Array.isArray(item.description) ?
+                        item.description.join(' ') : item.description
                     return (
                         <tr key={item.id}>
-                            <td>{`${item.title} (${item.description})`}</td>
+                            <td>{`${item.title} (${descriptionElement})`}</td>
                             <td className="ActionTable__price ActionTable__price--old">{item.price_old}</td>
                             <td className="ActionTable__price">{item.price_new}</td>
                         </tr>

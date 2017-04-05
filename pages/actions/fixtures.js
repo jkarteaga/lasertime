@@ -293,7 +293,7 @@ const actions = [
         id: 30,
         category: 1,
         title: 'Контурная пластика',
-        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        description: ['asdfasdf', 'asdfasdfas'],
         image: 'dummy.jpg',
         price_old: 32000,
         price_new: 28500,
