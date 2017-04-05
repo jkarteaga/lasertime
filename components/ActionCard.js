@@ -70,12 +70,10 @@ Action.propTypes = {
     priceNew: PropTypes.number.isRequired,
     discount: PropTypes.number.isRequired,
     deadline: PropTypes.string.isRequired,
-    deadlineColor: PropTypes.string,
+    deadlineColor: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired
 }
 
-Action.defaultProps = {
-    deadlineColor: ''
-}
+Action.defaultProps = {}
 
 export default Action

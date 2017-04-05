@@ -1,29 +1,13 @@
-import React, { Component, PropTypes } from "react";
-import ActionList from '../../components/ActionList';
-import { actions, categories, groups } from './fixtures'
+import React, { PropTypes } from 'react'
+import ActionList from '../../components/ActionList'
+import fixtures from './fixtures'
 
-class Actions extends Component {
+function Actions(props) {
+    const { actions, categories, groups } = fixtures
 
-    // display mode: grid vs table
-    state = {
-        displayGrid: true,
-    }
-
-    toggleDisplayMode = () => {
-        this.setState({ displayGrid: !this.state.displayGrid })
-    }
-
-    render() {
-        return (
-            <ActionList
-                displayGrid={this.state.displayGrid}
-                toggleDisplayMode={this.toggleDisplayMode}
-                items={actions}
-                categories={categories}
-                groups={groups}
-            />
-        )
-    }
+    return (
+        <ActionList items={actions} categories={categories} groups={groups} />
+    )
 }
 
 Actions.propTypes = {}
