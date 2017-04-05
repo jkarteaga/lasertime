@@ -13,7 +13,7 @@ const actions = [
         id: 2,
         category: 0,
         title: 'Лазерная эпиляция',
-        description: 'лицо + 1/3 шеи',
+        description: 'лицо + шея',
         image: 'laser-epilation-face.jpg',
         price_old: 6000,
         price_new: 3000,
@@ -40,6 +40,86 @@ const actions = [
         group: 6
     },
     {
+        id: 27,
+        category: 0,
+        title: 'Лазерная эпиляция',
+        description: 'руки до локтя',
+        image: 'dummy.jpg',
+        price_old: 5000,
+        price_new: 4000,
+        group: 6
+    },
+    {
+        id: 28,
+        category: 0,
+        title: 'Лазерная эпиляция',
+        description: 'руки полностью',
+        image: 'dummy.jpg',
+        price_old: 6000,
+        price_new: 5000,
+        group: 6
+    },
+    {
+        id: 29,
+        category: 0,
+        title: 'Лазерная эпиляция',
+        description: 'ноги полностью',
+        image: 'dummy.jpg',
+        price_old: 10000,
+        price_new: 8000,
+        group: 6
+    },
+    {
+        id: 30,
+        category: 0,
+        title: 'Лазерная эпиляция',
+        description: 'голени',
+        image: 'dummy.jpg',
+        price_old: 7000,
+        price_new: 5000,
+        group: 6
+    },
+    {
+        id: 31,
+        category: 0,
+        title: 'Лазерная эпиляция',
+        description: 'бёдра',
+        image: 'dummy.jpg',
+        price_old: 7000,
+        price_new: 5000,
+        group: 6
+    },
+    {
+        id: 32,
+        category: 0,
+        title: 'Лазерная эпиляция',
+        description: 'грудь полностью',
+        image: 'dummy.jpg',
+        price_old: 7000,
+        price_new: 3000,
+        group: 6
+    },
+    {
+        id: 16,
+        category: 0,
+        title: 'Лазерная эпиляция',
+        description: ['тело полностью', 'кроме лица и спины'],
+        image: 'dummy.jpg',
+        price_old: 6000,
+        price_new: 15000,
+        group: 6
+    },
+    {
+        id: 17,
+        category: 0,
+        title: 'Лазерная эпиляция',
+        description: 'тотальное мужское бикини',
+        image: 'dummy.jpg',
+        price_old: 6000,
+        price_new: 10000,
+        group: 6
+    },
+    {
         id: 5,
         category: 1,
         title: 'Увеличение губ',
@@ -55,8 +135,18 @@ const actions = [
         title: 'Биоревитализация лица',
         description: 'препаратом Aquashine® 2,5мл',
         image: 'biorevitalization.jpg',
-        price_old: 19000,
-        price_new: 12000,
+        price_old: 15000,
+        price_new: 10000,
+        group: 6
+    },
+    {
+        id: 24,
+        category: 1,
+        title: 'Биоревитализация лица',
+        description: 'Aquashine® BTX',
+        image: 'dummy.jpg',
+        price_old: 15000,
+        price_new: 10000,
         group: 6
     },
     {
@@ -65,8 +155,8 @@ const actions = [
         title: 'Биоревитализация лица',
         description: 'препаратом Hyaron® с обезболиванием',
         image: 'biorevitalization.jpg',
-        price_old: 11000,
-        price_new: 6000,
+        price_old: 7000,
+        price_new: 5000,
         group: 6
     },
     {
@@ -76,7 +166,7 @@ const actions = [
         description: 'препаратом Perfecta Subskin®',
         image: 'cheekbones-augmentation.jpg',
         price_old: 32000,
-        price_new: 25000,
+        price_new: 20000,
         group: 6
     },
     {
@@ -90,13 +180,33 @@ const actions = [
         group: 6
     },
     {
+        id: 26,
+        category: 1,
+        title: 'Botox®',
+        description: 'цена за 1 единицу',
+        image: 'dummy.jpg',
+        price_old: 300,
+        price_new: 220,
+        group: 6
+    },
+    {
         id: 10,
         category: 1,
         title: 'Лечение гипергидроза',
         description: 'стоимость за 1 флакон',
         image: 'hyperhydrosis.jpg',
         price_old: 26000,
-        price_new: 20000,
+        price_new: 15000,
+        group: 6
+    },
+    {
+        id: 25,
+        category: 1,
+        title: 'Плазмолифтинг',
+        description: 'чистый',
+        image: 'dummy.jpg',
+        price_old: 6000,
+        price_new: 3000,
         group: 6
     },
     {
@@ -113,10 +223,10 @@ const actions = [
         id: 12,
         category: 2,
         title: 'Фотоомоложение',
-        description: 'лицо',
+        description: 'на аппарате IPL Quantum Lumenis',
         image: 'ipl-rejuvenation.jpg',
         price_old: 10000,
-        price_new: 7000,
+        price_new: 5000,
         group: 6
     },
     {
@@ -150,30 +260,10 @@ const actions = [
         group: 6
     },
     {
-        id: 16,
-        category: 0,
-        title: 'Лазерная эпиляция',
-        description: 'все тело, кроме лица и спины',
-        image: 'dummy.jpg',
-        price_old: 6000,
-        price_new: 15000,
-        group: 6
-    },
-    {
-        id: 17,
-        category: 0,
-        title: 'Лазерная эпиляция',
-        description: 'тотальное мужское бикини',
-        image: 'dummy.jpg',
-        price_old: 6000,
-        price_new: 10000,
-        group: 6
-    },
-    {
         id: 18,
         category: 1,
         title: 'Контурная пластика',
-        description: 'препаратом Stylage XXL® (объём: 2 шприца)',
+        description: 'Stylage® XXL (2 шприца)',
         image: 'dummy.jpg',
         price_old: 40000,
         price_new: 36000,
@@ -183,7 +273,7 @@ const actions = [
         id: 19,
         category: 1,
         title: 'Контурная пластика',
-        description: 'препаратом Stylage® XXL    (3 шприца)',
+        description: 'Stylage® XXL (3 шприца)',
         image: 'dummy.jpg',
         price_old: 60000,
         price_new: 48000,
@@ -193,7 +283,7 @@ const actions = [
         id: 20,
         category: 1,
         title: 'Контурная пластика',
-        description: 'препаратом Stylage L® (объём: 2 шприца)',
+        description: 'Stylage® L (2 шприца)',
         image: 'dummy.jpg',
         price_old: 32000,
         price_new: 28500,
@@ -203,7 +293,7 @@ const actions = [
         id: 21,
         category: 1,
         title: 'Контурная пластика',
-        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        description: 'Stylage® L (3 шприца)',
         image: 'dummy.jpg',
         price_old: 48000,
         price_new: 38000,
@@ -213,93 +303,22 @@ const actions = [
         id: 22,
         category: 1,
         title: 'Контурная пластика',
-        description: 'препаратом Princess Volume с лидокаином (объём: 2 шприца)',
+        description: 'Princess® Volume Lido (2 шприца)',
         image: 'dummy.jpg',
-        price_old: 32000,
-        price_new: 28500,
+        price_old: 28000,
+        price_new: 25000,
         group: 6
     },
     {
         id: 23,
         category: 1,
         title: 'Контурная пластика',
-        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        description: 'Princess® Volume Lido (3 шприца)',
         image: 'dummy.jpg',
-        price_old: 32000,
-        price_new: 28500,
+        price_old: 42000,
+        price_new: 33500,
         group: 6
     },
-    {
-        id: 24,
-        category: 1,
-        title: 'Контурная пластика',
-        description: 'препаратом Stylage L® (объём: 3 шприца)',
-        image: 'dummy.jpg',
-        price_old: 32000,
-        price_new: 28500,
-        group: 6
-    },
-    {
-        id: 25,
-        category: 1,
-        title: 'Контурная пластика',
-        description: 'препаратом Stylage L® (объём: 3 шприца)',
-        image: 'dummy.jpg',
-        price_old: 32000,
-        price_new: 28500,
-        group: 6
-    },
-    {
-        id: 26,
-        category: 1,
-        title: 'Контурная пластика',
-        description: 'препаратом Stylage L® (объём: 3 шприца)',
-        image: 'dummy.jpg',
-        price_old: 32000,
-        price_new: 28500,
-        group: 6
-    },
-    {
-        id: 27,
-        category: 1,
-        title: 'Контурная пластика',
-        description: 'препаратом Stylage L® (объём: 3 шприца)',
-        image: 'dummy.jpg',
-        price_old: 32000,
-        price_new: 28500,
-        group: 6
-    },
-    {
-        id: 28,
-        category: 1,
-        title: 'Контурная пластика',
-        description: 'препаратом Stylage L® (объём: 3 шприца)',
-        image: 'dummy.jpg',
-        price_old: 32000,
-        price_new: 28500,
-        group: 6
-    },
-    {
-        id: 29,
-        category: 1,
-        title: 'Контурная пластика',
-        description: '3 шприца Stylage L®',
-        image: 'dummy.jpg',
-        price_old: 32000,
-        price_new: 28500,
-        group: 6
-    },
-    {
-        id: 30,
-        category: 1,
-        title: 'Контурная пластика',
-        description: ['asdfasdf', 'asdfasdfas'],
-        image: 'dummy.jpg',
-        price_old: 32000,
-        price_new: 28500,
-        group: 6
-    },
-
 ]
 
 const categories = ['Эпиляция', 'Инъекции', 'Аппаратная косметология']
