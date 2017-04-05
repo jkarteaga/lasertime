@@ -33,7 +33,7 @@ class ActionList extends React.Component {
 
     // calculateDiscount returns number rounded to 5 like: 35 or 50
     calculateDiscount = (priceOld, priceNew) => {
-        const discount = (1 - (priceNew / priceOld)) * 100
+        const discount = 100 - ((priceNew / priceOld) * 100)
         return discount - (discount % 5)
     }
 
@@ -93,7 +93,6 @@ class ActionList extends React.Component {
             return this.sortActionsByPrice(actions, reverse)
         }
         return actions
-
     }
 
 
@@ -136,7 +135,7 @@ class ActionList extends React.Component {
                         key={item.id}
                         title={item.title}
                         description={item.description}
-                        badgeColor={discount >= 50 ? 'gold' : discount >= 25 ? 'silver' : 'gray'}
+                        badgeColor={discount >= 30 ? 'gold' : discount >= 20 ? 'silver' : 'gray'}
                         priceOld={item.price_old}
                         priceNew={item.price_new}
                         discount={discount}

@@ -149,9 +149,160 @@ const actions = [
         price_new: 6000,
         group: 6
     },
+    {
+        id: 16,
+        category: 0,
+        title: 'Лазерная эпиляция',
+        description: 'все тело, кроме лица и спины',
+        image: 'dummy.jpg',
+        price_old: 6000,
+        price_new: 15000,
+        group: 6
+    },
+    {
+        id: 17,
+        category: 0,
+        title: 'Лазерная эпиляция',
+        description: 'тотальное мужское бикини',
+        image: 'dummy.jpg',
+        price_old: 6000,
+        price_new: 10000,
+        group: 6
+    },
+    {
+        id: 18,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage XXL® (объём: 2 шприца)',
+        image: 'dummy.jpg',
+        price_old: 40000,
+        price_new: 36000,
+        group: 6
+    },
+    {
+        id: 19,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage® XXL    (3 шприца)',
+        image: 'dummy.jpg',
+        price_old: 60000,
+        price_new: 48000,
+        group: 6
+    },
+    {
+        id: 20,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage L® (объём: 2 шприца)',
+        image: 'dummy.jpg',
+        price_old: 32000,
+        price_new: 28500,
+        group: 6
+    },
+    {
+        id: 21,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        image: 'dummy.jpg',
+        price_old: 48000,
+        price_new: 38000,
+        group: 6
+    },
+    {
+        id: 22,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Princess Volume с лидокаином (объём: 2 шприца)',
+        image: 'dummy.jpg',
+        price_old: 32000,
+        price_new: 28500,
+        group: 6
+    },
+    {
+        id: 23,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        image: 'dummy.jpg',
+        price_old: 32000,
+        price_new: 28500,
+        group: 6
+    },
+    {
+        id: 24,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        image: 'dummy.jpg',
+        price_old: 32000,
+        price_new: 28500,
+        group: 6
+    },
+    {
+        id: 25,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        image: 'dummy.jpg',
+        price_old: 32000,
+        price_new: 28500,
+        group: 6
+    },
+    {
+        id: 26,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        image: 'dummy.jpg',
+        price_old: 32000,
+        price_new: 28500,
+        group: 6
+    },
+    {
+        id: 27,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        image: 'dummy.jpg',
+        price_old: 32000,
+        price_new: 28500,
+        group: 6
+    },
+    {
+        id: 28,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        image: 'dummy.jpg',
+        price_old: 32000,
+        price_new: 28500,
+        group: 6
+    },
+    {
+        id: 29,
+        category: 1,
+        title: 'Контурная пластика',
+        description: '3 шприца Stylage L®',
+        image: 'dummy.jpg',
+        price_old: 32000,
+        price_new: 28500,
+        group: 6
+    },
+    {
+        id: 30,
+        category: 1,
+        title: 'Контурная пластика',
+        description: 'препаратом Stylage L® (объём: 3 шприца)',
+        image: 'dummy.jpg',
+        price_old: 32000,
+        price_new: 28500,
+        group: 6
+    },
+
 ]
 
-const categories = ['Эпиляция', 'Инъекции', 'Аппаратная косметология', 'еще']
+const categories = ['Эпиляция', 'Инъекции', 'Аппаратная косметология']
 
 const groups = {
     1: [[1, 2, 3], [6, 7], [10, 11, 12], [15, 16], [19, 20, 21], [24, 25], [28, 29, 30]],
