@@ -65,6 +65,9 @@ class ActionList extends React.Component {
                 actions.push({ ...item, deadline })
             } else if (group === 'weekend' && (day === 0 || day === 6)) {
                 actions.push({ ...item, deadline: day === 0 ? 1 : 2 })
+            } else if (group === 'alla' && [2, 4, 5, 6].includes(day)) {
+                const deadline = day === 2 ? 1 : 7 - day
+                actions.push({ ...item, deadline })
             }
         })
 
@@ -135,7 +138,7 @@ class ActionList extends React.Component {
                         key={item.id}
                         title={item.title}
                         description={item.description}
-                        badgeColor={discount >= 30 ? 'gold' : discount >= 20 ? 'silver' : 'gray'}
+                        badgeColor={discount >= 35 ? 'gold' : discount >= 25 ? 'silver' : 'gray'}
                         priceOld={item.price_old}
                         priceNew={item.price_new}
                         discount={discount}

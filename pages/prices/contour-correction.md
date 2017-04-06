@@ -50,9 +50,9 @@ order: 7
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ |  СТОИМОСТЬ  |
 |:-------------------|:-----:|:-----------:|
-| PRINCESS Rich      | 1 мл  | 10 000 руб. |
-| PRINCESS Filler    | 1 мл  | 11 000 руб. |
-| PRINCESS Volume    | 1 мл  | 12 000 руб. |
+| PRINCESS Rich      | 1 мл  | 12 000 руб. |
+| PRINCESS Filler    | 1 мл  | 14 000 руб. |
+| PRINCESS Volume    | 1 мл  | 15 000 руб. |
 
 
 ## Radiesse (Радиесс) {.PriceTable__heading}

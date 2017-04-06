@@ -12,8 +12,8 @@ order: 8
 
 | НАЗВАНИЕ ПРЕПАРАТА        | ОБЪЕМ    | СТОИМОСТЬ   |
 |:--------------------------|:---------|:------------|
-| Aquashine Soft Filler     | 2 мл     | 12 000 руб. |
-| Aquashine Soft Filler BR  | 2 мл     | 12 000 руб. |
+| Aquashine Soft Filler     | 2 мл     | 15 000 руб. |
+| Aquashine Soft Filler BR  | 2 мл     | 15 000 руб. |
 | Aquashine Soft Filler BTX | 2 мл     | 15 000 руб. |
 | Meso-Wharton P 199        | 1,5 мл   | 15 000 руб. |
 | Meso-Xanthin F 199        | 1,5 мл   | 15 000 руб. |
@@ -95,12 +95,12 @@ order: 8
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ | СТОИМОСТЬ   |
 |:-------------------|:------|:------------|
-| PRINCESS Rich      | 1 мл  | 10 000 руб. |
+| PRINCESS Rich      | 1 мл  | 13 000 руб. |
 
 ## YVOIRE{.PriceTable__heading}
 #### LG Life Sciences / Южная Корея {.PriceTable__caption}
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ | СТОИМОСТЬ   |
 |:-------------------|:------|:------------|
-| YVOIRE Hydro       | 1 мл  | 12 000 руб. |
+| YVOIRE Hydro       | 1 мл  | 15 000 руб. |
 
