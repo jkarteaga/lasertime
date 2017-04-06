@@ -4,7 +4,7 @@ const actions = [
         category: 0,
         title: 'Лазерная эпиляция',
         description: 'голени + бикини + подмышки',
-        image: 'laser-epilation-legs.jpg',
+        image: 'laser-epilation-legs-bikini.jpg',
         price_old: 18000,
         price_new: 12000,
         group: 2
@@ -44,7 +44,7 @@ const actions = [
         category: 0,
         title: 'Лазерная эпиляция',
         description: 'руки до локтя',
-        image: 'dummy.jpg',
+        image: 'laser-epilation-hands.jpg',
         price_old: 5000,
         price_new: 4000,
         group: 5
@@ -54,7 +54,7 @@ const actions = [
         category: 0,
         title: 'Лазерная эпиляция',
         description: 'ноги полностью',
-        image: 'laser-epilation-legs-2.jpg',
+        image: 'laser-epilation-legs.jpg',
         price_old: 16000,
         price_new: 8000,
         group: 9
@@ -74,7 +74,7 @@ const actions = [
         category: 0,
         title: 'Лазерная эпиляция',
         description: 'бёдра',
-        image: 'dummy.jpg',
+        image: 'laser-epilation-thighs.jpg',
         price_old: 9000,
         price_new: 5000,
         group: 6
@@ -84,7 +84,7 @@ const actions = [
         category: 0,
         title: 'Лазерная эпиляция',
         description: 'грудь полностью',
-        image: 'dummy.jpg',
+        image: 'laser-epilation-breasts.jpg',
         price_old: 8000,
         price_new: 3000,
         group: 3
@@ -94,7 +94,7 @@ const actions = [
         category: 0,
         title: 'Лазерная эпиляция',
         description: ['тело полностью', 'кроме лица и спины'],
-        image: 'dummy.jpg',
+        image: 'laser-epilation-body.jpg',
         price_old: 30000,
         price_new: 15000,
         group: 4
@@ -254,7 +254,7 @@ const actions = [
         category: 3,
         title: 'Botox®',
         description: 'цена за 1 единицу',
-        image: 'dummy.jpg',
+        image: 'botox.jpg',
         price_old: 300,
         price_new: 220,
         group: 1
@@ -293,7 +293,7 @@ const actions = [
         id: 31,
         category: 2,
         title: 'Фотоомоложение',
-        description: ['лицо', 'на аппарате IPL Quantum Lumenis'],
+        description: 'лицо',
         image: 'ipl-rejuvenation.jpg',
         price_old: 9000,
         price_new: 5000,
@@ -303,7 +303,7 @@ const actions = [
         id: 32,
         category: 2,
         title: 'Фотоомоложение',
-        description: ['лицо + шея', 'на аппарате IPL Quantum Lumenis'],
+        description: 'лицо + шея',
         image: 'ipl-rejuvenation.jpg',
         price_old: 11000,
         price_new: 7000,
@@ -313,7 +313,7 @@ const actions = [
         id: 33,
         category: 2,
         title: 'Фотоомоложение',
-        description: ['лицо + шея + декольте', 'на аппарате IPL Quantum Lumenis'],
+        description: 'лицо + шея + декольте',
         image: 'ipl-rejuvenation.jpg',
         price_old: 15000,
         price_new: 10000,
@@ -344,7 +344,7 @@ const actions = [
         category: 4,
         title: 'Пилинг',
         description: 'ретиноевый',
-        image: 'dummy.jpg',
+        image: 'peel.jpg',
         price_old: 4500,
         price_new: 2000,
         group: 6
@@ -384,7 +384,7 @@ const actions = [
         category: 1,
         title: 'Контурная пластика',
         description: ['Stylage® XXL', '2 шприца'],
-        image: 'dummy.jpg',
+        image: 'contour-correction.jpg',
         price_old: 40000,
         price_new: 30000,
         group: 3
@@ -394,7 +394,7 @@ const actions = [
         category: 1,
         title: 'Контурная пластика',
         description: ['Stylage® L', '2 шприца'],
-        image: 'dummy.jpg',
+        image: 'contour-correction.jpg',
         price_old: 34000,
         price_new: 27000,
         group: 3
@@ -404,7 +404,7 @@ const actions = [
         category: 1,
         title: 'Контурная пластика',
         description: ['Princess® Volume Lido', '2 шприца'],
-        image: 'dummy.jpg',
+        image: 'contour-correction.jpg',
         price_old: 30000,
         price_new: 24000,
         group: 8
@@ -414,7 +414,7 @@ const actions = [
         category: 1,
         title: 'Мезотерапия',
         description: ['Lipolab® 10мл', 'жиросжигатель'],
-        image: 'dummy.jpg',
+        image: 'fat-burner.jpg',
         price_old: 5000,
         price_new: 3000,
         group: 5
@@ -424,7 +424,7 @@ const actions = [
         category: 1,
         title: 'Мезотерапия',
         description: ['Dermaheal® 5мл', 'любого назначения'],
-        image: 'dummy.jpg',
+        image: 'mesotherapy.jpg',
         price_old: 7000,
         price_new: 3500,
         group: 5

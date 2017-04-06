@@ -138,7 +138,7 @@ class ActionList extends React.Component {
                         key={item.id}
                         title={item.title}
                         description={item.description}
-                        badgeColor={discount >= 35 ? 'gold' : discount >= 25 ? 'silver' : 'gray'}
+                        badgeColor={discount >= 40 ? 'gold' : discount >= 30 ? 'silver' : 'gray'}
                         priceOld={item.price_old}
                         priceNew={item.price_new}
                         discount={discount}
