@@ -70,7 +70,7 @@ order: 7
 |:-------------------------------|:------:|:-----------:|
 | Stylage S                      | 0,8 мл | 13 500 руб. |
 | Stylage M                      |  1 мл  | 15 000 руб. |
-| Stylage L                      |  1 мл  | 16 000 руб. |
+| Stylage L                      |  1 мл  | 17 000 руб. |
 | Stylage XL                     |  1 мл  | 18 000 руб. |
 | Stylage XXL                    |  2 мл  | 20 000 руб. |
 | Stylage Special Lips with Lido |  1 мл  | 18 000 руб. |

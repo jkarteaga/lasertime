@@ -390,33 +390,13 @@ const actions = [
         group: 3
     },
     {
-        id: 41,
-        category: 1,
-        title: 'Контурная пластика',
-        description: ['Stylage® XXL', '3 шприца'],
-        image: 'dummy.jpg',
-        price_old: 60000,
-        price_new: 42000,
-        group: 3
-    },
-    {
         id: 42,
         category: 1,
         title: 'Контурная пластика',
         description: ['Stylage® L', '2 шприца'],
         image: 'dummy.jpg',
-        price_old: 32000,
+        price_old: 34000,
         price_new: 27000,
-        group: 3
-    },
-    {
-        id: 43,
-        category: 1,
-        title: 'Контурная пластика',
-        description: ['Stylage® L', '3 шприца'],
-        image: 'dummy.jpg',
-        price_old: 48000,
-        price_new: 36000,
         group: 3
     },
     {
@@ -426,17 +406,7 @@ const actions = [
         description: ['Princess® Volume Lido', '2 шприца'],
         image: 'dummy.jpg',
         price_old: 30000,
-        price_new: 25000,
-        group: 8
-    },
-    {
-        id: 45,
-        category: 1,
-        title: 'Контурная пластика',
-        description: ['Princess® Volume Lido', '3 шприца'],
-        image: 'dummy.jpg',
-        price_old: 45000,
-        price_new: 31000,
+        price_new: 24000,
         group: 8
     },
     {
