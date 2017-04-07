@@ -2,7 +2,7 @@ import React, { PropTypes } from "react"
 
 function ActionGrid({ elements }) {
     return (
-        <div className="Actions">
+        <div className="ActionGrid">
             { elements }
         </div>
     )

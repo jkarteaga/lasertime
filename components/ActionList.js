@@ -3,6 +3,7 @@ import ActionCard from './ActionCard'
 import ActionGrid from './ActionGrid'
 import ActionTable from './ActionTable'
 import ActionSortBar from './ActionSortBar'
+import ActionDisplayModeBar from './ActionDisplayModeBar'
 
 class ActionList extends React.Component {
 
@@ -183,10 +184,20 @@ class ActionList extends React.Component {
 
 
         return (
-            <div>
-                <h1>Акции нашей клиники</h1>
-                <ActionSortBar sortType={this.state.sortType} changeSortType={this.handleChangeSortType}/>
-                {displayGrid ? <ActionGrid elements={actionCards} /> : actionTables}
+            <div className="ActionList">
+                <ActionSortBar
+                    sortType={this.state.sortType}
+                    changeSortType={this.handleChangeSortType}
+                />
+                <ActionDisplayModeBar
+                    changeDisplayMode={this.handleChangeDisplayMode}
+                    displayGrid={this.state.displayGrid}
+                />
+                {displayGrid ?
+                    <ActionGrid elements={actionCards} />
+                    :
+                    actionTables
+                }
             </div>
         )
     }

@@ -1,24 +1,35 @@
 import React, { PropTypes } from 'react'
 
 function ActionSortBar({ sortType, changeSortType }) {
+
+    const baseClass = 'ActionSortBar__toggle'
+    const defaultClass = baseClass + (sortType === 'default' ? ' ActionSortBar__toggle--active' : '')
+    const discountClass = baseClass + (sortType === 'discount' ? ' ActionSortBar__toggle--active' : '')
+    const priceClass = baseClass + (sortType === 'price' ? ' ActionSortBar__toggle--active' : '')
+
     return (
         <div className="ActionSortBar">
-            <span className="ActionSortBar__title">Сортировка:</span>
-            <span
-                className={'ActionSortBar__toggle' + (sortType === 'default' ? ' ActionSortBar__toggle--active' : '')}
-                onClick={() => changeSortType('default')}>
-                по умолчанию
-            </span>
-            <span
-                className={'ActionSortBar__toggle' + (sortType === 'discount' ? ' ActionSortBar__toggle--active' : '')}
-                onClick={() => changeSortType('discount')}>
-                по выгоде
-            </span>
-            <span
-                className={'ActionSortBar__toggle' + (sortType === 'price' ? ' ActionSortBar__toggle--active' : '')}
-                onClick={() => changeSortType('price')}>
-                по цене
-            </span>
+            <div className="ActionSortBar__wrapper">
+                <div className="ActionSortBar__title">Сортировка:</div>
+                <div
+                    className={defaultClass}
+                    onClick={() => changeSortType('default')}
+                >
+                    по типу
+                </div>
+                <div
+                    className={discountClass}
+                    onClick={() => changeSortType('discount')}
+                >
+                    по выгоде
+                </div>
+                <div
+                    className={priceClass}
+                    onClick={() => changeSortType('price')}
+                >
+                    по цене
+                </div>
+            </div>
         </div>
     )
 }

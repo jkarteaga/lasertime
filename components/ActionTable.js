@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 
 function ActionTable({ title, elements }) {
     return (
-        <div>
+        <div className="ActionTable">
             <h2 className="Actions__heading">{title}</h2>
 
             <table className="ActionTable">
