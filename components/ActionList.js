@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react'
 import ActionCard from './ActionCard'
 import ActionGrid from './ActionGrid'
 import ActionTable from './ActionTable'
+import ActionSortBar from './ActionSortBar'
 
 class ActionList extends React.Component {
 
@@ -184,10 +185,7 @@ class ActionList extends React.Component {
         return (
             <div>
                 <h1>Акции нашей клиники</h1>
-                <button onClick={this.handleChangeDisplayMode}>Change mode</button>
-                <button onClick={() => this.handleChangeSortType('default')}>Default</button>
-                <button onClick={() => this.handleChangeSortType('discount')}>Discount</button>
-                <button onClick={() => this.handleChangeSortType('price')}>Price</button>
+                <ActionSortBar sortType={this.state.sortType} changeSortType={this.handleChangeSortType}/>
                 {displayGrid ? <ActionGrid elements={actionCards} /> : actionTables}
             </div>
         )
