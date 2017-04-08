@@ -53,10 +53,10 @@ const actions = [
         id: 7,
         category: 0,
         title: 'Лазерная эпиляция',
-        description: 'ноги полностью',
+        description: 'ноги полностью + бикини',
         image: 'laser-epilation-legs.jpg',
-        price_old: 16000,
-        price_new: 8000,
+        price_old: 20000,
+        price_new: 10000,
         group: 9
     },
     {
@@ -95,8 +95,8 @@ const actions = [
         title: 'Лазерная эпиляция',
         description: ['тело полностью', 'кроме лица и спины'],
         image: 'laser-epilation-body.jpg',
-        price_old: 30000,
-        price_new: 15000,
+        price_old: 39000,
+        price_new: 20000,
         group: 4
     },
     {
