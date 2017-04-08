@@ -173,7 +173,7 @@ order: 7
 
 | НАЗВАНИЕ ПРЕПАРАТА | ОБЪЕМ |  СТОИМОСТЬ  |
 |:-------------------|:-----:|:-----------:|
-| Perfecta Subskin   | 3 мл  | 30 000 руб. |
+| Perfecta Subskin   | 3 мл  | 35 000 руб. |
 | Perfecta Derm      | 1 мл  | 14 000 руб. |
 
 ## Ellanse {.PriceTable__heading}

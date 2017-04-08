@@ -3,7 +3,7 @@ const actions = [
         id: 1,
         category: 0,
         title: 'Лазерная эпиляция',
-        description: 'голени + бикини + подмышки',
+        description: 'голени + глубокое бикини + подмышки',
         image: 'laser-epilation-legs-bikini.jpg',
         price_old: 18000,
         price_new: 12000,
@@ -33,7 +33,7 @@ const actions = [
         id: 4,
         category: 0,
         title: 'Лазерная эпиляция',
-        description: 'бикини + подмышки',
+        description: 'глубокое бикини + подмышки',
         image: 'laser-epilation-bikini.jpg',
         price_old: 10000,
         price_new: 6000,
@@ -50,17 +50,17 @@ const actions = [
         group: 5
     },
     {
-        id: 7,
+        id: 6,
         category: 0,
         title: 'Лазерная эпиляция',
-        description: 'ноги полностью + бикини',
+        description: 'ноги полностью + классическое бикини',
         image: 'laser-epilation-legs.jpg',
         price_old: 20000,
         price_new: 10000,
         group: 9
     },
     {
-        id: 8,
+        id: 7,
         category: 0,
         title: 'Лазерная эпиляция',
         description: 'голени',
@@ -70,7 +70,7 @@ const actions = [
         group: 2
     },
     {
-        id: 9,
+        id: 8,
         category: 0,
         title: 'Лазерная эпиляция',
         description: 'бёдра',
@@ -80,7 +80,7 @@ const actions = [
         group: 6
     },
     {
-        id: 10,
+        id: 9,
         category: 0,
         title: 'Лазерная эпиляция',
         description: 'грудь полностью',
@@ -90,7 +90,7 @@ const actions = [
         group: 3
     },
     {
-        id: 11,
+        id: 10,
         category: 0,
         title: 'Лазерная эпиляция',
         description: ['тело полностью', 'кроме лица и спины'],
@@ -100,17 +100,7 @@ const actions = [
         group: 4
     },
     {
-        id: 12,
-        category: 0,
-        title: 'Лазерная эпиляция',
-        description: 'тотальное мужское бикини',
-        image: 'dummy.jpg',
-        price_old: 20000,
-        price_new: 10000,
-        group: 6
-    },
-    {
-        id: 13,
+        id: 11,
         category: 1,
         title: 'Увеличение губ',
         description: 'препаратом Princess® Volume 1мл',
@@ -120,7 +110,7 @@ const actions = [
         group: 1
     },
     {
-        id: 14,
+        id: 12,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом Princess® Rich 1мл',
@@ -130,7 +120,7 @@ const actions = [
         group: 9
     },
     {
-        id: 15,
+        id: 13,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом YVOIRE® Hydro 1мл',
@@ -140,7 +130,7 @@ const actions = [
         group: 5
     },
     {
-        id: 16,
+        id: 14,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом Aquashine® 2мл',
@@ -150,7 +140,7 @@ const actions = [
         group: 8
     },
     {
-        id: 17,
+        id: 15,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом Meso-Wharton® P 199 1,5мл',
@@ -160,7 +150,7 @@ const actions = [
         group: 8
     },
     {
-        id: 18,
+        id: 16,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом Meso-Xanthin F 199 1,5мл',
@@ -170,7 +160,7 @@ const actions = [
         group: 5
     },
     {
-        id: 19,
+        id: 17,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом Mesoeye C 71 1мл',
@@ -180,7 +170,7 @@ const actions = [
         group: 2
     },
     {
-        id: 20,
+        id: 18,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом Mesoscult C 71 1,5мл',
@@ -190,7 +180,7 @@ const actions = [
         group: 5
     },
     {
-        id: 21,
+        id: 19,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом Laennec Inj',
@@ -200,7 +190,7 @@ const actions = [
         group: 5
     },
     {
-        id: 22,
+        id: 20,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом Melsmon',
@@ -210,7 +200,7 @@ const actions = [
         group: 6
     },
     {
-        id: 23,
+        id: 21,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом Curacen',
@@ -220,7 +210,7 @@ const actions = [
         group: 6
     },
     {
-        id: 24,
+        id: 22,
         category: 1,
         title: 'Биоревитализация лица',
         description: 'препаратом Hyaron® с обезболиванием',
@@ -230,17 +220,17 @@ const actions = [
         group: 9
     },
     {
-        id: 25,
+        id: 23,
         category: 1,
         title: 'Увеличение скул',
-        description: 'препаратом Perfecta® Subskin',
+        description: ['препаратом Perfecta® Subskin', '3 шприца'],
         image: 'cheekbones-augmentation.jpg',
-        price_old: 32000,
-        price_new: 20000,
+        price_old: 35000,
+        price_new: 25000,
         group: 8
     },
     {
-        id: 26,
+        id: 24,
         category: 3,
         title: 'Dysport®',
         description: 'цена за 1 единицу',
@@ -250,7 +240,7 @@ const actions = [
         group: 1
     },
     {
-        id: 27,
+        id: 25,
         category: 3,
         title: 'Botox®',
         description: 'цена за 1 единицу',
@@ -260,7 +250,7 @@ const actions = [
         group: 1
     },
     {
-        id: 28,
+        id: 26,
         category: 3,
         title: 'Лечение гипергидроза',
         description: 'стоимость за 1 флакон',
@@ -270,67 +260,67 @@ const actions = [
         group: 2
     },
     {
-        id: 29,
+        id: 27,
         category: 1,
-        title: 'Плазмолифтинг',
-        description: ['без добавления препарата', 'на основе гиалурон. кислоты'],
+        title: 'Плазмолифтинг лица',
+        description: '2 пробирки',
         image: 'plazmolifting.jpg',
         price_old: 6000,
         price_new: 3000,
         group: 2
     },
     {
-        id: 30,
+        id: 28,
         category: 1,
-        title: 'Плазмолифинг',
-        description: ['с добавлением препарата', 'на основе гиалурон. кислоты'],
+        title: 'Плазмолифинг лица',
+        description: ['2 пробирки', 'с добавлением гиалур. кислоты'],
         image: 'plazmolifting.jpg',
         price_old: 8000,
         price_new: 6000,
         group: 8
     },
     {
-        id: 31,
+        id: 29,
         category: 2,
         title: 'Фотоомоложение',
-        description: 'лицо',
+        description: ['лицо', 'кол-во вспышек не ограничено'],
         image: 'ipl-rejuvenation.jpg',
         price_old: 9000,
         price_new: 5000,
         group: 2
     },
     {
-        id: 32,
+        id: 30,
         category: 2,
         title: 'Фотоомоложение',
-        description: 'лицо + шея',
+        description: ['лицо + шея', 'кол-во вспышек не ограничено'],
         image: 'ipl-rejuvenation.jpg',
         price_old: 11000,
         price_new: 7000,
         group: 5
     },
     {
-        id: 33,
+        id: 31,
         category: 2,
         title: 'Фотоомоложение',
-        description: 'лицо + шея + декольте',
+        description: ['лицо + шея + декольте', 'кол-во вспышек не ограничено'],
         image: 'ipl-rejuvenation.jpg',
         price_old: 15000,
         price_new: 10000,
         group: 6
     },
     {
-        id: 34,
+        id: 32,
         category: 4,
         title: 'Чистка лица',
-        description: 'атравматическая комбинированная',
+        description: 'атравматическая',
         image: 'facial-cleansing.jpg',
         price_old: 5000,
         price_new: 3000,
         group: 1
     },
     {
-        id: 35,
+        id: 33,
         category: 2,
         title: 'Ультразвуковая чистка лица',
         description: 'пилинг + увлажнение',
@@ -340,7 +330,7 @@ const actions = [
         group: 6
     },
     {
-        id: 36,
+        id: 34,
         category: 4,
         title: 'Пилинг',
         description: 'ретиноевый',
@@ -350,7 +340,7 @@ const actions = [
         group: 6
     },
     {
-        id: 37,
+        id: 35,
         category: 2,
         title: 'Омоложение infini',
         description: ['лицо + шея', 'насадка не вкл. в стоимость'],
@@ -360,7 +350,7 @@ const actions = [
         group: 9
     },
     {
-        id: 38,
+        id: 36,
         category: 2,
         title: 'Омоложение infini',
         description: ['лицо + шея + декольте', 'насадка не вкл. в стоимость'],
@@ -370,7 +360,7 @@ const actions = [
         group: 4
     },
     {
-        id: 39,
+        id: 37,
         category: 2,
         title: 'DOT-омоложение',
         description: ['фракционный нанопилинг', 'с обезболиванием'],
@@ -380,7 +370,7 @@ const actions = [
         group: 9
     },
     {
-        id: 40,
+        id: 38,
         category: 1,
         title: 'Контурная пластика',
         description: ['Stylage® XXL', '2 шприца'],
@@ -390,7 +380,7 @@ const actions = [
         group: 3
     },
     {
-        id: 42,
+        id: 39,
         category: 1,
         title: 'Контурная пластика',
         description: ['Stylage® L', '2 шприца'],
@@ -400,7 +390,7 @@ const actions = [
         group: 3
     },
     {
-        id: 44,
+        id: 40,
         category: 1,
         title: 'Контурная пластика',
         description: ['Princess® Volume Lido', '2 шприца'],
@@ -410,7 +400,7 @@ const actions = [
         group: 8
     },
     {
-        id: 46,
+        id: 41,
         category: 1,
         title: 'Мезотерапия',
         description: ['Lipolab® 10мл', 'жиросжигатель'],
@@ -420,7 +410,7 @@ const actions = [
         group: 5
     },
     {
-        id: 47,
+        id: 42,
         category: 1,
         title: 'Мезотерапия',
         description: ['Dermaheal® 5мл', 'любого назначения'],
