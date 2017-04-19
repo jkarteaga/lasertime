@@ -58,6 +58,8 @@ module.exports = React.createClass({
             </head>
             <body>
             <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js" />
             <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
             </body>
             </html>

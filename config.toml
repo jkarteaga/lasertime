@@ -2,7 +2,7 @@ siteTitle="Клиника красоты Знак Качества"
 linkPrefix = "/lasertime"
 
 fixedPhone = 89055881313
-mobilePhone = 89858888297
+mobilePhone = 79858888297
 
 leftMenuItems = [
     ["/actions/", "Акции"],

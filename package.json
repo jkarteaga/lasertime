@@ -52,12 +52,13 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "npm run clean; npm run copy-static; gatsby build",
-    "clean": "rm -r public/*",
-    "copy-static": "cp -R assets/favicon/ public/; cp -R assets/static public/",
-    "deploy": "npm run clean; npm run copy-static; gatsby build --prefix-links && gh-pages -d public",
-    "watch": "watch 'echo File changed!' .",
+    "build": "npm run clean; gatsby build",
+    "clean": "rm -r public/",
+    "copy-assets": "cp -R assets/ public/",
+    "deploy-gh-pages": "npm run clean; npm run copy-assets; gatsby build --prefix-links && gh-pages -d public",
+    "deploy-ftp": "npm run build && npm run copy-assets && npm run upload-ftp",
     "dev": "gatsby develop",
+    "upload-ftp": "lftp ftp.lasertime.nichost.ru -e 'rm -r lasertime/lasertime.ru/docs/;mirror -R public/ lasertime/lasertime.ru/docs/;exit'",
     "test": "npm run unit",
     "unit": "NODE_ENV=test mocha --compilers js:babel-core/register --require test/setup/index.js test/unit || exit 0"
   }
