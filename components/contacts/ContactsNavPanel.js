@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SelectPanel from './TabSelectPanel'
+import TabSelectPanel from './ContactsTabSelectPanel'
 
 class ContactsNavPanel extends Component {
     state = {
@@ -9,7 +9,7 @@ class ContactsNavPanel extends Component {
     render() {
         return (
             <div>
-                <SelectPanel />
+                <TabSelectPanel />
             </div>
         )
     }

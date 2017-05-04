@@ -2,7 +2,10 @@ import React, { PropTypes } from 'react'
 
 function ContactsTabSelectPanel(props) {
     return (
-        <div>Select</div>
+        <div>
+            <input type="checkbox"/>
+
+        </div>
     )
 }
 
