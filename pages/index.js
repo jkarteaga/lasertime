@@ -9,7 +9,7 @@ import mainCollage from './home-page/lasertime-main-collage.jpg'
 class Index extends React.Component {
     render() {
         return (
-            <div>
+            <div className="PageContent__wrapper">
                 <Helmet
                     title={config.siteTitle}
                     meta={[

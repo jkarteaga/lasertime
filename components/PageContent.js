@@ -8,9 +8,10 @@ class PageContent extends React.Component {
     render() {
         return (
             <div className="PageContent">
-                <div className="PageContent__wrapper">
-                    {this.props.children}
-                </div>
+                {this.props.children}
+                {/*<div className="PageContent__wrapper">*/}
+                    {/**/}
+                {/*</div>*/}
             </div>
         )
     }
