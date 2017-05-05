@@ -8,7 +8,8 @@ class ContactsNavPanel extends Component {
 
     render() {
         return (
-            <div>
+            <div className="ContactsNavPanel">
+                ContactsNavPanel
                 <TabSelectPanel />
             </div>
         )
