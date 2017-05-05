@@ -14,9 +14,10 @@
 
   background-color: white;
 
-  input[type="radio"] {
-    display: none;
-  }
+  // Reset list style
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .ContactsTabSelectPanel__option {
@@ -64,19 +65,32 @@
     cursor: pointer;
   }
 
+  & svg {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    //fill: #fff;
+  }
 }
-
 
 
 .ContactsTabSelectPanelGroup {
   //outline: 1px solid red;
   position: absolute;
   top: 40px;
+  left: 0;
   background-color: white;
   display: none;
   height: 83px;
   width: 180px;
   box-shadow: 0 3px 10px 0px #777;
+
+  // Reset list style
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
   &--opened {
     display: block;

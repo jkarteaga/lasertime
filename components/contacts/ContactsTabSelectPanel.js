@@ -1,33 +1,35 @@
 import React, { PropTypes } from 'react'
 
-function ContactsTabSelectPanel(props) {
+function ContactsTabSelectPanel() {
     return (
-        <div className="ContactsTabSelectPanel">
+        <div >
 
-            <label className="ContactsTabSelectPanel__option ContactsTabSelectPanel__option--active ContactsTabSelectPanel__option--hovered">
-                <input type="radio" name="ContactsTabSelect" />
-                пешком по карте
-            </label>
+            <ul className="ContactsTabSelectPanel">
 
-            <div className="ContactsTabSelectPanelGroup ContactsTabSelectPanelGroup--opened">
-                <label className="ContactsTabSelectPanelGroup__option">
-                    <input type="radio" name="ContactsTabSelect" />
-                    пешком по фото
-                </label>
-                <label className="ContactsTabSelectPanelGroup__option">
-                    <input type="radio" name="ContactsTabSelect" />
-                    пешком по видео
-                </label>
-            </div>
+                <li className="ContactsTabSelectPanel__option ContactsTabSelectPanel__option--active ContactsTabSelectPanel__option--hovered">
+                    <span>пешком по карте</span>
+                    <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#ccc">
+                        <polygon points="12 26 19 20 32 33 45 19 52 26 32 47" />
+                    </svg>
 
-            <label className="ContactsTabSelectPanel__option">
-                <input type="radio" name="ContactsTabSelect" />
-                на машине
-            </label>
-            <label className="ContactsTabSelectPanel__option">
-                <input type="radio" name="ContactsTabSelect" />
-                на такси
-            </label>
+                    <ul className="ContactsTabSelectPanelGroup ContactsTabSelectPanelGroup--opened">
+                        <li className="ContactsTabSelectPanelGroup__option">
+                            <span>пешком по фото</span>
+                        </li>
+                        <li className="ContactsTabSelectPanelGroup__option">
+                            <span>пешком по видео</span>
+
+                        </li>
+                    </ul>
+
+                </li>
+                <li className="ContactsTabSelectPanel__option">
+                    на машине
+                </li>
+                <li className="ContactsTabSelectPanel__option">
+                    на такси
+                </li>
+            </ul>
         </div>
     )
 }
