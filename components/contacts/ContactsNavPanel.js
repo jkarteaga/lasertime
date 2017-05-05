@@ -8,7 +8,7 @@ import TaxiTab from './ContactsTaxiTab'
 
 class ContactsNavPanel extends Component {
     state = {
-        display: 'svgmap' // svgmap, photo, video, gmap, taxi
+        display: 'gmap' // svgmap, photo, video, gmap, taxi
     }
 
     getActiveTabElement = (mode) => {
