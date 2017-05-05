@@ -6,14 +6,16 @@ class ContactsTabSelectPanel extends React.Component {
         isOpened: false
     }
 
-    toggleGroupOpen = () => {
+    setGroupOpen = () => {
         this.setState({
-            isOpened: !this.state.isOpened
+            isOpened: true
         })
     }
 
-    toggleChangeMode = () => {
-
+    setGroupClose = () => {
+        this.setState({
+            isOpened: false
+        })
     }
 
     render() {
@@ -28,7 +30,7 @@ class ContactsTabSelectPanel extends React.Component {
         let groupSelectItem3 = groupItems[2]
         let onClickMode1 = 'svgmap'
         let onClickMode2 = 'photo'
-        const onClickMode3 = 'video'
+        let onClickMode3 = 'video'
         const activeClassName = 'ContactsTabSelectPanel__option--active'
 
         switch (activeMode) {
@@ -38,6 +40,7 @@ class ContactsTabSelectPanel extends React.Component {
             groupSelectItem3 = groupItems[2]
             onClickMode1 = 'photo'
             onClickMode2 = 'svgmap'
+            onClickMode3 = 'video'
             break
         case 'video':
             groupSelectItem1 = groupItems[2]
@@ -45,6 +48,7 @@ class ContactsTabSelectPanel extends React.Component {
             groupSelectItem3 = groupItems[1]
             onClickMode1 = 'video'
             onClickMode2 = 'svgmap'
+            onClickMode3 = 'photo'
         }
 
 
@@ -54,8 +58,9 @@ class ContactsTabSelectPanel extends React.Component {
                 <li
                     className={`ContactsTabSelectPanel__option ${~groupModes.indexOf(activeMode) ? activeClassName : ''}`}
                     onClick={() => changeMode(onClickMode1)}
-                    onMouseEnter={this.toggleGroupOpen}
-                    onMouseLeave={this.toggleGroupOpen}
+                    onMouseEnter={this.setGroupOpen}
+                    onMouseLeave={this.setGroupClose}
+                    onMouseUp={this.setGroupClose}
                 >
                     <span>{groupSelectItem1}</span>
                     <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#ccc">
@@ -65,13 +70,21 @@ class ContactsTabSelectPanel extends React.Component {
                     <ul className={`ContactsTabSelectPanelGroup ${isOpened ? 'ContactsTabSelectPanelGroup--opened' : ''}`}>
                         <li
                             className="ContactsTabSelectPanelGroup__option"
-                            onClick={() => changeMode(onClickMode2)}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                changeMode(onClickMode2)
+                            }}
+                            onMouseUp={this.setGroupClose}
                         >
                             <span>{groupSelectItem2}</span>
                         </li>
                         <li
                             className="ContactsTabSelectPanelGroup__option"
-                            onClick={() => changeMode(onClickMode3)}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                changeMode(onClickMode3)
+                            }}
+                            onMouseUp={this.setGroupClose}
                         >
                             <span>{groupSelectItem3}</span>
                         </li>
