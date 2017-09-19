@@ -6,24 +6,22 @@
     "import"
   ],
   "globals": {
-    "react": true,
-    "gatsby-helpers": true
+    "react": true
   },
   "rules": {
-    "comma-dangle": "off",
-    "indent": ["error", 4],
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
-    "semi": [0, "never"],
+    "react/no-danger": [0],
+    "react/forbid-prop-types": [0],
     "react/jsx-indent": ["warn", 4],
     "react/jsx-indent-props": ["warn", 4],
+    "comma-dangle": "off",
+    "indent": ["error", 4],
+    "semi": [0, "never"],
     "import/no-extraneous-dependencies": [0],
     "import/extensions": [0],
-    "import/no-unresolved": [0],
-    "react/no-danger": [0],
-    "react/forbid-prop-types": [0]
+    "import/no-unresolved": [0]
   },
   "env": {
     "mocha": true
-  },
-  "parser": "babel-eslint"
+  }
 }
