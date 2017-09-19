@@ -1,27 +1,16 @@
 {
-  "extends": "eslint-config-airbnb",
-  "plugins": [
-    "react",
-    "jsx-a11y",
-    "import"
-  ],
-  "globals": {
-    "react": true
-  },
+  "extends": "react-app",
   "rules": {
-    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
-    "react/no-danger": [0],
-    "react/forbid-prop-types": [0],
-    "react/jsx-indent": ["warn", 4],
-    "react/jsx-indent-props": ["warn", 4],
-    "comma-dangle": "off",
-    "indent": ["error", 4],
-    "semi": [0, "never"],
-    "import/no-extraneous-dependencies": [0],
-    "import/extensions": [0],
-    "import/no-unresolved": [0]
-  },
-  "env": {
-    "mocha": true
+//    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+//    "react/no-danger": [0],
+//    "react/forbid-prop-types": [0],
+//    "react/jsx-indent": ["warn", 4],
+//    "react/jsx-indent-props": ["warn", 4],
+//    "comma-dangle": "off",
+//    "indent": ["error", 4],
+//    "semi": ["error", "never"]
+//    "import/no-extraneous-dependencies": [0],
+//    "import/extensions": [0],
+//    "import/no-unresolved": [0]
   }
 }

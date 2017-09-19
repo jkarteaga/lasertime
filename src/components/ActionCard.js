@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes,  } from 'react'
 import { prefixLink } from 'gatsby-helpers'
 
 function Action({ title, description, badgeColor, priceOld, priceNew, discount, deadline, deadlineColor, image }) {
