@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React  from 'react'
+import PropTypes from 'prop-types'
 import { getArticles } from '../../utils/helpers'
 import PagePreview from '../../components/PagePreview'
 
@@ -16,9 +17,9 @@ function ArticleList(props, context) {
     )
 }
 
-ArticleList.contextTypes = {
-    router: PropTypes.object.isRequired
-}
+// ArticleList.contextTypes = {
+//     router: PropTypes.object.isRequired
+// }
 ArticleList.propTypes = {
     route: PropTypes.object.isRequired
 }

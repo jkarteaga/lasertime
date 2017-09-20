@@ -13,7 +13,8 @@
     "gatsby-remark-images": "next",
     "gatsby-remark-smartypants": "next",
     "gatsby-source-filesystem": "next",
-    "gatsby-transformer-remark": "next"
+    "gatsby-transformer-remark": "next",
+    "prop-types": "^15.6.0"
   },
   "keywords": [
     "gatsby"
