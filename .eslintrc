@@ -1,5 +1,8 @@
 {
   "extends": "react-app",
+  "globals": {
+    "graphql": true
+  },
   "rules": {
 //    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
 //    "react/no-danger": [0],

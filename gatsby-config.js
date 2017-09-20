@@ -1,4 +1,5 @@
 module.exports = {
+
     siteMetadata: {
         title: 'Клиника красоты Знак Качества',
         description: '',
@@ -17,40 +18,32 @@ module.exports = {
                 {path: '/contacts/', name: 'Контакты'},
             ],
         }
-
     },
+
     plugins: [
         'gatsby-plugin-less',
         {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `articles`,
-                path: `${__dirname}/src/articles/hyperhidrosis/`
+                path: `${__dirname}/src/articles/`
             },
         },
         {
-            resolve: `gatsby-source-filesystem`,
+            resolve: `gatsby-transformer-remark`,
             options: {
-                name: `md`,
-                path: `${__dirname}/src/md/`
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 690
+                        },
+                    },
+                    `gatsby-remark-copy-linked-files`,
+                    `gatsby-remark-smartypants`,
+                ],
             },
         },
-        `gatsby-transformer-remark`,
-        // {
-        //     resolve: `gatsby-transformer-remark`,
-        //     options: {
-        //         plugins: [
-        //             {
-        //                 resolve: `gatsby-remark-images`,
-        //                 options: {
-        //                     maxWidth: 690
-        //                 },
-        //             },
-        //             `gatsby-remark-copy-linked-files`,
-        //             `gatsby-remark-smartypants`,
-        //         ],
-        //     },
-        // },
         `gatsby-plugin-sharp`
 
         // 'gatsby-transformer-json',
