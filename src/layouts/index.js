@@ -12,17 +12,17 @@ function Page({ children }) {
 
     return (
         <div id="outer-container">
-            <MobileMenu
-                className="MobileMenu" right width={250}
-                pageWrapId={'page-wrap'}
-                outerContainerId={'outer-container'} />
+            {/*<MobileMenu*/}
+                {/*className="MobileMenu" right width={250}*/}
+                {/*pageWrapId={'page-wrap'}*/}
+                {/*outerContainerId={'outer-container'} />*/}
             <div id="page-wrap" className="Page">
                 <div className="Page__wrapper">
-                    <PageHeader />
-                    <PageContent>
+                    {/*<PageHeader />*/}
+                    {/*<PageContent>*/}
                         {children()}
-                    </PageContent>
-                    <PageFooter />
+                    {/*</PageContent>*/}
+                    {/*<PageFooter />*/}
                 </div>
             </div>
         </div>

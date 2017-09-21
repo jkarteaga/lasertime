@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import MenuItem from './HeaderMenuItem'
+import MenuItem from '../HeaderMenuItem'
 
 function HeaderMenu({ position, items }) {
     const links = items.map((item, id) => <MenuItem

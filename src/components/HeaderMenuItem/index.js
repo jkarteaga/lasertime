@@ -1,13 +1,11 @@
 import React, { PropTypes } from 'react'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-
+import Link from 'gatsby-link'
 
 function HeaderMenuItem({ path, name }) {
     return (
         <li className="HeaderMenu__item">
             <Link
-                to={prefixLink(path)}
+                to={path}
                 className="HeaderMenu__link"
                 activeClassName="HeaderMenu__link--active"
             >

@@ -1,14 +1,12 @@
 import React from 'react'
-import { config } from 'config'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-import ScrollProgress from './ScrollProgress'
-import HeaderMenu from './HeaderMenu'
-import PhoneList from './PhoneList'
-import Logo from './HeaderLogo'
-import Title from './HeaderTitle'
-import SocialList from './SocialList'
-import phoneIcon from '../assets/static/img/MobileMenu__phone-icon.png'
+import Link from 'gatsby-link'
+import ScrollProgress from '../ScrollProgress'
+import HeaderMenu from '../HeaderMenu'
+import PhoneList from '../PhoneList'
+import Logo from '../HeaderLogo'
+import Title from '../HeaderTitle'
+import SocialList from '../SocialList'
+import phoneIcon from '../../assets/static/img/MobileMenu__phone-icon.png'
 
 let timer
 
@@ -24,7 +22,7 @@ class PageHeader extends React.Component {
 
 
     _onScroll = () => {
-        timer = this.state.timer;
+        timer = this.state.timer
         if (timer) {
             clearTimeout(timer)
             timer = null
@@ -56,21 +54,23 @@ class PageHeader extends React.Component {
         const { leftMenuItems, rightMenuItems, fixedPhone, mobilePhone } = config
         return (
             <header className="PageHeader">
-                <div className="PageHeader__wrapper" ref={(ref) => { this._pageHeaderElement = ref }}>
+                <div className="PageHeader__wrapper" ref={(ref) => {
+                    this._pageHeaderElement = ref
+                }}>
                     <div className="PageHeader__items">
 
                         <div className="PageHeader__item">
                             <a href="tel:+79055881313">
-                            <div className="PageHeader__phone-icon">
-                                <img src={phoneIcon}/>
-                            </div>
+                                <div className="PageHeader__phone-icon">
+                                    <img src={phoneIcon} />
+                                </div>
                             </a>
                             <PhoneList items={[fixedPhone, mobilePhone]} />
                             <HeaderMenu position="left" items={leftMenuItems} />
                         </div>
 
                         <div className="PageHeader__item">
-                            <Link className="PageHeader__link-home" to={prefixLink('/')}>
+                            <Link className="PageHeader__link-home" to={'/'}>
                                 <Title />
                                 <Logo />
                             </Link>
@@ -92,3 +92,24 @@ PageHeader.propTypes = {}
 PageHeader.defaultProps = {}
 
 export default PageHeader
+
+// export const query = graphql`
+//     query PageHeaderQuery {
+//       site {
+//         siteMetadata {
+//           menuItems {
+//             leftMenuItems {
+//               path
+//               name
+//             }
+//             rightMenuItems {
+//               path
+//               name
+//             }
+//           }
+//           fixedPhone
+//           mobilePhone
+//         }
+//       }
+//     }
+// `

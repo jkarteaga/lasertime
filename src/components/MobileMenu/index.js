@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Link from 'gatsby-link'
 import Radium from 'radium'
-import { config } from 'config'
-import logo from '../assets/static/img/SiteLogo__logo.jpg'
+import logo from '../../assets/static/img/SiteLogo__logo.jpg'
 
 const Menu = require('react-burger-menu').push
 const RadiumLink = Radium(Link)
 
-class MobileMenu extends Component {
+class MobileMenu extends React.Component {
     state = {
         render: false,
         isOpen: false,
@@ -53,18 +52,18 @@ class MobileMenu extends Component {
             return null;
         }
 
-        const { leftMenuItems, rightMenuItems } = config
+        const { leftMenuItems, rightMenuItems } = this.props.data.site.siteMetadata.menuItems
 
         const menuItems = leftMenuItems.concat(rightMenuItems)
 
         const menuElements = menuItems.map((item) => {
             return (
                 <RadiumLink
-                    key={item[0]}
-                    to={prefixLink(item[0])}
+                    key={item.name}
+                    to={item.path}
                     className="MobileMenu__link"
                 >
-                    {item[1]}
+                    {item.name}
                 </RadiumLink>
             )
         })
@@ -72,7 +71,7 @@ class MobileMenu extends Component {
         return (
             <Menu customCrossIcon={false} isOpen={this.state.isOpen} wait={20} {...this.props}>
                 <div className="MobileMenu__logo">
-                    <RadiumLink to={prefixLink('/')}>
+                    <RadiumLink to={'/'}>
                         <img src={logo} />
                     </RadiumLink>
                 </div>
@@ -86,3 +85,21 @@ MobileMenu.propTypes = {}
 MobileMenu.defaultProps = {}
 
 export default MobileMenu
+
+// export const pageQuery = graphql`
+// query MenuItems {
+//   site {
+//     siteMetadata {
+//       menuItems {
+//         leftMenuItems {
+//           path
+//           name
+//         }
+//         rightMenuItems {
+//           path
+//           name
+//         }
+//       }
+//     }
+//   }
+// }`
