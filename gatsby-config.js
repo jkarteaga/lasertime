@@ -45,7 +45,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-sharp`,
-        `gatsby-plugin-react-helmet`
+        // `gatsby-plugin-react-helmet`
 
         // 'gatsby-transformer-json',
         // `gatsby-transformer-javascript-static-exports`,

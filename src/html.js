@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 
 // import { siteMetadata as config } from '../gatsby-config'
 
@@ -18,7 +18,7 @@ if (isProduction) {
 }
 
 const Html = ({body, headComponents, postBodyComponents}) => {
-    const helmet = Helmet.rewind()
+    const helmet = Helmet.renderStatic()
 
     return (
         <html lang="ru">
