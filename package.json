@@ -14,7 +14,10 @@
     "gatsby-remark-smartypants": "1.4.7",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-remark": "^1.7.15",
+    "normalize.css": "^7.0.0",
     "prop-types": "^15.6.0",
+    "radium": "^0.19.4",
+    "react-burger-menu": "^2.1.6",
     "react-helmet": "^5.2.0"
   },
   "keywords": [

@@ -1,6 +1,5 @@
-import React, { Component, PropTypes } from 'react'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
 import Radium from 'radium'
 import { config } from 'config'
 import logo from '../assets/static/img/SiteLogo__logo.jpg'
