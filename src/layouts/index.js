@@ -19,9 +19,9 @@ function Page({ children }) {
             <div id="page-wrap" className="Page">
                 <div className="Page__wrapper">
                     {/*<PageHeader />*/}
-                    {/*<PageContent>*/}
+                    <PageContent>
                         {children()}
-                    {/*</PageContent>*/}
+                    </PageContent>
                     {/*<PageFooter />*/}
                 </div>
             </div>
