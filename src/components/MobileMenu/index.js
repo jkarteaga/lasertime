@@ -52,7 +52,7 @@ class MobileMenu extends React.Component {
             return null;
         }
 
-        const { leftMenuItems, rightMenuItems } = this.props.data.site.siteMetadata.menuItems
+        const { leftMenuItems, rightMenuItems } = this.props.data.menuItems
 
         const menuItems = leftMenuItems.concat(rightMenuItems)
 
@@ -86,20 +86,17 @@ MobileMenu.defaultProps = {}
 
 export default MobileMenu
 
-// export const pageQuery = graphql`
-// query MenuItems {
-//   site {
-//     siteMetadata {
-//       menuItems {
-//         leftMenuItems {
-//           path
-//           name
-//         }
-//         rightMenuItems {
-//           path
-//           name
-//         }
-//       }
-//     }
-//   }
-// }`
+export const MobileMenuFragment = graphql`
+fragment MobileMenuItems on siteMetadata_2 {
+  menuItems {
+    leftMenuItems {
+      path
+      name
+    }
+    rightMenuItems {
+      path
+      name
+    }
+  }
+}
+`

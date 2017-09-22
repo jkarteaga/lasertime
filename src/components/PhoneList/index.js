@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React  from 'react'
+import PropTypes from 'prop-types'
 
 function PhoneList({ items }) {
     const phones = items.map((phone, id) => {
@@ -54,7 +55,7 @@ function PhoneList({ items }) {
 }
 
 PhoneList.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.number).isRequired
+    items: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 PhoneList.defaultProps = {}
 

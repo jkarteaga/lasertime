@@ -51,14 +51,15 @@ class PageHeader extends React.Component {
 
 
     render() {
-        const { leftMenuItems, rightMenuItems, fixedPhone, mobilePhone } = config
+        const { menuItems, fixedPhone, mobilePhone } = this.props.data
+        const { leftMenuItems, rightMenuItems } = menuItems
+
         return (
             <header className="PageHeader">
                 <div className="PageHeader__wrapper" ref={(ref) => {
                     this._pageHeaderElement = ref
                 }}>
                     <div className="PageHeader__items">
-
                         <div className="PageHeader__item">
                             <a href="tel:+79055881313">
                                 <div className="PageHeader__phone-icon">
@@ -93,23 +94,19 @@ PageHeader.defaultProps = {}
 
 export default PageHeader
 
-// export const query = graphql`
-//     query PageHeaderQuery {
-//       site {
-//         siteMetadata {
-//           menuItems {
-//             leftMenuItems {
-//               path
-//               name
-//             }
-//             rightMenuItems {
-//               path
-//               name
-//             }
-//           }
-//           fixedPhone
-//           mobilePhone
-//         }
-//       }
-//     }
-// `
+export const pageHeaderFragment = graphql`
+  fragment PageHeader on siteMetadata_2 {
+    fixedPhone
+    mobilePhone
+    menuItems {
+      leftMenuItems {
+        path
+        name
+      }
+      rightMenuItems {
+        path
+        name
+      }
+    }
+  }
+`

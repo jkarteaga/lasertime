@@ -8,21 +8,21 @@ import PageContent from '../components/PageContent'
 import PageFooter from '../components/PageFooter'
 import MobileMenu from '../components/MobileMenu'
 
-function Page({ children }) {
-
+function Page({ children, data }) {
     return (
         <div id="outer-container">
-            {/*<MobileMenu*/}
-                {/*className="MobileMenu" right width={250}*/}
-                {/*pageWrapId={'page-wrap'}*/}
-                {/*outerContainerId={'outer-container'} />*/}
+            <MobileMenu
+                data={data.site.siteMetadata}
+                className="MobileMenu" right width={250}
+                pageWrapId={'page-wrap'}
+                outerContainerId={'outer-container'} />
             <div id="page-wrap" className="Page">
                 <div className="Page__wrapper">
-                    {/*<PageHeader />*/}
+                    <PageHeader data={data.site.siteMetadata}/>
                     <PageContent>
                         {children()}
                     </PageContent>
-                    {/*<PageFooter />*/}
+                    <PageFooter />
                 </div>
             </div>
         </div>
@@ -30,7 +30,19 @@ function Page({ children }) {
 }
 
 Page.propTypes = {
-    children: PropTypes.object.isRequired  // eslint-disable-line react/forbid-prop-types
+    children: PropTypes.func.isRequired  // eslint-disable-line react/forbid-prop-types
 }
 
 export default Page
+
+export const indexQuery = graphql`
+query IndexTemplateQuery {
+    site {
+      siteMetadata {
+        title
+        ...PageHeader
+        ...MobileMenuItems
+      }
+    }
+  }
+`

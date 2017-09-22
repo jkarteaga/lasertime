@@ -1,11 +1,12 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import MenuItem from '../HeaderMenuItem'
 
 function HeaderMenu({ position, items }) {
     const links = items.map((item, id) => <MenuItem
         key={id}
-        path={item[0]}
-        name={item[1]}
+        path={item.path}
+        name={item.name}
     />)
 
     return (
@@ -19,7 +20,7 @@ function HeaderMenu({ position, items }) {
 
 HeaderMenu.propTypes = {
     position: PropTypes.string.isRequired,
-    items: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired
+    items: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 HeaderMenu.defaultProps = {}
 

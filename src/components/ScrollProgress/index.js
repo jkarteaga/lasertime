@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 
 class ScrollProgress extends React.Component {
@@ -67,8 +68,8 @@ class ScrollProgress extends React.Component {
 
 
 ScrollProgress.propTypes = {
-    backgroundColor: React.PropTypes.string,
-    route: React.PropTypes.object
+    backgroundColor: PropTypes.string,
+    route: PropTypes.object
 };
 
 
