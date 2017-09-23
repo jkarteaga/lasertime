@@ -30,18 +30,18 @@ function Page({ children, data }) {
 }
 
 Page.propTypes = {
-    children: PropTypes.func.isRequired  // eslint-disable-line react/forbid-prop-types
+    children: PropTypes.func.isRequired
 }
 
 export default Page
 
-export const indexQuery = graphql`
+export const pageQuery = graphql`
 query IndexTemplateQuery {
     site {
       siteMetadata {
         title
         ...PageHeader
-        ...MobileMenuItems
+        ...MobileMenu
       }
     }
   }
