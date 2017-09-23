@@ -58,6 +58,7 @@ module.exports = {
                 ],
             },
         },
+        `gatsby-plugin-react-next`,
         // `gatsby-plugin-sharp`,
         // `gatsby-plugin-react-helmet`
 
