@@ -35,21 +35,21 @@ class ContactsTabSelectPanel extends React.Component {
         const activeClassName = 'ContactsTabSelectPanel__option--active'
 
         switch (activeMode) {
-        case 'photo':
-            groupSelectItem1 = groupItems[1]
-            groupSelectItem2 = groupItems[0]
-            groupSelectItem3 = groupItems[2]
-            onClickMode1 = 'photo'
-            onClickMode2 = 'svgmap'
-            onClickMode3 = 'video'
-            break
-        case 'video':
-            groupSelectItem1 = groupItems[2]
-            groupSelectItem2 = groupItems[0]
-            groupSelectItem3 = groupItems[1]
-            onClickMode1 = 'video'
-            onClickMode2 = 'svgmap'
-            onClickMode3 = 'photo'
+            case 'photo':
+                groupSelectItem1 = groupItems[1]
+                groupSelectItem2 = groupItems[0]
+                groupSelectItem3 = groupItems[2]
+                onClickMode1 = 'photo'
+                onClickMode2 = 'svgmap'
+                onClickMode3 = 'video'
+                break
+            case 'video':
+                groupSelectItem1 = groupItems[2]
+                groupSelectItem2 = groupItems[0]
+                groupSelectItem3 = groupItems[1]
+                onClickMode1 = 'video'
+                onClickMode2 = 'svgmap'
+                onClickMode3 = 'photo'
         }
 
 
@@ -72,7 +72,7 @@ class ContactsTabSelectPanel extends React.Component {
                         <li
                             className="ContactsTabSelectPanelGroup__option"
                             onClick={(e) => {
-                                e.stopPropagation();
+                                e.stopPropagation()
                                 changeMode(onClickMode2)
                             }}
                             onMouseUp={this.setGroupClose}
@@ -82,7 +82,7 @@ class ContactsTabSelectPanel extends React.Component {
                         <li
                             className="ContactsTabSelectPanelGroup__option"
                             onClick={(e) => {
-                                e.stopPropagation();
+                                e.stopPropagation()
                                 changeMode(onClickMode3)
                             }}
                             onMouseUp={this.setGroupClose}
