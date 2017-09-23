@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 function ArticleList({data}) {
     const articlesElements = data.allMarkdownRemark.edges.map(({node}) => {
-        return <PagePreview key={node.id} title={node.frontmatter.title} path={node.frontmatter.path}/>
+        return <PagePreview key={node.internal.contentDigest} title={node.frontmatter.title} path={node.frontmatter.path}/>
     })
 
     return (
@@ -31,6 +31,9 @@ query Articles {
   allMarkdownRemark(filter: {fields: {group:{eq:"articles"}}}) {
    	edges {
       node {
+        internal {
+            contentDigest
+        }
         frontmatter {
           title
           path

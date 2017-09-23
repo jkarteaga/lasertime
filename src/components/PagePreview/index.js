@@ -12,7 +12,8 @@ function PagePreview({title, path}) {
 }
 
 PagePreview.propTypes = {
-    article: PropTypes.object.isRequired
+    title: PropTypes.string.isRequired,
+    path: PropTypes.string.isRequired
 }
 PagePreview.defaultProps = {}
 

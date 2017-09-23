@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import TabSelectPanel from './ContactsTabSelectPanel'
 import SVGMapTab from './ContactsSVGMapTab'
 import GMapTab from './ContactsGMapTab'
@@ -6,7 +6,7 @@ import PhotoTab from './ContactsPhotoTab'
 import VideoTab from './ContactsVideoTab'
 import TaxiTab from './ContactsTaxiTab'
 
-class ContactsNavPanel extends Component {
+class ContactsNavPanel extends React.Component {
     state = {
         display: 'gmap' // svgmap, photo, video, gmap, taxi
     }
