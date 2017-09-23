@@ -1,9 +1,10 @@
-import React, { PropTypes } from 'react'
-import ActionCard from './ActionCard'
-import ActionGrid from './ActionGrid'
-import ActionTable from './ActionTable'
-import ActionSortBar from './ActionSortBar'
-import ActionDisplayModeBar from './ActionDisplayModeBar'
+import React from 'react'
+import PropTypes from 'prop-types'
+import ActionCard from './../ActionCard'
+import ActionGrid from './../ActionGrid'
+import ActionTable from './../ActionTable'
+import ActionSortBar from './../ActionSortBar'
+import ActionDisplayModeBar from './../ActionDisplayModeBar'
 
 class ActionList extends React.Component {
 

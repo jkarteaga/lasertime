@@ -1,5 +1,5 @@
-import React, { PropTypes,  } from 'react'
-import { prefixLink } from 'gatsby-helpers'
+import React from 'react'
+import PropTypes from 'prop-types'
 
 function Action({ title, description, badgeColor, priceOld, priceNew, discount, deadline, deadlineColor, image }) {
 
@@ -13,7 +13,7 @@ function Action({ title, description, badgeColor, priceOld, priceNew, discount, 
 
             <div className="Action__header">
                 <div className="Action__logo">
-                    <img src={prefixLink(`/actions/images/${image}`)} alt={title} />
+                    <img src={`/actions/images/${image}`} alt={title} />
                 </div>
                 <div className="Action__title">
                     <div>{title}</div>

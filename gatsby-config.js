@@ -26,14 +26,14 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `articles`,
-                path: `${__dirname}/src/markdown/articles/`
+                path: `${__dirname}/src/files/markdown/articles/`
             },
         },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `doctors`,
-                path: `${__dirname}/src/markdown/doctors/`
+                path: `${__dirname}/src/files/markdown/doctors/`
             },
         },
         {
