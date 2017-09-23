@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 
 class ArticleTemplate extends React.Component {
@@ -6,6 +7,7 @@ class ArticleTemplate extends React.Component {
         const article = this.props.data.markdownRemark
         return (
             <div className="PageContent__wrapper">
+                <Helmet title={article.frontmatter.title}/>
                 <h1>{article.frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{__html: article.html}}></div>
             </div>

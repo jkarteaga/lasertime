@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 
-function PagePreview(props) {
+function PagePreview({title, path}) {
     return (
         <div>
-            <Link to={props.article.data.path}>{props.article.data.title}</Link>
+            <Link to={path}>{title}</Link>
         </div>
     )
 }
