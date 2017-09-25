@@ -4,8 +4,8 @@
   "version": "0.9",
   "author": "Oleg Legun <oleg.legun@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.42",
-    "gatsby-link": "^1.6.15",
+    "gatsby": "^1.9.52",
+    "gatsby-link": "^1.6.17",
     "gatsby-plugin-less": "^1.0.5",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-react-next": "^1.0.4",

@@ -64,11 +64,6 @@ module.exports = {
                 ],
             },
         },
-        `gatsby-plugin-react-next`,
         `gatsby-plugin-react-helmet`,
-        // `gatsby-plugin-sharp`,
-
-        // 'gatsby-transformer-json',
-        // `gatsby-transformer-javascript-static-exports`,
     ],
 };

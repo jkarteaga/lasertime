@@ -1,5 +1,3 @@
-import 'normalize.css'
-import '../css/styles.less'
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -8,7 +6,11 @@ import PageContent from '../components/PageContent'
 import PageFooter from '../components/PageFooter'
 import MobileMenu from '../components/MobileMenu'
 
+import 'normalize.css'
+import '../css/styles.less'
+
 function Page({ children, data }) {
+    console.log('--- `data` in layouts/index.js: ', data)
     return (
         <div id="outer-container">
             <MobileMenu
@@ -36,7 +38,7 @@ Page.propTypes = {
 export default Page
 
 export const pageQuery = graphql`
-query siteMetadata {
+query indexLayout {
     site {
       siteMetadata {
         title
