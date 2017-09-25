@@ -39,6 +39,13 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `prices`,
+                path: `${__dirname}/src/files/markdown/prices/`
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 name: `actions-img`,
                 path: `${__dirname}/src/files/img/actions/`
             },

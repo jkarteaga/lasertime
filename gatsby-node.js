@@ -1,19 +1,17 @@
 const path = require('path');
 
+const articleTemplatePath = `src/templates/article.js`
+
 exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
     const { createNodeField } = boundActionCreators
 
+    // Create node field `group` for each MD file
+    // which will be used for filtering in GraphQL Queries
     if (node.internal.type === `MarkdownRemark`) {
-
-        // Create node field `group` for each MD file
-        // which will be used for filtering in GraphQL Queries
         const fileNode = getNode(node.parent)
         createNodeField({node, name: "group", value: fileNode.sourceInstanceName})
     }
 }
-
-
-const articleTemplatePath = `src/templates/article.js`
 
 exports.createPages = ({graphql, boundActionCreators}) => {
     const {createPage} = boundActionCreators
