@@ -3,25 +3,24 @@ import PagePreview from '../../components/PagePreview'
 
 function PriceList({ data }) {
 
-    const sortedPriceList = data.allMarkdownRemark.edges.sort((a, b) => {
-            const aOrder = a.node.frontmatter.order
-            const bOrder = b.node.frontmatter.order
-            if (aOrder > bOrder) {
-                return 1
+    const pricelistElements = data.allMarkdownRemark.edges
+        .sort((a, b) => {
+                const aOrder = a.node.frontmatter.order
+                const bOrder = b.node.frontmatter.order
+                if (aOrder > bOrder) {
+                    return 1
+                }
+                else if (aOrder < bOrder) {
+                    return -1
+                }
+                return 0
             }
-            else if (aOrder < bOrder) {
-                return -1
-            }
-            return 0
-        }
-    )
+        )
+        .map(({ node }) => {
+            return <PagePreview key={node.internal.contentDigest} title={node.frontmatter.title}
+                                path={node.frontmatter.path} />
+        })
 
-    console.log(sortedPriceList)
-
-    const pricelistElements = sortedPriceList.map(({ node }) => {
-        return <PagePreview key={node.internal.contentDigest} title={node.frontmatter.title}
-                            path={node.frontmatter.path} />
-    })
 
     return (
         <div className="PageContent__wrapper">
@@ -44,15 +43,12 @@ export default PriceList
 
 
 export const pageQuery = graphql`
-query PricesByOrder {
+query Prices {
   allMarkdownRemark(
     filter: {fields: {group: {eq: "prices"}}}
   ) {
     edges {
       node {
-        fields{
-           order
-        }
         internal {
           contentDigest
         }

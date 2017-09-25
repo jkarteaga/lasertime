@@ -11,10 +11,10 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
         const fileNode = getNode(node.parent)
         createNodeField({node, name: "group", value: fileNode.sourceInstanceName})
 
-        if (node.frontmatter.order !== undefined) {
-            // console.log(node.frontmatter.title, node.frontmatter.order)
-            createNodeField({node, name: "order", value: node.frontmatter.order})
-        }
+        // Add order field
+        // if (node.frontmatter.order !== undefined) {
+        //     createNodeField({node, name: "order", value: node.frontmatter.order})
+        // }
     }
 }
 
