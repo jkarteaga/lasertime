@@ -1,11 +1,26 @@
-import React  from 'react'
+import React from 'react'
 import PagePreview from '../../components/PagePreview'
 
 function PriceList({ data }) {
 
-    // const priceLists = getPrices(props.route.pages)
-    const pricelistElements = data.allMarkdownRemark.edges.map(({ node }) => {
-        return <PagePreview key={node.internal.contentDigest} title={node.frontmatter.title} path={node.frontmatter.path} />
+    const sortedPriceList = data.allMarkdownRemark.edges.sort((a, b) => {
+            const aOrder = a.node.frontmatter.order
+            const bOrder = b.node.frontmatter.order
+            if (aOrder > bOrder) {
+                return 1
+            }
+            else if (aOrder < bOrder) {
+                return -1
+            }
+            return 0
+        }
+    )
+
+    console.log(sortedPriceList)
+
+    const pricelistElements = sortedPriceList.map(({ node }) => {
+        return <PagePreview key={node.internal.contentDigest} title={node.frontmatter.title}
+                            path={node.frontmatter.path} />
     })
 
     return (
@@ -35,12 +50,16 @@ query PricesByOrder {
   ) {
     edges {
       node {
+        fields{
+           order
+        }
         internal {
           contentDigest
         }
         frontmatter {
           title
           path
+          order
         }
       }
     }
