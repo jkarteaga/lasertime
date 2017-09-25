@@ -6,7 +6,7 @@ import PhoneList from '../PhoneList'
 import Logo from '../HeaderLogo'
 import Title from '../HeaderTitle'
 import SocialList from '../SocialList'
-import phoneIcon from '../../assets/static/img/MobileMenu__phone-icon.png'
+import phoneIcon from './img/phone-icon.png'
 
 let timer
 

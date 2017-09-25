@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Radium from 'radium'
-import logo from '../../assets/static/img/SiteLogo__logo.jpg'
+import logo from './img/logo.jpg'
 
 const Menu = require('react-burger-menu').push
 const RadiumLink = Radium(Link)

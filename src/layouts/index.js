@@ -36,7 +36,7 @@ Page.propTypes = {
 export default Page
 
 export const pageQuery = graphql`
-query IndexTemplateQuery {
+query siteMetadata {
     site {
       siteMetadata {
         title
