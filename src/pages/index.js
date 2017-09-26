@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import mainCollage from './lasertime-main-collage.jpg'
+import mainCollage from '../files/img/lasertime-main-collage.jpg'
 
 
 class IndexPage extends React.Component {
@@ -79,7 +79,7 @@ class IndexPage extends React.Component {
 export default IndexPage
 
 export const pageQuery = graphql`
-query IndexQuery {
+query IndexPage {
     site {
       siteMetadata {
         title

@@ -10,7 +10,6 @@ import 'normalize.css'
 import '../css/styles.less'
 
 function Page({ children, data }) {
-    console.log('--- `data` in layouts/index.js: ', data)
     return (
         <div id="outer-container">
             <MobileMenu
