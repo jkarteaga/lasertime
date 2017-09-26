@@ -1,4 +1,6 @@
 module.exports = {
+    pathPrefix: `/lasertime`,
+
     siteMetadata: {
         title: 'Клиника красоты Знак Качества',
         description: '',
