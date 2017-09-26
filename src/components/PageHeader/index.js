@@ -95,7 +95,7 @@ PageHeader.defaultProps = {}
 export default PageHeader
 
 export const pageFragment = graphql`
-  fragment PageHeader on siteMetadata_2 {
+  fragment PageHeader on siteMetadata {
     fixedPhone
     mobilePhone
     menuItems {

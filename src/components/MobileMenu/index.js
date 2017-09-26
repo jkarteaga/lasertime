@@ -87,7 +87,7 @@ MobileMenu.defaultProps = {}
 export default MobileMenu
 
 export const pageFragment = graphql`
-fragment MobileMenu on siteMetadata_2 {
+fragment MobileMenu on siteMetadata {
   menuItems {
     leftMenuItems {
       path
