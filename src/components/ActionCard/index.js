@@ -13,7 +13,7 @@ function Action({ title, description, badgeColor, priceOld, priceNew, discount, 
 
             <div className="Action__header">
                 <div className="Action__logo">
-                    <img src={`/actions/images/${image}`} alt={title} />
+                    <img src={`/img/actions/${image}`} alt={title} />
                 </div>
                 <div className="Action__title">
                     <div>{title}</div>
@@ -24,7 +24,7 @@ function Action({ title, description, badgeColor, priceOld, priceNew, discount, 
             <div className="Action__body">
                 <div className={`Action__badge Action__badge--${badgeColor}`}>{`-${discount}%`}</div>
                 <div className="Action__description">
-                    { descriptionElement }
+                    {descriptionElement}
                 </div>
 
                 <div className="Action__price">
