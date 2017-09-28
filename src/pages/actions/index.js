@@ -6,7 +6,7 @@ function Actions() {
     const { actions, categories, groups } = fixtures
 
     return (
-        <div>
+        <div className="">
             <h1>Акции нашей клиники</h1>
             <ActionList
                 items={actions}

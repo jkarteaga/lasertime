@@ -4,9 +4,12 @@ import NavPanel from '../../components/contacts/ContactsNavPanel'
 
 function Contacts(props) {
     return (
-        <div className="Contacts">
-            <InfoPanel />
-            <NavPanel />
+        <div>
+            <h1>Контакты</h1>
+            <div className="Contacts">
+                <InfoPanel />
+                <NavPanel />
+            </div>
         </div>
     )
 }

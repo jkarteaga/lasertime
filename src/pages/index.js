@@ -17,6 +17,7 @@ class IndexPage extends React.Component {
                         { name: 'keywords', content: 'Знак Качества' },
                     ]}
                 />
+                <br />
                 <p>
                     Медицинский центр «Знак качества» - команда молодых,
                     энергичных и увлеченных своим делом

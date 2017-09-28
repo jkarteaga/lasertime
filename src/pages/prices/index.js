@@ -25,6 +25,7 @@ function PriceList({ data }) {
 
     return (
         <div className="PageContent__wrapper">
+            <h1>Цены</h1>
             <p className="">
                 Внимание, цены на сайте представлены только для предварительного
                 ознакомления! В связи в нестабильным экономическим положением в
