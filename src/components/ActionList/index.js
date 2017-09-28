@@ -217,7 +217,7 @@ class ActionList extends React.Component {
                 {displayGrid ? (
                     <ActionGrid elements={actionCards} />
                 ) : (
-                    actionTables
+                    <div className="PageContent__wrapper">{actionTables}</div>
                 )}
             </div>
         )

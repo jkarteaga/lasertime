@@ -5,16 +5,52 @@
 /*----------------------------------------------------------------------------*/
 
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 html {
-  font-size: @html-font-size;
-  overflow-x: hidden;
+    font-size: @html-font-size;
+    overflow-x: hidden;
 }
 
 a:hover {
-  cursor: pointer;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid @gray-90;
+
+    & thead {
+        background-color: @gold;
+
+        & th {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    & tbody tr {
+        position: relative;
+        background-color: #fff;
+        &:nth-child(even) {
+            background-color: @gray-95;
+        }
+
+        &:hover {
+            background-color: #f9ecc4;
+        }
+
+        & td {
+            padding: 5px;
+
+            &:first-of-type {
+                width: 60%;
+            }
+        }
+    }
 }
 
 /*------------------------------------------------------------------------------

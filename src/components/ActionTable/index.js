@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function ActionTable({ title, elements }) {
     return (
-        <div className="ActionTable">
+        <div>
             <h2 className="Actions__heading">{title}</h2>
 
             <table className="ActionTable">

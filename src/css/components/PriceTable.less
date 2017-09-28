@@ -1,40 +1,5 @@
 @import "../variables";
 /*TODO выравнивание ячеек по центру в ценах */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid @gray-90;
-
-  & thead {
-    background-color: @gold;
-
-    & th {
-      text-align: center;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-  }
-
-  & tbody tr {
-    position: relative;
-    background-color: #fff;
-    &:nth-child(even) {
-      background-color: @gray-95;
-    }
-
-    &:hover {
-      background-color: #f9ecc4;
-    }
-
-    & td {
-      padding: 5px;
-
-      &:first-of-type {
-        width: 60%;
-      }
-    }
-  }
-}
 
 .PriceTable__heading {
   text-align: center;
