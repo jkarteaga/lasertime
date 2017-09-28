@@ -8,42 +8,44 @@ import TaxiTab from './ContactsTaxiTab'
 
 class ContactsNavPanel extends React.Component {
     state = {
-        display: 'gmap' // svgmap, photo, video, gmap, taxi
+        display: 'gmap', // svgmap, photo, video, gmap, taxi
     }
 
-    getActiveTabElement = (mode) => {
+    getActiveTabElement = mode => {
         switch (mode) {
-        case 'svgmap':
-            return <SVGMapTab />
-        case 'photo':
-            return <PhotoTab />
-        case 'video':
-            return <VideoTab />
-        case 'gmap':
-            return <GMapTab />
-        case 'taxi':
-            return <TaxiTab />
-        default:
-            return null
+            case 'svgmap':
+                return <SVGMapTab />
+            case 'photo':
+                return <PhotoTab />
+            case 'video':
+                return <VideoTab />
+            case 'gmap':
+                return <GMapTab />
+            case 'taxi':
+                return <TaxiTab />
+            default:
+                return null
         }
     }
 
-    toggleChangeMode = (newMode) => {
+    toggleChangeMode = newMode => {
         if (newMode !== this.state.display) {
             this.setState({
-                display: newMode
+                display: newMode,
             })
         }
     }
 
     render() {
-
         const activeTabElement = this.getActiveTabElement(this.state.display)
 
         return (
             <div className="ContactsNavPanel">
-                { activeTabElement }
-                <TabSelectPanel activeMode={this.state.display} changeMode={this.toggleChangeMode} />
+                {activeTabElement}
+                <TabSelectPanel
+                    activeMode={this.state.display}
+                    changeMode={this.toggleChangeMode}
+                />
             </div>
         )
     }

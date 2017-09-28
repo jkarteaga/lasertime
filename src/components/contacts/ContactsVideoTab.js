@@ -1,9 +1,7 @@
 import React, { PropTypes } from 'react'
 
 function ContactsVideoTab(props) {
-    return (
-        <div>VideoTab</div>
-    )
+    return <div>VideoTab</div>
 }
 
 ContactsVideoTab.propTypes = {}

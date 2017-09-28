@@ -2,20 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 class ContactsTabSelectPanel extends React.Component {
-
     state = {
-        isOpened: false
+        isOpened: false,
     }
 
     setGroupOpen = () => {
         this.setState({
-            isOpened: true
+            isOpened: true,
         })
     }
 
     setGroupClose = () => {
         this.setState({
-            isOpened: false
+            isOpened: false,
         })
     }
 
@@ -23,7 +22,11 @@ class ContactsTabSelectPanel extends React.Component {
         const { activeMode, changeMode } = this.props
         const { isOpened } = this.state
 
-        const groupItems = ['пешком по карте', 'пешком по фото', 'пешком по видео']
+        const groupItems = [
+            'пешком по карте',
+            'пешком по фото',
+            'пешком по видео',
+        ]
         const groupModes = ['svgmap', 'photo', 'video']
 
         let groupSelectItem1 = groupItems[0]
@@ -52,26 +55,38 @@ class ContactsTabSelectPanel extends React.Component {
                 onClickMode3 = 'photo'
         }
 
-
         return (
             <ul className="ContactsTabSelectPanel">
-
                 <li
-                    className={`ContactsTabSelectPanel__option ${~groupModes.indexOf(activeMode) ? activeClassName : ''}`}
+                    className={`ContactsTabSelectPanel__option ${~groupModes.indexOf(
+                        activeMode
+                    )
+                        ? activeClassName
+                        : ''}`}
                     onClick={() => changeMode(onClickMode1)}
                     onMouseEnter={this.setGroupOpen}
                     onMouseLeave={this.setGroupClose}
                     onMouseUp={this.setGroupClose}
                 >
                     <span>{groupSelectItem1}</span>
-                    <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#ccc">
+                    <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="#ccc"
+                    >
                         <polygon points="12 26 19 20 32 33 45 19 52 26 32 47" />
                     </svg>
 
-                    <ul className={`ContactsTabSelectPanelGroup ${isOpened ? 'ContactsTabSelectPanelGroup--opened' : ''}`}>
+                    <ul
+                        className={`ContactsTabSelectPanelGroup ${isOpened
+                            ? 'ContactsTabSelectPanelGroup--opened'
+                            : ''}`}
+                    >
                         <li
                             className="ContactsTabSelectPanelGroup__option"
-                            onClick={(e) => {
+                            onClick={e => {
                                 e.stopPropagation()
                                 changeMode(onClickMode2)
                             }}
@@ -81,7 +96,7 @@ class ContactsTabSelectPanel extends React.Component {
                         </li>
                         <li
                             className="ContactsTabSelectPanelGroup__option"
-                            onClick={(e) => {
+                            onClick={e => {
                                 e.stopPropagation()
                                 changeMode(onClickMode3)
                             }}
@@ -90,16 +105,21 @@ class ContactsTabSelectPanel extends React.Component {
                             <span>{groupSelectItem3}</span>
                         </li>
                     </ul>
-
                 </li>
                 <li
-                    className={`ContactsTabSelectPanel__option ${activeMode === 'gmap' ? activeClassName : ''}`}
+                    className={`ContactsTabSelectPanel__option ${activeMode ===
+                    'gmap'
+                        ? activeClassName
+                        : ''}`}
                     onClick={() => changeMode('gmap')}
                 >
                     на машине
                 </li>
                 <li
-                    className={`ContactsTabSelectPanel__option ${activeMode === 'taxi' ? activeClassName : ''}`}
+                    className={`ContactsTabSelectPanel__option ${activeMode ===
+                    'taxi'
+                        ? activeClassName
+                        : ''}`}
                     onClick={() => changeMode('taxi')}
                 >
                     на такси
@@ -111,7 +131,7 @@ class ContactsTabSelectPanel extends React.Component {
 
 ContactsTabSelectPanel.propTypes = {
     activeMode: PropTypes.string.isRequired,
-    changeMode: PropTypes.func.isRequired
+    changeMode: PropTypes.func.isRequired,
 }
 ContactsTabSelectPanel.defaultProps = {}
 

@@ -2,9 +2,7 @@ import React, { Component, PropTypes } from 'react'
 
 class ContactsGMapTab extends Component {
     render() {
-        return (
-            <div>GMapTab</div>
-        )
+        return <div>GMapTab</div>
     }
 }
 

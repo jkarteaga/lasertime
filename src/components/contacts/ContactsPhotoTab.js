@@ -2,9 +2,7 @@ import React, { Component, PropTypes } from 'react'
 
 class ContactsPhotoTab extends Component {
     render() {
-        return (
-            <div>PhotoTab</div>
-        )
+        return <div>PhotoTab</div>
     }
 }
 

@@ -7,42 +7,37 @@ import ActionSortBar from './../ActionSortBar'
 import ActionDisplayModeBar from './../ActionDisplayModeBar'
 
 class ActionList extends React.Component {
-
     state = {
         displayGrid: true,
-        sortType: 'default', /* default, discount, price */
-        sortReverse: false
+        sortType: 'default' /* default, discount, price */,
+        sortReverse: false,
     }
-
 
     handleChangeDisplayMode = () => {
         this.setState({ displayGrid: !this.state.displayGrid })
     }
 
-
-    handleChangeSortType = (type) => {
+    handleChangeSortType = type => {
         if (this.state.sortType === type) {
             this.setState({
-                sortReverse: !this.state.sortReverse
+                sortReverse: !this.state.sortReverse,
             })
         } else {
             this.setState({
                 sortType: type,
-                sortReverse: false
+                sortReverse: false,
             })
         }
     }
 
-
     // calculateDiscount returns number rounded to 5 like: 35 or 50
     calculateDiscount = (priceOld, priceNew) => {
-        const discount = 100 - ((priceNew / priceOld) * 100)
-        return discount - (discount % 5)
+        const discount = 100 - priceNew / priceOld * 100
+        return discount - discount % 5
     }
 
-
-    filterActionsByCategory = (array, catId) => array.filter(item => item.category === catId)
-
+    filterActionsByCategory = (array, catId) =>
+        array.filter(item => item.category === catId)
 
     // filterActionsByGroup returns array of action elements w/ added deadline field
     filterCurrentActionsByGroup = (items, groups) => {
@@ -50,7 +45,7 @@ class ActionList extends React.Component {
         const day = new Date().getDay()
         const actions = []
 
-        items.forEach((item) => {
+        items.forEach(item => {
             const group = groups[item.group]
             let slice
 
@@ -77,20 +72,18 @@ class ActionList extends React.Component {
         return actions
     }
 
-
-    generateDeadlineString = (days) => {
+    generateDeadlineString = days => {
         switch (days) {
-        case 1:
-            return '1 день'
-        case 2:
-        case 3:
-        case 4:
-            return `${days} дня`
-        default:
-            return `${days} дней`
+            case 1:
+                return '1 день'
+            case 2:
+            case 3:
+            case 4:
+                return `${days} дня`
+            default:
+                return `${days} дней`
         }
     }
-
 
     sortActions = (actions, sortType, reverse) => {
         if (sortType === 'discount') {
@@ -100,7 +93,6 @@ class ActionList extends React.Component {
         }
         return actions
     }
-
 
     // By default sorts from High => Low
     sortActionsByDiscount = (items, reverse) => {
@@ -122,7 +114,6 @@ class ActionList extends React.Component {
         return items
     }
 
-
     render() {
         const { items, categories, groups } = this.props
         const { displayGrid, sortType, sortReverse } = this.state
@@ -130,23 +121,41 @@ class ActionList extends React.Component {
         let actionTables
 
         if (displayGrid) {
-            const filteredActions = this.filterCurrentActionsByGroup(items, groups)
-            const sortedActions = this.sortActions(filteredActions, sortType, sortReverse)
+            const filteredActions = this.filterCurrentActionsByGroup(
+                items,
+                groups
+            )
+            const sortedActions = this.sortActions(
+                filteredActions,
+                sortType,
+                sortReverse
+            )
 
-            actionCards = sortedActions.map((item) => {
-                const discount = this.calculateDiscount(item.price_old, item.price_new)
+            actionCards = sortedActions.map(item => {
+                const discount = this.calculateDiscount(
+                    item.price_old,
+                    item.price_new
+                )
                 const deadline = item.deadline
                 return (
                     <ActionCard
                         key={item.id}
                         title={item.title}
                         description={item.description}
-                        badgeColor={discount >= 40 ? 'gold' : discount >= 30 ? 'silver' : 'gray'}
+                        badgeColor={
+                            discount >= 40
+                                ? 'gold'
+                                : discount >= 30 ? 'silver' : 'gray'
+                        }
                         priceOld={item.price_old}
                         priceNew={item.price_new}
                         discount={discount}
                         deadline={this.generateDeadlineString(item.deadline)}
-                        deadlineColor={deadline <= 1 ? 'red' : deadline <= 2 ? 'orange' : 'black'}
+                        deadlineColor={
+                            deadline <= 1
+                                ? 'red'
+                                : deadline <= 2 ? 'orange' : 'black'
+                        }
                         image={item.image}
                     />
                 )
@@ -154,35 +163,46 @@ class ActionList extends React.Component {
         } else {
             actionTables = categories.map((categoryTitle, categoryId) => {
                 // Get all actions w/ current category
-                const currentActions = this.filterCurrentActionsByGroup(items, groups)
-                const filteredActions = this.filterActionsByCategory(currentActions, categoryId)
-                const sortedActions = this.sortActions(filteredActions, sortType, sortReverse)
+                const currentActions = this.filterCurrentActionsByGroup(
+                    items,
+                    groups
+                )
+                const filteredActions = this.filterActionsByCategory(
+                    currentActions,
+                    categoryId
+                )
+                const sortedActions = this.sortActions(
+                    filteredActions,
+                    sortType,
+                    sortReverse
+                )
 
-
-                const categoryElements = sortedActions.map((item) => {
-
-
-                    const descriptionElement = Array.isArray(item.description) ?
-                        item.description.join(' ') : item.description
+                const categoryElements = sortedActions.map(item => {
+                    const descriptionElement = Array.isArray(item.description)
+                        ? item.description.join(' ')
+                        : item.description
                     return (
                         <tr key={item.id}>
                             <td>{`${item.title} (${descriptionElement})`}</td>
-                            <td className="ActionTable__price ActionTable__price--old">{item.price_old}</td>
-                            <td className="ActionTable__price">{item.price_new}</td>
+                            <td className="ActionTable__price ActionTable__price--old">
+                                {item.price_old}
+                            </td>
+                            <td className="ActionTable__price">
+                                {item.price_new}
+                            </td>
                         </tr>
                     )
                 })
 
-                return categoryElements.length !== 0 ?
+                return categoryElements.length !== 0 ? (
                     <ActionTable
                         key={categoryId}
                         title={categoryTitle}
                         elements={categoryElements}
                     />
-                    : null
+                ) : null
             })
         }
-
 
         return (
             <div className="ActionList">
@@ -194,11 +214,11 @@ class ActionList extends React.Component {
                     changeDisplayMode={this.handleChangeDisplayMode}
                     displayGrid={this.state.displayGrid}
                 />
-                {displayGrid ?
+                {displayGrid ? (
                     <ActionGrid elements={actionCards} />
-                    :
+                ) : (
                     actionTables
-                }
+                )}
             </div>
         )
     }
@@ -207,7 +227,7 @@ class ActionList extends React.Component {
 ActionList.propTypes = {
     items: PropTypes.array.isRequired,
     categories: PropTypes.array.isRequired,
-    groups: PropTypes.object.isRequired
+    groups: PropTypes.object.isRequired,
 }
 ActionList.defaultProps = {}
 

@@ -8,24 +8,21 @@ function ActionTable({ title, elements }) {
 
             <table className="ActionTable">
                 <thead>
-                <tr>
-                    <th>Зона</th>
-                    <th>Цена, руб.</th>
-                    <th>Цена по акции, руб.</th>
-                </tr>
+                    <tr>
+                        <th>Зона</th>
+                        <th>Цена, руб.</th>
+                        <th>Цена по акции, руб.</th>
+                    </tr>
                 </thead>
-                <tbody>
-                {elements}
-                </tbody>
+                <tbody>{elements}</tbody>
             </table>
-
         </div>
     )
 }
 
 ActionTable.propTypes = {
     title: PropTypes.string.isRequired,
-    elements: PropTypes.array.isRequired
+    elements: PropTypes.array.isRequired,
 }
 ActionTable.defaultProps = {}
 

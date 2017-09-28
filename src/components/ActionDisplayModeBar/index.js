@@ -28,7 +28,7 @@ function ActionDisplayModeBar({ changeDisplayMode, displayGrid }) {
 
 ActionDisplayModeBar.propTypes = {
     changeDisplayMode: PropTypes.func.isRequired,
-    displayGrid: PropTypes.bool.isRequired
+    displayGrid: PropTypes.bool.isRequired,
 }
 ActionDisplayModeBar.defaultProps = {}
 

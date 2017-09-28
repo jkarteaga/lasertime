@@ -18,7 +18,7 @@ function HeaderMenuItem({ path, name }) {
 
 HeaderMenuItem.propTypes = {
     path: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired
+    name: PropTypes.string.isRequired,
 }
 HeaderMenuItem.defaultProps = {}
 

@@ -1,6 +1,5 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
-
 
 class ScrollProgress extends React.Component {
     state = {
@@ -8,7 +7,7 @@ class ScrollProgress extends React.Component {
         browserHeight: null,
         pageHeight: null,
         totalScrollableArea: null,
-        currentPage: null
+        currentPage: null,
     }
 
     componentDidMount() {
@@ -28,12 +27,11 @@ class ScrollProgress extends React.Component {
             browserHeight: window.innerHeight,
             pageHeight: pageHeight,
             totalScrollableArea: totalScrollableArea,
-            currentPage: window.location.pathname
+            currentPage: window.location.pathname,
         })
     }
 
     _onScroll = () => {
-
         if (this.state.to) {
             clearTimeout(this.state.to)
         }
@@ -44,12 +42,13 @@ class ScrollProgress extends React.Component {
             }
             let scrolled = document.body.scrollTop
 
-            let percentage = (scrolled / this.state.totalScrollableArea).toFixed(2) * 100
+            let percentage =
+                (scrolled / this.state.totalScrollableArea).toFixed(2) * 100
             this.refs.ScrollProgressValue.style.width = percentage + '%'
         }, 100)
 
         this.setState({
-            to: id
+            to: id,
         })
     }
 
@@ -59,23 +58,20 @@ class ScrollProgress extends React.Component {
                 <div
                     ref="ScrollProgressValue"
                     className="ScrollProgress__value"
-                    style={ { backgroundColor: this.props.backgroundColor } }>
-                </div>
+                    style={{ backgroundColor: this.props.backgroundColor }}
+                />
             </div>
-        );
+        )
     }
 }
 
-
 ScrollProgress.propTypes = {
     backgroundColor: PropTypes.string,
-    route: PropTypes.object
-};
-
+    route: PropTypes.object,
+}
 
 ScrollProgress.defaultProps = {
-    backgroundColor: '#32a5f0'
-};
+    backgroundColor: '#32a5f0',
+}
 
-
-export default ScrollProgress;
+export default ScrollProgress

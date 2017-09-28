@@ -14,15 +14,16 @@ function Page({ children, data }) {
         <div id="outer-container">
             <MobileMenu
                 data={data.site.siteMetadata}
-                className="MobileMenu" right width={250}
+                className="MobileMenu"
+                right
+                width={250}
                 pageWrapId={'page-wrap'}
-                outerContainerId={'outer-container'} />
+                outerContainerId={'outer-container'}
+            />
             <div id="page-wrap" className="Page">
                 <div className="Page__wrapper">
-                    <PageHeader data={data.site.siteMetadata}/>
-                    <PageContent>
-                        {children()}
-                    </PageContent>
+                    <PageHeader data={data.site.siteMetadata} />
+                    <PageContent>{children()}</PageContent>
                     <PageFooter />
                 </div>
             </div>
@@ -31,19 +32,19 @@ function Page({ children, data }) {
 }
 
 Page.propTypes = {
-    children: PropTypes.func.isRequired
+    children: PropTypes.func.isRequired,
 }
 
 export default Page
 
 export const pageQuery = graphql`
-query indexLayout {
-    site {
-      siteMetadata {
-        title
-        ...PageHeader
-        ...MobileMenu
-      }
+    query indexLayout {
+        site {
+            siteMetadata {
+                title
+                ...PageHeader
+                ...MobileMenu
+            }
+        }
     }
-  }
 `

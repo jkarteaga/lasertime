@@ -11,15 +11,13 @@ import phoneIcon from './img/phone-icon.png'
 let timer
 
 class PageHeader extends React.Component {
-
     state = {
-        headerIsFixed: false
+        headerIsFixed: false,
     }
 
     componentDidMount() {
         window.addEventListener('scroll', this._onScroll)
     }
-
 
     _onScroll = () => {
         timer = this.state.timer
@@ -33,14 +31,16 @@ class PageHeader extends React.Component {
                 if (!this.state.headerIsFixed) {
                     this._pageHeaderElement.classList.add('PageHeader--fixed')
                     this.setState({
-                        headerIsFixed: true
+                        headerIsFixed: true,
                     })
                 }
             } else {
                 if (this.state.headerIsFixed) {
-                    this._pageHeaderElement.classList.remove('PageHeader--fixed')
+                    this._pageHeaderElement.classList.remove(
+                        'PageHeader--fixed'
+                    )
                     this.setState({
-                        headerIsFixed: false
+                        headerIsFixed: false,
                     })
                 }
             }
@@ -49,16 +49,18 @@ class PageHeader extends React.Component {
         timer = id
     }
 
-
     render() {
         const { menuItems, fixedPhone, mobilePhone } = this.props.data
         const { leftMenuItems, rightMenuItems } = menuItems
 
         return (
             <header className="PageHeader">
-                <div className="PageHeader__wrapper" ref={(ref) => {
-                    this._pageHeaderElement = ref
-                }}>
+                <div
+                    className="PageHeader__wrapper"
+                    ref={ref => {
+                        this._pageHeaderElement = ref
+                    }}
+                >
                     <div className="PageHeader__items">
                         <div className="PageHeader__item">
                             <a href="tel:+79055881313">
@@ -79,7 +81,10 @@ class PageHeader extends React.Component {
 
                         <div className="PageHeader__item">
                             <SocialList />
-                            <HeaderMenu position="right" items={rightMenuItems} />
+                            <HeaderMenu
+                                position="right"
+                                items={rightMenuItems}
+                            />
                         </div>
                     </div>
                     <ScrollProgress backgroundColor="#EDD483" />
@@ -95,18 +100,18 @@ PageHeader.defaultProps = {}
 export default PageHeader
 
 export const pageFragment = graphql`
-  fragment PageHeader on siteMetadata {
-    fixedPhone
-    mobilePhone
-    menuItems {
-      leftMenuItems {
-        path
-        name
-      }
-      rightMenuItems {
-        path
-        name
-      }
+    fragment PageHeader on siteMetadata {
+        fixedPhone
+        mobilePhone
+        menuItems {
+            leftMenuItems {
+                path
+                name
+            }
+            rightMenuItems {
+                path
+                name
+            }
+        }
     }
-  }
 `

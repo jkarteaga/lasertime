@@ -8,7 +8,11 @@ function Actions() {
     return (
         <div>
             <h1>Акции нашей клиники</h1>
-            <ActionList items={actions} categories={categories} groups={groups} />
+            <ActionList
+                items={actions}
+                categories={categories}
+                groups={groups}
+            />
         </div>
     )
 }
@@ -17,4 +21,3 @@ Actions.propTypes = {}
 Actions.defaultProps = {}
 
 export default Actions
-

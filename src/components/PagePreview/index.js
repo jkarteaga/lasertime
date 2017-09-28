@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-
-function PagePreview({title, path}) {
+function PagePreview({ title, path }) {
     return (
         <div>
             <Link to={path}>{title}</Link>
@@ -13,7 +12,7 @@ function PagePreview({title, path}) {
 
 PagePreview.propTypes = {
     title: PropTypes.string.isRequired,
-    path: PropTypes.string.isRequired
+    path: PropTypes.string.isRequired,
 }
 PagePreview.defaultProps = {}
 

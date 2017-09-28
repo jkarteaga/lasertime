@@ -4,13 +4,18 @@ import Helmet from 'react-helmet'
 
 function ArticleList({ data }) {
     const articlesElements = data.allMarkdownRemark.edges.map(({ node }) => {
-        return <PagePreview key={node.internal.contentDigest} title={node.frontmatter.title}
-                            path={node.frontmatter.path} />
+        return (
+            <PagePreview
+                key={node.internal.contentDigest}
+                title={node.frontmatter.title}
+                path={node.frontmatter.path}
+            />
+        )
     })
 
     return (
         <div className="PageContent__wrapper">
-            <Helmet title={"Статьи"} />
+            <Helmet title={'Статьи'} />
             <h1>Статьи</h1>
             {articlesElements}
         </div>
@@ -28,19 +33,19 @@ function ArticleList({ data }) {
 export default ArticleList
 
 export const pageQuery = graphql`
-query Articles {
-  allMarkdownRemark(filter: {fields: {group:{eq:"articles"}}}) {
-   	edges {
-      node {
-        internal {
-            contentDigest
+    query Articles {
+        allMarkdownRemark(filter: { fields: { group: { eq: "articles" } } }) {
+            edges {
+                node {
+                    internal {
+                        contentDigest
+                    }
+                    frontmatter {
+                        title
+                        path
+                    }
+                }
+            }
         }
-        frontmatter {
-          title
-          path
-        }
-      }
     }
-  }
-}
 `

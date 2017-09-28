@@ -1,47 +1,50 @@
 {
-  "name": "lasertime",
-  "description": "LaserTime Clinic Site",
-  "version": "0.9",
-  "author": "Oleg Legun <oleg.legun@gmail.com>",
-  "dependencies": {
-    "gatsby": "^1.9.52",
-    "gatsby-link": "^1.6.17",
-    "gatsby-plugin-less": "^1.0.5",
-    "gatsby-plugin-react-helmet": "^1.0.5",
-    "gatsby-plugin-react-next": "^1.0.4",
-    "gatsby-plugin-sharp": "1.6.8",
-    "gatsby-remark-copy-linked-files": "1.5.7",
-    "gatsby-remark-images": "1.5.13",
-    "gatsby-remark-smartypants": "1.4.8",
-    "gatsby-source-filesystem": "^1.5.2",
-    "gatsby-transformer-remark": "^1.7.15",
-    "normalize.css": "^7.0.0",
-    "prop-types": "^15.6.0",
-    "radium": "^0.19.5",
-    "react-burger-menu": "^2.1.6",
-    "react-helmet": "^5.2.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-  },
-  "devDependencies": {
-    "babel-eslint": "^8.0.1",
-    "eslint": "^4.1.1",
-    "eslint-plugin-flowtype": "^2.39.0",
-    "eslint-config-react-app": "^2.0.1",
-    "eslint-plugin-import": "^2.6.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.1.0",
-    "gh-pages": "^1.0.0",
-    "prettier": "^1.6.1"
-  }
+    "name": "lasertime",
+    "description": "LaserTime Clinic Site",
+    "version": "0.9",
+    "author": "Oleg Legun <oleg.legun@gmail.com>",
+    "dependencies": {
+        "gatsby": "^1.9.52",
+        "gatsby-link": "^1.6.17",
+        "gatsby-plugin-less": "^1.0.5",
+        "gatsby-plugin-react-helmet": "^1.0.5",
+        "gatsby-plugin-react-next": "^1.0.4",
+        "gatsby-plugin-sharp": "1.6.8",
+        "gatsby-remark-copy-linked-files": "1.5.7",
+        "gatsby-remark-images": "1.5.13",
+        "gatsby-remark-smartypants": "1.4.8",
+        "gatsby-source-filesystem": "^1.5.2",
+        "gatsby-transformer-remark": "^1.7.15",
+        "normalize.css": "^7.0.0",
+        "prop-types": "^15.6.0",
+        "radium": "^0.19.5",
+        "react-burger-menu": "^2.1.6",
+        "react-helmet": "^5.2.0"
+    },
+    "keywords": [
+        "gatsby"
+    ],
+    "license": "MIT",
+    "main": "n/a",
+    "scripts": {
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "format": "prettier --tab-width 4 --no-semi --single-quote --trailing-comma es5 --write 'src/**/*.js'",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+        "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.0.1",
+        "eslint": "^4.1.1",
+        "eslint-config-prettier": "^2.6.0",
+        "eslint-config-react-app": "^2.0.1",
+        "eslint-plugin-flowtype": "^2.39.0",
+        "eslint-plugin-import": "^2.6.0",
+        "eslint-plugin-jsx-a11y": "^6.0.2",
+        "eslint-plugin-prettier": "^2.3.1",
+        "eslint-plugin-react": "^7.1.0",
+        "gh-pages": "^1.0.0",
+        "prettier": "^1.6.1"
+    }
 }

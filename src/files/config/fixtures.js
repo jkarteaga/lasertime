@@ -7,7 +7,7 @@ const actions = [
         image: 'laser-epilation-legs-bikini.jpg',
         price_old: 18000,
         price_new: 12000,
-        group: 2
+        group: 2,
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const actions = [
         image: 'laser-epilation-face.jpg',
         price_old: 7000,
         price_new: 3000,
-        group: 1
+        group: 1,
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const actions = [
         image: 'laser-epilation-armpits.jpg',
         price_old: 12000,
         price_new: 6000,
-        group: 6
+        group: 6,
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const actions = [
         image: 'laser-epilation-bikini.jpg',
         price_old: 10000,
         price_new: 6000,
-        group: 1
+        group: 1,
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const actions = [
         image: 'laser-epilation-hands.jpg',
         price_old: 5000,
         price_new: 4000,
-        group: 5
+        group: 5,
     },
     {
         id: 6,
@@ -57,7 +57,7 @@ const actions = [
         image: 'laser-epilation-legs.jpg',
         price_old: 20000,
         price_new: 10000,
-        group: 9
+        group: 9,
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ const actions = [
         image: 'laser-epilation-shins.jpg',
         price_old: 8000,
         price_new: 5000,
-        group: 2
+        group: 2,
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ const actions = [
         image: 'laser-epilation-thighs.jpg',
         price_old: 9000,
         price_new: 5000,
-        group: 6
+        group: 6,
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ const actions = [
         image: 'laser-epilation-breasts.jpg',
         price_old: 8000,
         price_new: 3000,
-        group: 3
+        group: 3,
     },
     {
         id: 10,
@@ -97,7 +97,7 @@ const actions = [
         image: 'laser-epilation-body.jpg',
         price_old: 39000,
         price_new: 20000,
-        group: 4
+        group: 4,
     },
     {
         id: 11,
@@ -107,7 +107,7 @@ const actions = [
         image: 'lips-augmentation.jpg',
         price_old: 15000,
         price_new: 10000,
-        group: 1
+        group: 1,
     },
     {
         id: 12,
@@ -117,7 +117,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 13000,
         price_new: 10000,
-        group: 9
+        group: 9,
     },
     {
         id: 13,
@@ -127,7 +127,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 15000,
         price_new: 10000,
-        group: 5
+        group: 5,
     },
     {
         id: 14,
@@ -137,7 +137,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 15000,
         price_new: 10000,
-        group: 8
+        group: 8,
     },
     {
         id: 15,
@@ -147,7 +147,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 15000,
         price_new: 10000,
-        group: 8
+        group: 8,
     },
     {
         id: 16,
@@ -157,7 +157,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 15000,
         price_new: 10000,
-        group: 5
+        group: 5,
     },
     {
         id: 17,
@@ -167,7 +167,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 15000,
         price_new: 10000,
-        group: 2
+        group: 2,
     },
     {
         id: 18,
@@ -177,7 +177,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 15000,
         price_new: 10000,
-        group: 5
+        group: 5,
     },
     {
         id: 19,
@@ -187,7 +187,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 4000,
         price_new: 3000,
-        group: 5
+        group: 5,
     },
     {
         id: 20,
@@ -197,7 +197,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 5000,
         price_new: 3000,
-        group: 6
+        group: 6,
     },
     {
         id: 21,
@@ -207,7 +207,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 6000,
         price_new: 3500,
-        group: 6
+        group: 6,
     },
     {
         id: 22,
@@ -217,7 +217,7 @@ const actions = [
         image: 'biorevitalization.jpg',
         price_old: 7000,
         price_new: 5500,
-        group: 9
+        group: 9,
     },
     {
         id: 23,
@@ -227,7 +227,7 @@ const actions = [
         image: 'cheekbones-augmentation.jpg',
         price_old: 35000,
         price_new: 25000,
-        group: 8
+        group: 8,
     },
     {
         id: 24,
@@ -237,7 +237,7 @@ const actions = [
         image: 'dysport.jpg',
         price_old: 120,
         price_new: 85,
-        group: 1
+        group: 1,
     },
     {
         id: 25,
@@ -247,7 +247,7 @@ const actions = [
         image: 'botox.jpg',
         price_old: 300,
         price_new: 220,
-        group: 1
+        group: 1,
     },
     {
         id: 26,
@@ -257,7 +257,7 @@ const actions = [
         image: 'hyperhydrosis.jpg',
         price_old: 25500,
         price_new: 15000,
-        group: 2
+        group: 2,
     },
     {
         id: 27,
@@ -267,7 +267,7 @@ const actions = [
         image: 'plazmolifting.jpg',
         price_old: 6000,
         price_new: 3000,
-        group: 2
+        group: 2,
     },
     {
         id: 28,
@@ -277,7 +277,7 @@ const actions = [
         image: 'plazmolifting.jpg',
         price_old: 8000,
         price_new: 6000,
-        group: 8
+        group: 8,
     },
     {
         id: 29,
@@ -287,7 +287,7 @@ const actions = [
         image: 'ipl-rejuvenation.jpg',
         price_old: 9000,
         price_new: 5000,
-        group: 2
+        group: 2,
     },
     {
         id: 30,
@@ -297,7 +297,7 @@ const actions = [
         image: 'ipl-rejuvenation.jpg',
         price_old: 11000,
         price_new: 7000,
-        group: 5
+        group: 5,
     },
     {
         id: 31,
@@ -307,7 +307,7 @@ const actions = [
         image: 'ipl-rejuvenation.jpg',
         price_old: 15000,
         price_new: 10000,
-        group: 6
+        group: 6,
     },
     {
         id: 32,
@@ -317,7 +317,7 @@ const actions = [
         image: 'facial-cleansing.jpg',
         price_old: 5000,
         price_new: 3000,
-        group: 1
+        group: 1,
     },
     {
         id: 33,
@@ -327,7 +327,7 @@ const actions = [
         image: 'facial-cleansing.jpg',
         price_old: 5000,
         price_new: 3000,
-        group: 6
+        group: 6,
     },
     {
         id: 34,
@@ -337,7 +337,7 @@ const actions = [
         image: 'peel.jpg',
         price_old: 4500,
         price_new: 2000,
-        group: 6
+        group: 6,
     },
     {
         id: 35,
@@ -347,7 +347,7 @@ const actions = [
         image: 'infini.jpg',
         price_old: 20000,
         price_new: 10000,
-        group: 9
+        group: 9,
     },
     {
         id: 36,
@@ -357,7 +357,7 @@ const actions = [
         image: 'infini.jpg',
         price_old: 25000,
         price_new: 15000,
-        group: 4
+        group: 4,
     },
     {
         id: 37,
@@ -367,7 +367,7 @@ const actions = [
         image: 'dot-rejuvenation.jpg',
         price_old: 11000,
         price_new: 6000,
-        group: 9
+        group: 9,
     },
     {
         id: 38,
@@ -377,7 +377,7 @@ const actions = [
         image: 'contour-correction.jpg',
         price_old: 40000,
         price_new: 30000,
-        group: 3
+        group: 3,
     },
     {
         id: 39,
@@ -387,7 +387,7 @@ const actions = [
         image: 'contour-correction.jpg',
         price_old: 34000,
         price_new: 27000,
-        group: 3
+        group: 3,
     },
     {
         id: 40,
@@ -397,7 +397,7 @@ const actions = [
         image: 'contour-correction.jpg',
         price_old: 30000,
         price_new: 24000,
-        group: 8
+        group: 8,
     },
     {
         id: 41,
@@ -407,7 +407,7 @@ const actions = [
         image: 'fat-burner.jpg',
         price_old: 5000,
         price_new: 3000,
-        group: 5
+        group: 5,
     },
     {
         id: 42,
@@ -417,15 +417,29 @@ const actions = [
         image: 'mesotherapy.jpg',
         price_old: 7000,
         price_new: 3500,
-        group: 5
+        group: 5,
     },
 ]
 
-const categories = ['Эпиляция', 'Инъекции', 'Аппаратная косметология', 'Ботулотоксины', 'Чистки и пилинги']
+const categories = [
+    'Эпиляция',
+    'Инъекции',
+    'Аппаратная косметология',
+    'Ботулотоксины',
+    'Чистки и пилинги',
+]
 
 const groups = {
     // Often
-    1: [[1, 2, 3], [6, 7], [10, 11, 12], [15, 16], [19, 20, 21], [24, 25], [28, 29, 30]],
+    1: [
+        [1, 2, 3],
+        [6, 7],
+        [10, 11, 12],
+        [15, 16],
+        [19, 20, 21],
+        [24, 25],
+        [28, 29, 30],
+    ],
     2: [[4, 5], [8, 9], [13, 14], [17, 18], [22, 23], [26, 27], [31]],
 
     // Seldom
@@ -440,7 +454,7 @@ const groups = {
     8: 'weekend',
 
     // Tue, Thu, Fri, Sat
-    9: 'alla'
+    9: 'alla',
 }
 
 export default { actions, categories, groups }

@@ -10,7 +10,7 @@ class MobileMenu extends React.Component {
     state = {
         render: false,
         isOpen: false,
-        timer: null
+        timer: null,
     }
 
     componentDidMount() {
@@ -23,7 +23,6 @@ class MobileMenu extends React.Component {
     }
 
     _onResize = () => {
-
         if (this.state.timer) {
             clearTimeout(this.state.timer)
         }
@@ -31,32 +30,30 @@ class MobileMenu extends React.Component {
         const id = setTimeout(() => {
             if (window && window.innerWidth > 550) {
                 this.setState({
-                    render: false
+                    render: false,
                 })
-            }
-            else {
+            } else {
                 this.setState({
-                    render: true
+                    render: true,
                 })
             }
         }, 10)
 
         this.setState({
-            timer: id
+            timer: id,
         })
     }
 
-
     render() {
         if (!this.state.render) {
-            return null;
+            return null
         }
 
         const { leftMenuItems, rightMenuItems } = this.props.data.menuItems
 
         const menuItems = leftMenuItems.concat(rightMenuItems)
 
-        const menuElements = menuItems.map((item) => {
+        const menuElements = menuItems.map(item => {
             return (
                 <RadiumLink
                     key={item.name}
@@ -69,7 +66,12 @@ class MobileMenu extends React.Component {
         })
 
         return (
-            <Menu customCrossIcon={false} isOpen={this.state.isOpen} wait={20} {...this.props}>
+            <Menu
+                customCrossIcon={false}
+                isOpen={this.state.isOpen}
+                wait={20}
+                {...this.props}
+            >
                 <div className="MobileMenu__logo">
                     <RadiumLink to={'/'}>
                         <img src={logo} />
@@ -87,16 +89,16 @@ MobileMenu.defaultProps = {}
 export default MobileMenu
 
 export const pageFragment = graphql`
-fragment MobileMenu on siteMetadata {
-  menuItems {
-    leftMenuItems {
-      path
-      name
+    fragment MobileMenu on siteMetadata {
+        menuItems {
+            leftMenuItems {
+                path
+                name
+            }
+            rightMenuItems {
+                path
+                name
+            }
+        }
     }
-    rightMenuItems {
-      path
-      name
-    }
-  }
-}
 `
