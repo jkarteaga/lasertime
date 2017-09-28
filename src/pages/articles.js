@@ -1,9 +1,9 @@
 import React from 'react'
+import PagePreview from '../components/PagePreview'
 import Helmet from 'react-helmet'
-import PagePreview from '../../components/PagePreview'
 
-function Doctors({ data }) {
-    const doctorsElements = data.allMarkdownRemark.edges.map(({ node }) => {
+function ArticleList({ data }) {
+    const articlesElements = data.allMarkdownRemark.edges.map(({ node }) => {
         return (
             <PagePreview
                 key={node.internal.contentDigest}
@@ -15,22 +15,26 @@ function Doctors({ data }) {
 
     return (
         <div className="PageContent__wrapper">
-            <Helmet title={'Врачи'} />
-            <h1>Врачи</h1>
-            {doctorsElements}
+            <Helmet title={'Статьи'} />
+            <h1>Статьи</h1>
+            {articlesElements}
         </div>
     )
 }
 
-Doctors.propTypes = {}
+// ArticleList.contextTypes = {
+//     router: PropTypes.object.isRequired
+// }
+// ArticleList.propTypes = {
+//     route: PropTypes.object.isRequired
+// }
+// ArticleList.defaultProps = {}
 
-Doctors.defaultProps = {}
-
-export default Doctors
+export default ArticleList
 
 export const pageQuery = graphql`
-    query Doctors {
-        allMarkdownRemark(filter: { fields: { group: { eq: "doctors" } } }) {
+    query Articles {
+        allMarkdownRemark(filter: { fields: { group: { eq: "articles" } } }) {
             edges {
                 node {
                     internal {

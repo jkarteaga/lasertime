@@ -1,5 +1,5 @@
 import React from 'react'
-import PagePreview from '../../components/PagePreview'
+import PagePreview from '../components/PagePreview'
 
 function PriceList({ data }) {
     const pricelistElements = data.allMarkdownRemark.edges

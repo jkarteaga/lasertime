@@ -1,6 +1,6 @@
 import React from 'react'
-import InfoPanel from '../../components/contacts/ContactsInfoPanel'
-import NavPanel from '../../components/contacts/ContactsNavPanel'
+import InfoPanel from '../components/contacts/ContactsInfoPanel'
+import NavPanel from '../components/contacts/ContactsNavPanel'
 
 function Contacts(props) {
     return (
