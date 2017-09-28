@@ -1,65 +1,65 @@
-@import "../mixins";
-@import "../variables";
+@import '../mixins';
+@import '../variables';
 
 .PageContent {
-  background-color: #fff;
-  border-bottom: 4px solid @gold;
-  line-height: @line-height;
+    background-color: #fff;
+    border-bottom: 4px solid @gold;
+    line-height: @line-height;
 }
 
 .PageContent a {
-  color: @link-color;
-  text-decoration: none;
-
-  &:visited {
     color: @link-color;
-  }
+    text-decoration: none;
 
-  &:hover {
-    color: @link-color--hover;
-  }
+    &:visited {
+        color: @link-color;
+    }
+
+    &:hover {
+        color: @link-color--hover;
+    }
 }
 
 .PageContent__wrapper {
-  padding: 0 40px 50px;
+    padding: 0 40px 50px;
 }
 
 @media @mobile-widths {
-  .PageContent {
-    font-size: @font-size--mobile;
-    min-height: calc(~"100vh - 180px");
-  }
+    .PageContent {
+        font-size: @font-size--mobile;
+        min-height: calc(~'100vh - 180px');
+    }
 
-  .PageContent__wrapper {
-    padding: 0 15px 15px;
-  }
+    .PageContent__wrapper {
+        padding: 0 15px 15px;
+    }
 }
 
 @media @mobile-wide-widths {
-  .PageContent {
-    font-size: @font-size--mobile;
-    min-height: calc(~"100vh - 195px");
-  }
+    .PageContent {
+        font-size: @font-size--mobile;
+        min-height: calc(~'100vh - 195px');
+    }
 
-  .PageContent__wrapper {
-    padding: 0 10px;
-  }
+    .PageContent__wrapper {
+        padding: 0 10px;
+    }
 }
 
 @media @tablet-widths {
-  .PageContent {
-    font-size: @font-size--tablet;
-    min-height: calc(~"100vh - 300px");
-  }
+    .PageContent {
+        font-size: @font-size--tablet;
+        min-height: calc(~'100vh - 300px');
+    }
 
-  .PageContent__wrapper {
-    padding: 0 40px 50px;
-  }
+    .PageContent__wrapper {
+        padding: 0 40px 50px;
+    }
 }
 
 @media @desktop-widths {
-  .PageContent {
-    font-size: @font-size--desktop;
-    min-height: calc(~"100vh - 385px");
-  }
+    .PageContent {
+        font-size: @font-size--desktop;
+        min-height: calc(~'100vh - 385px');
+    }
 }

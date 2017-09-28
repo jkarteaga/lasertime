@@ -1,53 +1,50 @@
-@import "./mixins";
+@import './mixins';
 
 .markdown {
-  p {
-    text-align: justify;
-  }
+    p {
+        text-align: justify;
+    }
 
-  img.float-left {
-    padding-right: 10px;
-  }
+    img.float-left {
+        padding-right: 10px;
+    }
 
-  img.float-right {
-    padding-left: 10px;
-  }
-
+    img.float-right {
+        padding-left: 10px;
+    }
 }
-
 
 .width-100,
 .width-50 {
-  width: 100%;
+    width: 100%;
 }
 
 .width-33 {
-  width: 50%;
+    width: 50%;
 }
 
 .width-25 {
-  width: 33%;
+    width: 33%;
 }
 
 .float-left {
-  float: left;
+    float: left;
 }
 
 .float-right {
-  float: right;
+    float: right;
 }
 
 @media @mobile-wide-widths {
+    .width-50 {
+        width: 50%;
+    }
 
-  .width-50 {
-    width: 50%;
-  }
+    .width-33 {
+        width: 33%;
+    }
 
-  .width-33 {
-    width: 33%;
-  }
-
-  .width-25 {
-    width: 25%;
-  }
+    .width-25 {
+        width: 25%;
+    }
 }

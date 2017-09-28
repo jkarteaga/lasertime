@@ -29,7 +29,7 @@
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
-        "format": "prettier --tab-width 4 --no-semi --single-quote --trailing-comma es5 --write 'src/**/*.js'",
+        "format": "prettier --tab-width 4 --no-semi --single-quote --trailing-comma es5 --write 'src/**/*.less'",
         "test": "echo \"Error: no test specified\" && exit 1",
         "deploy": "gatsby build --prefix-paths && gh-pages -d public",
         "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"

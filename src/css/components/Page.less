@@ -1,36 +1,33 @@
-@import "../mixins";
-@import "../variables";
+@import '../mixins';
+@import '../variables';
 
 .Page {
-  min-height: 100vh;
-  //TODO change headings font
-  //font-size: @font-size;
-  font-family: Arsenal, sans-serif;
+    min-height: 100vh;
+    //TODO change headings font
+    //font-size: @font-size;
+    font-family: Arsenal, sans-serif;
 }
 
 .Page__wrapper {
-  .container();
+    .container();
 }
 
-
 @media @mobile-wide-widths {
-
 }
 
 @media @tablet-widths {
-
 }
 
 @media @desktop-widths {
-  .Page {
-    padding-top: 50px;
-    background: lighten(@gold, 26%) url("../../files/img/Page__bg-pattern.png") 0 0 repeat;
-    /* TODO change to separate file */
-  }
+    .Page {
+        padding-top: 50px;
+        background: lighten(@gold, 26%)
+            url('../../files/img/Page__bg-pattern.png') 0 0 repeat;
+        /* TODO change to separate file */
+    }
 
-  .Page__wrapper {
-    box-shadow: @container-shadow;
-    border: 1px solid @gold;
-  }
+    .Page__wrapper {
+        box-shadow: @container-shadow;
+        border: 1px solid @gold;
+    }
 }
-

@@ -1,113 +1,111 @@
-@import "../variables";
+@import '../variables';
 
 .ContactsTabSelectPanel {
-  //outline: 1px solid red;
-  //background-color: #ccfffa;
+    //outline: 1px solid red;
+    //background-color: #ccfffa;
 
-  //font-size: 0;
-  position: absolute;
-  width: 386px;
-  height: 40px;
-  top: 10px;
-  left: 25%;
-  box-shadow: 0 2px 10px 0px #777;
+    //font-size: 0;
+    position: absolute;
+    width: 386px;
+    height: 40px;
+    top: 10px;
+    left: 25%;
+    box-shadow: 0 2px 10px 0px #777;
 
-  background-color: white;
+    background-color: white;
 
-  // Reset list style
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    // Reset list style
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .ContactsTabSelectPanel__option {
+    //font-size: @html-font-size;
+    position: relative;
+    display: block;
+    float: left;
+    height: 30px;
 
-  //font-size: @html-font-size;
-  position: relative;
-  display: block;
-  float: left;
-  height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
 
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-
-  &:nth-of-type(1) {
-    //padding-right: 30px;
-    width: 150px;
-  }
-
-  &:nth-of-type(3) {
-    float: right;
-  }
-
-  &:nth-of-type(2):after,
-  &:nth-of-type(3):after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 40px;
-    width: 1px;
-    background-color: @gray-50;
-  }
-
-  &:hover {
-    background-color: @gray-95;
-    border-bottom: 5px solid @gray-95;
-    cursor: pointer;
-  }
-
-  &--active {
-    //background-color: @gray-95;
-    border-bottom: 5px solid @ContactsTabSelectPanel__option--active-color;
-    &:hover {
-      border-bottom: 5px solid @ContactsTabSelectPanel__option--active-color;
+    &:nth-of-type(1) {
+        //padding-right: 30px;
+        width: 150px;
     }
-  }
 
-  & svg {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 5px;
-    top: 8px;
-    //fill: #fff;
-  }
+    &:nth-of-type(3) {
+        float: right;
+    }
+
+    &:nth-of-type(2):after,
+    &:nth-of-type(3):after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        width: 1px;
+        background-color: @gray-50;
+    }
+
+    &:hover {
+        background-color: @gray-95;
+        border-bottom: 5px solid @gray-95;
+        cursor: pointer;
+    }
+
+    &--active {
+        //background-color: @gray-95;
+        border-bottom: 5px solid @ContactsTabSelectPanel__option--active-color;
+        &:hover {
+            border-bottom: 5px solid
+                @ContactsTabSelectPanel__option--active-color;
+        }
+    }
+
+    & svg {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 5px;
+        top: 8px;
+        //fill: #fff;
+    }
 }
 
 .ContactsTabSelectPanelGroup {
-  //outline: 1px solid red;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background-color: white;
-  display: none;
-  height: 83px;
-  width: 180px;
-  box-shadow: 0 3px 10px 0px #777;
+    //outline: 1px solid red;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    display: none;
+    height: 83px;
+    width: 180px;
+    box-shadow: 0 3px 10px 0px #777;
 
-  // Reset list style
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    // Reset list style
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-  &--opened {
-    display: block;
-
-  }
+    &--opened {
+        display: block;
+    }
 }
 
 .ContactsTabSelectPanelGroup__option {
-  display: block;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 
-  &:hover {
-    background-color: @gray-95;
-    cursor: pointer;
-  }
-
+    &:hover {
+        background-color: @gray-95;
+        cursor: pointer;
+    }
 }

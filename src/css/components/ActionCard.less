@@ -1,199 +1,212 @@
 .Action {
-  position: relative;
-  width: 280px;
-  height: 290px;
-  background: #fff;
-  margin: 10px auto;
-  overflow: hidden;
-  box-shadow: 0 1px 5px 1px #ccc;
-
-  &__logo img {
-    height: 140px;
-    width: auto;
-    filter: blur(0) brightness(0.6);
-  }
-
-  &__title {
-    position: absolute;
-    display: table;
-    width: 250px;
-    height: 70px;
-    top: 15px;
-    left: 15px;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 1px 1px 1px #333;
-    font-size: 26px;
-    line-height: 30px;
-    //outline: 1px solid red;
-
-    & div {
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-    }
-  }
-
-  &__header::after {
-    content: '';
-    position: absolute;
-    top: 120px;
-    left: -35px;
-    width: 350px;
-    height: 100px;
-    background-color: #fff;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    clip: rect(0px, 350px, 25px, 0px);
-  }
-
-  &__badge {
-    position: absolute;
-    top: 90px;
-    left: 115px;
-    width: 60px;
-    font-size: 22px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    text-align: center;
-
-    //&--gray {
-    //  color: #fff;
-    //  //background-image: linear-gradient(to right top, #e95941, #b64434, #e95941);
-    //  background-image: linear-gradient(to right top, #e95941, #a54e4a, #e95941);
-    //  box-shadow: 0 2px 0 0 #914642;
-    //  text-shadow: 1px 1px #5e0a0c;
-    //
-    //}
-
-    &--gray {
-      color: #333;
-      //background-image: linear-gradient(to right top, #e95941, #b64434, #e95941);
-      background-image: linear-gradient(to right top, #d1d1d1, #f8f8f8, #d1d1d1);
-      box-shadow: 0 2px 0 0 #d6d6d6;
-    }
-
-    &--silver {
-      color: #fff;
-      background-image: linear-gradient(to right top, #dedede, #808080, #dedede);
-      box-shadow: 0 2px 0 0 #808080;
-      text-shadow: 1px 1px #737373;
-    }
-
-    &--gold {
-      color: #fff;
-      background-image: linear-gradient(to right top, #ffed88, #b78c51, #ffed88);
-      box-shadow: 0 2px 0 0 #ae8b47;
-      text-shadow: 1px 1px #9c8833;
-    }
-
-    border-radius: 50%;
-    font-weight: bold;
-  }
-
-  &__description {
-    display: table;
-    width: 240px;
-    height: 46px;
-    margin: 10px auto 0;
-
-    & div {
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-      font-size: 18px;
-      line-height: 20px;
-    }
-  }
-
-  &__price {
-    width: 100%;
-    //outline: 1px solid red;
-    //text-align: center;
-    font-size: 24px;
-    padding-bottom: 12px;
-    height: 40px;
-
-    &--old {
-      width: 50%;
-      float: left;
-      text-decoration: line-through;
-      color: #c3c3c3;
-      text-align: center;
-      line-height: 43px;
-
-    }
-
-    &--new {
-      width: 50%;
-      float: right;
-      //color: #3FC66C;
-      color: #333;
-      //font-weight: bold;
-      font-size: 28px;
-      text-indent: 5px;
-
-    }
-  }
-
-  &__deadline {
     position: relative;
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding-left: 60px;
-    line-height: 25px;
-    height: 25px;
-    //outline: 1px solid red;
+    width: 280px;
+    height: 290px;
+    background: #fff;
+    margin: 10px auto;
+    overflow: hidden;
+    box-shadow: 0 1px 5px 1px #ccc;
 
-    &--black {
-      color: black;
+    &__logo img {
+        height: 140px;
+        width: auto;
+        filter: blur(0) brightness(0.6);
     }
 
-    &--red {
-      color: #B7111A;
+    &__title {
+        position: absolute;
+        display: table;
+        width: 250px;
+        height: 70px;
+        top: 15px;
+        left: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 1px 1px 1px #333;
+        font-size: 26px;
+        line-height: 30px;
+        //outline: 1px solid red;
+
+        & div {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
     }
 
-    &--orange {
-      color: #cb8000;
+    &__header::after {
+        content: '';
+        position: absolute;
+        top: 120px;
+        left: -35px;
+        width: 350px;
+        height: 100px;
+        background-color: #fff;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        clip: rect(0px, 350px, 25px, 0px);
     }
 
-    & svg {
-      position: absolute;
-      top: 0;
-      left: 32px;
-      padding-top: 2px;
-      width: 20px;
-      height: 20px;
+    &__badge {
+        position: absolute;
+        top: 90px;
+        left: 115px;
+        width: 60px;
+        font-size: 22px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        text-align: center;
+
+        //&--gray {
+        //  color: #fff;
+        //  //background-image: linear-gradient(to right top, #e95941, #b64434, #e95941);
+        //  background-image: linear-gradient(to right top, #e95941, #a54e4a, #e95941);
+        //  box-shadow: 0 2px 0 0 #914642;
+        //  text-shadow: 1px 1px #5e0a0c;
+        //
+        //}
+
+        &--gray {
+            color: #333;
+            //background-image: linear-gradient(to right top, #e95941, #b64434, #e95941);
+            background-image: linear-gradient(
+                to right top,
+                #d1d1d1,
+                #f8f8f8,
+                #d1d1d1
+            );
+            box-shadow: 0 2px 0 0 #d6d6d6;
+        }
+
+        &--silver {
+            color: #fff;
+            background-image: linear-gradient(
+                to right top,
+                #dedede,
+                #808080,
+                #dedede
+            );
+            box-shadow: 0 2px 0 0 #808080;
+            text-shadow: 1px 1px #737373;
+        }
+
+        &--gold {
+            color: #fff;
+            background-image: linear-gradient(
+                to right top,
+                #ffed88,
+                #b78c51,
+                #ffed88
+            );
+            box-shadow: 0 2px 0 0 #ae8b47;
+            text-shadow: 1px 1px #9c8833;
+        }
+
+        border-radius: 50%;
+        font-weight: bold;
     }
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 1px;
-      height: 25px;
-      background: #ccc;
+    &__description {
+        display: table;
+        width: 240px;
+        height: 46px;
+        margin: 10px auto 0;
+
+        & div {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 18px;
+            line-height: 20px;
+        }
     }
-  }
 
-  &__share-icons {
-    width: 50%;
-    float: right;
-  }
+    &__price {
+        width: 100%;
+        //outline: 1px solid red;
+        //text-align: center;
+        font-size: 24px;
+        padding-bottom: 12px;
+        height: 40px;
 
-  &__share-icon {
-    float: right;
-    width: 24px;
-    height: 24px;
-    padding: 3px;
-    margin-right: 11px;
-    color: #888;
-    opacity: 0.2;
+        &--old {
+            width: 50%;
+            float: left;
+            text-decoration: line-through;
+            color: #c3c3c3;
+            text-align: center;
+            line-height: 43px;
+        }
 
-    &:hover {
-      opacity: 0.5;
+        &--new {
+            width: 50%;
+            float: right;
+            //color: #3FC66C;
+            color: #333;
+            //font-weight: bold;
+            font-size: 28px;
+            text-indent: 5px;
+        }
     }
-  }
+
+    &__deadline {
+        position: relative;
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+        padding-left: 60px;
+        line-height: 25px;
+        height: 25px;
+        //outline: 1px solid red;
+
+        &--black {
+            color: black;
+        }
+
+        &--red {
+            color: #b7111a;
+        }
+
+        &--orange {
+            color: #cb8000;
+        }
+
+        & svg {
+            position: absolute;
+            top: 0;
+            left: 32px;
+            padding-top: 2px;
+            width: 20px;
+            height: 20px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 25px;
+            background: #ccc;
+        }
+    }
+
+    &__share-icons {
+        width: 50%;
+        float: right;
+    }
+
+    &__share-icon {
+        float: right;
+        width: 24px;
+        height: 24px;
+        padding: 3px;
+        margin-right: 11px;
+        color: #888;
+        opacity: 0.2;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
 }

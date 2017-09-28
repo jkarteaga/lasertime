@@ -1,83 +1,78 @@
-@import "../variables";
-
+@import '../variables';
 
 @media @mobile-widths {
-  .PhoneList {
-    display: none;
-  }
+    .PhoneList {
+        display: none;
+    }
 }
 
 @media @mobile-wide-widths {
-  .PhoneList {
-    display: flex;
-    flex-basis: 53px;
-  }
-
-  .PhoneList__items {
-    margin: auto auto 0;
-    padding-left: 15px;
-    line-height: @line-height-phone-link--mobile-wide;
-  }
-
-  .PhoneList__item {
-    position: relative;
-  }
-
-  .PhoneList__link {
-    color: @gold-dark;
-    text-decoration: none;
-  }
-  .PhoneList__icon {
-
-    position: absolute;
-
-    &--fixed {
-      left: -35px;
-      height: @icon-phone-size--mobile-wide;
-      fill: @icon-phone-color;
+    .PhoneList {
+        display: flex;
+        flex-basis: 53px;
     }
 
-    &--mobile {
-      left: -25px;
-      height: @icon-phone-size--mobile-wide;
-      fill: @icon-phone-color;
+    .PhoneList__items {
+        margin: auto auto 0;
+        padding-left: 15px;
+        line-height: @line-height-phone-link--mobile-wide;
     }
-  }
 
-  .PhoneList__link {
-    font-size: @font-size-phone-link--mobile-wide;
-  }
+    .PhoneList__item {
+        position: relative;
+    }
 
+    .PhoneList__link {
+        color: @gold-dark;
+        text-decoration: none;
+    }
+    .PhoneList__icon {
+        position: absolute;
+
+        &--fixed {
+            left: -35px;
+            height: @icon-phone-size--mobile-wide;
+            fill: @icon-phone-color;
+        }
+
+        &--mobile {
+            left: -25px;
+            height: @icon-phone-size--mobile-wide;
+            fill: @icon-phone-color;
+        }
+    }
+
+    .PhoneList__link {
+        font-size: @font-size-phone-link--mobile-wide;
+    }
 }
 
-
 @media @tablet-widths {
-  .PhoneList {
-    flex-basis: 70px;
-  }
-
-  .PhoneList__items {
-    line-height: @line-height-phone-link--desktop;
-  }
-
-  .PhoneList__icon {
-    position: absolute;
-
-    &--fixed {
-      top: 2px;
-      left: -40px;
-      height: @icon-phone-size--desktop;
+    .PhoneList {
+        flex-basis: 70px;
     }
 
-    &--mobile {
-      top: 2px;
-      left: -30px;
-      height: @icon-phone-size--desktop;
+    .PhoneList__items {
+        line-height: @line-height-phone-link--desktop;
     }
-  }
 
-  .PhoneList__link {
-    font-size: @font-size-phone-link--desktop;
-  }
+    .PhoneList__icon {
+        position: absolute;
 
+        &--fixed {
+            top: 2px;
+            left: -40px;
+            height: @icon-phone-size--desktop;
+        }
+
+        &--mobile {
+            top: 2px;
+            left: -30px;
+            height: @icon-phone-size--desktop;
+        }
+    }
+
+    .PhoneList__link {
+        font-size: @font-size-phone-link--desktop;
+    }
 }
