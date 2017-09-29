@@ -5,7 +5,7 @@ description:
 keywords: [""]
 ---
 
-![](./gvaramiya-aleksey.jpg){.width-50 .float-right}
+![](./gvaramiya-aleksey.jpg) {.width-50 .float-right}
 
 Гварамия Алексей Алекович -- пластический хирург, врач высшей категории.
 
