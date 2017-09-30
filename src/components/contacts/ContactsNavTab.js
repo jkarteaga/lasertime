@@ -1,6 +1,6 @@
-import React, { Component, PropTypes } from 'react'
+import React from 'react'
 
-class ContactsGMapTab extends Component {
+class ContactsGMapTab extends React.Component {
     render() {
         return <div>GMapTab</div>
     }
