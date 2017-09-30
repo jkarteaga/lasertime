@@ -1,12 +1,12 @@
 import React from 'react'
 
-class ContactsGMapTab extends React.Component {
+class ContactsNavTab extends React.Component {
     render() {
-        return <div>GMapTab</div>
+        return <div>NavTab</div>
     }
 }
 
-ContactsGMapTab.propTypes = {}
-ContactsGMapTab.defaultProps = {}
+ContactsNavTab.propTypes = {}
+ContactsNavTab.defaultProps = {}
 
-export default ContactsGMapTab
+export default ContactsNavTab

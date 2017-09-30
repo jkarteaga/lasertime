@@ -1,6 +1,6 @@
 import React from 'react'
 import ActionList from '../components/ActionList'
-import fixtures from '../files/config/fixtures'
+import fixtures from '../files/config/actions-fixtures'
 
 function Actions() {
     const { actions, categories, groups } = fixtures
