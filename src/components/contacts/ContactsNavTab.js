@@ -1,8 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { YMaps, Map, Placemark } from 'react-yandex-maps'
+import {
+    YMaps,
+    Map,
+    Placemark,
+    FullscreenControl,
+    ZoomControl,
+    GeoObject,
+} from 'react-yandex-maps'
 
-const mapState = { center: [55.767124, 37.632857], zoom: 17 }
+const mapState = {
+    center: [55.767124, 37.632857],
+    zoom: 17,
+    controls: [],
+}
 
 class ContactsNavTab extends React.Component {
     render() {
@@ -13,9 +24,31 @@ class ContactsNavTab extends React.Component {
                     width={this.props.parentNode.offsetWidth}
                     height={this.props.parentNode.offsetHeight}
                 >
+                    <FullscreenControl />
+                    <ZoomControl />
+                    <GeoObject
+                        // The geometry description.
+                        geometry={{
+                            type: 'Point',
+                            coordinates: [55.767124, 37.632857],
+                        }}
+                        // Properties.
+                        properties={{
+                            // The placemark content.
+                            iconContent: 'Клиника "Знак Качества"',
+                            hintContent: '',
+                        }}
+                        // Options.
+                        options={{
+                            // The placemark's icon will stretch to fit its contents.
+                            preset: 'islands#orangeStretchyIcon',
+                            // The placemark can be moved.
+                            draggable: true,
+                        }}
+                    />
                     {/*<Placemark*/}
                     {/*geometry={{*/}
-                    {/*coordinates: [55.751574, 37.573856],*/}
+                    {/*coordinates: [55.767124, 37.632857],*/}
                     {/*}}*/}
                     {/*properties={{*/}
                     {/*hintContent: 'Собственный значок метки',*/}

@@ -1,7 +1,9 @@
 import React, { PropTypes } from 'react'
 
 function ContactsTaxiTab(props) {
-    return <div>TaxiTab</div>
+    return (
+        <div style={{ marginTop: '200px', textAlign: 'center' }}>Скоро...</div>
+    )
 }
 
 ContactsTaxiTab.propTypes = {}
