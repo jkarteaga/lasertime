@@ -8,19 +8,19 @@ const ContactsTabSelectPanel = ({ activeMode, changeMode }) => {
         <ul className="ContactsTabSelectPanel">
             <li
                 className={`ContactsTabSelectPanel__option ${activeMode ===
-                'svgmap'
+                'metro'
                     ? activeClassName
                     : ''}`}
-                onClick={() => changeMode('svgmap')}
+                onClick={() => changeMode('metro')}
             >
                 от метро
             </li>
             <li
                 className={`ContactsTabSelectPanel__option ${activeMode ===
-                'navmap'
+                'nav'
                     ? activeClassName
                     : ''}`}
-                onClick={() => changeMode('navmap')}
+                onClick={() => changeMode('nav')}
             >
                 на машине
             </li>

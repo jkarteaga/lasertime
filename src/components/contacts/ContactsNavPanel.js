@@ -1,19 +1,19 @@
 import React from 'react'
 import TabSelectPanel from './ContactsTabSelectPanel'
-import SVGMapTab from './ContactsSVGMapTab'
+import SVGMapTab from './ContactsMetroTab'
 import GMapTab from './ContactsNavTab'
 import TaxiTab from './ContactsTaxiTab'
 
 class ContactsNavPanel extends React.Component {
     state = {
-        display: 'svgmap', // svgmap, nav, taxi
+        display: 'metro', // metro, nav, taxi
     }
 
     getActiveTabElement = mode => {
         switch (mode) {
-            case 'svgmap':
+            case 'metro':
                 return <SVGMapTab />
-            case 'navmap':
+            case 'nav':
                 return <GMapTab />
             case 'taxi':
                 return <TaxiTab />
