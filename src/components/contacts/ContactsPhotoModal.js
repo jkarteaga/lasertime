@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { PhotoSwipe } from 'react-photoswipe'
 import 'react-photoswipe/lib/photoswipe.css'
-import images from '../../../files/config/contacts-modal-images'
+import images from '../../files/config/contacts-modal-images'
 
 let options = {
     //http://photoswipe.com/documentation/options.html
