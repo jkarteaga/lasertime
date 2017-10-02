@@ -2,17 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { PhotoSwipe } from 'react-photoswipe'
 import 'react-photoswipe/lib/photoswipe.css'
-import images from '../../files/config/contacts-modal-images'
 
 let options = {
     //http://photoswipe.com/documentation/options.html
 }
 
-const ContactsPhotoModal = ({ display, toggleClose }) => {
+const ContactsPhotoModal = ({ isOpen, toggleClose, images }) => {
     return (
         <div>
             <PhotoSwipe
-                isOpen={display}
+                isOpen={isOpen}
                 items={images}
                 options={options}
                 onClose={toggleClose}
@@ -21,7 +20,11 @@ const ContactsPhotoModal = ({ display, toggleClose }) => {
     )
 }
 
-ContactsPhotoModal.propTypes = {}
+ContactsPhotoModal.propTypes = {
+    isOpen: PropTypes.bool.isRequired,
+    toggleClose: PropTypes.func.isRequired,
+    images: PropTypes.array.isRequired
+}
 ContactsPhotoModal.defaultProps = {}
 
 export default ContactsPhotoModal

@@ -1,4 +1,4 @@
-const images = [
+export const ImagesPath1 = [
     {
         src: 'http://lorempixel.com/1200/900',
         w: 1200,
@@ -48,5 +48,18 @@ const images = [
         caption: 'Hello!!!',
     },
 ]
-
-export default images
+export const ImagesPath2 = [
+    {
+        src: 'http://lorempixel.com/1200/900',
+        w: 200,
+        h: 600,
+        title: 'Image 1',
+    },
+    {
+        src: 'http://lorempixel.com/1200/900',
+        w: 200,
+        h: 600,
+        title: 'Image 2',
+        caption: 'Hello!!!',
+    },
+]
