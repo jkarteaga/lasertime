@@ -67,6 +67,7 @@ table {
 @import './components/Contacts';
 @import './components/ContactsInfoPanel';
 @import './components/ContactsNavPanel';
+@import './components/ContactsSVGMap';
 @import './components/ContactsTabSelectPanel';
 @import './components/HeaderLogo';
 @import './components/HeaderMenu';
@@ -89,40 +90,3 @@ table {
 /*----------------------------------------------------------------------------*/
 
 //* {  background: #000 !important;color: #0f0 !important;outline: solid #f00 1px !important;}
-
-.ContactsSVGMap__path {
-    stroke-dasharray: 20;
-    animation: path infinite 30s linear;
-}
-
-.ContactsSVGMap__path--top {
-    stroke-dashoffset: 1000;
-    
-}
-
-.ContactsSVGMap__path--bottom {
-    stroke-dashoffset: 700;
-}
-
-.ContactsSVGMap__clinic-building {
-    animation: 2s ease both infinite blink;
-}
-
-
-@keyframes blink {
-    0% {
-        fill: #F5B80F;
-    }
-    50% {
-        fill: #cb2f2f;
-    }
-    100% {
-        fill: #F5B80F;
-    }
-}
-
-@keyframes path {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
