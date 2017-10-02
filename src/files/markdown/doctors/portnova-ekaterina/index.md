@@ -5,7 +5,7 @@ description:
 keywords: [""]
 ---
 
-![](./portnova-ekaterina.jpg){.width-50 .float-right}
+<img class="width-50 float-right" src="/img/doctors/portnova-ekaterina.jpg" title="Портнова Екатерина"/>
 
 Ведущий специалист клиники "Знак Качества" по световым и лазерным
 технологиям. В основе ее работы лежат принципы сочетания комфорта и

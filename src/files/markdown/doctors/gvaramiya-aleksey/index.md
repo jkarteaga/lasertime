@@ -5,7 +5,8 @@ description:
 keywords: [""]
 ---
 
-![](./gvaramiya-aleksey.jpg) {.width-50 .float-right}
+<img class="width-50 float-right" src="/img/doctors/gvaramiya-aleksey.jpg" title="Портнова Екатерина"/>
+
 
 Гварамия Алексей Алекович -- пластический хирург, врач высшей категории.
 
