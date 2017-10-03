@@ -1,15 +1,12 @@
 import React from 'react'
 import ContactsSVGMap from './ContactsSVGMap'
-import ContactsPhotoModal from './ContactsPhotoModal'
-import {
-    ImagesPath1,
-    ImagesPath2,
-} from '../../files/config/contacts-modal-images'
+import ContactsPhotoModal from '../PhotoModal'
+import PathImages from '../../files/config/contacts-path-images'
 
 class ContactsMetroTab extends React.Component {
     state = {
         photoModalIsOpen: false,
-        imagesPath: 1,
+        path: 'top',
     }
 
     handleModalClose = () => {
@@ -17,24 +14,19 @@ class ContactsMetroTab extends React.Component {
             this.setState({ photoModalIsOpen: false })
     }
 
-    handleModalOpen = imagesPath => {
+    handleModalOpen = path => {
         this.state.photoModalIsOpen ||
-            this.setState({ photoModalIsOpen: true, imagesPath })
+            this.setState({ photoModalIsOpen: true, path: path })
     }
 
     render() {
         return (
             <div>
                 <ContactsSVGMap toggleModalOpen={this.handleModalOpen} />
-                {/*<button onClick={this.handleModalOpen}>*/}
-                {/*Проход по фотографиям*/}
-                {/*</button>*/}
                 <ContactsPhotoModal
                     isOpen={this.state.photoModalIsOpen}
                     toggleClose={this.handleModalClose}
-                    images={
-                        this.state.imagesPath === 1 ? ImagesPath1 : ImagesPath2
-                    }
+                    images={PathImages[this.state.path]}
                 />
             </div>
         )

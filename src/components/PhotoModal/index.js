@@ -23,7 +23,7 @@ const ContactsPhotoModal = ({ isOpen, toggleClose, images }) => {
 ContactsPhotoModal.propTypes = {
     isOpen: PropTypes.bool.isRequired,
     toggleClose: PropTypes.func.isRequired,
-    images: PropTypes.array.isRequired
+    images: PropTypes.array.isRequired,
 }
 ContactsPhotoModal.defaultProps = {}
 
