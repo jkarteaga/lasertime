@@ -1,13 +1,69 @@
-.ContactsInfoPanel {
-    outline: 1px solid red;
+@import '../variables';
 
+
+
+.ContactsInfoPanel {
     display: flex;
     flex-direction: column;
-
-    flex-basis: 200px;
+    
 }
 
 .ContactsInfoPanel__item {
+    flex-basis: 100px;
+
     outline: 1px solid red;
-    flex-basis: 150px;
+}
+
+
+
+.ContactsInfoPanel__icon {
+    fill: @gold-dark;
+    width: 40px;
+    
+    &--phone {
+        
+    }
+    &--address {
+
+    }
+    &--email {
+
+    }
+}
+
+
+
+@media @mobile-widths {
+
+}
+
+@media @mobile-wide-widths {
+    .ContactsInfoPanel {
+        flex-direction: row;
+        
+        // As item
+    }
+
+    .ContactsInfoPanel__item {
+        flex-basis: 33%;
+        flex-grow: 1;
+    }
+}
+
+@media @tablet-widths {
+    .ContactsInfoPanel {
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 130px;
+
+
+    }
+
+    .ContactsInfoPanel__item {
+    }
+}
+
+@media @desktop-widths {
+    
 }

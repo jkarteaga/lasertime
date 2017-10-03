@@ -13,7 +13,7 @@ const ContactsTabSelectPanel = ({ activeMode, changeMode }) => {
                     : ''}`}
                 onClick={() => changeMode('metro')}
             >
-                пешком от метро
+                на метро
             </li>
             <li
                 className={`ContactsTabSelectPanel__option ${activeMode ===

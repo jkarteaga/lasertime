@@ -6,17 +6,7 @@ import PathImages from '../../files/config/contacts-path-images'
 class ContactsMetroTab extends React.Component {
     state = {
         photoModalIsOpen: false,
-        path: 'top',
-    }
-
-    handleModalClose = () => {
-        this.state.photoModalIsOpen &&
-            this.setState({ photoModalIsOpen: false })
-    }
-
-    handleModalOpen = path => {
-        this.state.photoModalIsOpen ||
-            this.setState({ photoModalIsOpen: true, path: path })
+        path: 'bottom',
     }
 
     render() {
@@ -30,6 +20,16 @@ class ContactsMetroTab extends React.Component {
                 />
             </div>
         )
+    }
+
+    handleModalClose = () => {
+        this.state.photoModalIsOpen &&
+            this.setState({ photoModalIsOpen: false })
+    }
+
+    handleModalOpen = path => {
+        this.state.photoModalIsOpen ||
+            this.setState({ photoModalIsOpen: true, path: path })
     }
 }
 
