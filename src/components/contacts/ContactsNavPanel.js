@@ -14,7 +14,7 @@ class ContactsNavPanel extends React.Component {
             case 'metro':
                 return <SVGMapTab />
             case 'nav':
-                return <GMapTab parentNode={this.ParentTab}/>
+                return <GMapTab parentNode={this.ParentTab} />
             case 'taxi':
                 return <TaxiTab />
             default:
@@ -34,12 +34,17 @@ class ContactsNavPanel extends React.Component {
         const activeTabElement = this.getActiveTabElement(this.state.display)
 
         return (
-            <div className="ContactsNavPanel" ref={(ref) => { this.ParentTab = ref }}>
-                {activeTabElement}
+            <div
+                className="ContactsNavPanel"
+                ref={ref => {
+                    this.ParentTab = ref
+                }}
+            >
                 <TabSelectPanel
                     activeMode={this.state.display}
                     changeMode={this.toggleChangeMode}
                 />
+                {activeTabElement}
             </div>
         )
     }
