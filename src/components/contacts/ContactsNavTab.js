@@ -7,6 +7,7 @@ import {
     FullscreenControl,
     ZoomControl,
     GeoObject,
+    TrafficControl,
 } from 'react-yandex-maps'
 
 const mapState = {
@@ -22,10 +23,11 @@ class ContactsNavTab extends React.Component {
                 <Map
                     state={mapState}
                     width={this.props.parentNode.offsetWidth}
-                    height={this.props.parentNode.offsetHeight}
+                    height={400}
                 >
                     <FullscreenControl />
                     <ZoomControl />
+                    <TrafficControl />
                     <GeoObject
                         // The geometry description.
                         geometry={{
