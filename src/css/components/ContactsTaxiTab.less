@@ -8,6 +8,11 @@
 
     
     background-color: @gray-95;
+    
+    // test for scroll
+    //flex-direction: row;
+    //overflow: scroll;
+    //width: 700px;
 }
 
 .ContactsTaxiTab__item {
@@ -25,6 +30,10 @@
     background-color: white;
     box-shadow: 0 0 15px 0 @gray-80;
     padding: 10px 10px 15px;
+    
+    // test for scroll
+    //margin: 10px;
+    //flex-basis: 400px;
     
 }
 
@@ -73,5 +82,13 @@
         flex-direction: row;
         overflow: scroll;
         flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-top: 50px;
+    }
+
+    .ContactsTaxiTab__item {
+        
+        flex: 0 0 auto;
+        margin: 10px;
     }
 }
