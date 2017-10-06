@@ -1,6 +1,97 @@
 const PathImages = {
     top: [
         {
+            src: '/lasertime/img/contacts/path-1.jpg',
+            w: 1000,
+            h: 756,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-2.jpg',
+            w: 1000,
+            h: 750,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-3.jpg',
+            w: 1000,
+            h: 750,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-4.jpg',
+            w: 1000,
+            h: 750,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-5.jpg',
+            w: 1000,
+            h: 750,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-6.jpg',
+            w: 1000,
+            h: 750,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-7.jpg',
+            w: 1000,
+            h: 825,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-8.jpg',
+            w: 1000,
+            h: 742,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-9.jpg',
+            w: 1000,
+            h: 1000,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-5.jpg',
+            w: 1000,
+            h: 1000,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-5.jpg',
+            w: 1000,
+            h: 1000,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-5.jpg',
+            w: 1000,
+            h: 1000,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-5.jpg',
+            w: 1000,
+            h: 1000,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-5.jpg',
+            w: 1000,
+            h: 1000,
+            title: 'Image 1',
+        },
+        {
+            src: '/lasertime/img/contacts/path-5.jpg',
+            w: 1000,
+            h: 1000,
+            title: 'Image 1',
+        },
+
+        {
             src: '/lasertime/img/contacts/top-1.jpg',
             w: 1000,
             h: 1000,
