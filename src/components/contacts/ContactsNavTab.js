@@ -23,7 +23,7 @@ class ContactsNavTab extends React.Component {
                 <Map
                     state={mapState}
                     width={this.props.parentNode.offsetWidth}
-                    height={400}
+                    height={this.props.parentNode.offsetHeight - 40}
                 >
                     <FullscreenControl />
                     <ZoomControl />

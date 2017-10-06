@@ -6,7 +6,7 @@ import TaxiTab from './ContactsTaxiTab'
 
 class ContactsNavPanel extends React.Component {
     state = {
-        display: 'taxi', // metro, nav, taxi
+        display: 'metro', // metro, nav, taxi
     }
 
     getActiveTabElement = mode => {

@@ -4,15 +4,18 @@
 .ContactsTaxiTab {
     // Flex Container
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
 
-    
+
+    overflow: scroll;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
     background-color: @gray-95;
-    
-    // test for scroll
-    //flex-direction: row;
-    //overflow: scroll;
-    //width: 700px;
+
+
 }
 
 .ContactsTaxiTab__item {
@@ -25,15 +28,14 @@
     
     
     // Flex Item
-    margin: 10px auto;
+    margin: 10px;
     
     background-color: white;
     box-shadow: 0 0 15px 0 @gray-80;
     padding: 10px 10px 15px;
     
     // test for scroll
-    //margin: 10px;
-    //flex-basis: 400px;
+    flex: 0 0 auto;
     
 }
 
@@ -41,7 +43,7 @@
     
     // Flex Item
     flex-basis: 130px;
-    width: 180px;
+    width: 160px;
 
 
     margin: 0 auto;
@@ -83,12 +85,29 @@
         overflow: scroll;
         flex-wrap: nowrap;
         overflow-x: auto;
-        padding-top: 50px;
+        //padding-top: 50px;
+        
     }
 
     .ContactsTaxiTab__item {
         
         flex: 0 0 auto;
         margin: 10px;
+    }
+}
+
+@media @tablet-widths {
+    .ContactsTaxiTab {
+        justify-content: space-around;
+        align-items: center;
+        height: 435px;
+    }
+    .ContactsTaxiTab__item {
+        width: 170px;
+        //margin: 10px auto;
+    }
+    
+    .ContactsTaxiTab__logo {
+        width: 120px;
     }
 }
