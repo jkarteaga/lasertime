@@ -5,7 +5,7 @@ description:
 keywords: [""]
 ---
 
-<img class="width-50 float-right" src="/img/doctors/dolidze-tatiana.jpg" title="Портнова Екатерина"/>
+<img class="width-50 float-right" src="/img/doctors/dolidze-tatiana.jpg" title="Долидзе Татьяна"/>
 
 **Помощник врача-косметолога**
 

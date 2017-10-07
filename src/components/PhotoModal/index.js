@@ -4,7 +4,10 @@ import { PhotoSwipe } from 'react-photoswipe'
 import 'react-photoswipe/lib/photoswipe.css'
 
 let options = {
-    //http://photoswipe.com/documentation/options.html
+    // showHideOpacity: true,
+    bgOpacity: 0.9,
+    fullscreenEl: false,
+    shareEl: false,
 }
 
 const ContactsPhotoModal = ({ isOpen, toggleClose, images }) => {

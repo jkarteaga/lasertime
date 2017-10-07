@@ -4,19 +4,19 @@ const PathImages = {
             src: '/lasertime/img/contacts/path-common-1.jpg',
             w: 1000,
             h: 756,
-            title: 'Image 1',
+            title: 'Выйти из 1-го вагона из центра',
         },
         {
             src: '/lasertime/img/contacts/path-common-2.jpg',
             w: 1000,
             h: 750,
-            title: 'Image 1',
+            title: '2',
         },
         {
             src: '/lasertime/img/contacts/path-common-3.jpg',
             w: 1000,
             h: 750,
-            title: 'Image 1',
+            title: '3',
         },
         {
             src: '/lasertime/img/contacts/path-common-4.jpg',
