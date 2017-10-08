@@ -1,8 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-// import { siteMetadata as config } from '../gatsby-config'
-
 const isProduction = process.env.NODE_ENV === 'production'
 //TODO add opengraph
 // https://github.com/oliverbenns/oliverbenns.com/blob/master/src/html.jsx
@@ -29,7 +27,7 @@ const Html = ({ body, headComponents, postBodyComponents }) => {
                     content="width=device-width, initial-scale=1"
                 />
                 <link
-                    href="https://fonts.googleapis.com/css?family=Arsenal"
+                    href="https://fonts.googleapis.com/css?family=Arsenal&amp;subset=cyrillic-ext"
                     rel="stylesheet"
                 />
 

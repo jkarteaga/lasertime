@@ -6,17 +6,13 @@ class IndexPage extends React.Component {
     render() {
         return (
             <div className="PageContent__wrapper">
-                <Helmet
-                    title={this.props.data.site.siteMetadata.title}
-                    meta={[
-                        {
-                            name: 'description',
-                            content:
-                                'Добро пожаловать в клинику красоты "Знак Качества"! Мы качественно проводим процедуры фракционного лазерного омоложения, лазерной эпиляции, пластической хирургии.',
-                        },
-                        { name: 'keywords', content: 'Знак Качества' },
-                    ]}
-                />
+                <Helmet>
+                    <title>{this.props.data.site.siteMetadata.title}</title>
+                    <meta
+                        name="description"
+                        content="Добро пожаловать в клинику красоты &quot;Знак Качества&quot;! Мы качественно проводим процедуры фракционного лазерного омоложения, лазерной эпиляции, пластической хирургии."
+                    />
+                </Helmet>
                 <br />
                 <p>
                     Медицинский центр «Знак качества» - команда молодых,
