@@ -13,7 +13,7 @@ function Page({ children, data }) {
     return (
         <div id="outer-container">
             <MobileMenu
-                data={data.site.siteMetadata}
+                data={data}
                 className="MobileMenu"
                 right
                 width={250}
@@ -22,7 +22,7 @@ function Page({ children, data }) {
             />
             <div id="page-wrap" className="Page">
                 <div className="Page__wrapper">
-                    <PageHeader data={data.site.siteMetadata} />
+                    <PageHeader data={data} />
                     <PageContent>{children()}</PageContent>
                     <PageFooter />
                 </div>
@@ -39,11 +39,12 @@ export default Page
 
 export const pageQuery = graphql`
     query indexLayout {
+        ...MobileMenu
+        ...PageHeader
         site {
             siteMetadata {
                 title
-                ...PageHeader
-                ...MobileMenu
+                
             }
         }
     }

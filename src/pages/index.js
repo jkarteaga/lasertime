@@ -10,7 +10,11 @@ class IndexPage extends React.Component {
                     <title>{this.props.data.site.siteMetadata.title}</title>
                     <meta
                         name="description"
-                        content="Добро пожаловать в клинику красоты &quot;Знак Качества&quot;! Мы качественно проводим процедуры фракционного лазерного омоложения, лазерной эпиляции, пластической хирургии."
+                        content={this.props.data.site.siteMetadata.description}
+                    />
+                    <meta
+                        name="keywords"
+                        content={this.props.data.site.siteMetadata.keywords}
                     />
                 </Helmet>
                 <br />
@@ -24,8 +28,8 @@ class IndexPage extends React.Component {
                 <img
                     style={{ width: '100%' }}
                     src={mainCollage}
-                    alt="Клиника Красоты Знак Качества"
-                    title="Клиника Красоты Знак Качества"
+                    alt="Клиника красоты 'Знак Качества'"
+                    title="Фотографии клиники 'Знак Качества'"
                 />
 
                 <p>
@@ -126,6 +130,8 @@ export const pageQuery = graphql`
         site {
             siteMetadata {
                 title
+                description
+                keywords
             }
         }
     }

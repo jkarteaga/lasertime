@@ -19,38 +19,12 @@ class PageHeader extends React.Component {
         window.addEventListener('scroll', this._onScroll)
     }
 
-    _onScroll = () => {
-        timer = this.state.timer
-        if (timer) {
-            clearTimeout(timer)
-            timer = null
-        }
-
-        const id = setTimeout(() => {
-            if (document.body.scrollTop > 49) {
-                if (!this.state.headerIsFixed) {
-                    this._pageHeaderElement.classList.add('PageHeader--fixed')
-                    this.setState({
-                        headerIsFixed: true,
-                    })
-                }
-            } else {
-                if (this.state.headerIsFixed) {
-                    this._pageHeaderElement.classList.remove(
-                        'PageHeader--fixed'
-                    )
-                    this.setState({
-                        headerIsFixed: false,
-                    })
-                }
-            }
-        }, 50)
-
-        timer = id
-    }
-
     render() {
-        const { menuItems, fixedPhone, mobilePhone } = this.props.data
+        const {
+            menuItems,
+            fixedPhone,
+            mobilePhone,
+        } = this.props.data.site.siteMetadata
         const { leftMenuItems, rightMenuItems } = menuItems
 
         return (
@@ -92,6 +66,36 @@ class PageHeader extends React.Component {
             </header>
         )
     }
+
+    _onScroll = () => {
+        timer = this.state.timer
+        if (timer) {
+            clearTimeout(timer)
+            timer = null
+        }
+
+        const id = setTimeout(() => {
+            if (document.body.scrollTop > 49) {
+                if (!this.state.headerIsFixed) {
+                    this._pageHeaderElement.classList.add('PageHeader--fixed')
+                    this.setState({
+                        headerIsFixed: true,
+                    })
+                }
+            } else {
+                if (this.state.headerIsFixed) {
+                    this._pageHeaderElement.classList.remove(
+                        'PageHeader--fixed'
+                    )
+                    this.setState({
+                        headerIsFixed: false,
+                    })
+                }
+            }
+        }, 50)
+
+        timer = id
+    }
 }
 
 PageHeader.propTypes = {}
@@ -100,17 +104,21 @@ PageHeader.defaultProps = {}
 export default PageHeader
 
 export const pageFragment = graphql`
-    fragment PageHeader on siteMetadata {
-        fixedPhone
-        mobilePhone
-        menuItems {
-            leftMenuItems {
-                path
-                name
-            }
-            rightMenuItems {
-                path
-                name
+    fragment PageHeader on RootQueryType {
+        site {
+            siteMetadata {
+                fixedPhone
+                mobilePhone
+                menuItems {
+                    leftMenuItems {
+                        path
+                        name
+                    }
+                    rightMenuItems {
+                        path
+                        name
+                    }
+                }
             }
         }
     }
