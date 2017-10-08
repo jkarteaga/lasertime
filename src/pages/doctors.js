@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Helmet from '../components/HelmetWrapper'
 import PagePreview from '../components/PagePreview'
 
 function Doctors({ data }) {
@@ -15,7 +15,7 @@ function Doctors({ data }) {
 
     return (
         <div className="PageContent__wrapper">
-            <Helmet title={'Врачи'} />
+            <Helmet data={data} title="Врачи" description="" />
             <h1>Врачи</h1>
             {doctorsElements}
         </div>
@@ -30,6 +30,7 @@ export default Doctors
 
 export const pageQuery = graphql`
     query Doctors {
+        ...Helmet
         allMarkdownRemark(filter: { fields: { group: { eq: "doctors" } } }) {
             edges {
                 node {

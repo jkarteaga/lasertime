@@ -9,7 +9,7 @@ function PhoneList({ items }) {
         return id ? (
             <a
                 key={phone}
-                href={`whatsapp://send?text=Здравствуйте, Алла.&phone=${phone}`}
+                href={`whatsapp://send?text=Здравствуйте,&nbsp;Алла.&phone=${phone}`}
                 className="PhoneList__link"
             >
                 <div key={phone} className="PhoneList__item">

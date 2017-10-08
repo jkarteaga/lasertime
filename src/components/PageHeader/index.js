@@ -39,7 +39,7 @@ class PageHeader extends React.Component {
                         <div className="PageHeader__item">
                             <a href="tel:+79055881313">
                                 <div className="PageHeader__phone-icon">
-                                    <img src={phoneIcon} />
+                                    <img src={phoneIcon} alt="телефон" />
                                 </div>
                             </a>
                             <PhoneList items={[fixedPhone, mobilePhone]} />

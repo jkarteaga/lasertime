@@ -7,12 +7,13 @@ function HelmetWrapper({ data, title, description, keywords }) {
         <Helmet>
             <title>{title + ' | ' + data.site.siteMetadata.title}</title>
             <meta name="description" content={description} />
-            <meta name="keywords" content={keywords} />
+            {keywords && <meta name="keywords" content={keywords} />}
         </Helmet>
     )
 }
 
 HelmetWrapper.propTypes = {
+    data: PropTypes.object.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     keywords: PropTypes.string,

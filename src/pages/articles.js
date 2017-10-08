@@ -1,6 +1,6 @@
 import React from 'react'
 import PagePreview from '../components/PagePreview'
-import Helmet from 'react-helmet'
+import Helmet from '../components/HelmetWrapper'
 
 function ArticleList({ data }) {
     const articlesElements = data.allMarkdownRemark.edges.map(({ node }) => {
@@ -15,7 +15,7 @@ function ArticleList({ data }) {
 
     return (
         <div className="PageContent__wrapper">
-            <Helmet title={'Статьи'} />
+            <Helmet data={data} title="Статьи" description="" />
             <h1>Статьи</h1>
             {articlesElements}
         </div>
@@ -34,6 +34,7 @@ export default ArticleList
 
 export const pageQuery = graphql`
     query Articles {
+        ...Helmet
         allMarkdownRemark(filter: { fields: { group: { eq: "articles" } } }) {
             edges {
                 node {

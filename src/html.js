@@ -14,7 +14,7 @@ if (isProduction) {
     }
 }
 
-const Html = ({ body, headComponents, postBodyComponents }) => {
+const HTML = ({ body, headComponents, postBodyComponents }) => {
     const helmet = Helmet.renderStatic()
 
     return (
@@ -55,4 +55,4 @@ const Html = ({ body, headComponents, postBodyComponents }) => {
     )
 }
 
-export default Html
+export default HTML

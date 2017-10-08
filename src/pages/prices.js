@@ -26,11 +26,7 @@ function PriceList({ data }) {
 
     return (
         <div className="PageContent__wrapper">
-            <Helmet
-                data={data}
-                title="Цены на процедуры"
-                description="Описание цен на странице"
-            />
+            <Helmet data={data} title="Цены" description="" keywords="" />
             <h1>Цены</h1>
             <p className="">
                 Внимание, цены на сайте представлены только для предварительного
