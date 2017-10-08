@@ -7,7 +7,7 @@ keywords: [""]
 
 ### Главный врач медицинского кабинета "Знак качества"
 
-<img class="width-50 float-right" src="/img/doctors/legun-alla.jpg" title="Легун Алла"/>
+<img class="width-50 float-right" src="/img/doctors/legun-alla.jpg" title="Легун Алла" alt="Легун Алла"}/>
 
 1995 - 2001 – РГМУ, факультет "Лечебное дело" (с отличием),
 дополнительное образование – "Врач-реабилитолог", дополнительная

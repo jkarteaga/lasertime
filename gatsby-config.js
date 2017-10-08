@@ -47,36 +47,16 @@ module.exports = {
                 path: `${__dirname}/src/files/markdown/prices/`,
             },
         },
-        // {
-        //     resolve: `gatsby-source-filesystem`,
-        //     options: {
-        //         name: `actions-img`,
-        //         path: `${__dirname}/src/files/img/actions/`,
-        //     },
-        // },
-        // `gatsby-transformer-sharp`,
-        // `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-transformer-remark`,
-            // options: {
-            //     plugins: [
-            //         {
-            //             resolve: `gatsby-remark-images`,
-            //             // options: {
-            //             //     // It's important to specify the maxWidth (in pixels) of
-            //             //     // the content container as this plugin uses this as the
-            //             //     // base for generating different widths of each image.
-            //             //     maxWidth: 900,
-            //             //     // Remove the default behavior of adding a link to each
-            //             //     // image.
-            //             //     linkImagesToOriginal: false,
-            //             // },
-            //         },
-            //     ],
-            // },
+            options: {
+                plugins: [`gatsby-remark-copy-linked-files`],
+            },
         },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-next`,
         // `gatsby-plugin-react-helmet`,
+        // `gatsby-transformer-sharp`,
+        // `gatsby-plugin-sharp`,
     ],
 }
