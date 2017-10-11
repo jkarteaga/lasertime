@@ -1,5 +1,5 @@
 module.exports = {
-    pathPrefix: `/lasertime`,
+    pathPrefix: `/`,
 
     siteMetadata: {
         title: 'Клиника красоты "Знак Качества"',
@@ -9,7 +9,7 @@ module.exports = {
             'клиника знак качества, легун алла, лазерная эпиляция в москве',
         linkPrefix: '/lasertime',
         fixedPhone: '89055881313',
-        mobilePhone: '79858888297',
+        mobilePhone: '89858888297',
         menuItems: {
             leftMenuItems: [
                 { path: '/actions/', name: 'Акции' },
