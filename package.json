@@ -36,8 +36,7 @@
         "develop": "gatsby develop",
         "format": "prettier --tab-width 4 --no-semi --single-quote --trailing-comma es5 --write 'src/**/*.js'",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-        "deploy:vscale": "yarn run clean && yarn run build && ./scripts/upload-vscale.sh",
+        "deploy": "yarn run clean && yarn run build && ./scripts/upload-vscale.sh",
         "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
     },
     "devDependencies": {
@@ -50,7 +49,6 @@
         "eslint-plugin-jsx-a11y": "^6.0.2",
         "eslint-plugin-prettier": "^2.3.1",
         "eslint-plugin-react": "^7.1.0",
-        "gh-pages": "^1.0.0",
         "prettier": "^1.6.1"
     }
 }

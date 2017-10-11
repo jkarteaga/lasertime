@@ -5,7 +5,7 @@ description:
 keywords: [""]
 ---
 
-<img class="width-50 float-right" src="/img/doctors/dolidze-tatiana.jpg" title="Долидзе Татьяна" alt="Долидзе Татьяна"}/>
+<img class="width-50 float-right" src="/img/doctors/dolidze-tatiana.jpg" title="Долидзе Татьяна" alt="Долидзе Татьяна"/>
 
 **Помощник врача-косметолога**
 
