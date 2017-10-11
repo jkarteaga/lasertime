@@ -33,11 +33,11 @@
     "scripts": {
         "build": "gatsby build",
         "clean": "rm -r public/",
-        "develop": "gatsby develop",
-        "format": "prettier --tab-width 4 --no-semi --single-quote --trailing-comma es5 --write 'src/**/*.js'",
-        "test": "echo \"Error: no test specified\" && exit 1",
         "deploy": "yarn run clean && yarn run build && ./scripts/upload-vscale.sh",
-        "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
+        "develop": "gatsby develop",
+        "format": "prettier --config .prettierrc --write 'src/**/*.js'",
+        "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
         "babel-eslint": "^8.0.1",
