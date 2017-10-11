@@ -49,7 +49,7 @@ const commonImages = [
         src: '/img/contacts/path-common-8.jpg',
         w: 1000,
         h: 742,
-        title: 'При выходе из стеклянных дверей метро – повернуть направо',
+        title: 'При выходе из стеклянных дверей метро – повернуть налево',
     },
     {
         src: '/img/contacts/path-common-9.jpg',

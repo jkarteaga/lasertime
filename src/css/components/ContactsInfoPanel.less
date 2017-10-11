@@ -1,54 +1,38 @@
 @import '../variables';
 
-
-
 .ContactsInfoPanel {
     display: flex;
     flex-direction: column;
-    
+
     &__phone {
-        
     }
-    
+
     &__address {
-        
     }
-    
+
     &__email {
-        
     }
 }
 
 .ContactsInfoPanel__item {
     flex-basis: 80px;
     text-align: center;
-
-
-    
 }
-
-
 
 .ContactsInfoPanel__icon {
     fill: @gold-dark;
     width: 40px;
     //margin: 0 auto;
-    
+
     &--phone {
-        
     }
     &--address {
-
     }
     &--email {
-
     }
 }
 
-
-
 @media @mobile-widths {
-
 }
 
 @media @mobile-wide-widths {
@@ -58,7 +42,6 @@
 
         // Flex Item
         flex-basis: 100px;
-        
     }
 
     .ContactsInfoPanel__item {
@@ -72,13 +55,11 @@
         // Flex Container
         flex-direction: column;
         justify-content: space-around;
-        
+
         // Flex Item
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 130px;
-
-
     }
 
     .ContactsInfoPanel__item {
@@ -88,5 +69,4 @@
 }
 
 @media @desktop-widths {
-    
 }

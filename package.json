@@ -1,7 +1,7 @@
 {
     "name": "lasertime",
     "description": "LaserTime Clinic Site",
-    "version": "0.9",
+    "version": "1.0",
     "author": "Oleg Legun <oleg.legun@gmail.com>",
     "dependencies": {
         "gatsby": "^1.9.52",
@@ -35,7 +35,7 @@
         "clean": "rm -r public/",
         "deploy": "yarn run clean && yarn run build && ./scripts/upload-vscale.sh",
         "develop": "gatsby develop",
-        "format": "prettier --config .prettierrc --write 'src/**/*.js'",
+        "format": "prettier --config .prettierrc --write 'src/**/*.(js|less)'",
         "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -49,6 +49,6 @@
         "eslint-plugin-jsx-a11y": "^6.0.2",
         "eslint-plugin-prettier": "^2.3.1",
         "eslint-plugin-react": "^7.1.0",
-        "prettier": "^1.6.1"
+        "prettier": "^1.7.4"
     }
 }
