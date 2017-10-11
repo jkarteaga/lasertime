@@ -5,7 +5,7 @@ description:
 keywords: ["дот омоложение", "омоложение"]
 ---
 
-![](./fractional-laser-rejuvenation.jpg){.width-50 .float-right}
+![](./fractional-laser-rejuvenation.jpg)
 
 К сожалению, после 30 лет морщины, которых раньше мы не замечали,
 становятся более глубокими и переходят в категорию <<линии жизни>>. И

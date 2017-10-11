@@ -6,7 +6,7 @@ keywords: ["чистка лица", "омоложение"]
 promotion: true
 ---
 
-![](./biorevitalization-moscow.jpg){.width-50 .float-right}
+![](./biorevitalization-moscow.jpg)
 
 Примерно в возрасте 25-ти лет наша кожа начинает претерпевать изменения,
 причем довольно неприятные: терять упругость, эластичность, а также
