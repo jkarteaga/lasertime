@@ -1,11 +1,11 @@
 import React from 'react'
-import PagePreview from '../components/PagePreview'
+import ArticlePreview from '../components/ArticlePreview'
 import Helmet from '../components/HelmetWrapper'
 
 function ArticleList({ data }) {
     const articlesElements = data.allMarkdownRemark.edges.map(({ node }) => {
         return (
-            <PagePreview
+            <ArticlePreview
                 key={node.internal.contentDigest}
                 title={node.frontmatter.title}
                 path={node.frontmatter.path}
