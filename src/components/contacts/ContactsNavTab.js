@@ -16,11 +16,8 @@ const mapState = {
     controls: [],
 }
 
-
 class ContactsNavTab extends React.Component {
-
     render() {
-
         return (
             <YMaps>
                 <Map
