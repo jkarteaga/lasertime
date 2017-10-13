@@ -1,0 +1,131 @@
+@import '../variables';
+
+.ArticlePreview {
+    display: flex;
+    height: 100px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 0 10px #333;
+}
+
+.ArticlePreview__article-type {
+    display: flex;
+
+    flex-basis: 100px;
+    flex-shrink: 0;
+
+    &&--article {
+    }
+
+    &&--interview {
+    }
+}
+
+.ArticlePreview__article-type-icon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.ArticlePreview__article-type-text {
+    display: none;
+}
+
+.ArticlePreview__img {
+    display: none;
+}
+
+.ArticlePreview__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.ArticlePreview__title {
+    display: flex;
+    flex-grow: 1;
+
+    // span for vertical centering
+    & span {
+        outline: 1px solid red;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.ArticlePreview__description {
+    display: none;
+}
+
+.ArticlePreview__link {
+    display: none;
+}
+
+@media @mobile-wide-widths {
+    .ArticlePreview {
+        display: flex;
+        height: 200px;
+        outline: 1px solid red;
+        margin-bottom: 20px;
+
+        box-shadow: 0 0 10px #333;
+    }
+
+    .ArticlePreview__article-type {
+        display: flex;
+
+        flex-direction: column;
+        flex-basis: 50px;
+        flex-shrink: 0;
+
+        &&--article {
+        }
+
+        &&--interview {
+        }
+    }
+
+    .ArticlePreview__article-type-icon {
+        //width: 50px;
+        //height: 50px;
+        //margin: auto;
+
+        flex-basis: 50px;
+        flex-grow: 0;
+    }
+
+    .ArticlePreview__article-type-text {
+        flex-grow: 1;
+        display: block;
+    }
+
+    .ArticlePreview__title {
+        display: flex;
+        flex-basis: 50px;
+        flex-grow: 0;
+
+        // span for vertical centering
+        & span {
+            outline: 1px solid red;
+            margin: auto;
+        }
+    }
+
+    .ArticlePreview__description {
+        display: block;
+        flex-grow: 1;
+    }
+
+    .ArticlePreview__link {
+        display: block;
+        text-align: right;
+    }
+}
+
+@media @tablet-widths {
+    .ArticlePreview__img {
+        display: block;
+        flex-basis: 200px;
+        flex-shrink: 0;
+    }
+}
