@@ -2,28 +2,32 @@
 
 .ArticlePreview {
     display: flex;
-    height: 100px;
+    height: 90px;
     margin-bottom: 20px;
 
-    box-shadow: 0 0 10px #333;
+    color: black;
+
+    box-shadow: 0 0 10px #555;
 }
 
 .ArticlePreview__article-type {
     display: flex;
 
-    flex-basis: 100px;
+    flex-basis: 70px;
     flex-shrink: 0;
 
-    &&--article {
+    &--article {
+        background-color: @gold-dark;
     }
 
-    &&--interview {
+    &--interview {
+        background-color: @red-stamp;
     }
 }
 
 .ArticlePreview__article-type-icon {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin: auto;
 }
 
@@ -45,9 +49,13 @@
     display: flex;
     flex-grow: 1;
 
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3em;
+    padding: 5px;
+
     // span for vertical centering
     & span {
-        outline: 1px solid red;
         margin: auto;
         text-align: center;
     }
@@ -61,11 +69,14 @@
     display: none;
 }
 
+/*-----------------------------------------------------------------------------
+ *  @mobile-wide-widths
+ *----------------------------------------------------------------------------*/
+
 @media @mobile-wide-widths {
     .ArticlePreview {
         display: flex;
-        height: 200px;
-        outline: 1px solid red;
+        height: 180px;
         margin-bottom: 20px;
 
         box-shadow: 0 0 10px #333;
@@ -75,7 +86,7 @@
         display: flex;
 
         flex-direction: column;
-        flex-basis: 50px;
+        flex-basis: 45px;
         flex-shrink: 0;
 
         &&--article {
@@ -86,9 +97,9 @@
     }
 
     .ArticlePreview__article-type-icon {
-        //width: 50px;
-        //height: 50px;
-        //margin: auto;
+        width: 45px;
+        height: 45px;
+        padding-top: 5px;
 
         flex-basis: 50px;
         flex-grow: 0;
@@ -97,35 +108,45 @@
     .ArticlePreview__article-type-text {
         flex-grow: 1;
         display: block;
+        text-align: center;
     }
 
     .ArticlePreview__title {
         display: flex;
         flex-basis: 50px;
         flex-grow: 0;
-
-        // span for vertical centering
-        & span {
-            outline: 1px solid red;
-            margin: auto;
-        }
+        flex-shrink: 0;
     }
 
     .ArticlePreview__description {
         display: block;
         flex-grow: 1;
+        padding: 0 10px;
     }
 
     .ArticlePreview__link {
         display: block;
+        flex-basis: 35px;
+        flex-shrink: 0;
+        padding-right: 25px;
         text-align: right;
+        text-decoration: underline;
+
+        & a:visited {
+            color: @gray-50;
+        }
     }
 }
+
+/*-----------------------------------------------------------------------------
+ *  @tablet-widths
+ *----------------------------------------------------------------------------*/
 
 @media @tablet-widths {
     .ArticlePreview__img {
         display: block;
-        flex-basis: 200px;
+        flex-basis: 180px;
         flex-shrink: 0;
+        background-color: #737373;
     }
 }
