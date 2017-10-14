@@ -14,21 +14,13 @@ function ArticleList({ data }) {
     })
 
     return (
-        <div className="PageContent__wrapper">
+        <div className="PageContent__wrapper PageContent__wrapper--gray-bg">
             <Helmet data={data} title="Статьи" description="" />
             <h1>Статьи</h1>
             {articlesElements}
         </div>
     )
 }
-
-// ArticleList.contextTypes = {
-//     router: PropTypes.object.isRequired
-// }
-// ArticleList.propTypes = {
-//     route: PropTypes.object.isRequired
-// }
-// ArticleList.defaultProps = {}
 
 export default ArticleList
 

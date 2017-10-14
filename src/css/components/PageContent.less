@@ -2,7 +2,7 @@
 @import '../variables';
 
 .PageContent {
-    background-color: #fff;
+    background-color: white;
     border-bottom: 4px solid @gold;
     line-height: @line-height;
 }
@@ -22,6 +22,10 @@
 
 .PageContent__wrapper {
     padding: 0 40px 50px;
+
+    &--gray-bg {
+        background-color: @gray-97;
+    }
 }
 
 @media @mobile-widths {

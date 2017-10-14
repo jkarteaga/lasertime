@@ -25,7 +25,7 @@ function PriceList({ data }) {
         })
 
     return (
-        <div className="PageContent__wrapper">
+        <div className="PageContent__wrapper PageContent__wrapper--gray-bg">
             <Helmet data={data} title="Цены" description="" keywords="" />
             <h1>Цены</h1>
             <p className="">
