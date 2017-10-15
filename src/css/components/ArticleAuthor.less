@@ -1,0 +1,43 @@
+@import '../variables';
+
+.ArticleAuthor {
+    display: flex;
+
+    box-shadow: 0 1px 5px 1px @gray-80;
+}
+
+.ArticleAuthor__header {
+    display: none;
+}
+
+.ArticleAuthor__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.ArticleAuthor__title {
+    display: flex;
+    flex-basis: 60px;
+
+    font-size: 1.5em;
+    font-weight: bold;
+
+    &-wrapper {
+        margin: auto;
+    }
+}
+
+.ArticleAuthor__description {
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.ArticleAuthor__link {
+    flex-basis: 40px;
+    text-decoration: underline;
+    text-align: right;
+    padding-right: 30px;
+}
+
+@media @mobile-wide-widths {
+}

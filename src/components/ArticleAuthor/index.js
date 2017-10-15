@@ -12,7 +12,11 @@ function ArticleAuthorBlock({ image, name, description, link }) {
                 <div className="ArticleAuthor__name">{name}</div>
             </div>
             <div className="ArticleAuthor__body">
-                <div className="ArticleAuthor__title">Об авторе</div>
+                <div className="ArticleAuthor__title">
+                    <div className="ArticleAuthor__title-wrapper">
+                        Об авторе
+                    </div>
+                </div>
                 <div className="ArticleAuthor__description">{description}</div>
                 <div className="ArticleAuthor__link">
                     <Link to={link}>Подробнее</Link>
