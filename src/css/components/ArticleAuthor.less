@@ -28,7 +28,7 @@
 }
 
 .ArticleAuthor__description {
-    padding: 0 10px;
+    padding: 0 10px 0 25px;
     text-align: justify;
 }
 
@@ -40,4 +40,41 @@
 }
 
 @media @mobile-wide-widths {
+    .ArticleAuthor__header {
+        display: flex;
+        flex-direction: column;
+
+        background-color: @gray-90;
+
+        &-wrapper {
+            margin: auto;
+            text-align: center;
+            position: relative;
+        }
+
+        &-wrapper::after {
+            content: '';
+            position: absolute;
+
+            border: 15px solid transparent;
+            border-left-color: @gray-90;
+
+            top: calc(50% - 7px);
+            right: -30px;
+        }
+    }
+
+    .ArticleAuthor__img {
+        padding: 10px 10px 0;
+        & img {
+            height: 120px;
+            border-radius: 65px;
+            border: 3px solid white;
+        }
+    }
+
+    .ArticleAuthor__name {
+        text-align: center;
+        line-height: 1.2em;
+    }
 }
