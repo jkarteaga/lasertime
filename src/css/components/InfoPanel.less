@@ -1,0 +1,60 @@
+@import '../variables';
+
+.InfoPanel {
+    display: flex;
+    flex-direction: column;
+    //outline: 1px solid red;
+    border-left: 5px solid;
+
+    margin-top: 15px;
+
+    &--gray {
+        border-left-color: @gray-80;
+    }
+
+    &--green {
+        border-left-color: #a7d155;
+    }
+
+    &--orange {
+        border-left-color: #fecf71;
+    }
+
+    &--red {
+        border-left-color: #f0776c;
+    }
+
+    &--shadow {
+        box-shadow: @box-shadow-80;
+    }
+}
+
+.InfoPanel__title {
+    //flex-basis: 40px;
+    padding: 15px 10px;
+    margin: 0;
+    background-color: @gray-97;
+}
+
+.InfoPanel__body {
+    //outline: 1px solid red;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+@media @mobile-wide-widths {
+    .InfoPanel {
+        border-left-width: 10px;
+    }
+
+    .InfoPanel__title {
+        //flex-basis: 40px;
+        //padding: 15px 0;
+        //margin: 0;
+        //background-color: @gray-97;
+    }
+
+    .InfoPanel__body {
+        padding: 0 15px;
+    }
+}

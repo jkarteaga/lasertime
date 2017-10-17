@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function InfoPanel({ title, children }) {
+function InfoPanel({ title, color, shadow, children }) {
+    const dropShadowClass = shadow ? 'InfoPanel--shadow' : ''
     return (
-        <div className="InfoPanel">
+        <div className={`InfoPanel InfoPanel--${color} ${dropShadowClass}`}>
             <h2 className="InfoPanel__title">{title}</h2>
             <div className="InfoPanel__body">{children}</div>
         </div>
@@ -12,9 +13,13 @@ function InfoPanel({ title, children }) {
 
 InfoPanel.propTypes = {
     title: PropTypes.string.isRequired,
-    color: PropTypes.oneOf(['gray', 'green', 'yellow', 'red']),
+    color: PropTypes.oneOf(['gray', 'green', 'orange', 'red']),
+    shadow: PropTypes.bool,
 }
 
-InfoPanel.defaultProps = {}
+InfoPanel.defaultProps = {
+    color: 'gray',
+    shadow: true,
+}
 
 export default InfoPanel
