@@ -5,7 +5,7 @@ import TextPanel from '../components/TextPanel'
 
 function Services({ data }) {
     return (
-        <div className="PageContent__wrapper PageContent__wrapper--gray-bg">
+        <div className="PageContent__wrapper">
             <HelmetWrapper data={data} title={'Услуги'} description="" />
             <h1>Услуги</h1>
             <InfoPanel
@@ -19,41 +19,63 @@ function Services({ data }) {
                     accumsan sed sit amet ante.
                 </p>
             </InfoPanel>
-            <InfoPanel title={'Hello'} color={'green'}>
+
+            <p>
+                Donec sed condimentum ante. Curabitur mi nisi, fringilla
+                tristique sapien in, euismod tempor risus. Aliquam at dignissim
+                ante. Quisque a fermentum augue, vitae mattis elit. Nam lorem
+                felis, gravida ut tellus sit amet, ultrices suscipit nunc. Morbi
+                odio risus, sagittis non tincidunt nec, molestie eu diam.
+                Vivamus vitae ex elit.
+            </p>
+            <TextPanel title={'А знаете ли Вы?'}>
                 <p>
-                    Proin eget velit ante. Vivamus vel urna vitae orci vulputate
-                    accumsan sed sit amet ante.
+                    Существуют некоторые противопоказания для контурной
+                    пластики:
                 </p>
-            </InfoPanel>
-            <InfoPanel title={'Hello'} color={'red'}>
+                <ul>
+                    <li>Воспалительные процессы, идущие в организме;</li>
+                    <li>аутоиммунные болезни;</li>
+                    <li>аллергия на отдельные составляющие геля;</li>
+                    <li>беременность, период лактации;</li>
+                    <li>Простудные заболевания;</li>
+                    <li>
+                        Сахарный диабет.Также процедуру контурной пластики
+                        нельзя проводить детям, не достигшим совершеннолетия. В
+                        любом случае, перед процедурой вы должны посоветоваться
+                        с лечащим врачом на предмет заболеваний, не допустимых с
+                        процедурой.
+                    </li>
+                </ul>
+
+                <h2>А знаете ли Вы?</h2>
                 <p>
-                    Proin eget velit ante. Vivamus vel urna vitae orci vulputate
-                    accumsan sed sit amet ante.
+                    Существуют некоторые противопоказания для контурной
+                    пластики:
                 </p>
-            </InfoPanel>
-            <InfoPanel title={'Hello'} color={'orange'}>
-                <p>
-                    Proin eget velit ante. Vivamus vel urna vitae orci vulputate
-                    accumsan sed sit amet ante.
-                </p>
-            </InfoPanel>
-            {/*<TextPanel title={'Hi there!'}>*/}
-            {/*Proin eget velit ante. Vivamus vel urna vitae orci vulputate*/}
-            {/*accumsan sed sit amet ante. Quisque et fermentum lorem, at*/}
-            {/*elementum orci. Curabitur id nisi mauris. Sed eu rutrum mi.*/}
-            {/*Pellentesque facilisis eget nibh laoreet porttitor. Ut vel*/}
-            {/*elementum mauris. Morbi dignissim, nunc eu condimentum posuere,*/}
-            {/*mauris metus sollicitudin enim, id eleifend mi nisl id dolor.*/}
-            {/*Phasellus sed lorem non tortor scelerisque mattis. Morbi*/}
-            {/*vehicula, odio eget sagittis tempus, velit mauris consequat*/}
-            {/*dolor, sit amet lacinia ante sem sed erat. Fusce posuere iaculis*/}
-            {/*imperdiet.*/}
-            {/*</TextPanel>*/}
-            Donec sed condimentum ante. Curabitur mi nisi, fringilla tristique
-            sapien in, euismod tempor risus. Aliquam at dignissim ante. Quisque
-            a fermentum augue, vitae mattis elit. Nam lorem felis, gravida ut
-            tellus sit amet, ultrices suscipit nunc. Morbi odio risus, sagittis
-            non tincidunt nec, molestie eu diam. Vivamus vitae ex elit.
+                <ul>
+                    <li>Воспалительные процессы, идущие в организме;</li>
+                    <li>аутоиммунные болезни;</li>
+                    <li>аллергия на отдельные составляющие геля;</li>
+                    <li>беременность, период лактации;</li>
+                    <li>Простудные заболевания;</li>
+                    <li>
+                        Сахарный диабет.Также процедуру контурной пластики
+                        нельзя проводить детям, не достигшим совершеннолетия. В
+                        любом случае, перед процедурой вы должны посоветоваться
+                        с лечащим врачом на предмет заболеваний, не допустимых с
+                        процедурой.
+                    </li>
+                </ul>
+            </TextPanel>
+            <p>
+                Donec sed condimentum ante. Curabitur mi nisi, fringilla
+                tristique sapien in, euismod tempor risus. Aliquam at dignissim
+                ante. Quisque a fermentum augue, vitae mattis elit. Nam lorem
+                felis, gravida ut tellus sit amet, ultrices suscipit nunc. Morbi
+                odio risus, sagittis non tincidunt nec, molestie eu diam.
+                Vivamus vitae ex elit.
+            </p>
         </div>
     )
 }

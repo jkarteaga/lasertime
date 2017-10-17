@@ -19,7 +19,7 @@ InfoPanel.propTypes = {
 
 InfoPanel.defaultProps = {
     color: 'gray',
-    shadow: true,
+    shadow: false,
 }
 
 export default InfoPanel

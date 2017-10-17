@@ -30,7 +30,11 @@ function ArticlePreview({ type, image, title, description, path }) {
                 </div>
                 <div className="ArticlePreview__content">
                     <div className="ArticlePreview__title">
-                        <div className="ArticlePreview__title-wrapper">{title}</div>
+                        <div className="ArticlePreview__title-wrapper">
+                            <h2 className="ArticlePreview__title-text">
+                                {title}
+                            </h2>
+                        </div>
                     </div>
                     <div className="ArticlePreview__description">
                         {description}
