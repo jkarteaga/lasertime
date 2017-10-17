@@ -1,0 +1,66 @@
+@import 'variables';
+
+body {
+    letter-spacing: 0.04em;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: @html-font-size;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    line-height: @line-height--h1;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: @font-size--h2;
+    //text-align: center;
+    line-height: @line-height--h2;
+    //margin: 0;
+    //padding-top: 15px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid @gray-90;
+
+    & thead {
+        background-color: @gold;
+
+        & th {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    & tbody tr {
+        position: relative;
+        background-color: #fff;
+        &:nth-child(even) {
+            background-color: @gray-95;
+        }
+
+        &:hover {
+            background-color: #f9ecc4;
+        }
+
+        & td {
+            padding: 5px;
+
+            &:first-of-type {
+                width: 60%;
+            }
+        }
+    }
+}
