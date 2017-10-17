@@ -1,0 +1,81 @@
+@import '../variables';
+
+.Quote {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 40px;
+    margin: 0;
+
+    border: 1px solid @gray-90;
+}
+
+.Quote__text {
+    margin: auto;
+    text-align: center;
+    //font-style: italic;
+    font-size: 1.2em;
+
+    font-family: 'Forum', serif;
+
+    position: relative;
+}
+
+.Quote__text-wrapper {
+    margin: 5px 0;
+
+    &::before {
+        content: '\201C';
+        position: absolute;
+        font-size: 2.5em;
+        color: @gray-70;
+
+        transform: translateX(-25px) translateY(-25px);
+    }
+
+    &::after {
+        position: absolute;
+        content: '\201D';
+        font-size: 2.5em;
+        color: @gray-70;
+
+        transform: translateX(10px) translateY(5px);
+    }
+}
+
+.Quote__author {
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: @gray-70;
+    letter-spacing: 0.3em;
+    font-size: 0.6em;
+
+    padding-top: 10px;
+}
+
+@media @mobile-wide-widths {
+    .Quote {
+        padding: 30px 55px;
+    }
+
+    .Quote__text {
+        font-size: 1.5em;
+    }
+
+    .Quote__author {
+        font-size: 0.8em;
+    }
+
+    .Quote__text-wrapper {
+        &::before {
+            transform: translateX(-35px) translateY(-30px);
+        }
+
+        &::after {
+            transform: translateX(20px) translateY(5px);
+        }
+    }
+}

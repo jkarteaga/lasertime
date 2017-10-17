@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 function Quote({ text, author }) {
     return (
         <blockquote className="Quote">
-            <p className="Quote__text">{text}</p>
+            <div className="Quote__text">
+                <p className="Quote__text-wrapper">{text}</p>
+            </div>
             <cite className="Quote__author">{author}</cite>
         </blockquote>
     )

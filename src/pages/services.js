@@ -2,12 +2,19 @@ import React from 'react'
 import HelmetWrapper from '../components/HelmetWrapper'
 import InfoPanel from '../components/InfoPanel'
 import TextPanel from '../components/TextPanel'
+import Quote from '../components/Quote'
 
 function Services({ data }) {
     return (
         <div className="PageContent__wrapper">
             <HelmetWrapper data={data} title={'Услуги'} description="" />
             <h1>Услуги</h1>
+            <Quote
+                text={
+                    'В 20 лет у вас лицо, которое дала вам природа; в 30 лет у вас лицо, которое вылепила вам жизнь, а в 50 у вас лицо, которое вы заслуживаете.'
+                }
+                author="Коко Шанель"
+            />
             <InfoPanel
                 title={
                     'Proin eget velit ante. Vivamus vel urna vitae orci vulputate\n' +
