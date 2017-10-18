@@ -1,0 +1,22 @@
+@import '../variables';
+
+.CollapsiblePanel {
+    display: flex;
+    flex-direction: column;
+    box-shadow: @box-shadow-80;
+}
+
+.CollapsiblePanel__title {
+    background-color: @gray-97;
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 1.2em;
+}
+
+.CollapsiblePanel__body {
+    display: none;
+
+    &--opened {
+        display: block;
+    }
+}
