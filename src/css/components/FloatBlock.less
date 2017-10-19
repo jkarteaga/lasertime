@@ -1,25 +1,31 @@
 @import '../variables';
 
 .FloatBlock {
-    padding: 15px;
 }
 
 @media @mobile-wide-widths {
     .FloatBlock {
-        padding: 25px;
+        p:first-child {
+            // remove top margin for alignment with other content
+            margin-top: 0;
+        }
 
         &--left {
             float: left;
-            width: 50%;
+            width: 49%;
+
+            margin-right: 2%;
         }
 
         &--right {
             float: right;
-            width: 50%;
+            width: 49%;
+
+            padding-left: 2%;
         }
 
         &--one-third {
-            width: 50%;
+            width: 49%;
         }
     }
 }
