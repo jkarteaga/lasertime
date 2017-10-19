@@ -1,0 +1,33 @@
+@import '../variables';
+
+.FloatBlock {
+    padding: 15px;
+}
+
+@media @mobile-wide-widths {
+    .FloatBlock {
+        padding: 25px;
+
+        &--left {
+            float: left;
+            width: 50%;
+        }
+
+        &--right {
+            float: right;
+            width: 50%;
+        }
+
+        &--one-third {
+            width: 50%;
+        }
+    }
+}
+
+@media @tablet-widths {
+    .FloatBlock {
+        &--one-third {
+            width: 33%;
+        }
+    }
+}
