@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function InfoBlock({ children }) {
-    return <div className="InfoBlock">{children}</div>
+function InfoBlock({ color, children }) {
+    return <div className={`InfoBlock InfoBlock--${color}`}>{children}</div>
 }
 
 InfoBlock.propTypes = {
