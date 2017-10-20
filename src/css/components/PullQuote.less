@@ -5,8 +5,25 @@
     padding: 15px;
     font-family: 'Forum', serif;
 
-    border: 1px solid #ffd093;
-    background-color: #fff5e8;
+    &--gray {
+        border: 1px solid @gray-90;
+        background-color: white;
+    }
+
+    &--green {
+        border: 1px solid @green;
+        background-color: @green-light;
+    }
+
+    &--orange {
+        border: 1px solid @orange;
+        background-color: @orange-light;
+    }
+
+    &--red {
+        border: 1px solid @red;
+        background-color: @red-light;
+    }
 }
 
 .PullQuote__body {
@@ -14,6 +31,6 @@
 
 @media @mobile-wide-widths {
     .PullQuote {
-        padding: 25px;
+        padding: 20px;
     }
 }
