@@ -1,0 +1,43 @@
+.List {
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 10px 0 10px 40px;
+        position: relative;
+    }
+
+    li::before {
+        content: '';
+        position: absolute;
+        left: 3px;
+        top: 9px;
+        width: 25px;
+        height: 25px;
+        background-size: 25px 25px;
+    }
+
+    &--marker-check {
+        li::before {
+            background-image: url('../icons/list-marker-check.svg');
+        }
+    }
+    &--marker-plus {
+        li::before {
+            background-image: url('../icons/list-marker-plus.svg');
+        }
+    }
+    &--marker-minus {
+        li::before {
+            background-image: url('../icons/list-marker-minus.svg');
+        }
+    }
+    &--marker-cross {
+        li::before {
+            background-image: url('../icons/list-marker-cross.svg');
+        }
+    }
+}
