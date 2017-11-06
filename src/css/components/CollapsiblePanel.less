@@ -4,6 +4,38 @@
     display: flex;
     flex-direction: column;
     box-shadow: @box-shadow-80;
+    background-color: white;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-image: url('../icons/collapsible-panel-arrow.svg');
+        right: 13px;
+        top: 8px;
+        transition: all ease 0.2s;
+        transform: scale(-1);
+    }
+
+    &--opened {
+        .CollapsiblePanel__body {
+            transition: max-height ease 2s;
+            // work-around
+            max-height: 1500px;
+        }
+
+        &::after {
+            transform: scale(1);
+        }
+    }
+}
+
+.CollapsiblePanel__body {
+    transition: max-height ease-out 0.5s;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .CollapsiblePanel__title {
@@ -11,12 +43,4 @@
     margin: 0;
     padding: 10px 10px;
     font-size: 1.2em;
-}
-
-.CollapsiblePanel__body {
-    display: none;
-
-    &--opened {
-        display: block;
-    }
 }

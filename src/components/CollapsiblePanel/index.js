@@ -11,19 +11,17 @@ class CollapsiblePanel extends React.Component {
     render() {
         const { title, children } = this.props
         const openPanelClass = this.state.isOpen
-            ? 'CollapsiblePanel__body--opened'
+            ? 'CollapsiblePanel--opened'
             : ''
         return (
-            <div className={`CollapsiblePanel`}>
+            <div className={`CollapsiblePanel ${openPanelClass}`}>
                 <h2
                     onClick={this.handleOpen}
                     className="CollapsiblePanel__title"
                 >
                     {title}
                 </h2>
-                <div className={`CollapsiblePanel__body ${openPanelClass}`}>
-                    {children}
-                </div>
+                <div className={`CollapsiblePanel__body`}>{children}</div>
             </div>
         )
     }
