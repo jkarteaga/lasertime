@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 
 function Figure({ children, caption }) {
     return (
-        <div className="Figure">
+        <figure className="Figure">
             {children}
             {caption ? (
                 <figcaption className={'Figure__caption'}>{caption}</figcaption>
             ) : null}
-        </div>
+        </figure>
     )
 }
 

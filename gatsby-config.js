@@ -71,7 +71,7 @@ module.exports = {
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-next`,
         // `gatsby-plugin-react-helmet`,
-        // `gatsby-transformer-sharp`,
+        `gatsby-transformer-sharp`,
         // `gatsby-plugin-sharp`,
     ],
 }

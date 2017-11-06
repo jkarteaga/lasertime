@@ -5,6 +5,7 @@
     "author": "Oleg Legun <oleg.legun@gmail.com>",
     "dependencies": {
         "gatsby": "^1.9.52",
+        "gatsby-image": "^1.0.24",
         "gatsby-link": "^1.6.17",
         "gatsby-plugin-catch-links": "^1.0.9",
         "gatsby-plugin-less": "^1.0.5",
