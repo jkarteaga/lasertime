@@ -1,3 +1,5 @@
+@import '../variables';
+
 .List {
     ul,
     ol {
@@ -28,10 +30,10 @@
         background-color: @gold;
         font-size: 1.1em;
         width: 29px;
-        height: 29px;
-        left: 0px;
+        height: 26px;
+        padding-top: 3px;
+        left: 0;
         top: 8px;
-        //font-weight: bold;
         border-radius: 50%;
         text-align: center;
     }
@@ -54,6 +56,16 @@
     &--marker-cross {
         li::before {
             background-image: url('../icons/list-marker-cross.svg');
+        }
+    }
+}
+
+@media @desktop-widths {
+    .List {
+        ol li::before {
+            width: 29px;
+            height: 28px;
+            padding-top: 1px;
         }
     }
 }
