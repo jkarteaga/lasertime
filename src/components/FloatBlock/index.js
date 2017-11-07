@@ -17,6 +17,7 @@ FloatBlock.propTypes = {
     left: PropTypes.bool,
     right: PropTypes.bool,
     oneThird: PropTypes.bool,
+    children: PropTypes.node.isRequired,
 }
 
 FloatBlock.defaultProps = {
