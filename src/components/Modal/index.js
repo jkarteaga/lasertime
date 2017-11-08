@@ -21,7 +21,7 @@ class Modal extends React.Component {
         const { children, text, title } = this.props
         return (
             <div>
-                <span onClick={this.handleOpenModal}>{text}</span>
+                <span className={"Modal__trigger"} onClick={this.handleOpenModal}>{text}</span>
                 <ReactModal
                     isOpen={this.state.isOpen}
                     onRequestClose={this.handleCloseModal}
@@ -38,13 +38,14 @@ class Modal extends React.Component {
                         beforeClose: 'Modal__overlay--before-close',
                     }}
                 >
+                    <div
+                        className={'Modal__close-icon'}
+                        onClick={this.handleCloseModal}
+                    />
                     <div className="Modal__title">
                         <div className="Modal__title-wrapper">{title}</div>
                     </div>
-                    <div
-                        className={'Modal__close'}
-                        onClick={this.handleCloseModal}
-                    />
+
                     <div className="Modal__body">{children}</div>
                 </ReactModal>
             </div>
