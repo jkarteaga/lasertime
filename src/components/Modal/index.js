@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactModal from 'react-modal'
 
-ReactModal.setAppElement('#___gatsby')
+// ReactModal.setAppElement('#___gatsby')
 
 class Modal extends React.Component {
     state = {
-        isOpen: false,
+        isOpen: true,
     }
 
     handleOpenModal = () => {
@@ -18,7 +18,7 @@ class Modal extends React.Component {
     }
 
     render() {
-        const { children, text } = this.props
+        const { children, text, title } = this.props
         return (
             <div>
                 <span onClick={this.handleOpenModal}>{text}</span>
@@ -27,12 +27,25 @@ class Modal extends React.Component {
                     onRequestClose={this.handleCloseModal}
                     shouldCloseOnOverlayClick={true}
                     shouldCloseOnEsc={true}
-                    portalClassName={'ReactModalPortal'}
+                    className={{
+                        base: 'Modal',
+                        afterOpen: 'Modal--after-open',
+                        beforeClose: 'Modal--before-close',
+                    }}
+                    overlayClassName={{
+                        base: 'Modal__overlay',
+                        afterOpen: 'Modal__overlay--after-open',
+                        beforeClose: 'Modal__overlay--before-close',
+                    }}
                 >
-                    <div className="">
-                        <button onClick={this.handleCloseModal}>close</button>
-                        {children}
+                    <div className="Modal__title">
+                        <div className="Modal__title-wrapper">{title}</div>
                     </div>
+                    <div
+                        className={'Modal__close'}
+                        onClick={this.handleCloseModal}
+                    />
+                    <div className="Modal__body">{children}</div>
                 </ReactModal>
             </div>
         )
@@ -42,6 +55,7 @@ class Modal extends React.Component {
 Modal.propTypes = {
     children: PropTypes.node.isRequired,
     text: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
 }
 
 export default Modal
