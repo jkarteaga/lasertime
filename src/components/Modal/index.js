@@ -2,8 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactModal from 'react-modal'
 
-// ReactModal.setAppElement('#___gatsby')
-
 class Modal extends React.Component {
     state = {
         isOpen: true,
@@ -21,12 +19,18 @@ class Modal extends React.Component {
         const { children, text, title } = this.props
         return (
             <div>
-                <span className={"Modal__trigger"} onClick={this.handleOpenModal}>{text}</span>
+                <span
+                    className={'Modal__trigger'}
+                    onClick={this.handleOpenModal}
+                >
+                    {text}
+                </span>
                 <ReactModal
                     isOpen={this.state.isOpen}
                     onRequestClose={this.handleCloseModal}
                     shouldCloseOnOverlayClick={true}
                     shouldCloseOnEsc={true}
+                    closeTimeoutMS={300}
                     className={{
                         base: 'Modal',
                         afterOpen: 'Modal--after-open',

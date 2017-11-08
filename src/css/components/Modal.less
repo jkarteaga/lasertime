@@ -1,5 +1,49 @@
 @import '../variables';
 
+@keyframes overlay-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes overlay-disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes modal-appear {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes modal-disappear {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
 .ReactModal__Body--open {
     overflow: hidden;
     position: fixed;
@@ -29,6 +73,16 @@
     border: 4px solid @gold-dark;
 
     outline: none;
+
+    //transition: all 1s ease;
+
+    &--after-open {
+        animation: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) modal-appear;
+    }
+
+    &--before-close {
+        animation: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) modal-disappear;
+    }
 }
 
 .Modal__overlay {
@@ -41,15 +95,24 @@
     background-color: rgba(0, 0, 0, 0.5);
 
     z-index: 100;
+
+    &--after-open {
+        animation: 0.35s ease-out overlay-appear;
+    }
+
+    &--before-close {
+        animation: 350ms ease-out overlay-disappear;
+    }
 }
 
 .Modal__title {
-    //outline: 1px solid red;
     flex-basis: 50px;
     flex-shrink: 0;
-    font-size: 1.3em;
     display: flex;
     background-color: @orange-light;
+
+    font-size: 1.2em;
+    font-weight: bold;
 
     &-wrapper {
         margin: auto;
@@ -86,6 +149,10 @@
     .Modal__body {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .Modal__title {
+        font-size: 1.3em;
     }
 }
 
