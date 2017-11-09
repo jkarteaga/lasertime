@@ -1,6 +1,15 @@
 @import '../variables';
 
 .FloatBlock {
+    &--right&--one-fourth {
+        float: right;
+        width: 33%;
+    }
+
+    &--left&--one-fourth {
+        float: left;
+        width: 33%;
+    }
 }
 
 @media @mobile-wide-widths {
@@ -27,6 +36,10 @@
         &--one-third {
             width: 49%;
         }
+
+        &--one-fourth {
+            width: 32%;
+        }
     }
 }
 
@@ -34,6 +47,10 @@
     .FloatBlock {
         &--one-third {
             width: 33%;
+        }
+
+        &--one-fourth {
+            width: 24%;
         }
     }
 }
