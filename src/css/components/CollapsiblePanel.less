@@ -10,11 +10,11 @@
     &::after {
         content: '';
         position: absolute;
-        width: 25px;
-        height: 25px;
+        width: 27px;
+        height: 27px;
         background-image: url('../icons/collapsible-panel-arrow.svg');
-        right: 13px;
-        top: 8px;
+        right: 17px;
+        top: 14px;
         transition: all ease 0.2s;
         transform: scale(-1);
     }
@@ -32,15 +32,15 @@
     }
 }
 
+.CollapsiblePanel__title {
+    background-color: @gray-97;
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 1.4em;
+}
+
 .CollapsiblePanel__body {
     transition: max-height ease-out 0.5s;
     max-height: 0;
     overflow: hidden;
-}
-
-.CollapsiblePanel__title {
-    background-color: @gray-97;
-    margin: 0;
-    padding: 10px 10px;
-    font-size: 1.2em;
 }
