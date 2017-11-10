@@ -4,7 +4,7 @@ import ReactModal from 'react-modal'
 
 class Modal extends React.Component {
     state = {
-        isOpen: true,
+        isOpen: false,
     }
 
     handleOpenModal = () => {
