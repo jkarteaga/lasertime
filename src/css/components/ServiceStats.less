@@ -1,0 +1,76 @@
+@import '../variables';
+
+.ServiceStats {
+    border: 1px solid @gray-90;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.ServiceStats__heading {
+    text-align: center;
+}
+
+.ServiceStats__body {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    justify-content: space-between;
+}
+
+.ServiceStats__item {
+    display: flex;
+    justify-content: center;
+}
+
+.ServiceStats__icon {
+    //outline: 1px solid red;
+    flex-basis: 60px;
+
+    padding-top: 10px;
+    background: no-repeat center;
+
+    &--duration {
+        background-image: url('../icons/icon-duration.svg');
+    }
+    &--money {
+        background-image: url('../icons/icon-money.svg');
+    }
+    &--quantity {
+        background-image: url('../icons/icon-quantity.svg');
+    }
+}
+
+.ServiceStats__item-body {
+    flex-basis: 220px;
+    text-align: center;
+}
+
+.ServiceStats__item-heading {
+    font-weight: bold;
+}
+
+.ServiceStats__text {
+}
+
+.ServiceStats__link {
+    color: @link-color;
+}
+
+@media @mobile-wide-widths {
+    .ServiceStats__body {
+        flex-direction: row;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    .ServiceStats__item {
+        flex-direction: column;
+    }
+
+    .ServiceStats__item-body {
+        flex-basis: auto;
+    }
+}

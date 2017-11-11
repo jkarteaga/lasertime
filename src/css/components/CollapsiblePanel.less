@@ -22,6 +22,8 @@
     &--opened {
         .CollapsiblePanel__body {
             transition: max-height ease 2s;
+            padding-top: 15px;
+            padding-bottom: 15px;
             // work-around
             max-height: 1500px;
         }
@@ -40,7 +42,9 @@
 }
 
 .CollapsiblePanel__body {
-    transition: max-height ease-out 0.5s;
+    transition: max-height ease-out 0.5s, padding ease-out 0.5s;
     max-height: 0;
+    //box-sizing: border-box;
     overflow: hidden;
+    padding: 0 15px;
 }
