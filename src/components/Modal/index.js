@@ -19,12 +19,13 @@ class Modal extends React.Component {
         const { children, text, title } = this.props
         return (
             <div>
-                <span
+                <a
+                    href={'#'}
                     className={'Modal__trigger'}
                     onClick={this.handleOpenModal}
                 >
                     {text}
-                </span>
+                </a>
                 <ReactModal
                     isOpen={this.state.isOpen}
                     onRequestClose={this.handleCloseModal}
