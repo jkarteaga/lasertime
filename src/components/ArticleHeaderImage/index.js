@@ -5,8 +5,10 @@ import Img from 'gatsby-image'
 function ArticleHeaderImage({ title, imgSizes }) {
     return (
         <div className={'ArticleHeaderImage'}>
-            <Img sizes={imgSizes} />
-            <h1 className={'ArticleHeaderTitle'}>{title}</h1>
+            <div className="ArticleHeaderImage__img">
+                <Img sizes={imgSizes} />
+            </div>
+            <h1 className={'ArticleHeaderImage__title'}>{title}</h1>
         </div>
     )
 }
