@@ -2,6 +2,7 @@ module.exports = {
     pathPrefix: `/`,
 
     siteMetadata: {
+        siteUrl: `https://lasertime.ru`,
         title: 'Клиника красоты "Знак Качества"',
         description:
             'Добро пожаловать в клинику красоты &quot;Знак Качества&quot;! Мы качественно проводим процедуры фракционного лазерного омоложения, лазерной эпиляции, пластической хирургии.',
@@ -76,6 +77,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-catch-links`,
+        `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-next`,
         // `gatsby-plugin-react-helmet`,
         `gatsby-transformer-sharp`,
