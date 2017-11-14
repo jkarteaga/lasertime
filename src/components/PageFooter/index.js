@@ -1,19 +1,34 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 class PageFooter extends React.Component {
     render() {
         return (
             <div className="PageFooter">
                 <div className="PageFooter__wrapper">
-                    Лицензия на осуществление медицинской деятельности{' '}
-                    <a
-                        href={'/static/pdf/licence.pdf'}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        № ЛО-77-01-013289
-                    </a>{' '}
-                    от 18.10.2016 г.
+                    <div className="PageFooter__licence">
+                        Лицензия на осуществление медицинской деятельности{' '}
+                        <Link
+                            to={'/pdf/licence.pdf'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            № ЛО-77-01-013289
+                        </Link>{' '}
+                        от 18.10.2016 г.
+                    </div>
+                    <div className="PageFooter__warning">
+                        Использовании любых материалов сайта без
+                        предварительного согласования с администрацией
+                        запрещено.
+                    </div>
+                    <div className="PageFooter__copyright">
+                        © 2017 Клиника “Знак Качества”.{' '}
+                        <span className="PageFooter__copyright-text">
+                            {' '}
+                            Все авторские права защищены.
+                        </span>
+                    </div>
                 </div>
             </div>
         )
