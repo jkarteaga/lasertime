@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from '../components/HelmetWrapper'
 import PagePreview from '../components/PagePreview'
 import InfoBlock from '../components/InfoBlock'
+import ArticleHeaderImage from '../components/ArticleHeaderImage'
 
 function PriceList({ data }) {
     const pricelistElements = data.allMarkdownRemark.edges
@@ -26,20 +27,23 @@ function PriceList({ data }) {
         })
 
     return (
-        <div className="PageContent__wrapper PageContent__wrapper--gray-bg">
+        <div>
             <Helmet data={data} title="Цены" description="" keywords="" />
-            <h1>Цены</h1>
-            <InfoBlock color="red">
-                <p>
-                    Внимание, цены на сайте представлены только для
-                    предварительного ознакомления! В связи в нестабильным
-                    экономическим положением в стране, цены на
-                    высококачественные европейские препараты постоянно
-                    корректируются. Уточняйте актуальную информацию по ценам у
-                    нашего администратора.
-                </p>
-            </InfoBlock>
-            {pricelistElements}
+
+            <ArticleHeaderImage title={'Цены'} imgSizes={data.blank.sizes} />
+            <div className="PageContent__wrapper">
+                <InfoBlock color="red">
+                    <p>
+                        Внимание, цены на сайте представлены только для
+                        предварительного ознакомления! В связи в нестабильным
+                        экономическим положением в стране, цены на
+                        высококачественные европейские препараты постоянно
+                        корректируются. Уточняйте актуальную информацию по ценам
+                        у нашего администратора.
+                    </p>
+                </InfoBlock>
+                {pricelistElements}
+            </div>
         </div>
     )
 }
@@ -52,6 +56,11 @@ export default PriceList
 export const pageQuery = graphql`
     query Prices {
         ...Helmet
+        blank: imageSharp(id: { regex: "/blank/" }) {
+            sizes(maxWidth: 960) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
         allMarkdownRemark(filter: { fields: { group: { eq: "prices" } } }) {
             edges {
                 node {

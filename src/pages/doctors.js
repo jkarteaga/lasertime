@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from '../components/HelmetWrapper'
 import PagePreview from '../components/PagePreview'
+import ArticleHeaderImage from '../components/ArticleHeaderImage'
 
 function Doctors({ data }) {
     const doctorsElements = data.allMarkdownRemark.edges.map(({ node }) => {
@@ -14,10 +15,14 @@ function Doctors({ data }) {
     })
 
     return (
-        <div className="PageContent__wrapper">
+        <div>
             <Helmet data={data} title="Врачи" description="" />
-            <h1>Врачи</h1>
-            {doctorsElements}
+            <ArticleHeaderImage
+                title={'Врачи'}
+                imgSizes={data.blank.sizes}
+                noEffects
+            />
+            <div className="PageContent__wrapper">{doctorsElements}</div>
         </div>
     )
 }
@@ -31,6 +36,11 @@ export default Doctors
 export const pageQuery = graphql`
     query Doctors {
         ...Helmet
+        blank: imageSharp(id: { regex: "/blank/" }) {
+            sizes(maxWidth: 960) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
         allMarkdownRemark(filter: { fields: { group: { eq: "doctors" } } }) {
             edges {
                 node {

@@ -9,12 +9,10 @@ function Services({ data }) {
         <div>
             <Helmet data={data} title={'Услуги'} description="" />
 
-            <div className="PageContent__header">
-                <ArticleHeaderImage
-                    title={'Услуги'}
-                    imgSizes={data.servicesHeader.sizes}
-                />
-            </div>
+            <ArticleHeaderImage
+                title={'Услуги'}
+                imgSizes={data.servicesHeader.sizes}
+            />
 
             <div className="PageContent__wrapper">
                 <ServiceList>

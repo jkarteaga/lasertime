@@ -11,6 +11,7 @@ function Contacts({ data }) {
             <ArticleHeaderImage
                 title={'Контакты'}
                 imgSizes={data.contactsHeader.sizes}
+                noEffects
             />
             <div className="Contacts">
                 <InfoPanel />
@@ -28,7 +29,7 @@ export default Contacts
 export const pageQuery = graphql`
     query Contacts {
         ...Helmet
-        contactsHeader: imageSharp(id: { regex: "/face/" }) {
+        contactsHeader: imageSharp(id: { regex: "/contacts-header1/" }) {
             sizes(maxWidth: 960) {
                 ...GatsbyImageSharpSizes_noBase64
             }

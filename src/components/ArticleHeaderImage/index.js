@@ -2,10 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
-function ArticleHeaderImage({ title, imgSizes }) {
+function ArticleHeaderImage({ title, imgSizes, noEffects }) {
+    const filterClassName = noEffects ? '' : 'ArticleHeaderImage__img--filter'
     return (
         <div className={'ArticleHeaderImage'}>
-            <div className="ArticleHeaderImage__img">
+            <div className={`ArticleHeaderImage__img ${filterClassName}`}>
                 <Img sizes={imgSizes} />
             </div>
             <h1 className={'ArticleHeaderImage__title'}>{title}</h1>
@@ -16,8 +17,11 @@ function ArticleHeaderImage({ title, imgSizes }) {
 ArticleHeaderImage.propTypes = {
     title: PropTypes.string.isRequired,
     imgSizes: PropTypes.object.isRequired,
+    noEffects: PropTypes.bool,
 }
 
-ArticleHeaderImage.defaultProps = {}
+ArticleHeaderImage.defaultProps = {
+    noEffects: false,
+}
 
 export default ArticleHeaderImage

@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from '../components/HelmetWrapper'
 import ActionList from '../components/ActionList'
 import fixtures from '../files/config/actions-fixtures'
+import ArticleHeaderImage from '../components/ArticleHeaderImage'
 
 function Actions({ data }) {
     const { actions, categories, groups } = fixtures
@@ -9,7 +10,11 @@ function Actions({ data }) {
     return (
         <div className="">
             <Helmet data={data} title="Акции" description="" />
-            <h1>Акции нашей клиники</h1>
+            <ArticleHeaderImage
+                title={'Акции'}
+                imgSizes={data.contactsHeader.sizes}
+                noEffects
+            />
             <ActionList
                 items={actions}
                 categories={categories}
@@ -24,5 +29,10 @@ export default Actions
 export const pageQuery = graphql`
     query Actions {
         ...Helmet
+        contactsHeader: imageSharp(id: { regex: "/actions-header/" }) {
+            sizes(maxWidth: 960) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
     }
 `
