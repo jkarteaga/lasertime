@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import ArticleAuthorBlock from '../components/ArticleAuthor'
 
 class ArticleTemplate extends React.Component {
     render() {
@@ -9,7 +8,6 @@ class ArticleTemplate extends React.Component {
             <div className="PageContent__wrapper">
                 <Helmet title={article.frontmatter.title} />
                 <h1>{article.frontmatter.title}</h1>
-                <ArticleAuthorBlock />
                 <div dangerouslySetInnerHTML={{ __html: article.html }} />
             </div>
         )

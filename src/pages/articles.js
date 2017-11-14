@@ -14,7 +14,7 @@ function ArticleList({ data }) {
     })
 
     return (
-        <div className="PageContent__wrapper PageContent__wrapper--gray-bg">
+        <div className="PageContent__wrapper">
             <Helmet data={data} title="Статьи" description="" />
             <h1>Статьи</h1>
             {articlesElements}

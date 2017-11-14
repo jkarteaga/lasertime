@@ -45,7 +45,7 @@ export const pageQuery = graphql`
         laserEpilationHeader: imageSharp(
             id: { regex: "/laser-epilation-header/" }
         ) {
-            sizes(maxWidth: 200) {
+            sizes(maxWidth: 350) {
                 ...GatsbyImageSharpSizes_noBase64
             }
         }
