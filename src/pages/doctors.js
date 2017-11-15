@@ -20,6 +20,7 @@ function Doctors({ data }) {
             <ArticleHeaderImage
                 title={'Врачи'}
                 imgSizes={data.blank.sizes}
+                alignLeft
                 noEffects
             />
             <div className="PageContent__wrapper">{doctorsElements}</div>
@@ -36,8 +37,8 @@ export default Doctors
 export const pageQuery = graphql`
     query Doctors {
         ...Helmet
-        blank: imageSharp(id: { regex: "/blank/" }) {
-            sizes(maxWidth: 960) {
+        blank: imageSharp(id: { regex: "/doctors-header/" }) {
+            sizes(maxWidth: 960, quality: 65) {
                 ...GatsbyImageSharpSizes_noBase64
             }
         }

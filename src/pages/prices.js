@@ -30,7 +30,12 @@ function PriceList({ data }) {
         <div>
             <Helmet data={data} title="Цены" description="" keywords="" />
 
-            <ArticleHeaderImage title={'Цены'} imgSizes={data.blank.sizes} />
+            <ArticleHeaderImage
+                title={'Цены'}
+                imgSizes={data.blank.sizes}
+                alignLeft
+                noEffects
+            />
             <div className="PageContent__wrapper">
                 <InfoBlock color="red">
                     <p>
@@ -56,8 +61,8 @@ export default PriceList
 export const pageQuery = graphql`
     query Prices {
         ...Helmet
-        blank: imageSharp(id: { regex: "/blank/" }) {
-            sizes(maxWidth: 960) {
+        blank: imageSharp(id: { regex: "/prices-header/" }) {
+            sizes(maxWidth: 960, quality: 65) {
                 ...GatsbyImageSharpSizes_noBase64
             }
         }

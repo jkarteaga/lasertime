@@ -13,6 +13,7 @@ function Actions({ data }) {
             <ArticleHeaderImage
                 title={'Акции'}
                 imgSizes={data.contactsHeader.sizes}
+                alignRight
                 noEffects
             />
             <ActionList
@@ -30,7 +31,7 @@ export const pageQuery = graphql`
     query Actions {
         ...Helmet
         contactsHeader: imageSharp(id: { regex: "/actions-header/" }) {
-            sizes(maxWidth: 960) {
+            sizes(maxWidth: 960, quality: 65) {
                 ...GatsbyImageSharpSizes_noBase64
             }
         }

@@ -20,6 +20,7 @@ function ArticleList({ data }) {
             <ArticleHeaderImage
                 title={'Статьи'}
                 imgSizes={data.blank.sizes}
+                alignRight
                 noEffects
             />
             <div className="PageContent__wrapper">{articlesElements}</div>
@@ -32,8 +33,8 @@ export default ArticleList
 export const pageQuery = graphql`
     query Articles {
         ...Helmet
-        blank: imageSharp(id: { regex: "/blank/" }) {
-            sizes(maxWidth: 960) {
+        blank: imageSharp(id: { regex: "/articles-header/" }) {
+            sizes(maxWidth: 960, quality: 60) {
                 ...GatsbyImageSharpSizes_noBase64
             }
         }

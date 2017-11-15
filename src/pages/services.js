@@ -12,6 +12,8 @@ function Services({ data }) {
             <ArticleHeaderImage
                 title={'Услуги'}
                 imgSizes={data.servicesHeader.sizes}
+                alignRight
+                noEffects
             />
 
             <div className="PageContent__wrapper">
@@ -35,8 +37,8 @@ export default Services
 export const pageQuery = graphql`
     query Services {
         ...Helmet
-        servicesHeader: imageSharp(id: { regex: "/face/" }) {
-            sizes(maxWidth: 960) {
+        servicesHeader: imageSharp(id: { regex: "/services-header/" }) {
+            sizes(maxWidth: 960, quality: 65) {
                 ...GatsbyImageSharpSizes_noBase64
             }
         }
