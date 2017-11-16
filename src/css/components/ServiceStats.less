@@ -60,6 +60,14 @@
 }
 
 @media @mobile-wide-widths {
+    .ServiceStats {
+        padding-left: 0;
+    }
+
+    .ServiceStats__item {
+        justify-content: flex-start;
+    }
+
     .ServiceStats__body {
         flex-direction: row;
         height: auto;
@@ -68,6 +76,7 @@
 
     .ServiceStats__item {
         flex-direction: column;
+        flex-basis: 30%;
     }
 
     .ServiceStats__item-body {
