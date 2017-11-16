@@ -12,20 +12,16 @@ import FloatBlock from '../../../components/FloatBlock/index'
 import ServiceStats from '../../../components/ServiceStats'
 import ArticleHeaderImage from '../../../components/ArticleHeaderImage'
 
-function LaserEpilation({ data }) {
+function LaserEpilationService({ data }) {
     configureAnchors({ offset: -70, scrollDuration: 500 })
 
     return (
         <div>
-            <Helmet
-                data={data}
-                title="Лазерная эпиляция"
-                description="Описание страницы"
-            />
+            <Helmet data={data} title="Лазерная эпиляция" description="" />
 
             <ArticleHeaderImage
-                title={'Лазерная эпиляция'}
-                imgSizes={data.laserEpilationHeader.sizes}
+                title="Лазерная эпиляция"
+                imgSizes={data.laserEpilationServiceHeader.sizes}
             />
 
             <div className="PageContent__wrapper">
@@ -417,10 +413,10 @@ function LaserEpilation({ data }) {
     )
 }
 
-export default LaserEpilation
+export default LaserEpilationService
 
 export const pageQuery = graphql`
-    query LaserEpilationQuery {
+    query LaserEpilationServiceQuery {
         ...Helmet
         laserEpilationProcess: imageSharp(
             id: { regex: "/laser-epilation-process/" }
@@ -429,7 +425,7 @@ export const pageQuery = graphql`
                 ...GatsbyImageSharpSizes_noBase64
             }
         }
-        laserEpilationHeader: imageSharp(
+        laserEpilationServiceHeader: imageSharp(
             id: { regex: "/laser-epilation-header/" }
         ) {
             sizes(maxWidth: 960) {
