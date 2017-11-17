@@ -23,6 +23,16 @@ function Services({ data }) {
                         link="/services/laser-epilation"
                         imgSizes={data.laserEpilationHeader.sizes}
                     />
+                    <ServiceListItem
+                        title="3D лифтинг INFINI®"
+                        link="/services/3d-lifting-infini"
+                        imgSizes={data.laserEpilationHeader.sizes}
+                    />
+                    <ServiceListItem
+                        title="Лазерное омоложение"
+                        link="/services/laser-rejuvenation"
+                        imgSizes={data.laserEpilationHeader.sizes}
+                    />
                 </ServiceList>
             </div>
         </div>
