@@ -17,7 +17,7 @@ function LaserRejuvenationService({ data }) {
     return (
         <div>
             <Helmet data={data} title="Лазерное DOT омоложение" description="" />
-            <ArticleHeaderImage title="Лазерное омоложение" imgSizes={data.laserEpilationServiceHeader.sizes} />
+            <ArticleHeaderImage title="Лазерное омоложение" imgSizes={data.laserRejuvenationServiceHeader.sizes} />
 
             <div className="PageContent__wrapper">
                 <FloatBlock right oneThird>
@@ -205,6 +205,11 @@ export const pageQuery = graphql`
     query LaserRejuvenationServiceQuery {
         ...Helmet
         laserEpilationServiceHeader: imageSharp(id: { regex: "/laser-epilation-header/" }) {
+            sizes(maxWidth: 960) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        laserRejuvenationServiceHeader: imageSharp(id: { regex: "/laser-rejuvenation-service-header/" }) {
             sizes(maxWidth: 960) {
                 ...GatsbyImageSharpSizes_noBase64
             }

@@ -21,22 +21,23 @@ function Services({ data }) {
                     <ServiceListItem
                         title="Лазерная эпиляция"
                         link="/services/laser-epilation"
-                        imgSizes={data.laserEpilationHeader.sizes}
+                        imgSizes={data.laserEpilationServiceHeader.sizes}
                     />
                     <ServiceListItem
                         title="3D лифтинг INFINI®"
                         link="/services/3d-lifting-infini"
-                        imgSizes={data.laserEpilationHeader.sizes}
+                        imgSizes={data.liftingInfiniServiceHeader.sizes}
                     />
+
                     <ServiceListItem
                         title="Лазерное омоложение"
                         link="/services/laser-rejuvenation"
-                        imgSizes={data.laserEpilationHeader.sizes}
+                        imgSizes={data.laserRejuvenationServiceHeader.sizes}
                     />
                     <ServiceListItem
                         title="Фотоомоложение"
                         link="/services/photo-rejuvenation"
-                        imgSizes={data.laserEpilationHeader.sizes}
+                        imgSizes={data.photoRejuvenationServiceHeader.sizes}
                     />
                 </ServiceList>
             </div>
@@ -57,8 +58,29 @@ export const pageQuery = graphql`
                 ...GatsbyImageSharpSizes_noBase64
             }
         }
-        laserEpilationHeader: imageSharp(
-            id: { regex: "/laser-epilation-header/" }
+        laserEpilationServiceHeader: imageSharp(
+            id: { regex: "/laser-epilation-service-header/" }
+        ) {
+            sizes(maxWidth: 350) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        photoRejuvenationServiceHeader: imageSharp(
+            id: { regex: "/photo-rejuvenation-service-header/" }
+        ) {
+            sizes(maxWidth: 350) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        liftingInfiniServiceHeader: imageSharp(
+            id: { regex: "/lifting-infini-service-header/" }
+        ) {
+            sizes(maxWidth: 350) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        laserRejuvenationServiceHeader: imageSharp(
+            id: { regex: "/laser-rejuvenation-service-header/" }
         ) {
             sizes(maxWidth: 350) {
                 ...GatsbyImageSharpSizes_noBase64

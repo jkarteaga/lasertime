@@ -19,7 +19,7 @@ function LiftingInfiniService({ data }) {
         <div>
             <Helmet data={data} title="3D лифтинг INFINI" description="" />
 
-            <ArticleHeaderImage title="3D лифтинг INFINI®" imgSizes={data.laserEpilationServiceHeader.sizes} />
+            <ArticleHeaderImage title="3D лифтинг INFINI®" imgSizes={data.liftingInfiniServiceHeader.sizes} />
 
             <div className="PageContent__wrapper">
                 <FloatBlock right oneThird>
@@ -207,7 +207,7 @@ export const pageQuery = graphql`
                 ...GatsbyImageSharpSizes_noBase64
             }
         }
-        laserEpilationServiceHeader: imageSharp(id: { regex: "/laser-epilation-header/" }) {
+        liftingInfiniServiceHeader: imageSharp(id: { regex: "/lifting-infini-service-header/" }) {
             sizes(maxWidth: 960) {
                 ...GatsbyImageSharpSizes_noBase64
             }

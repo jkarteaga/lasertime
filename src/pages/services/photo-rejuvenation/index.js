@@ -19,7 +19,7 @@ function PhotoRejuvenationService({ data }) {
     return (
         <div>
             <Helmet data={data} title="Фотоомоложение" description="" />
-            <ArticleHeaderImage title="Фотоомоложение" imgSizes={data.photoRejuvenationHeader.sizes} />
+            <ArticleHeaderImage title="Фотоомоложение" imgSizes={data.photoRejuvenationServiceHeader.sizes} />
             <div className="PageContent__wrapper">
                 <FloatBlock right oneThird>
                     <TOC title={'Содержание'}>
@@ -189,7 +189,7 @@ export default PhotoRejuvenationService
 export const pageQuery = graphql`
     query PhotoRejuvenationServiceQuery {
         ...Helmet
-        photoRejuvenationHeader: imageSharp(id: { regex: "/laser-epilation-header/" }) {
+        photoRejuvenationServiceHeader: imageSharp(id: { regex: "/photo-rejuvenation-service-header/" }) {
             sizes(maxWidth: 960) {
                 ...GatsbyImageSharpSizes_noBase64
             }
