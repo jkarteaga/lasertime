@@ -33,6 +33,11 @@ function Services({ data }) {
                         link="/services/laser-rejuvenation"
                         imgSizes={data.laserEpilationHeader.sizes}
                     />
+                    <ServiceListItem
+                        title="Фотоомоложение"
+                        link="/services/photo-rejuvenation"
+                        imgSizes={data.laserEpilationHeader.sizes}
+                    />
                 </ServiceList>
             </div>
         </div>
