@@ -3,12 +3,6 @@
 .Timeline {
     margin: 10px;
     box-shadow: @box-shadow-80;
-}
-.Timeline__list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding-left: 0;
     position: relative;
 
     &::before {
@@ -19,6 +13,21 @@
         height: 100%;
         background-color: @gray-90;
     }
+}
+
+.Timeline__title {
+    padding-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.Timeline__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
 }
 
 .TimelineItem {
@@ -64,4 +73,43 @@
     font-size: 15px;
     color: @gray-60;
     margin: 0;
+}
+
+@media @mobile-wide-widths {
+    .Timeline {
+        margin: 15px;
+        &::before {
+            width: 10px;
+            left: 135px;
+        }
+    }
+
+    .Timeline__title {
+    }
+
+    .Timeline__list {
+    }
+
+    .TimelineItem {
+        flex-direction: row;
+        padding-left: 0;
+
+        &::before {
+            left: 125px;
+        }
+    }
+
+    .TimelineItem__header {
+        flex: 0 0 120px;
+        text-align: right;
+        margin-right: 40px;
+    }
+
+    .TimelineItem__date {
+        margin-top: 15px;
+    }
+
+    .TimelineItem__body {
+        margin: 13px 0;
+    }
 }
