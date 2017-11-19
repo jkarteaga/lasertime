@@ -18,15 +18,9 @@ export default Timeline
 export const TimelineItem = ({ date, name, description }) => {
     return (
         <li className="TimelineItem">
-            <div className="TimelineItem__date">
-                <h3>{date}</h3>
-            </div>
-            <div className="TimelineItem__name">
-                <p>{name}</p>
-            </div>
-            <div className="TimelineItem__description">
-                <p>{description}</p>
-            </div>
+            <h3 className="TimelineItem__date">{date}</h3>
+            <p className="TimelineItem__name">{name}</p>
+            <p className="TimelineItem__description">{description}</p>
         </li>
     )
 }
