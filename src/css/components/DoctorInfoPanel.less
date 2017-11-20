@@ -1,0 +1,90 @@
+@import '../variables';
+
+.DoctorInfoPanel {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.DoctorInfoPanel__body {
+    background-color: @gray-97;
+    padding: 10px 20px;
+}
+
+.DoctorInfoPanel__name {
+    font-weight: normal;
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 0;
+    //padding-left: 10px;
+}
+
+.DoctorInfoPanel__position {
+    //font-weight: bold;
+    color: @gray-50;
+}
+
+.DoctorInfoPanel__description {
+    color: @gray-50;
+    margin-bottom: 0;
+}
+
+.DoctorInfoPanel__photo {
+    background-color: @gray-97;
+    display: flex;
+
+    & .DoctorInfoPanel__photo-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media @mobile-wide-widths {
+    .DoctorInfoPanel {
+        margin: 15px;
+        flex-direction: row;
+    }
+
+    .DoctorInfoPanel__body {
+        padding: 0 0 10px 20px;
+    }
+
+    .DoctorInfoPanel__description {
+        //outline: 1px solid red;
+
+        height: 100px;
+        overflow: scroll;
+    }
+
+    .DoctorInfoPanel__photo {
+        display: flex;
+        flex: 0 0 30%;
+        align-items: flex-end;
+        padding-top: 20px;
+
+        & .DoctorInfoPanel__photo-wrapper {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media @tablet-widths {
+    .DoctorInfoPanel {
+        margin: 20px;
+    }
+
+    .DoctorInfoPanel__body {
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-bottom: 30px;
+    }
+
+    .DoctorInfoPanel__description {
+        height: auto;
+        //overflow: scroll;
+    }
+
+    .DoctorInfoPanel__photo {
+        flex-basis: 30%;
+    }
+}

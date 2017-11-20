@@ -11,7 +11,9 @@ function DoctorInfoPanel({ name, position, description, imageSizes }) {
                 <p className="DoctorInfoPanel__description">{description}</p>
             </div>
             <div className="DoctorInfoPanel__photo">
-                <Img sizes={imageSizes} title={name} alt={name} />
+                <div className="DoctorInfoPanel__photo-wrapper">
+                    <Img sizes={imageSizes} title={name} alt={name} />
+                </div>
             </div>
         </article>
     )
