@@ -14,32 +14,31 @@ function Doctors({ data }) {
                 alignLeft
                 noEffects
             />
-            <div className="PageContent__wrapper">
-                <Link to="/doctors/legun-alla">
-                    <DoctorPreview
-                        name="Легун Алла Александровна"
-                        position="главный врач"
-                    />
-                </Link>
-                <Link to="/doctors/portnova-ekaterina">
-                    <DoctorPreview
-                        name="Портнова Екатерина Вячеславовна"
-                        position="специалист по лазерным и световым технологиям"
-                    />
-                </Link>
-                <Link to="/doctors/dolidze-tatiana">
-                    <DoctorPreview
-                        name="Долидзе Татьяна Джумберовна"
-                        position="ассистент врача-косметолога"
-                    />
-                </Link>
-                <Link to="/doctors/gvaramiya-aleksey">
-                    <DoctorPreview
-                        name="Гварамия Алексей Алекович"
-                        position="пластический хирург"
-                    />
-                </Link>
-            </div>
+
+            <Link to="/doctors/legun-alla">
+                <DoctorPreview
+                    name="Легун Алла Александровна"
+                    position="главный врач"
+                />
+            </Link>
+            <Link to="/doctors/portnova-ekaterina">
+                <DoctorPreview
+                    name="Портнова Екатерина Вячеславовна"
+                    position="специалист по лазерным и световым технологиям"
+                />
+            </Link>
+            <Link to="/doctors/dolidze-tatiana">
+                <DoctorPreview
+                    name="Долидзе Татьяна Джумберовна"
+                    position="ассистент врача-косметолога"
+                />
+            </Link>
+            <Link to="/doctors/gvaramiya-aleksey">
+                <DoctorPreview
+                    name="Гварамия Алексей Алекович"
+                    position="пластический хирург"
+                />
+            </Link>
         </div>
     )
 }

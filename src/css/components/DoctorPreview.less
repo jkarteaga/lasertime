@@ -3,8 +3,8 @@
 .DoctorPreview {
     box-shadow: @box-shadow-80;
     padding: 10px 20px;
-    margin-bottom: 20px;
-    background-color: @gray-97;
+    margin: 0 20px 20px 20px;
+    background-color: white;
 }
 
 .DoctorPreview__name {
@@ -20,6 +20,12 @@
 
 @media @tablet-widths {
     .DoctorPreview {
+        transition: transform ease 300ms, box-shadow ease 300ms;
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: @box-shadow-gold;
+        }
         //width: 50%;
     }
 
