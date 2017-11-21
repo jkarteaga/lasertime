@@ -58,13 +58,6 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                name: `doctorsmd`,
-                path: `${__dirname}/src/files/markdown/doctors/`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
                 name: `prices`,
                 path: `${__dirname}/src/files/markdown/prices/`,
             },
