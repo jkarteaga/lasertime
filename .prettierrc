@@ -9,6 +9,12 @@
       "options": {
         "printWidth": 1000
       }
+    },
+    {
+      "files": "**/articles/*.js",
+      "options": {
+        "printWidth": 1000
+      }
     }
-]
+  ]
 }
