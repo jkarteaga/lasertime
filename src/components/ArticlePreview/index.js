@@ -5,6 +5,7 @@ import articleIcon from './src/icon-article.svg'
 import interviewIcon from './src/icon-interview.svg'
 import interviewTypeText from './src/text-interview.svg'
 import articleTypeText from './src/text-article.svg'
+import placeholderImg from './src/placeholder-image.png'
 
 function ArticlePreview({ type, image, title, description, path }) {
     const TypeIcon = type === 'interview' ? interviewIcon : articleIcon
@@ -48,7 +49,7 @@ function ArticlePreview({ type, image, title, description, path }) {
 
 ArticlePreview.propTypes = {
     type: PropTypes.oneOf(['article', 'interview']),
-    image: PropTypes.string.isRequired,
+    image: PropTypes.string,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired,
@@ -56,9 +57,8 @@ ArticlePreview.propTypes = {
 
 ArticlePreview.defaultProps = {
     type: 'article',
-    image: 'https://placeimg.com/180/180/any',
-    description:
-        'Nunc id mi vitae tellus semper tincidunt eget et eros. Phasellus placerat tellus quis sapien bibendum, ac tincidunt enim ornare. Etiam cursus justo eu orci consequat, sit amet pellentesque ante blandit.',
+    image: placeholderImg,
+    description: '',
 }
 
 export default ArticlePreview

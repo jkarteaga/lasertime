@@ -39,7 +39,7 @@ ArticleAuthorBlock.defaultProps = {
     image: '/img/articles/legun-alla-author.jpg',
     name: 'Легун Алла Александровна',
     description:
-        'Sed enim arcu, tempus ac risus sed, tincidunt luctus augue. Aliquam sit amet purus metus. Curabitur quis pellentesque odio. Integer ullamcorper lorem id lectus tristique, at cursus mauris consectetur. Sed urna dolor, aliquet ac ante sed, luctus sollicitudin massa. Aenean velit ipsum, rhoncus vel nulla at, faucibus euismod nunc. Sed ut interdum enim.',
+        'Врач дерматовенеролог, косметолог, онкодерматолог, специалист по детской дерматологии, трихолог. Специалист по аппаратным и лазерным технологиям, а также инъекционным методикам. Алла Александровна использует новейшие методы лечения патологий кожи, постоянно повышая свою квалификацию. Проходит частые стажирировки в России и зарубежом.',
     link: '/doctors/legun-alla/',
 }
 

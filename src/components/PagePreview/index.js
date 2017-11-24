@@ -4,8 +4,10 @@ import Link from 'gatsby-link'
 
 function PagePreview({ title, path }) {
     return (
-        <div>
-            <Link to={path}>{title}</Link>
+        <div className="PagePreview">
+            <Link className="PagePreview__link" to={path}>
+                {title}
+            </Link>
         </div>
     )
 }
