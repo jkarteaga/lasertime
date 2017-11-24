@@ -17,7 +17,7 @@
 
 .Timeline__title {
     padding-top: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-align: center;
     font-size: 25px;
 }
@@ -28,6 +28,25 @@
     list-style: none;
     padding-left: 0;
     margin-top: 0;
+}
+
+.Timeline__certificates {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.Timeline__certificates-button {
+    margin: auto;
+
+    font-weight: bold;
+    border: 2px solid @gold;
+    display: inline-block;
+    padding: 10px 20px;
+    color: @gray-30;
+
+    &:hover {
+        background-color: @gold-light;
+    }
 }
 
 .TimelineItem {
@@ -74,6 +93,23 @@
     color: @gray-60;
     margin: 0;
 }
+.TimelineItem__description-list {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.TimelineItem__description-list-item {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background-color: @gold;
+        left: -15px;
+        top: 8px;
+    }
+}
 
 @media @mobile-wide-widths {
     .Timeline {
@@ -82,12 +118,6 @@
             width: 10px;
             left: 135px;
         }
-    }
-
-    .Timeline__title {
-    }
-
-    .Timeline__list {
     }
 
     .TimelineItem {

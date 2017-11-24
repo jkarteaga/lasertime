@@ -3,7 +3,10 @@
 .ArticleAuthor {
     display: flex;
 
-    box-shadow: 0 1px 5px 1px @gray-80;
+    //box-shadow: 0 1px 5px 1px @gray-80;
+    border: 2px solid @gray-90;
+
+    margin: 20px 0;
 }
 
 .ArticleAuthor__header {
@@ -36,7 +39,12 @@
     flex-basis: 40px;
     text-decoration: underline;
     text-align: right;
+    padding-top: 10px;
     padding-right: 30px;
+
+    & a {
+        color: @link-color;
+    }
 }
 
 @media @mobile-wide-widths {
