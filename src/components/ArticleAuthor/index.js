@@ -15,9 +15,7 @@ function ArticleAuthorBlock({ image, name, description, link }) {
             </div>
             <div className="ArticleAuthor__body">
                 <div className="ArticleAuthor__title">
-                    <div className="ArticleAuthor__title-wrapper">
-                        Об авторе
-                    </div>
+                    <div className="ArticleAuthor__title-wrapper">О враче</div>
                 </div>
                 <div className="ArticleAuthor__description">{description}</div>
                 <div className="ArticleAuthor__link">
@@ -39,7 +37,7 @@ ArticleAuthorBlock.defaultProps = {
     image: '/img/articles/legun-alla-author.jpg',
     name: 'Легун Алла Александровна',
     description:
-        'Врач дерматовенеролог, косметолог, онкодерматолог, специалист по детской дерматологии, трихолог. Специалист по аппаратным и лазерным технологиям, а также инъекционным методикам. Алла Александровна использует новейшие методы лечения патологий кожи, постоянно повышая свою квалификацию. Проходит частые стажирировки в России и зарубежом.',
+        'На наши вопросы отвечает главный врач клиники "Знак Качества", дерматовенеролог, косметолог, онкодерматолог, специалист по детской дерматологии, трихолог - Легун Алла Александровна. Эксперт по аппаратным и лазерным технологиям, а также инъекционным методикам. Использует новейшие методы лечения патологий кожи, постоянно повышая свою квалификацию. Проходит частые стажировки в России и зарубежом.',
     link: '/doctors/legun-alla/',
 }
 

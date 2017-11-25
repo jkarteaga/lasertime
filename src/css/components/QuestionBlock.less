@@ -22,3 +22,18 @@
         background-color: @gold;
     }
 }
+
+@media @tablet-widths {
+    .QuestionBlock__question {
+        padding-left: 10px;
+    }
+
+    .QuestionBlock__answer {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        &::before {
+            left: 10px;
+        }
+    }
+}
