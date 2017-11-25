@@ -30,6 +30,14 @@ const HTML = ({ body, headComponents, postBodyComponents }) => {
                     href="https://fonts.googleapis.com/css?family=Arsenal&amp;subset=cyrillic-ext"
                     rel="stylesheet"
                 />
+                <link
+                    href="https://fonts.googleapis.com/css?family=Forum&amp;subset=cyrillic,cyrillic-ext"
+                    rel="stylesheet"
+                />
+                <link
+                    href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&amp;subset=cyrillic-ext"
+                    rel="stylesheet"
+                />
                 <link rel="manifest" href="/manifest.json" />
                 <meta
                     name="msapplication-config"
@@ -53,7 +61,7 @@ const HTML = ({ body, headComponents, postBodyComponents }) => {
                     href="/favicon-96x96.png"
                     sizes="96x96"
                 />
-                <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
                 <link
                     rel="apple-touch-icon"
                     sizes="57x57"
