@@ -27,25 +27,25 @@ function ArticleList({ data }) {
             <div className="PageContent__wrapper">
                 <ArticlePreview
                     title={'Всё, что нужно знать о чистке лица'}
-                    path={'/articles/face-cleansing-interview'}
+                    path={'/articles/face-cleansing-interview/'}
                     description={''}
                     type={'interview'}
                 />
                 <ArticlePreview
                     title={'Всё, что нужно знать о лазерной эпиляции'}
-                    path={'/articles/laser-epilation-interview'}
+                    path={'/articles/laser-epilation-interview/'}
                     description={''}
                     type={'interview'}
                 />
                 <ArticlePreview
                     title={'Всё, что нужно знать о PRP плазмолифтинге'}
-                    path={'/articles/plazmolifting-interview'}
+                    path={'/articles/plazmolifting-interview/'}
                     description={''}
                     type={'interview'}
                 />
                 <ArticlePreview
                     title={'Всё, что нужно знать о фракционном DOT омоложении'}
-                    path={'/articles/dot-rejuvenation-interview'}
+                    path={'/articles/dot-rejuvenation-interview/'}
                     description={''}
                     type={'interview'}
                 />
