@@ -24,18 +24,22 @@
     }
 
     ol li::before {
+        background-color: @gold;
+        width: 30px;
+        height: 30px;
+
+        left: 0;
+        top: 6px;
+        border-radius: 50%;
+    }
+
+    ol li::after {
         content: counter(num);
         counter-increment: num;
-
-        background-color: @gold;
-        font-size: 1.1em;
-        width: 29px;
-        height: 26px;
-        padding-top: 3px;
-        left: 0;
-        top: 8px;
-        border-radius: 50%;
-        text-align: center;
+        font-size: 1.9rem;
+        position: absolute;
+        top: 7px;
+        left: 11px;
     }
 
     &--marker-check {
