@@ -2,6 +2,7 @@ import React from 'react'
 import Timeline, { TimelineItem } from '../../../components/Timeline'
 import Helmet from '../../../components/HelmetWrapper'
 import DoctorInfoPanel from '../../../components/DoctorInfoPanel'
+import certificates from './gvaramiya-aleksey-certificates.pdf'
 
 function GvaramiyaAlekseyDoctor({ data }) {
     return (
@@ -17,7 +18,7 @@ function GvaramiyaAlekseyDoctor({ data }) {
                 description="Пластический хирург, врач высшей категории. Главный внештатный окружной специалист по Южному округу города Москвы. Аккредитованный эксперт по контролю и  надзору за клиниками, занимающимися деятельностью &quot;пластическая хирургия&quot;. Действительный и сертифицированный член Российского Общества Пластических, Эстетических и Реконструктивных хирургов. Провел более 3500 операций по комплексной реювенации (омоложению) лица."
                 imageSizes={data.gvaramiyaAlekseyGraybg.sizes}
             />
-            <Timeline title="Обучение">
+            <Timeline title="Обучение" certLink={certificates}>
                 <TimelineItem
                     date="1991"
                     name="Второй московский медицинский институт им.Н.И.Пирогова"
