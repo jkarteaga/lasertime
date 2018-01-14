@@ -28,7 +28,6 @@ function Services({ data }) {
                         link="/services/3d-lifting-infini"
                         imgSizes={data.liftingInfiniServiceHeader.sizes}
                     />
-
                     <ServiceListItem
                         title="Лазерное омоложение"
                         link="/services/laser-rejuvenation"
@@ -38,6 +37,11 @@ function Services({ data }) {
                         title="Фотоомоложение"
                         link="/services/photo-rejuvenation"
                         imgSizes={data.photoRejuvenationServiceHeader.sizes}
+                    />
+                    <ServiceListItem
+                        title="Удаление сосудов"
+                        link="/services/ktp-laser"
+                        imgSizes={data.KTPLaserServiceHeader.sizes}
                     />
                 </ServiceList>
             </div>
@@ -81,6 +85,13 @@ export const pageQuery = graphql`
         }
         laserRejuvenationServiceHeader: imageSharp(
             id: { regex: "/laser-rejuvenation-service-header/" }
+        ) {
+            sizes(maxWidth: 350) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        KTPLaserServiceHeader: imageSharp(
+            id: { regex: "/ktp-laser-service-header/" }
         ) {
             sizes(maxWidth: 350) {
                 ...GatsbyImageSharpSizes_noBase64

@@ -3,4 +3,18 @@
   "semi": false,
   "singleQuote": true,
   "trailingComma": "es5",
+  "overrides": [
+      {
+        "files": "**/services/*/*.js",
+        "options": {
+          "printWidth": 1000
+        }
+      },
+      {
+        "files": "**/articles/*.js",
+        "options": {
+          "printWidth": 1000
+        }
+      }
+    ]
 }
