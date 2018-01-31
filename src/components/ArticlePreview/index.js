@@ -6,8 +6,9 @@ import interviewIcon from './src/icon-interview.svg'
 import interviewTypeText from './src/text-interview.svg'
 import articleTypeText from './src/text-article.svg'
 import placeholderImg from './src/placeholder-image.png'
+import Img from 'gatsby-image'
 
-function ArticlePreview({ type, image, title, description, path }) {
+function ArticlePreview({ type, image, imageRes, title, description, path }) {
     const TypeIcon = type === 'interview' ? interviewIcon : articleIcon
     const TypeText = type === 'interview' ? interviewTypeText : articleTypeText
 
@@ -15,9 +16,7 @@ function ArticlePreview({ type, image, title, description, path }) {
         <Link to={path}>
             <div className="ArticlePreview">
                 <div
-                    className={`ArticlePreview__article-type ArticlePreview__article-type--${
-                        type
-                    }`}
+                    className={`ArticlePreview__article-type ArticlePreview__article-type--${type}`}
                 >
                     <div className="ArticlePreview__article-type-icon">
                         <img src={TypeIcon} />
@@ -27,7 +26,11 @@ function ArticlePreview({ type, image, title, description, path }) {
                     </div>
                 </div>
                 <div className="ArticlePreview__img">
-                    <img src={image} />
+                    {imageRes ? (
+                        <Img resolutions={imageRes} />
+                    ) : (
+                        <img src={image} />
+                    )}
                 </div>
                 <div className="ArticlePreview__content">
                     <div className="ArticlePreview__title">
@@ -50,6 +53,7 @@ function ArticlePreview({ type, image, title, description, path }) {
 ArticlePreview.propTypes = {
     type: PropTypes.oneOf(['article', 'interview']),
     image: PropTypes.string,
+    imageRes: PropTypes.object,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired,

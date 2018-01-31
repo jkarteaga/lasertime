@@ -27,13 +27,13 @@ module.exports = {
 
     plugins: [
         'gatsby-plugin-less',
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `articles`,
-                path: `${__dirname}/src/files/markdown/articles/`,
-            },
-        },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `articles`,
+        //         path: `${__dirname}/src/files/markdown/articles/`,
+        //     },
+        // },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -62,6 +62,17 @@ module.exports = {
                 path: `${__dirname}/src/files/markdown/prices/`,
             },
         },
+        /*-----------------------------------------------------------------------------
+         * Articles Images   
+         *----------------------------------------------------------------------------*/
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `articles-images`,
+                path: `${__dirname}/src/pages/articles/`,
+            },
+        },
+
         {
             resolve: `gatsby-transformer-remark`,
             options: {
