@@ -141,13 +141,6 @@ function ArticleList({ data }) {
                     type={'article'}
                 />
                 <ArticlePreview
-                    title={'Лазерное удаление татуировок'}
-                    path={'/laser-tattoo-removal-moscow/'}
-                    imageRes={data.laserTattooRemovalArticle.resolutions}
-                    description={''}
-                    type={'article'}
-                />
-                <ArticlePreview
                     title={'Увеличение губ в Москве'}
                     path={'/lip-augmentation-moscow/'}
                     imageRes={data.lipAugmentationArticle.resolutions}
@@ -256,7 +249,7 @@ export const pageQuery = graphql`
         }
 
         liftingInfiniArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/3d-lifting-infini-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -264,7 +257,7 @@ export const pageQuery = graphql`
         }
 
         biorevitalizationArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/biorevitalization-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -272,7 +265,7 @@ export const pageQuery = graphql`
         }
 
         biorevitalizationVitalaserArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/biorevitalization-vitalaser-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -280,7 +273,7 @@ export const pageQuery = graphql`
         }
 
         contourCorrectionArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/contour-correction-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -288,7 +281,7 @@ export const pageQuery = graphql`
         }
 
         dermafilHappyLiftThreadsArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/dermafil-happy-lift-threads-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -296,7 +289,7 @@ export const pageQuery = graphql`
         }
 
         facialCleansingArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/facial-cleansing-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -304,7 +297,7 @@ export const pageQuery = graphql`
         }
 
         hyaluronicFillersArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/hyaluronic-fillers-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -312,7 +305,7 @@ export const pageQuery = graphql`
         }
 
         hyperhidrosisArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/hyperhidrosis-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -320,7 +313,7 @@ export const pageQuery = graphql`
         }
 
         laserEpilationArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/laser-epilation-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -328,7 +321,7 @@ export const pageQuery = graphql`
         }
 
         laserPigmentSpotRemovalArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/laser-pigment-spot-removal-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -336,7 +329,7 @@ export const pageQuery = graphql`
         }
 
         laserRejuvenationAdvantagesArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/laser-rejuvenation-advantages-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -351,16 +344,8 @@ export const pageQuery = graphql`
             }
         }
 
-        laserTattooRemovalArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
-        ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
-            }
-        }
-
         lipAugmentationArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/lip-augmentation-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -368,23 +353,21 @@ export const pageQuery = graphql`
         }
 
         mesoThreadsArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/meso-threads-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
             }
         }
 
-        mesotherapyArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
-        ) {
+        mesotherapyArticle: imageSharp(id: { regex: "/mesotherapy-article/" }) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
             }
         }
 
         photoRejuvenationArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/photo-rejuvenation-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -392,7 +375,7 @@ export const pageQuery = graphql`
         }
 
         plazmoliftingArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/plazmolifting-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -400,7 +383,7 @@ export const pageQuery = graphql`
         }
 
         ritidectomyFaceliftingArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/ritidectomy-facelifting-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -408,7 +391,7 @@ export const pageQuery = graphql`
         }
 
         silhouetteLiftSoftThreadsArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/silhouette-lift-soft-threads-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -416,7 +399,7 @@ export const pageQuery = graphql`
         }
 
         springThreadArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/spring-thread-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
@@ -424,7 +407,7 @@ export const pageQuery = graphql`
         }
 
         supersonicPeelingArticle: imageSharp(
-            id: { regex: "/dot-rejuvenation-interview/" }
+            id: { regex: "/supersonic-peeling-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
