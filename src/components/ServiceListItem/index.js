@@ -22,6 +22,4 @@ ServiceListItem.propTypes = {
     imgSizes: PropTypes.object.isRequired,
 }
 
-ServiceListItem.defaultProps = {}
-
 export default ServiceListItem

@@ -1,0 +1,49 @@
+@import '../variables';
+
+.PriceList {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.PriceListItem {
+    min-height: 50px;
+    display: flex;
+    width: 100%;
+    box-shadow: @box-shadow-80;
+    margin-bottom: 10px;
+}
+
+.PriceListItem__link {
+    flex-grow: 1;
+    display: flex;
+    //outline: 1px solid red;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.PriceListItem__title {
+    margin: auto;
+
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    color: black;
+}
+
+@media @tablet-widths {
+    .PriceList {
+        justify-content: space-between;
+    }
+
+    .PriceListItem {
+        transition: transform ease 300ms, box-shadow ease 300ms;
+
+        &:hover {
+            transform: scale(1.03);
+            box-shadow: @box-shadow-gold;
+        }
+        width: 49%;
+    }
+}

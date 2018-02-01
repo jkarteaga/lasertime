@@ -3,8 +3,9 @@ import Helmet from '../components/HelmetWrapper'
 import PagePreview from '../components/PagePreview'
 import InfoBlock from '../components/InfoBlock'
 import ArticleHeaderImage from '../components/ArticleHeaderImage'
+import PriceList, { PriceListItem } from '../components/PriceList'
 
-function PriceList({ data }) {
+function PriceListPage({ data }) {
     const pricelistElements = data.allMarkdownRemark.edges
         .sort((a, b) => {
             const aOrder = a.node.frontmatter.order
@@ -18,7 +19,7 @@ function PriceList({ data }) {
         })
         .map(({ node }) => {
             return (
-                <PagePreview
+                <PriceListItem
                     key={node.internal.contentDigest}
                     title={node.frontmatter.title}
                     path={node.frontmatter.path}
@@ -46,16 +47,16 @@ function PriceList({ data }) {
                         у нашего администратора.
                     </p>
                 </InfoBlock>
-                {pricelistElements}
+                <PriceList>{pricelistElements}</PriceList>
             </div>
         </div>
     )
 }
 
-PriceList.propTypes = {}
-PriceList.defaultProps = {}
+PriceListPage.propTypes = {}
+PriceListPage.defaultProps = {}
 
-export default PriceList
+export default PriceListPage
 
 export const pageQuery = graphql`
     query Prices {
