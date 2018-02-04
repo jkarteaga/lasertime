@@ -27,7 +27,7 @@ const HTML = ({ body, headComponents, postBodyComponents }) => {
                     content="width=device-width, initial-scale=1"
                 />
                 <link
-                    href="https://fonts.googleapis.com/css?family=Arsenal&amp;subset=cyrillic-ext"
+                    href="https://fonts.googleapis.com/css?family=Arsenal:400,400i&amp;subset=cyrillic-ext"
                     rel="stylesheet"
                 />
                 <link

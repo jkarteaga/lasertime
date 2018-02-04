@@ -1,115 +1,91 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import mainCollage from '../files/img/lasertime-main-collage.jpg'
+import { CarouselProvider, Slider, Slide, DotGroup } from 'pure-react-carousel'
+import SliderItem from '../components/SliderItem'
+import 'pure-react-carousel/dist/react-carousel.es.css'
 
-function IndexPage({ data }) {
-    return (
-        <div className="PageContent__wrapper">
-            <Helmet>
-                <title>{data.site.siteMetadata.title}</title>
-                <meta
-                    name="description"
-                    content={data.site.siteMetadata.description}
-                />
-                <meta
-                    name="keywords"
-                    content={data.site.siteMetadata.keywords}
-                />
-            </Helmet>
-            <br />
-            <p>
-                Медицинский центр «Знак качества» - команда молодых, энергичных
-                и увлеченных своим делом специалистов-профессионалов в области
-                лазерной и инъекционной косметологии.
-            </p>
+class IndexPage extends React.Component {
+    state = {
+        isSpinning: false,
+    }
 
-            <img
-                style={{ width: '100%' }}
-                src={mainCollage}
-                alt="Клиника красоты 'Знак Качества'"
-                title="Фотографии клиники 'Знак Качества'"
-            />
+    render() {
+        const { data } = this.props
+        // setTimeout(() => {
+        //     this.setState({ isSpinning: false })
+        // }, 1000)
+        return (
+            <div>
+                <Helmet>
+                    <title>{data.site.siteMetadata.title}</title>
+                    <meta
+                        name="description"
+                        content={data.site.siteMetadata.description}
+                    />
+                    <meta
+                        name="keywords"
+                        content={data.site.siteMetadata.keywords}
+                    />
+                </Helmet>
+                <CarouselProvider
+                    className={'Slider'}
+                    naturalSlideWidth={96}
+                    naturalSlideHeight={40}
+                    hasMasterSpinner={this.state.isSpinning}
+                    totalSlides={4}
+                >
+                    <Slider>
+                        <Slide index={0}>
+                            <SliderItem
+                                imageSizes={data.indexSlideBeauty.sizes}
+                                title={'КРАСОТА'}
+                                align="right"
+                                color="#924d45"
+                            />
+                        </Slide>
+                        <Slide index={1}>
+                            <SliderItem
+                                imageSizes={data.indexSlideYouth.sizes}
+                                title={'МОЛОДОСТЬ'}
+                                align="left"
+                                color="#fff"
+                            />
+                        </Slide>
 
-            <p>
-                Центр открыт в 2013 году, однако в кратчайшие сроки завоевал
-                заслуженную популярность, благодаря использованию новейшего
-                оборудования, высокому профессионализму врачей и доступным
-                ценам.
-            </p>
-            <p>
-                Центр находится в самом центре Москвы – Рыбников переулок, дом
-                4.
-            </p>
-            <p>
-                Специализация центра – anti-aging терапия, лазерная эпиляция
-                александритовым лазером, лазерное удаление сосудов и сосудистых
-                звездочек на лице и на теле, контурная пластика, нитевой и
-                плазмолифтинг, пилинги и уходы за кожей лица и тела.
-            </p>
-
-            <p>Инновационные методики омоложения в медицинском центре - это:</p>
-            <ul>
-                <li>
-                    Лазерная эпиляция на новейшем оборудовании ведущих
-                    европейских и американских производителей;
-                </li>
-                <li>Преимущества фракционного СО2 омоложения</li>
-                <li>Инъекции красоты – модная и эффективная процедура</li>
-                <li>Плазмолифтинг</li>
-                <li>Биоревитализация</li>
-                <li>
-                    Контурная пластика – современный метод борьбы с морщинами
-                </li>
-                <li>Нитевой лифтинг APTOS</li>
-                <li>Удаление татуировок, сосудов</li>
-                <li>Мезотерапия: молодость и свежесть</li>
-            </ul>
-
-            <p>
-                Медицинский центр «Знак качества» предлагает консультацию врача
-                и индивидуальный комплексный подход к каждому пациенту, что
-                выражается в индивидуальном подборе и использовании комплекса
-                процедур и препаратов, нацеленных на решение конкретной
-                проблемы. Наши врачи, устраняя имеющиеся у пациента проблемы,
-                используют наиболее щадящие, безболезненные и эффективные
-                методики, а также стремятся задействовать превентивные меры для
-                устранения проблем, возникающих в будущем.
-            </p>
-            <p>
-                Вместе с демократичными ценами, акциями и скидками постоянным
-                клиентам наш медицинский центр обеспечивает индивидуальный
-                подход к каждому клиенту.
-            </p>
-            <p>
-                Эффективность работы медицинского центра «Знак качества»
-                определяется нацеленностью на результат, что в свою очередь
-                достигается тремя основополагающими принципами работы центра:
-            </p>
-            <ul>
-                <li>
-                    подход к пациенту и его проблемам, предполагающий
-                    индивидуальное и комплексное использование доказавших свою
-                    эффективность методик;
-                </li>
-                <li>
-                    жесткие требования к используемому оборудованию и
-                    препаратам;
-                </li>
-                <li>высокая квалификация врачей.</li>
-            </ul>
-            <p>
-                Наилучший результат обеспечивается комплексным подходом к
-                решению конкретной проблемы. Так, использование ботулинотерапии
-                не обеспечивает молодость, ухоженный вид и резкий anti-aging
-                эффект, однако вместе с другими аппаратными и инъекционными
-                методиками обеспечивает решение многих проблем.
-            </p>
-            <p>
-                Главный врач клиники – врач-дерматолог с мировым именем Алла
-                Александровна Легун.
-            </p>
-        </div>
-    )
+                        <Slide index={2}>
+                            <SliderItem
+                                imageSizes={data.indexSlideQuality.sizes}
+                                title={'КАЧЕСТВО'}
+                                align="right"
+                                color="#f7dfd5"
+                            />
+                        </Slide>
+                        <Slide index={3}>
+                            <SliderItem
+                                imageSizes={data.indexSlideFreshness.sizes}
+                                title={'СВЕЖЕСТЬ'}
+                                align="left"
+                                color="#7ba310"
+                            />
+                        </Slide>
+                    </Slider>
+                    <DotGroup className={'SliderDotGroup'} />
+                </CarouselProvider>
+                <p>
+                    Медицинский центр «Знак качества» - команда молодых,
+                    энергичных и увлеченных своим делом
+                    специалистов-профессионалов в области лазерной и
+                    инъекционной косметологии.
+                </p>
+                <p>
+                    Центр открыт в 2013 году, однако в кратчайшие сроки завоевал
+                    заслуженную популярность, благодаря использованию новейшего
+                    оборудования, высокому профессионализму врачей и доступным
+                    ценам.
+                </p>
+            </div>
+        )
+    }
 }
 
 export default IndexPage
@@ -121,6 +97,30 @@ export const pageQuery = graphql`
                 title
                 description
                 keywords
+            }
+        }
+        indexSlideBeauty: imageSharp(id: { regex: "/index-slide-beauty/" }) {
+            sizes(maxWidth: 960) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+
+        indexSlideYouth: imageSharp(id: { regex: "/index-slide-youth/" }) {
+            sizes(maxWidth: 960) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+
+        indexSlideQuality: imageSharp(id: { regex: "/index-slide-quality/" }) {
+            sizes(maxWidth: 960) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        indexSlideFreshness: imageSharp(
+            id: { regex: "/index-slide-freshness/" }
+        ) {
+            sizes(maxWidth: 960) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
     }

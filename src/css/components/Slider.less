@@ -1,0 +1,71 @@
+@import '../variables';
+
+.Slider {
+    position: relative;
+    width: 100%;
+}
+
+.SliderItem {
+    height: 100%;
+    width: 100%;
+}
+
+.SliderItem__title {
+    position: absolute;
+    font-size: 2em;
+    top: 35%;
+    width: 65%;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-align: center;
+
+    &--left {
+        left: 0;
+    }
+
+    &--right {
+        right: 0;
+    }
+}
+
+.SliderDotGroup {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+
+    & button {
+        // reset styles
+        border: 0;
+        margin: 2px 2px 0 0;
+        display: block;
+        flex-grow: 1;
+        height: 5px;
+        background-color: rgba(200, 200, 200, 0.7);
+
+        &[disabled] {
+            background-color: @gold;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+@media @mobile-wide-widths {
+    .SliderItem__title {
+        top: 36%;
+        font-size: 2.9em;
+    }
+}
+@media @tablet-widths {
+    .SliderItem__title {
+        font-size: 3.5em;
+    }
+}
+@media @desktop-widths {
+    .SliderItem__title {
+        font-size: 4em;
+    }
+}
