@@ -3,6 +3,16 @@
 .Slider {
     position: relative;
     width: 100%;
+
+    // animation
+    & li[aria-hidden='false'] .SliderItem__img {
+        transition: all 20s linear;
+        transform: scale(1.1);
+    }
+
+    & li[aria-hidden='true'] .SliderItem__img {
+        transform: scale(1);
+    }
 }
 
 .SliderItem {
