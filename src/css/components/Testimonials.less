@@ -1,0 +1,111 @@
+@import '../variables';
+
+@keyframes testimonials {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Testimonials {
+    display: flex;
+    height: 350px;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-image: url('../../files/index-slider-images/index-testimonials-bg-dark.jpg');
+    background-size: cover;
+}
+
+.Testimonials__container {
+    text-align: center;
+}
+
+.Testimonials__title {
+    font-family: 'Magnolia Script Regular', Arial, sans-serif;
+    font-size: 1.2em;
+    color: #f4d550;
+    margin-bottom: 10px;
+}
+
+.Testimonials__header {
+    font-family: 'Avenir Next Regular', Arial, sans-serif;
+    font-size: 1.5em;
+    line-height: 1em;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.Testimonials__icon {
+    height: 20px;
+}
+
+.Testimonials__body {
+    display: flex;
+    flex-direction: column;
+    //outline: 1px solid red;
+
+    animation: 2s ease testimonials;
+}
+
+.Testimonials__text {
+    flex-basis: 130px;
+    padding: 0 5px;
+    //outline: 1px solid red;
+
+    font-family: 'Avenir Next Regular', Arial, sans-serif;
+
+    color: white;
+}
+
+.Testimonials__name {
+    font-family: 'Magnolia Script Regular', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+.Testimonials__link {
+    color: white;
+}
+
+@media @mobile-wide-widths {
+    .Testimonials__header {
+        font-size: 1.7em;
+    }
+
+    .Testimonials__text {
+        flex-basis: 100px;
+        padding: 0 10px;
+    }
+}
+
+@media @tablet-widths {
+    .Testimonials {
+        height: 400px;
+        background-image: url('../../files/index-slider-images/index-testimonials-bg.jpg');
+    }
+
+    .Testimonials__container {
+        flex-basis: 500px;
+    }
+
+    .Testimonials__header {
+        font-size: 1.9em;
+        margin-bottom: 50px;
+    }
+
+    .Testimonials__icon {
+        height: 30px;
+    }
+
+    .Testimonials__text {
+        flex-basis: 110px;
+        padding: 0 15px;
+    }
+}
+
+@media @desktop-widths {
+    .Testimonials {
+        height: 430px;
+    }
+}
