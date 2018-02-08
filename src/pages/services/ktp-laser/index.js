@@ -40,7 +40,7 @@ function LiftingInfiniService({ data }) {
 
                 <div className={'clearfix'}> </div>
                 <Anchor id="stats" />
-                <ServiceStats durationText={'от 60 мин.'} priceText={'от 15 000 руб.'} priceLink={'/prices/laser-vessels-removal'} quantityText={'1 - 3'} />
+                <ServiceStats durationText={'от 60 мин.'} priceText={'от 3 000 руб.'} priceLink={'/prices/laser-vessels-removal'} quantityText={'1 - 3'} />
                 <Anchor id="theory" />
                 <CollapsiblePanel title={'Принцип действия'}>
                     <p>КТП лазер создан для лечения сосудистых дефектов кожи.</p>
