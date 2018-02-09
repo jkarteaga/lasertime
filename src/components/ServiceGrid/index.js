@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import Link from 'gatsby-link'
 
-function ServiceListItem({ title, link, imgSizes }) {
+export function ServiceGridItem({ title, link, imgSizes }) {
     return (
         <li className="ServiceListItem">
             <Link className="ServiceListItem__link" to={link}>
@@ -16,10 +16,18 @@ function ServiceListItem({ title, link, imgSizes }) {
     )
 }
 
-ServiceListItem.propTypes = {
+ServiceGridItem.propTypes = {
     title: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
     imgSizes: PropTypes.object.isRequired,
 }
 
-export default ServiceListItem
+function ServiceGrid({ children }) {
+    return <ul className="ServiceList">{children}</ul>
+}
+
+ServiceGrid.propTypes = {
+    children: PropTypes.node.isRequired,
+}
+
+export default ServiceGrid

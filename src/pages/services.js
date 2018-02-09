@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from '../components/HelmetWrapper'
-import ServiceList from '../components/ServiceList'
-import ServiceListItem from '../components/ServiceListItem'
+import ServiceGrid, { ServiceGridItem } from '../components/ServiceGrid'
 import ArticleHeaderImage from '../components/ArticleHeaderImage'
 
 function Services({ data }) {
@@ -17,33 +16,33 @@ function Services({ data }) {
             />
 
             <div className="PageContent__wrapper">
-                <ServiceList>
-                    <ServiceListItem
+                <ServiceGrid>
+                    <ServiceGridItem
                         title="Лазерная эпиляция"
                         link="/services/laser-epilation"
                         imgSizes={data.laserEpilationServiceHeader.sizes}
                     />
-                    <ServiceListItem
+                    <ServiceGridItem
                         title="3D лифтинг INFINI®"
                         link="/services/3d-lifting-infini"
                         imgSizes={data.liftingInfiniServiceHeader.sizes}
                     />
-                    <ServiceListItem
+                    <ServiceGridItem
                         title="Лазерное омоложение"
                         link="/services/laser-rejuvenation"
                         imgSizes={data.laserRejuvenationServiceHeader.sizes}
                     />
-                    <ServiceListItem
+                    <ServiceGridItem
                         title="Фотоомоложение"
                         link="/services/photo-rejuvenation"
                         imgSizes={data.photoRejuvenationServiceHeader.sizes}
                     />
-                    <ServiceListItem
+                    <ServiceGridItem
                         title="Удаление сосудов"
                         link="/services/ktp-laser"
                         imgSizes={data.KTPLaserServiceHeader.sizes}
                     />
-                </ServiceList>
+                </ServiceGrid>
             </div>
         </div>
     )
