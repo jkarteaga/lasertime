@@ -1,6 +1,6 @@
 @import '../variables';
 
-.ServiceList {
+.ServiceGrid {
     display: flex;
 
     list-style: none;
@@ -9,4 +9,63 @@
     justify-content: center;
     padding: 0;
     flex-wrap: wrap;
+}
+
+.ServiceGridItem {
+    flex-basis: 350px;
+    margin: 10px;
+
+    box-shadow: @box-shadow-80;
+}
+
+.ServiceGridItem__title {
+    margin: auto;
+
+    background: white;
+    font-size: 1.4em;
+    color: black;
+    text-transform: uppercase;
+}
+
+.ServiceGridItem__link {
+    height: 140px;
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+@media @mobile-wide-widths {
+    .ServiceGridItem {
+        flex-basis: 330px;
+    }
+
+    .ServiceGridItem__link {
+        height: 135px;
+    }
+}
+
+@media @tablet-widths {
+    .ServiceGridItem {
+        transition: transform ease 300ms, box-shadow ease 300ms;
+
+        &:hover {
+            transform: scale(1.03);
+            box-shadow: @box-shadow-gold;
+        }
+    }
+}
+
+@media @desktop-widths {
+    .ServiceGridItem {
+        flex-basis: 280px;
+    }
+
+    .ServiceGridItem__title {
+        font-size: 1.3em;
+    }
+
+    .ServiceGridItem__link {
+        height: 125px;
+    }
 }

@@ -5,12 +5,12 @@ import Link from 'gatsby-link'
 
 export function ServiceGridItem({ title, link, imgSizes }) {
     return (
-        <li className="ServiceListItem">
-            <Link className="ServiceListItem__link" to={link}>
-                <div className="ServiceListItem__img">
+        <li className="ServiceGridItem">
+            <Link className="ServiceGridItem__link" to={link}>
+                <div className="ServiceGridItem__img">
                     <Img sizes={imgSizes} alt={title} title={title} />
                 </div>
-                <div className="ServiceListItem__title">{title}</div>
+                <div className="ServiceGridItem__title">{title}</div>
             </Link>
         </li>
     )
@@ -23,7 +23,7 @@ ServiceGridItem.propTypes = {
 }
 
 function ServiceGrid({ children }) {
-    return <ul className="ServiceList">{children}</ul>
+    return <ul className="ServiceGrid">{children}</ul>
 }
 
 ServiceGrid.propTypes = {

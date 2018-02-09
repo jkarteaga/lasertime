@@ -69,7 +69,6 @@ class Testimonials extends React.Component {
 
 Testimonials.propTypes = {
     testimonials: PropTypes.array.isRequired,
-    bgImageRes: PropTypes.object.isRequired,
 }
 
 Testimonials.defaultProps = {}
