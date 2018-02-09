@@ -35,6 +35,10 @@ const HTML = ({ body, headComponents, postBodyComponents }) => {
                     rel="stylesheet"
                 />
                 <link
+                    href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic-ext"
+                    rel="stylesheet"
+                />
+                <link
                     href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&amp;subset=cyrillic-ext"
                     rel="stylesheet"
                 />

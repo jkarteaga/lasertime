@@ -23,6 +23,11 @@
         height: 20px;
         background-image: url('../icons/icon-check.svg');
     }
+
+    //Fix for alignment, TODO: use display: table
+    &:last-of-type {
+        display: none;
+    }
 }
 
 @media @tablet-widths {

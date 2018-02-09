@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import QuotesIcon from './icon-quotes.svg'
 
-const SWITCH_INTERVAL = 5000
+const SWITCH_INTERVAL = 10000
 
 class Testimonials extends React.Component {
     state = {
@@ -12,7 +12,7 @@ class Testimonials extends React.Component {
 
     componentDidMount() {
         this.setState({
-            // timer: setInterval(this.switchTestimonial, SWITCH_INTERVAL),
+            timer: setInterval(this.switchTestimonial, SWITCH_INTERVAL),
         })
     }
 
