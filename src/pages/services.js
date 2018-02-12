@@ -42,6 +42,11 @@ function Services({ data }) {
                         link="/services/ktp-laser"
                         imgSizes={data.KTPLaserServiceHeader.sizes}
                     />
+                    <ServiceGridItem
+                        title="Контурная пластика"
+                        link="/services/contour-correction"
+                        imgSizes={data.ContourCorrectionServiceHeader.sizes}
+                    />
                 </ServiceGrid>
             </div>
         </div>
@@ -91,6 +96,13 @@ export const pageQuery = graphql`
         }
         KTPLaserServiceHeader: imageSharp(
             id: { regex: "/ktp-laser-service-header/" }
+        ) {
+            sizes(maxWidth: 350) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        ContourCorrectionServiceHeader: imageSharp(
+            id: { regex: "/contour-correction-service-header/" }
         ) {
             sizes(maxWidth: 350) {
                 ...GatsbyImageSharpSizes_noBase64
