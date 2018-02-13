@@ -39,7 +39,7 @@
         "build": "gatsby build",
         "clean": "rm -r public/ .cache/",
         "deploy": "yarn run build && ./scripts/upload-vscale.sh",
-        "develop": "npm run clean && gatsby develop",
+        "develop": "yarn run clean && gatsby develop",
         "format": "prettier --config .prettierrc --write 'src/**/*.js'",
         "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
         "test": "echo \"Error: no test specified\" && exit 1"
