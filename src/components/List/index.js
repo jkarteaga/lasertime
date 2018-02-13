@@ -22,7 +22,7 @@ List.propTypes = {
     title: PropTypes.string,
     titleH2: PropTypes.string,
     titleH3: PropTypes.string,
-    marker: PropTypes.oneOf(['check', 'plus', 'minus', 'cross']),
+    marker: PropTypes.oneOf(['check', 'plus', 'minus', 'cross', 'dot']),
 }
 
 List.defaultProps = {}
