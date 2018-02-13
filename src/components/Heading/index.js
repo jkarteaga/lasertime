@@ -11,11 +11,23 @@ function Heading({ titleH1, titleH2, titleH3, titleH4, type }) {
             </div>
         )
     } else if (titleH2) {
-        return <h2 className={cls}>{titleH2}</h2>
+        return (
+            <div className={cls}>
+                <h2>{titleH2}</h2>
+            </div>
+        )
     } else if (titleH3) {
-        return <h3 className={cls}>{titleH3}</h3>
+        return (
+            <div className={cls}>
+                <h3>{titleH3}</h3>
+            </div>
+        )
     } else {
-        return <h4 className={cls}>{titleH4}</h4>
+        return (
+            <div className={cls}>
+                <h4>{titleH4}</h4>
+            </div>
+        )
     }
 }
 

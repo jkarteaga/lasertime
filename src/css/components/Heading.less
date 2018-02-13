@@ -4,13 +4,12 @@
     padding: 1.5em 0 0.5em 0;
     &--line {
         display: flex;
-        //outline: 1px solid red;
 
         &::before {
             content: '';
             flex-grow: 1;
             height: 2px;
-            background-color: @gold-dark;
+            background-color: @gold;
             margin: auto;
         }
 
@@ -18,7 +17,7 @@
             content: '';
             flex-grow: 1;
             height: 2px;
-            background-color: @gold-dark;
+            background-color: @gold;
             margin: auto;
         }
 
@@ -29,6 +28,9 @@
             flex-grow: 0;
             padding: 0 20px;
             margin: auto;
+
+            // Make all headings the same size
+            font-size: 2em;
         }
     }
 }
