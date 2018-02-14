@@ -1,7 +1,20 @@
 @import '../variables';
 
 .Heading {
-    padding: 1.5em 0 0.5em 0;
+    padding: 25px 0 15px 0;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        flex-grow: 0;
+        padding: 0 20px;
+        margin: 0 auto;
+
+        // Make all headings the same size by default
+        font-size: 3.5rem;
+    }
+
     &--line {
         display: flex;
 
@@ -20,17 +33,36 @@
             background-color: @gold;
             margin: auto;
         }
+    }
 
+    &--simple {
+        text-align: center;
+    }
+
+    &--bg {
         h1,
         h2,
         h3,
         h4 {
-            flex-grow: 0;
-            padding: 0 20px;
-            margin: auto;
+            font-size: 3.5rem;
+        }
+    }
 
-            // Make all headings the same size
-            font-size: 2em;
+    &--md {
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-size: 2.8rem;
+        }
+    }
+
+    &--sm {
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-size: 2.2rem;
         }
     }
 }

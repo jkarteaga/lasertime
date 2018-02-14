@@ -445,7 +445,7 @@ function ContourCorrectionService({ data }) {
                         </ul>
                     </List>
                 </InfoPanel>
-                <Heading titleH3="Вопросы о филлерах Belotero" />
+                <Heading titleH3="Вопросы о филлерах Belotero" small />
                 <QuestionBlock question="Как долго длится эффект от филлера Belotero?">
                     <p>Эффект может длиться от 9 до 12 месяцев.</p>
                 </QuestionBlock>
