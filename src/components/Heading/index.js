@@ -1,8 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Heading({ titleH1, titleH2, titleH3, titleH4, type }) {
-    const cls = `Heading Heading--${type}`
+function Heading({ titleH1, titleH2, titleH3, titleH4, type, big, small }) {
+    let cls = `Heading Heading--${type}`
+
+    if (big) {
+        cls += 'Heading--big'
+    } else if (small) {
+        cls += 'Heading--small'
+    }
 
     if (titleH1) {
         return (
@@ -36,9 +42,13 @@ Heading.propTypes = {
     titleH2: PropTypes.string,
     titleH3: PropTypes.string,
     titleH4: PropTypes.string,
-    type: PropTypes.oneOf(['plain', 'line']),
+    type: PropTypes.oneOf(['simple', 'line']),
+    big: PropTypes.bool,
+    small: PropTypes.bool,
 }
 
-Heading.defaultProps = {}
+Heading.defaultProps = {
+    type: 'simple',
+}
 
 export default Heading
