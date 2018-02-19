@@ -16,6 +16,13 @@ function ArticleList({ data }) {
 
             <div className="PageContent__wrapper">
                 <ArticlePreview
+                    title={'Мужская косметология'}
+                    path={'/articles/male-cosmetology/'}
+                    imageRes={data.maleCosmetologyArticle.resolutions}
+                    description={''}
+                    type={'article'}
+                />
+                <ArticlePreview
                     title={'Всё, что нужно знать о чистке лица'}
                     path={'/articles/face-cleansing-interview/'}
                     imageRes={data.faceCleansingInterview.resolutions}
@@ -221,6 +228,13 @@ export const pageQuery = graphql`
         # Preview images
         faceCleansingInterview: imageSharp(
             id: { regex: "/face-cleansing-interview/" }
+        ) {
+            resolutions(width: 180, height: 180) {
+                ...GatsbyImageSharpResolutions_noBase64
+            }
+        }
+        maleCosmetologyArticle: imageSharp(
+            id: { regex: "/male-cosmetology-article/" }
         ) {
             resolutions(width: 180, height: 180) {
                 ...GatsbyImageSharpResolutions_noBase64
