@@ -3,31 +3,44 @@
 .PullQuote {
     margin: 0;
     padding: 15px;
-    font-family: 'Alegreya Sans SC', serif;
+    font-family: 'Avenir Next Regular', Arial, sans-serif;
     font-size: 1.1em;
 
-    &--gray {
+    &--box {
         border: 1px solid @gray-90;
+    }
+
+    &--horizontal {
+        border: 1px solid @gray-90;
+        border-left: none;
+        border-right: none;
+    }
+
+    &--gray {
+        border-color: @gray-90;
         background-color: white;
     }
 
     &--green {
-        border: 1px solid @green;
+        border-color: @green;
         background-color: @green-light;
     }
 
     &--orange {
-        border: 1px solid @orange;
+        border-color: @orange;
         background-color: @orange-light;
     }
 
     &--red {
-        border: 1px solid @red;
+        border-color: @red;
         background-color: @red-light;
     }
 }
 
 .PullQuote__body {
+    &--alignCenter {
+        text-align: center;
+    }
 }
 
 @media @mobile-wide-widths {

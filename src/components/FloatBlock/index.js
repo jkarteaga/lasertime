@@ -1,7 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function FloatBlock({ left, right, oneThird, oneFourth, children }) {
+function FloatBlock({
+    left,
+    right,
+    oneThird,
+    oneFourth,
+    paddingTop,
+    children,
+}) {
     let floatClass
 
     floatClass = left ? 'FloatBlock--left' : 'FloatBlock--right'
@@ -12,6 +19,10 @@ function FloatBlock({ left, right, oneThird, oneFourth, children }) {
         floatClass += ' FloatBlock--one-fourth'
     }
 
+    if (paddingTop) {
+        floatClass += ' FloatBlock--paddingTop'
+    }
+
     return <div className={`FloatBlock ${floatClass}`}>{children}</div>
 }
 
@@ -20,6 +31,7 @@ FloatBlock.propTypes = {
     right: PropTypes.bool,
     oneThird: PropTypes.bool,
     oneFourth: PropTypes.bool,
+    paddingTop: PropTypes.bool,
     children: PropTypes.node.isRequired,
 }
 

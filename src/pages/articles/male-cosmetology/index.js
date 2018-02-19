@@ -12,7 +12,7 @@ export default function MaleCosmetologyArticle({ data }) {
             <h1>Мужская косметология</h1>
 
             <FloatBlock oneThird>
-                <PullQuote color="orange">
+                <PullQuote color="orange" alignCenter>
                     Вероятно, Вы удивитесь, узнав, что каждым пятым клиентом
                     косметолога является мужчина!
                 </PullQuote>
@@ -38,7 +38,7 @@ export default function MaleCosmetologyArticle({ data }) {
                 значительно повышает уровень его самооценки. Мужчинам необходимо
                 выглядеть не только брутально, но и привлекательно.
             </p>
-            <PullQuote>
+            <PullQuote type="horizontal" alignCenter>
                 Состояние кожи напрямую зависит от состояния костей черепа,
                 фасций, мышц и подкожно-жировой клетчатки лица.
             </PullQuote>
@@ -72,6 +72,7 @@ export default function MaleCosmetologyArticle({ data }) {
                 Это обусловлено большим количеством сальных желез, особенно в
                 области подбородка, где они связаны с волосяными фолликулами.
             </p>
+            <div className="clearfix" />
             <List
                 titleH2="Популярные косметологические процедуры для мужчин"
                 marker="dot"
