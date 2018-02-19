@@ -18,35 +18,35 @@ function ArticleList({ data }) {
                 <ArticlePreview
                     title={'Мужская косметология'}
                     path={'/articles/male-cosmetology/'}
-                    imageRes={data.maleCosmetologyArticle.resolutions}
+                    imageSizes={data.maleCosmetologyArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Всё, что нужно знать о чистке лица'}
                     path={'/articles/face-cleansing-interview/'}
-                    imageRes={data.faceCleansingInterview.resolutions}
+                    imageSizes={data.faceCleansingInterview.sizes}
                     description={''}
                     type={'interview'}
                 />
                 <ArticlePreview
                     title={'Всё, что нужно знать о лазерной эпиляции'}
                     path={'/articles/laser-epilation-interview/'}
-                    imageRes={data.laserEpilationInterview.resolutions}
+                    imageSizes={data.laserEpilationInterview.sizes}
                     description={''}
                     type={'interview'}
                 />
                 <ArticlePreview
                     title={'Всё, что нужно знать о PRP плазмолифтинге'}
                     path={'/articles/plazmolifting-interview/'}
-                    imageRes={data.plazmoliftingInterview.resolutions}
+                    imageSizes={data.plazmoliftingInterview.sizes}
                     description={''}
                     type={'interview'}
                 />
                 <ArticlePreview
                     title={'Всё, что нужно знать о фракционном DOT омоложении'}
                     path={'/articles/dot-rejuvenation-interview/'}
-                    imageRes={data.dotRejuvenationInterview.resolutions}
+                    imageSizes={data.dotRejuvenationInterview.sizes}
                     description={''}
                     type={'interview'}
                 />
@@ -54,7 +54,7 @@ function ArticleList({ data }) {
                 <ArticlePreview
                     title={'Глубокий 3D лифтинг на аппарате INFINI'}
                     path={'/3d-lifting-infini-moscow/'}
-                    imageRes={data.liftingInfiniArticle.resolutions}
+                    imageSizes={data.liftingInfiniArticle.sizes}
                     description={''}
                     type={'article'}
                 />
@@ -63,16 +63,14 @@ function ArticleList({ data }) {
                         'Биоревитализация – недорогая и очень эффективная процедура'
                     }
                     path={'/biorevitalization-moscow/'}
-                    imageRes={data.biorevitalizationArticle.resolutions}
+                    imageSizes={data.biorevitalizationArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Безыгольная биоревитализация'}
                     path={'/biorevitalization-vitalaser-moscow/'}
-                    imageRes={
-                        data.biorevitalizationVitalaserArticle.resolutions
-                    }
+                    imageSizes={data.biorevitalizationVitalaserArticle.sizes}
                     description={''}
                     type={'article'}
                 />
@@ -81,7 +79,7 @@ function ArticleList({ data }) {
                         'Контурная пластика – современный метод борьбы с морщинами'
                     }
                     path={'/contour-correction-moscow/'}
-                    imageRes={data.contourCorrectionArticle.resolutions}
+                    imageSizes={data.contourCorrectionArticle.sizes}
                     description={''}
                     type={'article'}
                 />
@@ -90,28 +88,28 @@ function ArticleList({ data }) {
                         'Итальянские нити Dermafil Happy Lift – революция в лифтинге'
                     }
                     path={'/dermafil-happy-lift-threads/'}
-                    imageRes={data.dermafilHappyLiftThreadsArticle.resolutions}
+                    imageSizes={data.dermafilHappyLiftThreadsArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Чистка лица в Москве - вся правда о процедуре!'}
                     path={'/facial-cleansing-moscow/'}
-                    imageRes={data.facialCleansingArticle.resolutions}
+                    imageSizes={data.facialCleansingArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Филлеры на основе гиалуроновой кислоты'}
                     path={'/hyaluronic-fillers-moscow/'}
-                    imageRes={data.hyaluronicFillersArticle.resolutions}
+                    imageSizes={data.hyaluronicFillersArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Гипергидроз (Москва) - излечим!'}
                     path={'/hyperhidrosis-moscow/'}
-                    imageRes={data.hyperhidrosisArticle.resolutions}
+                    imageSizes={data.hyperhidrosisArticle.sizes}
                     description={''}
                     type={'article'}
                 />
@@ -120,93 +118,91 @@ function ArticleList({ data }) {
                         'Лазерная эпиляция в Москве недорого: мифы и реальность!'
                     }
                     path={'/laser-epilation-moscow/'}
-                    imageRes={data.laserEpilationArticle.resolutions}
+                    imageSizes={data.laserEpilationArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Лазерное удаление пигментных пятен'}
                     path={'/laser-pigment-spot-removal-moscow/'}
-                    imageRes={data.laserPigmentSpotRemovalArticle.resolutions}
+                    imageSizes={data.laserPigmentSpotRemovalArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Преимущества фракционного омоложения'}
                     path={'/laser-rejuvenation-advantages-moscow/'}
-                    imageRes={
-                        data.laserRejuvenationAdvantagesArticle.resolutions
-                    }
+                    imageSizes={data.laserRejuvenationAdvantagesArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Фракционное лазерное омоложение'}
                     path={'/laser-rejuvenation-moscow/'}
-                    imageRes={data.laserRejuvenationArticle.resolutions}
+                    imageSizes={data.laserRejuvenationArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Увеличение губ в Москве'}
                     path={'/lip-augmentation-moscow/'}
-                    imageRes={data.lipAugmentationArticle.resolutions}
+                    imageSizes={data.lipAugmentationArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Тянем - потянем и вытянем лицо мезонитями'}
                     path={'/meso-threads-moscow/'}
-                    imageRes={data.mesoThreadsArticle.resolutions}
+                    imageSizes={data.mesoThreadsArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Мезотерапия: молодость и свежесть'}
                     path={'/mesotherapy-moscow/'}
-                    imageRes={data.mesotherapyArticle.resolutions}
+                    imageSizes={data.mesotherapyArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Фотоомоложение - современные технологии красоты'}
                     path={'/photo-rejuvenation-moscow/'}
-                    imageRes={data.photoRejuvenationArticle.resolutions}
+                    imageSizes={data.photoRejuvenationArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Плазмолифтинг лица в Москве'}
                     path={'/plazmolifting-moscow/'}
-                    imageRes={data.plazmoliftingArticle.resolutions}
+                    imageSizes={data.plazmoliftingArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Ритидэктомия - фейслифтинг, подтяжка лица и шеи'}
                     path={'/ritidectomy-facelifting-moscow/'}
-                    imageRes={data.ritidectomyFaceliftingArticle.resolutions}
+                    imageSizes={data.ritidectomyFaceliftingArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Нити Silhouette Lift Soft'}
                     path={'/silhouette-lift-soft-threads/'}
-                    imageRes={data.silhouetteLiftSoftThreadsArticle.resolutions}
+                    imageSizes={data.silhouetteLiftSoftThreadsArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Нити Spring Thread'}
                     path={'/spring-thread/'}
-                    imageRes={data.springThreadArticle.resolutions}
+                    imageSizes={data.springThreadArticle.sizes}
                     description={''}
                     type={'article'}
                 />
                 <ArticlePreview
                     title={'Ультразвуковой пилинг'}
                     path={'/supersonic-peeling-moscow/'}
-                    imageRes={data.supersonicPeelingArticle.resolutions}
+                    imageSizes={data.supersonicPeelingArticle.sizes}
                     description={''}
                     type={'article'}
                 />
@@ -226,205 +222,205 @@ export const pageQuery = graphql`
             }
         }
         # Preview images
-        faceCleansingInterview: imageSharp(
-            id: { regex: "/face-cleansing-interview/" }
-        ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
-            }
-        }
         maleCosmetologyArticle: imageSharp(
             id: { regex: "/male-cosmetology-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        faceCleansingInterview: imageSharp(
+            id: { regex: "/face-cleansing-interview/" }
+        ) {
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
         laserEpilationInterview: imageSharp(
             id: { regex: "/laser-epilation-interview/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
         plazmoliftingInterview: imageSharp(
             id: { regex: "/plazmolifting-interview/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
         dotRejuvenationInterview: imageSharp(
             id: { regex: "/dot-rejuvenation-interview/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         liftingInfiniArticle: imageSharp(
             id: { regex: "/3d-lifting-infini-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         biorevitalizationArticle: imageSharp(
             id: { regex: "/biorevitalization-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         biorevitalizationVitalaserArticle: imageSharp(
             id: { regex: "/biorevitalization-vitalaser-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         contourCorrectionArticle: imageSharp(
             id: { regex: "/contour-correction-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         dermafilHappyLiftThreadsArticle: imageSharp(
             id: { regex: "/dermafil-happy-lift-threads-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         facialCleansingArticle: imageSharp(
             id: { regex: "/facial-cleansing-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         hyaluronicFillersArticle: imageSharp(
             id: { regex: "/hyaluronic-fillers-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         hyperhidrosisArticle: imageSharp(
             id: { regex: "/hyperhidrosis-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         laserEpilationArticle: imageSharp(
             id: { regex: "/laser-epilation-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         laserPigmentSpotRemovalArticle: imageSharp(
             id: { regex: "/laser-pigment-spot-removal-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         laserRejuvenationAdvantagesArticle: imageSharp(
             id: { regex: "/laser-rejuvenation-advantages-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         laserRejuvenationArticle: imageSharp(
             id: { regex: "/dot-rejuvenation-interview/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         lipAugmentationArticle: imageSharp(
             id: { regex: "/lip-augmentation-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         mesoThreadsArticle: imageSharp(
             id: { regex: "/meso-threads-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         mesotherapyArticle: imageSharp(id: { regex: "/mesotherapy-article/" }) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         photoRejuvenationArticle: imageSharp(
             id: { regex: "/photo-rejuvenation-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         plazmoliftingArticle: imageSharp(
             id: { regex: "/plazmolifting-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         ritidectomyFaceliftingArticle: imageSharp(
             id: { regex: "/ritidectomy-facelifting-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         silhouetteLiftSoftThreadsArticle: imageSharp(
             id: { regex: "/silhouette-lift-soft-threads-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         springThreadArticle: imageSharp(
             id: { regex: "/spring-thread-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
 
         supersonicPeelingArticle: imageSharp(
             id: { regex: "/supersonic-peeling-article/" }
         ) {
-            resolutions(width: 180, height: 180) {
-                ...GatsbyImageSharpResolutions_noBase64
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
             }
         }
     }

@@ -8,7 +8,7 @@ import articleTypeText from './src/text-article.svg'
 import placeholderImg from './src/placeholder-image.png'
 import Img from 'gatsby-image'
 
-function ArticlePreview({ type, image, imageRes, title, description, path }) {
+function ArticlePreview({ type, imageSizes, image, title, description, path }) {
     const TypeIcon = type === 'interview' ? interviewIcon : articleIcon
     const TypeText = type === 'interview' ? interviewTypeText : articleTypeText
 
@@ -26,8 +26,8 @@ function ArticlePreview({ type, image, imageRes, title, description, path }) {
                     </div>
                 </div>
                 <div className="ArticlePreview__img">
-                    {imageRes ? (
-                        <Img resolutions={imageRes} />
+                    {imageSizes ? (
+                        <Img sizes={imageSizes} />
                     ) : (
                         <img src={image} />
                     )}
@@ -53,7 +53,7 @@ function ArticlePreview({ type, image, imageRes, title, description, path }) {
 ArticlePreview.propTypes = {
     type: PropTypes.oneOf(['article', 'interview']),
     image: PropTypes.string,
-    imageRes: PropTypes.object,
+    imageSizes: PropTypes.object,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired,
