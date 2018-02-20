@@ -15,6 +15,13 @@ function ArticlePreview({ type, imageSizes, image, title, description, path }) {
     return (
         <Link to={path}>
             <div className="ArticlePreview">
+                <div className="ArticlePreview__img">
+                    {imageSizes ? (
+                        <Img sizes={imageSizes} />
+                    ) : (
+                        <img src={image} />
+                    )}
+                </div>
                 <div
                     className={`ArticlePreview__article-type ArticlePreview__article-type--${type}`}
                 >
@@ -24,13 +31,6 @@ function ArticlePreview({ type, imageSizes, image, title, description, path }) {
                     <div className="ArticlePreview__article-type-text">
                         <img src={TypeText} />
                     </div>
-                </div>
-                <div className="ArticlePreview__img">
-                    {imageSizes ? (
-                        <Img sizes={imageSizes} />
-                    ) : (
-                        <img src={image} />
-                    )}
                 </div>
                 <div className="ArticlePreview__content">
                     <div className="ArticlePreview__title">
