@@ -33,23 +33,33 @@ class ScrollProgress extends React.Component {
 
     _onScroll = () => {
         if (this.state.to) {
-            clearTimeout(this.state.to)
+            return
         }
 
+        // If 'to' timerId is not set
         const id = setTimeout(() => {
             if (this.state.currentPage !== window.location.pathname) {
                 this._initialize()
             }
-            let scrolled = document.body.scrollTop
 
-            let percentage =
-                (scrolled / this.state.totalScrollableArea).toFixed(2) * 100
+            const percentage = this.calcProgress()
             this.refs.ScrollProgressValue.style.width = percentage + '%'
+
+            // clear timer
+            this.setState({
+                to: null,
+            })
         }, 100)
 
         this.setState({
             to: id,
         })
+    }
+
+    calcProgress = () => {
+        let scrolled = window.scrollY
+
+        return (scrolled / this.state.totalScrollableArea).toFixed(2) * 100
     }
 
     render() {
