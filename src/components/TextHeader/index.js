@@ -3,8 +3,12 @@ import PropTypes from 'prop-types'
 
 function TextHeader({ caption, heading }) {
     return [
-        <p className="TextHeader__caption">{caption}</p>,
-        <h2 className="TextHeader__heading">{heading}</h2>,
+        <p key={0} className="TextHeader__caption">
+            {caption}
+        </p>,
+        <h2 key={1} className="TextHeader__heading">
+            {heading}
+        </h2>,
     ]
 }
 

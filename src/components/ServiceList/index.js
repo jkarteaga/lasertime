@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 function ServiceList({ listItems }) {
-    const listElements = listItems.map(item => (
-        <li className="ServiceList__item">{item}</li>
+    const listElements = listItems.map((item, idx) => (
+        <li key={idx} className="ServiceList__item">
+            {item}
+        </li>
     ))
 
     return <ul className="ServiceList">{listElements}</ul>

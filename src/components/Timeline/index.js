@@ -8,7 +8,11 @@ function Timeline({ title, children, certLink }) {
             <ul className="Timeline__list">{children}</ul>
             {certLink ? (
                 <div className="Timeline__certificates">
-                    <a href={certLink} target={'_blank'} className="Timeline__certificates-button">
+                    <a
+                        href={certLink}
+                        target={'_blank'}
+                        className="Timeline__certificates-button"
+                    >
                         Посмотреть сертификаты
                     </a>
                 </div>
@@ -31,8 +35,11 @@ export const TimelineItem = ({ date, name, description }) => {
     if (Array.isArray(description)) {
         descriptionElement = (
             <ul className="TimelineItem__description-list">
-                {description.map(item => (
-                    <li className="TimelineItem__description-list-item">
+                {description.map((item, idx) => (
+                    <li
+                        key={idx}
+                        className="TimelineItem__description-list-item"
+                    >
                         {item}
                     </li>
                 ))}
@@ -46,9 +53,9 @@ export const TimelineItem = ({ date, name, description }) => {
             </div>
             <div className="TimelineItem__body">
                 <p className="TimelineItem__name">{name}</p>
-                <p className="TimelineItem__description">
+                <div className="TimelineItem__description">
                     {descriptionElement}
-                </p>
+                </div>
             </div>
         </li>
     )

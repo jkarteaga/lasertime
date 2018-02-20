@@ -7,9 +7,9 @@ function DoctorPreview({ name, position, imageSizes }) {
         <div className="DoctorPreview">
             <h2 className="DoctorPreview__name">{name}</h2>
             <div className="DoctorPreview__position">{position}</div>
-            <div className="DoctorPreview__image">
-                {/*<Img sizes={imageSizes} />*/}
-            </div>
+            {/*<div className="DoctorPreview__image">*/}
+            {/*<Img sizes={imageSizes} />*/}
+            {/*</div>*/}
         </div>
     )
 }
@@ -17,7 +17,7 @@ function DoctorPreview({ name, position, imageSizes }) {
 DoctorPreview.propTypes = {
     name: PropTypes.string.isRequired,
     position: PropTypes.string.isRequired,
-    imageSizes: PropTypes.object.isRequired,
+    // imageSizes: PropTypes.object.isRequired,
 }
 
 DoctorPreview.defaultProps = {}
