@@ -13,7 +13,7 @@ function InfoPanel({ title, color, shadow, children }) {
 
 InfoPanel.propTypes = {
     title: PropTypes.string.isRequired,
-    color: PropTypes.oneOf(['gray', 'green', 'orange', 'red']),
+    color: PropTypes.oneOf(['gray', 'green', 'orange', 'red', 'gold']),
     shadow: PropTypes.bool,
 }
 
