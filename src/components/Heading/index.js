@@ -53,7 +53,7 @@ Heading.propTypes = {
     titleH2: PropTypes.string,
     titleH3: PropTypes.string,
     titleH4: PropTypes.string,
-    type: PropTypes.oneOf(['simple', 'line', 'underline']),
+    type: PropTypes.oneOf(['simple', 'line', 'underline', 'box']),
     big: PropTypes.bool,
     medium: PropTypes.bool,
     small: PropTypes.bool,

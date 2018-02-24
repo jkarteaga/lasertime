@@ -19,7 +19,7 @@ function LiftingInfiniService({ data }) {
 
             <div className="PageContent__wrapper">
                 <FloatBlock right oneThird>
-                    <TOC title={'Содержание'}>
+                    <TOC title="Содержание">
                         <a href="#intro">Введение</a>
                         <a href="#stats">Статистика и цены</a>
                         <a href="#theory">Принцип действия</a>
@@ -40,9 +40,9 @@ function LiftingInfiniService({ data }) {
                 <p>Результат после Infini очень яркий и сопоставим с фракционным лазерным омоложением, но с минимальным периодом реабилитации.</p>
 
                 <Anchor id="stats" />
-                <ServiceStats durationText={'от 60 до 120 мин.'} priceText={'от 10 000 до 30 000 руб.'} priceLink={'/prices/infini-lifting'} quantityText={'2 - 6 (1 раз в 3 - 4 недели)'} />
+                <ServiceStats durationText="от 60 до 120 мин." priceText="от 10 000 до 30 000 руб." priceLink="/prices/infini-lifting" quantityText="2 - 6 (1 раз в 3 - 4 недели)" />
                 <Anchor id="theory" />
-                <CollapsiblePanel title={'Принцип работы 3D омоложения Infini®'}>
+                <CollapsiblePanel title="Принцип работы 3D омоложения Infini®">
                     <p>Что такое RF-терапия - ток очень высокой частоты, преобразованный в тканях в RF энергию. Воздействует на ткань через микро-иглы покрытые золотом, которые контактируют с кожей. RF энергия, проходящая через живые ткани оказывает на них тепловое воздействие. Таким образом, RF терапия позволяет оказывать контролируемое тепловое воздействие на заданном участке кожи с целью улучшения регенеративных свойств кожи.</p>
 
                     <p>
@@ -59,7 +59,7 @@ function LiftingInfiniService({ data }) {
                 </CollapsiblePanel>
 
                 <Anchor id="advantages" />
-                <InfoPanel title={'Преимущества Infini®'} shadow>
+                <InfoPanel title="Преимущества Infini®" color="green" shadow>
                     <InfoBlock color="green">
                         <p>Достижение видимых результатов через месяц (при условии прохождения процедуры не реже 1 раза в 2 недели.</p>
                     </InfoBlock>
@@ -81,8 +81,8 @@ function LiftingInfiniService({ data }) {
                 </InfoPanel>
 
                 <Anchor id="indications" />
-                <InfoPanel title={'Показания к процедуре Infini®'} color={'green'} shadow>
-                    <List marker={'check'}>
+                <InfoPanel title="Показания к процедуре Infini®" color="green" shadow>
+                    <List marker="check">
                         <ul>
                             <li>Хроно (временное) и фотостарение (от солнца) кожи</li>
                             <li>Изменение рельефа (морщины) и цвета кожи (нарушение микроциркуляции)</li>
@@ -99,8 +99,8 @@ function LiftingInfiniService({ data }) {
                 </InfoPanel>
 
                 <Anchor id="contraindications" />
-                <InfoPanel title={'Противопоказания к процедуре Infini®'} color={'red'} shadow>
-                    <List marker={'cross'} titleH3="Строгие противопоказания">
+                <InfoPanel title="Противопоказания к процедуре Infini®" color="red" shadow>
+                    <List marker="cross" titleH3="Строгие противопоказания">
                         <ul>
                             <li>Острые воспалительные заболевания кожи (фолликуты, угревая болезнь, герпес)</li>
                             <li>Геморрагическая (нарушение свёртываемости крови) болезнь</li>
@@ -110,7 +110,7 @@ function LiftingInfiniService({ data }) {
                             <li>Наличие у пациента вживленного дефибриллятора</li>
                         </ul>
                     </List>
-                    <List marker={'cross'} titleH3="Требуется консультация врача">
+                    <List marker="cross" titleH3="Требуется консультация врача">
                         <ul>
                             <li>Беременность</li>
                             <li>Бесконтрольная гипертония</li>
@@ -118,7 +118,7 @@ function LiftingInfiniService({ data }) {
                             <li>Родимые пятна в области обработки, склонные к образованию злокачественных опухолей или с иными патологиями (невусы)</li>
                         </ul>
                     </List>
-                    <List marker={'cross'} titleH3="Требуется письменное согласие пациента">
+                    <List marker="cross" titleH3="Требуется письменное согласие пациента">
                         <ul>
                             <li>Наличие каких-либо конструкций в зоне обработки: металлических штифтов, имплантатов или протезов (пациент может ощущать покалывание в этих местах)</li>
                             <li>Аллергия на препараты предназначенные для после процедурного ухода</li>
@@ -128,7 +128,7 @@ function LiftingInfiniService({ data }) {
                 </InfoPanel>
 
                 <Anchor id="side-effects" />
-                <InfoPanel title="Побочные эффекты" color="red" shadow>
+                <InfoPanel title="Побочные эффекты" color="orange" shadow>
                     <List marker="check" titleH3="Нормальные реакции кожи на INFINI®">
                         <ul>
                             <li>
@@ -170,7 +170,7 @@ function LiftingInfiniService({ data }) {
                 </InfoPanel>
 
                 <Anchor id="order" />
-                <InfoPanel title={'Порядок процедуры'} shadow>
+                <InfoPanel title="Порядок процедуры" shadow>
                     <InfoBlock color="red">
                         <p>Одноразовая индивидуальная насадка неможет использоваться повторно из-за высокой степени риска заражения любыми воспалительными заболеваниями.</p>
                     </InfoBlock>
@@ -190,7 +190,7 @@ function LiftingInfiniService({ data }) {
                 </InfoPanel>
 
                 <Anchor id="preparation" />
-                <InfoPanel title={'Как подготовиться к процедуре'} shadow color={'gray'}>
+                <InfoPanel title="Как подготовиться к процедуре" shadow color="gray">
                     <List>
                         <ol>
                             <li>В течение двух недель до процедуры, нежелательно введение филлеров, ботокса, а также проведения агрессивных процедур (лазерной шлифовки, срединных пилингов, постановки нитей) в обрабатываемых зонах.</li>
@@ -205,7 +205,7 @@ function LiftingInfiniService({ data }) {
                 </InfoPanel>
 
                 <Anchor id="memo" />
-                <InfoPanel title={'Памятка по процедуре'} color={'gray'} shadow>
+                <InfoPanel title="Памятка по процедуре" color="gray" shadow>
                     <List>
                         <ol>
                             <li>Не принимайте горячий душ и не посещайте сауну в течение трёх суток после процедуры. Допускается бережное умывание.</li>

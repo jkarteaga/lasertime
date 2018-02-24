@@ -47,6 +47,11 @@ function Services({ data }) {
                         link="/services/contour-correction"
                         imgSizes={data.ContourCorrectionServiceHeader.sizes}
                     />
+                    <ServiceGridItem
+                        title="Ботулотоксины"
+                        link="/services/botox"
+                        imgSizes={data.BotoxServiceHeader.sizes}
+                    />
                 </ServiceGrid>
             </div>
         </div>
@@ -102,6 +107,13 @@ export const pageQuery = graphql`
             }
         }
         ContourCorrectionServiceHeader: imageSharp(
+            id: { regex: "/contour-correction-service-header/" }
+        ) {
+            sizes(maxWidth: 350) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        BotoxServiceHeader: imageSharp(
             id: { regex: "/contour-correction-service-header/" }
         ) {
             sizes(maxWidth: 350) {
