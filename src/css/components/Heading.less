@@ -35,6 +35,33 @@
         }
     }
 
+    &--underline {
+        display: flex;
+        text-align: center;
+
+        & h1,
+        h2,
+        h3,
+        h4 {
+            padding: 0 10px 5px;
+            border-bottom: 2px solid @gold;
+        }
+    }
+
+    &--box {
+        display: flex;
+        text-align: center;
+        padding: 15px 0;
+        & h1,
+        h2,
+        h3,
+        h4 {
+            padding: 5px 10px;
+            //border-bottom: 2px solid @gold;
+            border: 1px solid @gold;
+        }
+    }
+
     &--simple {
         text-align: center;
     }
@@ -58,6 +85,7 @@
     }
 
     &--sm {
+        padding-bottom: 0;
         h1,
         h2,
         h3,
