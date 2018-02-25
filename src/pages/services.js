@@ -52,6 +52,11 @@ function Services({ data }) {
                         link="/services/botox"
                         imgSizes={data.BotoxServiceHeader.sizes}
                     />
+                    <ServiceGridItem
+                        title="SMAS лифтинг"
+                        link="/services/smas-lifting"
+                        imgSizes={data.BotoxServiceHeader.sizes}
+                    />
                 </ServiceGrid>
             </div>
         </div>
