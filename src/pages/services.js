@@ -55,7 +55,7 @@ function Services({ data }) {
                     <ServiceGridItem
                         title="SMAS лифтинг"
                         link="/services/smas-lifting"
-                        imgSizes={data.BotoxServiceHeader.sizes}
+                        imgSizes={data.SmasLiftingServiceHeader.sizes}
                     />
                 </ServiceGrid>
             </div>
@@ -119,7 +119,14 @@ export const pageQuery = graphql`
             }
         }
         BotoxServiceHeader: imageSharp(
-            id: { regex: "/contour-correction-service-header/" }
+            id: { regex: "/botox-service-header/" }
+        ) {
+            sizes(maxWidth: 350) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        SmasLiftingServiceHeader: imageSharp(
+            id: { regex: "/smas-lifting-service-header/" }
         ) {
             sizes(maxWidth: 350) {
                 ...GatsbyImageSharpSizes_noBase64

@@ -60,7 +60,7 @@ function BotoxService({ data }) {
                 <p>Ботулотоксин типа А – это ядовитое вещество белковой природы, которое продуцируется бактерии Clostridium botulinum. Препарат способен блокировать передачу нервных импульсов, и именно на этом свойстве основана возможность его применения в медицине. При попадании в организм токсин блокирует синтез ацетилхолина (нейромедиатора) в области нервно-мышечного синапса, в результате чего происходит временная парализация мышцы. Препарат не вызывает повреждение нерва, а только блокирует его функциональную активность. То есть введение препарата в мимические мышцы лица (отвечают за отображение эмоций), которые с одной стороны крепятся к кости, а другой – к коже, приводит к их парализации, что способствует полному расслаблению лица и разглаживанию морщин.</p>
                 <div className="clearfix" />
                 <Anchor id="stats" />
-                <ServiceStats durationText="от 60 до 120 мин." priceText="от 10 000 до 30 000 руб." priceLink="/prices/botox/" quantityText="1" />
+                <ServiceStats durationText="от 10 до 20 мин." priceText="от 85 руб." priceLink="/prices/botox/" quantityText="1 раз в 4–6 мес." />
                 <Anchor id="zones" />
                 <Heading titleH2="Куда вводится ботулотоксин?" medium type="underline" />
                 <p>В косметологической практике препараты на основе ботулотоксина вводят в мышцы-мишени.</p>
@@ -579,7 +579,7 @@ export default BotoxService
 export const pageQuery = graphql`
     query BotoxServiceQuery {
         ...Helmet
-        botoxServiceHeader: imageSharp(id: { regex: "/lifting-infini-service-header/" }) {
+        botoxServiceHeader: imageSharp(id: { regex: "/botox-service-header/" }) {
             sizes(maxWidth: 960) {
                 ...GatsbyImageSharpSizes_noBase64
             }

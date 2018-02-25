@@ -17,8 +17,7 @@ function SmasLiftingService({ data }) {
     return (
         <div>
             <Helmet data={data} title="SMAS лифтинг Doublo" description="" />
-
-            <ArticleHeaderImage title="SMAS лифтинг" imgSizes={data.liftingInfiniServiceHeader.sizes} />
+            <ArticleHeaderImage title="SMAS лифтинг" imgSizes={data.smasLiftingServiceHeader.sizes} />
 
             <div className="PageContent__wrapper">
                 <FloatBlock right oneThird>
@@ -45,7 +44,7 @@ function SmasLiftingService({ data }) {
                 <div className="clearfix" />
                 <PullQuote alignCenter>Метод, который положен в основу работы аппарата Doublo  ультразвук произвел настоящую революцию в области нехирургического омоложения!</PullQuote>
                 <Anchor id="stats" />
-                <ServiceStats durationText="от 60 до 120 мин." priceText="от 10 000 до 30 000 руб." priceLink="/prices/smas-lifting" quantityText="2 - 6 (1 раз в 3 - 4 недели)" />
+                <ServiceStats durationText="от 30 мин." priceText="от 6 000 руб." priceLink="/prices/smas-lifting" quantityText="1 (эффект длится год)" />
                 <Anchor id="theory" />
                 <CollapsiblePanel title="Принцип работы SMAS лифтинга Doublo®">
                     <p>Используемая технология ультразвуковой кавитации HIFU (High Intensive Focused Ultrasound) позволяет проводить точечную коагуляцию ткани на уровне SMAS. При этом окружающие ткани остаются целыми и не подвергаются термическому воздействию. Говоря научным языком, это воздействие высокоточного направленного ультразвука по технологии HIFU (High Intensity Focused Ultrasound) на глубокие SMAS слои, которые располагаются под кожей. SMAS переводится как “поверхностная мышечно-апоневротическая система” и отвечает за упругость и подтянутые контуры лица. Именно SMAS перемещают вверх во время выполнения операции фейслифтинга.</p>
@@ -189,7 +188,7 @@ export default SmasLiftingService
 export const pageQuery = graphql`
     query SmasLiftingServiceQuery {
         ...Helmet
-        liftingInfiniServiceHeader: imageSharp(id: { regex: "/lifting-infini-service-header/" }) {
+        smasLiftingServiceHeader: imageSharp(id: { regex: "/smas-lifting-service-header/" }) {
             sizes(maxWidth: 960) {
                 ...GatsbyImageSharpSizes_noBase64
             }
