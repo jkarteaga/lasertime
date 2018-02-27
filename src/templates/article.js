@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Heading from '../components/Heading'
 
 class ArticleTemplate extends React.Component {
     render() {
@@ -7,7 +8,7 @@ class ArticleTemplate extends React.Component {
         return (
             <div className="PageContent__wrapper">
                 <Helmet title={article.frontmatter.title} />
-                <h1>{article.frontmatter.title}</h1>
+                <Heading titleH1={article.frontmatter.title} type="underline" />
                 <div dangerouslySetInnerHTML={{ __html: article.html }} />
             </div>
         )
