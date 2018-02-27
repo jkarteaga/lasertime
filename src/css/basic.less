@@ -15,6 +15,7 @@ h1 {
     line-height: @line-height--h1;
     margin-top: 0;
     padding-top: 20px;
+    font-size: 2rem;
 }
 
 h2 {
@@ -29,10 +30,15 @@ a:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid @gray-90;
+    //border: 1px solid @gray-90;
+    font-size: 1.3rem;
 
     & thead {
-        background-color: @gold;
+        font-family: 'Avenir Next Regular', Arial, sans-serif;
+        text-transform: uppercase;
+        //color: white;
+        letter-spacing: 1px;
+        border-bottom: 1px solid @gold;
 
         & th {
             text-align: center;
@@ -42,14 +48,24 @@ table {
     }
 
     & tbody tr {
+        font-family: 'Avenir Next Regular', Arial, sans-serif;
+
+        // Preset for border coloring on hover
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+
         position: relative;
         background-color: #fff;
+
         &:nth-child(even) {
-            background-color: @gray-95;
+            background-color: #fff7ee;
         }
 
         &:hover {
-            background-color: #f9ecc4;
+            //background-color: #f9ecc4;
+            //outline: 1px solid @gold-dark;
+            border-left-color: @gold-dark;
+            border-right-color: @gold-dark;
         }
 
         & td {
@@ -57,6 +73,7 @@ table {
 
             &:first-of-type {
                 width: 60%;
+                padding-left: 15px;
             }
         }
     }
@@ -64,4 +81,21 @@ table {
 
 .clearfix {
     clear: both;
+}
+
+@media @mobile-wide-widths {
+    h1 {
+        font-size: 3rem;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        //border: 1px solid @gray-90;
+        font-size: 1.6rem;
+
+        & thead {
+            letter-spacing: 2px;
+        }
+    }
 }

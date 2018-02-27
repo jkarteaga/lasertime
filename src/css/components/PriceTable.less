@@ -4,13 +4,22 @@
 .PriceTable__heading {
     text-align: center;
     margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 //TODO заменить h4 подзаголовки на p
 .PriceTable__caption {
     font-size: @font-size-price-table-caption-small;
+    font-family: 'Avenir Next Regular', Arial, sans-serif;
+
     margin-top: -10px;
-    color: @gray-50;
+    color: @red-stamp;
     text-align: center;
     margin-bottom: 10px;
+}
+
+@media @mobile-wide-widths {
+    .PriceTable__heading {
+        font-size: 2.5rem;
+    }
 }
