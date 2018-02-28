@@ -16,6 +16,15 @@ function ArticleList({ data }) {
 
             <div className="PageContent__wrapper">
                 <ArticlePreview
+                    title={'Как мужчине помолодеть на 15 лет?'}
+                    path={'/articles/smas-lifting-male/'}
+                    imageSizes={data.smasLiftingMaleArticle.sizes}
+                    description={
+                        'Моложавый вид – секрет успеха, а все предубеждения по поводу коррекции внешности наконец-то отходят на второй план.'
+                    }
+                    type={'article'}
+                />
+                <ArticlePreview
                     title={'Мужская косметология'}
                     path={'/articles/male-cosmetology/'}
                     imageSizes={data.maleCosmetologyArticle.sizes}
@@ -222,6 +231,13 @@ export const pageQuery = graphql`
             }
         }
         # Preview images
+        smasLiftingMaleArticle: imageSharp(
+            id: { regex: "/smas-lifting-male-article/" }
+        ) {
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
         maleCosmetologyArticle: imageSharp(
             id: { regex: "/male-cosmetology-article/" }
         ) {
