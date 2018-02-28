@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function LaserEpilationArticle({ data }) {
     return (
@@ -9,7 +10,10 @@ export default function LaserEpilationArticle({ data }) {
                 title="Лазерная эпиляция в Москве недорого: мифы и реальность!"
                 description=""
             />
-            <h1>Лазерная эпиляция в Москве недорого: мифы и реальность!</h1>
+            <Heading
+                titleH1="Лазерная эпиляция в Москве недорого: мифы и реальность!"
+                type="underline"
+            />
             <p>
                 Избавление от лишних волос - одна из главных проблем в жизни
                 практически каждой представительницы прекрасного пола.
@@ -88,7 +92,7 @@ export default function LaserEpilationArticle({ data }) {
                 следствие, помочь действенно ее решить.
             </p>
 
-            <h2 >Лазерная эпиляция в Москве - не так все просто!</h2>
+            <h2>Лазерная эпиляция в Москве - не так все просто!</h2>
 
             <p>
                 Если все это не учесть, результатом могут быть разочарования,
@@ -154,7 +158,7 @@ export default function LaserEpilationArticle({ data }) {
 
             <p>Мы работаем на результат!</p>
 
-            <h2 >Лазерная эпиляция Москва недорого - подведем итоги</h2>
+            <h2>Лазерная эпиляция Москва недорого - подведем итоги</h2>
 
             <p>И что в итоге?</p>
 

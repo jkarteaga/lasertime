@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function SilhouetteLiftSoftThreadsArticle({ data }) {
     return (
@@ -9,7 +10,7 @@ export default function SilhouetteLiftSoftThreadsArticle({ data }) {
                 title="Нити Silhouette Lift Soft"
                 description=""
             />
-            <h1>Нити Silhouette Lift Soft</h1>
+            <Heading titleH1="Нити Silhouette Lift Soft" type="underline" />
             <p>
                 Популярность технологии омоложения, использующей нитевые методы,
                 стремительно растает. Солидный набор нитей, предусмотренный

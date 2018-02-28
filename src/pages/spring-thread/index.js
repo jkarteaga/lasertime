@@ -1,11 +1,12 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function SpringThreadArticle({ data }) {
     return (
         <div className="PageContent__wrapper">
             <Helmet data={data} title="Нити Spring Thread" description="" />
-            <h1>Нити Spring Thread</h1>
+            <Heading titleH1="Нити Spring Thread" type="underline" />
             <p>
                 Благодаря уникальным лифтинг нитям Spring Thread для подтяжки
                 лица, вы сможете омолодить свою кожу без всякого хирургического

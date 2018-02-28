@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function BiorevitalizationVitalaserArticle({ data }) {
     return (
@@ -9,7 +10,7 @@ export default function BiorevitalizationVitalaserArticle({ data }) {
                 title="Безыгольная биоревитализация"
                 description="Безыгольная биоревитализация на аппарате Лазмик в Москве"
             />
-            <h1>Безыгольная биоревитализация</h1>
+            <Heading titleH1="Безыгольная биоревитализация" type="underline" />
             <p>
                 Лазерная гиалуронопластика – это совершенно новое слово в
                 медицине. Данная технология была получена немецкими учеными и

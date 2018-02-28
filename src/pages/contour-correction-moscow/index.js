@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function ContourCorrectionArticle({ data }) {
     return (
@@ -9,8 +10,10 @@ export default function ContourCorrectionArticle({ data }) {
                 title="Контурная пластика – современный метод борьбы с морщинами"
                 description=""
             />
-            <h1>Контурная пластика – современный метод борьбы с морщинами</h1>
-
+            <Heading
+                titleH1="Контурная пластика – современный метод борьбы с морщинами"
+                type="underline"
+            />
             <p>
                 С возрастом у каждого человека появляются на лице нежеланные
                 морщины. Как бы она не ухаживала за своим лицом, увы, это

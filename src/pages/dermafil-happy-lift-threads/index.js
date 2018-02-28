@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function DermafilHappyLiftThreadsArticle({ data }) {
     return (
@@ -9,7 +10,7 @@ export default function DermafilHappyLiftThreadsArticle({ data }) {
                 title="Итальянские нити Dermafil Happy Lift – революция в лифтинге"
                 description=""
             />
-            <h1>Итальянские нити Dermafil Happy Lift – революция в лифтинге</h1>
+            <Heading titleH1="Итальянские нити Dermafil Happy Lift – революция в лифтинге" type="underline" />
             <p>
                 Сегодняшние модные тренды обязывают иметь «юное» лицо с чистой и
                 нежной кожей красавицам любого возраста. Природа своенравна и

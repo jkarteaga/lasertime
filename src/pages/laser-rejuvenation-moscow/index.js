@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function LaserRejuvenationArticle({ data }) {
     return (
@@ -9,7 +10,7 @@ export default function LaserRejuvenationArticle({ data }) {
                 title="Фракционное лазерное омоложение"
                 description=""
             />
-            <h1>Фракционное лазерное омоложение</h1>
+            <Heading titleH1="Фракционное лазерное омоложение" type="underline" />
             <p>
                 К сожалению, после 30 лет морщины, которых раньше мы не
                 замечали, становятся более глубокими и переходят в категорию

@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function LaserPigmentSpotRemovalArticle({ data }) {
     return (
@@ -9,7 +10,10 @@ export default function LaserPigmentSpotRemovalArticle({ data }) {
                 title="Лазерное удаление пигментных пятен"
                 description=""
             />
-            <h1>Лазерное удаление пигментных пятен</h1>
+            <Heading
+                titleH1="Лазерное удаление пигментных пятен"
+                type="underline"
+            />
             <p>
                 Каждый человек хочет иметь привлекательную внешность, хороший
                 цвет лица. Однако иногда на лице или теле появляются пигментные

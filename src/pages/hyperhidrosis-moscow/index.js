@@ -1,15 +1,16 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function HyperhidrosisArticle({ data }) {
     return (
         <div className="PageContent__wrapper">
             <Helmet
                 data={data}
-                title="Гипергидроз (Москва) - излечим!"
+                title="Гипергидроз излечим!"
                 description="Гипергидроз - недорогое и качественное лечение в Москве"
             />
-            <h1>Гипергидроз (Москва) - излечим!</h1>
+            <Heading titleH1="Гипергидроз излечим!" type="underline" />
             <p>
                 Повышенная потливость, от которой на сегодняшний день страдает
                 масса людей в Москве и по всему миру, имеет в медицинской

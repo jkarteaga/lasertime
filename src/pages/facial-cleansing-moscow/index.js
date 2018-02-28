@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function FacialCleansingArticle({ data }) {
     return (
@@ -9,7 +10,10 @@ export default function FacialCleansingArticle({ data }) {
                 title="Чистка лица в Москве - вся правда о процедуре!"
                 description=""
             />
-            <h1>Чистка лица в Москве - вся правда о процедуре!</h1>
+            <Heading
+                titleH1="Чистка лица в Москве - вся правда о процедуре!"
+                type="underline"
+            />
 
             <p>
                 <strong>Чистка лица</strong> – одна из самых распространенных

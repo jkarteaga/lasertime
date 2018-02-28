@@ -1,15 +1,19 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function MesoThreadsArticle({ data }) {
     return (
         <div className="PageContent__wrapper">
             <Helmet
                 data={data}
-                title="Тянем - потянем и вытянем лицо мезонитями"
+                title="Тянем-потянем и вытянем лицо мезонитями"
                 description=""
             />
-            <h1>Тянем - потянем и вытянем лицо мезонитями</h1>
+            <Heading
+                titleH1="Тянем-потянем и вытянем лицо мезонитями"
+                type="underline"
+            />
             <p>
                 Скажем банальность: умная женщина не может выглядеть плохо. Дело
                 тут не в возрасте, а в правильной оценке себя. Красивая женщина

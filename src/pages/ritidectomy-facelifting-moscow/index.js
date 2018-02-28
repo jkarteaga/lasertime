@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function RitidectomyFaceliftingArticle({ data }) {
     return (
@@ -9,7 +10,7 @@ export default function RitidectomyFaceliftingArticle({ data }) {
                 title="Ритидэктомия - фейслифтинг, подтяжка лица и шеи"
                 description=""
             />
-            <h1>Ритидэктомия - фейслифтинг, подтяжка лица и шеи</h1>
+            <Heading titleH1="Ритидэктомия - фейслифтинг, подтяжка лица и шеи" type="underline" />
             <p>
                 Теперь каждая женщина в стране, находясь в определенном
                 возрасте, мечтает о подтяжке кожи на лице. Данную операцию

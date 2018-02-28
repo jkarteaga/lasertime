@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function LiftingInfiniArticle({ data }) {
     return (
@@ -10,7 +11,10 @@ export default function LiftingInfiniArticle({ data }) {
                 title="Глубокий 3D лифтинг на аппарате INFINI"
                 description=""
             />
-            <h1>Глубокий 3D лифтинг на аппарате INFINI</h1>
+            <Heading
+                titleH1="Глубокий 3D лифтинг на аппарате INFINI"
+                type="underline"
+            />
 
             <p>
                 <strong>3D-лифтинг</strong> - это процедура, которая обладает

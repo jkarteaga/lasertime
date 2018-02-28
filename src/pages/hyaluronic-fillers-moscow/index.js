@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function HyaluronicFillersArticle({ data }) {
     return (
@@ -9,7 +10,10 @@ export default function HyaluronicFillersArticle({ data }) {
                 title="Филлеры на основе гиалуроновой кислоты"
                 description=""
             />
-            <h1>Филлеры на основе гиалуроновой кислоты</h1>
+            <Heading
+                titleH1="Филлеры на основе гиалуроновой кислоты"
+                type="underline"
+            />
             <p>
                 Одной из наиболее удачных разновидностей «инъекций красоты»
                 являются филлеры. Они способны сделать лицо более молодым и

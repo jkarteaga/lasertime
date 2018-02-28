@@ -4,12 +4,13 @@ import List from '../../../components/List'
 import PullQuote from '../../../components/PullQuote'
 import FloatBlock from '../../../components/FloatBlock'
 import Img from 'gatsby-image'
+import Heading from '../../../components/Heading'
 
 export default function MaleCosmetologyArticle({ data }) {
     return (
         <div className="PageContent__wrapper">
             <Helmet data={data} title="Мужская косметология" description="" />
-            <h1>Мужская косметология</h1>
+            <Heading titleH1="Мужская косметология" type="underline" />
 
             <FloatBlock oneThird>
                 <PullQuote color="orange" alignCenter>

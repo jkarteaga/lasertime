@@ -1,11 +1,12 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function SupersonicPeelingArticle({ data }) {
     return (
         <div className="PageContent__wrapper">
             <Helmet data={data} title="Ультразвуковой пилинг" description="" />
-            <h1>Ультразвуковой пилинг</h1>
+            <Heading titleH1="Ультразвуковой пилинг" type="underline" />
             <p>
                 Влияние на кожу лица различных факторов, таких как возрастные
                 изменения, стрессовые ситуации, колебания гормонального фона,

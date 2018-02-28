@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function LipAugmentationArticle({ data }) {
     return (
@@ -9,7 +10,7 @@ export default function LipAugmentationArticle({ data }) {
                 title="Увеличение губ в Москве"
                 description=""
             />
-            <h1>Увеличение губ в Москве</h1>
+            <Heading titleH1="Увеличение губ в Москве" type="underline" />
             <p>
                 Красивые пухленькие губы практически стали эталоном. К
                 сожалению, у природы свои причуды, поэтому не каждая женщина

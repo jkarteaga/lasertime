@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function LaserRejuvenationAdvantagesArticle({ data }) {
     return (
@@ -9,7 +10,10 @@ export default function LaserRejuvenationAdvantagesArticle({ data }) {
                 title="Преимущества фракционного омоложения"
                 description=""
             />
-            <h1>Преимущества фракционного омоложения</h1>
+            <Heading
+                titleH1="Преимущества фракционного омоложения"
+                type="underline"
+            />
             <p>
                 Клиника красоты «Знак качества» гарантирует омоложение кожи
                 благодаря использованию СО2 лазера с применением высокоточного

@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function PhotoRejuvenationArticle({ data }) {
     return (
@@ -9,7 +10,7 @@ export default function PhotoRejuvenationArticle({ data }) {
                 title="Фотоомоложение - современные технологии красоты"
                 description=""
             />
-            <h1>Фотоомоложение - современные технологии красоты</h1>
+            <Heading titleH1="Фотоомоложение - современные технологии красоты" type="underline" />
             <p>
                 Если Вы хотите оставаться неотразимой и радовать окружающих
                 своей красотой, наш косметический кабинет предлагает Вам пройти

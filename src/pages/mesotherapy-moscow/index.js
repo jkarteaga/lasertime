@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function MesotherapyArticle({ data }) {
     return (
@@ -9,7 +10,7 @@ export default function MesotherapyArticle({ data }) {
                 title="Мезотерапия: молодость и свежесть"
                 description=""
             />
-            <h1>Мезотерапия: молодость и свежесть</h1>
+            <Heading titleH1="Мезотерапия: молодость и свежесть" type="underline" />
             <p>
                 Мезотерапия – известная и популярная в современной косметологии
                 процедура коррекции дефектов кожи лица. Медицинская методика

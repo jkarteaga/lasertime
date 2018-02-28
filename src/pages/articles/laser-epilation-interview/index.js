@@ -3,6 +3,7 @@ import Helmet from '../../../components/HelmetWrapper'
 import QuestionBlock from '../../../components/QuestionBlock'
 import ArticleAuthorBlock from '../../../components/ArticleAuthor'
 import InfoBlock from '../../../components/InfoBlock'
+import Heading from '../../../components/Heading'
 
 export default function LaserEpilationInterview({ data }) {
     return (
@@ -12,7 +13,10 @@ export default function LaserEpilationInterview({ data }) {
                 title="Всё, что нужно знать о лазерной эпиляции"
                 description=""
             />
-            <h1>Всё, что нужно знать о лазерной эпиляции</h1>
+            <Heading
+                titleH1="Всё, что нужно знать о лазерной эпиляции"
+                type="underline"
+            />
 
             <ArticleAuthorBlock />
 

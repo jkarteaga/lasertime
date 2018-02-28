@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function BiorevitalizationArticle({ data }) {
     return (
@@ -9,7 +10,10 @@ export default function BiorevitalizationArticle({ data }) {
                 title="Биоревитализация – недорогая и очень эффективная процедура"
                 description=""
             />
-            <h1>Биоревитализация – недорогая и очень эффективная процедура</h1>
+            <Heading
+                titleH1="Биоревитализация – недорогая и очень эффективная процедура"
+                type="underline"
+            />
             <p>
                 Примерно в возрасте 25-ти лет наша кожа начинает претерпевать
                 изменения, причем довольно неприятные: терять упругость,

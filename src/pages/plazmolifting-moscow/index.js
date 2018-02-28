@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from '../../components/HelmetWrapper'
+import Heading from '../../components/Heading'
 
 export default function PlazmoliftingArticle({ data }) {
     return (
@@ -9,7 +10,7 @@ export default function PlazmoliftingArticle({ data }) {
                 title="Плазмолифтинг лица в Москве"
                 description=""
             />
-            <h1>Плазмолифтинг лица в Москве</h1>
+            <Heading titleH1="Плазмолифтинг лица в Москве" type="underline" />
             <p>
                 Лифтинг (с англ. языка) - подтяжка. В косметологии существует
                 множество процедур с применением лифтинга. Одной из самых новых,
