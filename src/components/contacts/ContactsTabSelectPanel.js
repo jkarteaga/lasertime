@@ -7,32 +7,30 @@ const ContactsTabSelectPanel = ({ activeMode, changeMode }) => {
     return (
         <ul className="ContactsTabSelectPanel">
             <li
-                className={`ContactsTabSelectPanel__option ${activeMode ===
-                'metro'
-                    ? activeClassName
-                    : ''}`}
+                className={`ContactsTabSelectPanel__option ${
+                    activeMode === 'metro' ? activeClassName : ''
+                }`}
                 onClick={() => changeMode('metro')}
             >
                 на метро
             </li>
             <li
-                className={`ContactsTabSelectPanel__option ${activeMode ===
-                'nav'
-                    ? activeClassName
-                    : ''}`}
+                className={`ContactsTabSelectPanel__option ${
+                    activeMode === 'nav' ? activeClassName : ''
+                }`}
                 onClick={() => changeMode('nav')}
             >
                 на машине
             </li>
-            <li
-                className={`ContactsTabSelectPanel__option ${activeMode ===
-                'taxi'
-                    ? activeClassName
-                    : ''}`}
-                onClick={() => changeMode('taxi')}
-            >
-                на такси
-            </li>
+            {/*<li*/}
+            {/*className={`ContactsTabSelectPanel__option ${activeMode ===*/}
+            {/*'taxi'*/}
+            {/*? activeClassName*/}
+            {/*: ''}`}*/}
+            {/*onClick={() => changeMode('taxi')}*/}
+            {/*>*/}
+            {/*на такси*/}
+            {/*</li>*/}
         </ul>
     )
 }

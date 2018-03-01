@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const ContactsSVGMap = ({ toggleModalOpen }) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2302 1342">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 2302 1342">
             <g fill="none">
                 <path
                     fill="#B28E00"
