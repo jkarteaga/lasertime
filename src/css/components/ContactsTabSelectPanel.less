@@ -6,28 +6,32 @@
     margin: 0;
     box-shadow: 0 5px 10px @gray-90;
 
-    height: 40px;
+    height: 45px;
 
     list-style: none;
     padding-left: 0;
 }
 
 .ContactsTabSelectPanel__option {
-    //outline: 1px solid red;
-
     // Item
     //flex-basis: 33%;
     flex-grow: 1;
     text-align: center;
-    border: 1px solid @gray-80;
-    padding-top: 5px;
+    border: 1px solid @gold;
+    border-left: none;
+    padding-top: 7px;
+
     cursor: pointer;
 
+    &:last-of-type {
+        border-right: none;
+    }
+
     &:hover {
-        background-color: @gray-95;
+        //background-color: @gray-95;
     }
 
     &--active {
-        border-bottom: 5px solid @red-stamp;
+        border-bottom: 5px solid @gold-dark;
     }
 }

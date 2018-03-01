@@ -18,7 +18,7 @@ export default function SmasLiftingMaleArticle({ data }) {
                 titleH1="Как мужчине помолодеть на 15 лет?"
                 type="underline"
             />
-            <FloatBlock>
+            <FloatBlock paddingTop>
                 <Img
                     sizes={data.smasLiftingMaleHandsome.sizes}
                     title="Лифтинг для мужчин"
