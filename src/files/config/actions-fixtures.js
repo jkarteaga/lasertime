@@ -6,7 +6,7 @@ const actions = [
         description: 'голени + глубокое бикини + подмышки',
         image: 'laser-epilation-legs-bikini.jpg',
         price_old: 18000,
-        price_new: 8000,
+        price_new: 10000,
         group: 2,
     },
     {
@@ -16,7 +16,7 @@ const actions = [
         description: 'лицо + шея',
         image: 'laser-epilation-face.jpg',
         price_old: 7000,
-        price_new: 2500,
+        price_new: 3000,
         group: 1,
     },
     {
@@ -36,7 +36,7 @@ const actions = [
         description: 'глубокое бикини + подмышки',
         image: 'laser-epilation-bikini.jpg',
         price_old: 10000,
-        price_new: 4500,
+        price_new: 6000,
         group: 1,
     },
     {
@@ -56,7 +56,7 @@ const actions = [
         description: 'ноги полностью + классическое бикини',
         image: 'laser-epilation-legs.jpg',
         price_old: 20000,
-        price_new: 8000,
+        price_new: 10000,
         group: 9,
     },
     {
