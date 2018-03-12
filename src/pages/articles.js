@@ -16,6 +16,15 @@ function ArticleList({ data }) {
 
             <div className="PageContent__wrapper">
                 <ArticlePreview
+                    title={'Карбоновый пилинг'}
+                    path={'/articles/laser-carbon-peeling/'}
+                    imageSizes={data.laserCarbonPeelingArticle.sizes}
+                    description={
+                        'Одной из самых инновационных технологий чистки лица является лазерный карбоновый пилинг. Главным преимуществом этой процедуры считается одновременный омолаживающий эффект, а также решение множества дерматологических проблем.'
+                    }
+                    type={'article'}
+                />
+                <ArticlePreview
                     title={'Как мужчине помолодеть на 15 лет?'}
                     path={'/articles/smas-lifting-male/'}
                     imageSizes={data.smasLiftingMaleArticle.sizes}
@@ -231,6 +240,13 @@ export const pageQuery = graphql`
             }
         }
         # Preview images
+        laserCarbonPeelingArticle: imageSharp(
+            id: { regex: "/laser-carbon-peeling-article/" }
+        ) {
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
         smasLiftingMaleArticle: imageSharp(
             id: { regex: "/smas-lifting-male-article/" }
         ) {
@@ -431,7 +447,6 @@ export const pageQuery = graphql`
                 ...GatsbyImageSharpSizes_noBase64
             }
         }
-
         supersonicPeelingArticle: imageSharp(
             id: { regex: "/supersonic-peeling-article/" }
         ) {
