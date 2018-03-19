@@ -16,7 +16,16 @@ function ArticleList({ data }) {
 
             <div className="PageContent__wrapper">
                 <ArticlePreview
-                    title={'Карбоновый пилинг'}
+                    title={'Векторный лифтинг Radiesse'}
+                    path={'/articles/vector-lifting-radiesse/'}
+                    imageSizes={data.vectorLiftingRadiesseArticle.sizes}
+                    description={
+                        'Не так давно единственным способом победить возрастные изменения была пластическая хирургия. Однако современные альтернативные методы не только дают аналогичный результат, но и восстанавливают упругость кожи.'
+                    }
+                    type={'article'}
+                />
+                <ArticlePreview
+                    title={'Лазерный карбоновый пилинг'}
                     path={'/articles/laser-carbon-peeling/'}
                     imageSizes={data.laserCarbonPeelingArticle.sizes}
                     description={
@@ -242,6 +251,13 @@ export const pageQuery = graphql`
         # Preview images
         laserCarbonPeelingArticle: imageSharp(
             id: { regex: "/laser-carbon-peeling-article/" }
+        ) {
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        vectorLiftingRadiesseArticle: imageSharp(
+            id: { regex: "/vector-lifting-radiesse-article/" }
         ) {
             sizes(maxWidth: 180) {
                 ...GatsbyImageSharpSizes_noBase64

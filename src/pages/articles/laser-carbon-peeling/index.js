@@ -10,8 +10,8 @@ import Img from 'gatsby-image'
 export default function LaserCarbonPeelingArticle({ data }) {
     return (
         <div className="PageContent__wrapper">
-            <Helmet data={data} title="Карбоновый пилинг" description="" />
-            <Heading titleH1="Карбоновый пилинг" type="underline" />
+            <Helmet data={data} title="Лазерный карбоновый пилинг" description="" />
+            <Heading titleH1="Лазерный карбоновый пилинг" type="underline" />
             <FloatBlock paddingTop>
                 <Img
                     sizes={data.laserCarbonPeelingWoman.sizes}
