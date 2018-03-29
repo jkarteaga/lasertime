@@ -103,8 +103,14 @@ module.exports = {
             options: {},
         },
         `gatsby-plugin-react-next`,
-        // `gatsby-plugin-react-helmet`,
         `gatsby-transformer-sharp`,
-        // `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: 'UA-35994757-6',
+                // Puts tracking script in the head instead of the body
+                head: false,
+            },
+        },
     ],
 }
