@@ -16,6 +16,13 @@ function ArticleList({ data }) {
 
             <div className="PageContent__wrapper">
                 <ArticlePreview
+                    title={'Плацентарные препараты или машина времени!'}
+                    path={'/articles/placental-drugs/'}
+                    imageSizes={data.placentalDrugsArticle.sizes}
+                    description={''}
+                    type={'article'}
+                />
+                <ArticlePreview
                     title={'Векторный лифтинг Radiesse'}
                     path={'/articles/vector-lifting-radiesse/'}
                     imageSizes={data.vectorLiftingRadiesseArticle.sizes}
@@ -251,6 +258,13 @@ export const pageQuery = graphql`
         # Preview images
         laserCarbonPeelingArticle: imageSharp(
             id: { regex: "/laser-carbon-peeling-article/" }
+        ) {
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        placentalDrugsArticle: imageSharp(
+            id: { regex: "/placental-drugs-article/" }
         ) {
             sizes(maxWidth: 180) {
                 ...GatsbyImageSharpSizes_noBase64
