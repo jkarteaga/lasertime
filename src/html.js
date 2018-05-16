@@ -26,18 +26,6 @@ const HTML = ({ body, headComponents, postBodyComponents }) => {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <link
-                    href="https://fonts.googleapis.com/css?family=Arsenal:400,400i&amp;subset=cyrillic-ext"
-                    rel="stylesheet"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css?family=Forum&amp;subset=cyrillic,cyrillic-ext"
-                    rel="stylesheet"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic-ext"
-                    rel="stylesheet"
-                />
                 <link rel="manifest" href="/manifest.json" />
                 <meta
                     name="msapplication-config"
