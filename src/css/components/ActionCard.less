@@ -37,6 +37,12 @@
         }
     }
 
+    &__header {
+        // fix for collapsing card with missing img
+        height: 140px;
+        width: 280px;
+    }
+
     &__header::after {
         content: '';
         position: absolute;
@@ -119,7 +125,7 @@
         width: 100%;
         //outline: 1px solid red;
         //text-align: center;
-        font-size: 24px;
+        font-size: 22px;
         padding-bottom: 12px;
         height: 40px;
 
@@ -138,7 +144,7 @@
             //color: #3FC66C;
             color: #333;
             //font-weight: bold;
-            font-size: 28px;
+            font-size: 26px;
             text-indent: 5px;
         }
     }
