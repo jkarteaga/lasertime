@@ -66,6 +66,9 @@ class ActionList extends React.Component {
             } else if (group === 'alla' && [2, 4, 5, 6].includes(day)) {
                 const deadline = day === 2 ? 1 : 7 - day
                 actions.push({ ...item, deadline })
+            } else if (group === 'mon-tue-wed' && [1, 2, 3].includes(day)) {
+                const deadline = 4 - day
+                actions.push({ ...item, deadline })
             }
         })
 
