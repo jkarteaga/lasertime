@@ -419,6 +419,26 @@ const actions = [
         price_new: 3500,
         group: 5,
     },
+    {
+        id: 43,
+        category: 2,
+        title: 'SMAS лифтинг',
+        description: 'на аппарате Doublo®',
+        image: 'smas-lifting.jpg',
+        price_old: 80000,
+        price_new: 40000,
+        group: 9,
+    },
+    {
+        id: 44,
+        category: 4,
+        title: 'Карбоновый пилинг',
+        description: 'лицо',
+        image: 'carbon-peeling.jpg',
+        price_old: 80000,
+        price_new: 40000,
+        group: 10,
+    },
 ]
 
 const categories = [
@@ -453,8 +473,8 @@ const groups = {
     7: 'weekdays',
     8: 'weekend',
 
-    // Tue, Thu, Fri, Sat
-    9: 'alla',
+    9: 'alla', // Tue, Thu, Fri, Sat
+    10: 'mon-tue-wed',
 }
 
 export default { actions, categories, groups }
