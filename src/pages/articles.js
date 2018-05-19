@@ -16,6 +16,13 @@ function ArticleList({ data }) {
 
             <div className="PageContent__wrapper">
                 <ArticlePreview
+                    title={'Пилинг PRX-T33 - сохраняем сияние и красоту кожи!'}
+                    path={'/articles/peeling-prx-t33/'}
+                    imageSizes={data.peelingPrxT33Article.sizes}
+                    description={''}
+                    type={'article'}
+                />
+                <ArticlePreview
                     title={'Плацентарные препараты или машина времени!'}
                     path={'/articles/placental-drugs/'}
                     imageSizes={data.placentalDrugsArticle.sizes}
@@ -258,6 +265,13 @@ export const pageQuery = graphql`
         # Preview images
         laserCarbonPeelingArticle: imageSharp(
             id: { regex: "/laser-carbon-peeling-article/" }
+        ) {
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        peelingPrxT33Article: imageSharp(
+            id: { regex: "/peeling-prx-t33-article/" }
         ) {
             sizes(maxWidth: 180) {
                 ...GatsbyImageSharpSizes_noBase64
