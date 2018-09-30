@@ -16,6 +16,15 @@ function ArticleList({ data }) {
 
             <div className="PageContent__wrapper">
                 <ArticlePreview
+                    title={'Омоложение без скальпеля!'}
+                    path={'/articles/rejuvenation-without-scalpel/'}
+                    imageSizes={data.RejuvenationWithoutScalpelArticle.sizes}
+                    description={
+                        'Косметологи нашего времени стараются найти альтернативу любым операционным вмешательствам. В данной статье мы рассмотрим одну из них.'
+                    }
+                    type={'article'}
+                />
+                <ArticlePreview
                     title={'Пилинг PRX-T33 - сохраняем сияние и красоту кожи!'}
                     path={'/articles/peeling-prx-t33/'}
                     imageSizes={data.peelingPrxT33Article.sizes}
@@ -265,6 +274,13 @@ export const pageQuery = graphql`
         # Preview images
         laserCarbonPeelingArticle: imageSharp(
             id: { regex: "/laser-carbon-peeling-article/" }
+        ) {
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        RejuvenationWithoutScalpelArticle: imageSharp(
+            id: { regex: "/rejuvenation-without-scalpel-article/" }
         ) {
             sizes(maxWidth: 180) {
                 ...GatsbyImageSharpSizes_noBase64

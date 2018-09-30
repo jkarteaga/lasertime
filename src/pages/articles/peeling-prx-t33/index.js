@@ -8,7 +8,7 @@ import InfoBlock from '../../../components/InfoBlock'
 import InlineHighlight from '../../../components/InlineHighlight'
 import InfoPanel from '../../../components/InfoPanel'
 
-export default function PeelingPRX({ data }) {
+export default function PeelingPRXArticle({ data }) {
     return (
         <div className="PageContent__wrapper">
             <Helmet
@@ -299,7 +299,7 @@ export default function PeelingPRX({ data }) {
 }
 
 export const pageQuery = graphql`
-    query PeelingPRXQuery {
+    query PeelingPRXArticleQuery {
         ...Helmet
         peelingPrxT33: imageSharp(id: { regex: "/peeling-prx-t33-female/" }) {
             sizes(maxWidth: 960) {
