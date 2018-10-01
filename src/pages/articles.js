@@ -16,6 +16,15 @@ function ArticleList({ data }) {
 
             <div className="PageContent__wrapper">
                 <ArticlePreview
+                    title={'LPG-массаж или подтяжка лица без операции'}
+                    path={'/articles/lpg-massage/'}
+                    imageSizes={data.LPGMassageArticle.sizes}
+                    description={
+                        'Технология LPG-массажа представляет собой одну из наиболее безопасных альтернатив операционному лечению целлюлита, процедуре липосакции и операционной подтяжке лица.'
+                    }
+                    type={'article'}
+                />
+                <ArticlePreview
                     title={'Омоложение без скальпеля!'}
                     path={'/articles/rejuvenation-without-scalpel/'}
                     imageSizes={data.RejuvenationWithoutScalpelArticle.sizes}
@@ -272,6 +281,11 @@ export const pageQuery = graphql`
             }
         }
         # Preview images
+        LPGMassageArticle: imageSharp(id: { regex: "/lpg-massage-article/" }) {
+            sizes(maxWidth: 180) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
         laserCarbonPeelingArticle: imageSharp(
             id: { regex: "/laser-carbon-peeling-article/" }
         ) {
