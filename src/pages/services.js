@@ -48,6 +48,11 @@ function Services({ data }) {
                         imgSizes={data.ContourCorrectionServiceHeader.sizes}
                     />
                     <ServiceGridItem
+                        title="LPG массаж"
+                        link="/services/lpg-massage"
+                        imgSizes={data.LPGMassageServiceHeader.sizes}
+                    />
+                    <ServiceGridItem
                         title="Ботулотоксины"
                         link="/services/botox"
                         imgSizes={data.BotoxServiceHeader.sizes}
@@ -113,6 +118,13 @@ export const pageQuery = graphql`
         }
         ContourCorrectionServiceHeader: imageSharp(
             id: { regex: "/contour-correction-service-header/" }
+        ) {
+            sizes(maxWidth: 350) {
+                ...GatsbyImageSharpSizes_noBase64
+            }
+        }
+        LPGMassageServiceHeader: imageSharp(
+            id: { regex: "/lpg-massage-service-header/" }
         ) {
             sizes(maxWidth: 350) {
                 ...GatsbyImageSharpSizes_noBase64
